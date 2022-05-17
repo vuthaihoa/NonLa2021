@@ -54,21 +54,21 @@ MonoBehaviour:
   - name: Health
     clip: {fileID: 8300000, guid: b7d04c78bc170474eb8068f52b17156d, type: 3}
     Volume: 0.7
-    Pitch: 0.8
+    Pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
   - name: Shield
     clip: {fileID: 8300000, guid: d38fa69fab0d7734abbd7297a347299f, type: 3}
     Volume: 0.7
-    Pitch: 0.8
+    Pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
   - name: Dash
     clip: {fileID: 8300000, guid: 4736029a9764f4148bc31c9c82a3e833, type: 3}
     Volume: 1
-    Pitch: 1.16
+    Pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
@@ -89,14 +89,14 @@ MonoBehaviour:
   - name: Theme
     clip: {fileID: 8300000, guid: 37f7e748df4e9394bb6a3b0e5fd7b028, type: 3}
     Volume: 0.19
-    Pitch: 0.8
+    Pitch: 1
     loop: 1
     source: {fileID: 0}
     group: {fileID: 24300002, guid: 5dc5318edcb2c2442882528414df648d, type: 2}
   - name: wolfAttack
     clip: {fileID: 8300000, guid: f850c309d65d2384faa5eaeebdfa0b05, type: 3}
     Volume: 0.466
-    Pitch: 1.46
+    Pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
@@ -110,28 +110,28 @@ MonoBehaviour:
   - name: EnemyJump
     clip: {fileID: 8300000, guid: d8d5a61c0768bb7499d56c49aaf39661, type: 3}
     Volume: 0.635
-    Pitch: 0.78
+    Pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
   - name: ThuongLuongattack2
     clip: {fileID: 8300000, guid: 7ca9217d19b102f4abd3e912174207fc, type: 3}
     Volume: 0.644
-    Pitch: 1.26
+    Pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
   - name: ThuongLuongAngry
     clip: {fileID: 8300000, guid: 521cbd62a31c50f4ca6252ee2fcaf9b3, type: 3}
     Volume: 0.728
-    Pitch: 1.06
+    Pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
   - name: checkPoint
     clip: {fileID: 8300000, guid: ae1f8d69419ff7c4ca94d3eb7e359258, type: 3}
-    Volume: 0.372
-    Pitch: 0.66
+    Volume: 0.259
+    Pitch: 1
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}

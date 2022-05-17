@@ -9,6 +9,11 @@ public class Enemy_Health : MonoBehaviour
     public GameObject deadParticle;
     public EnemyFollowPlayer EnemyFollowPlayer;
     public float dazedTime;
+    Animator ani;
+    private void Start()
+    {
+        ani = GetComponent<Animator>();
+    }
     private void Update()
     {
         if (dazedTime <= 0)
@@ -26,6 +31,7 @@ public class Enemy_Health : MonoBehaviour
         dazedTime = 0.6f;
         Instantiate(bloodEffect, transform.position, Quaternion.identity);
         health -= damage;
+        ani.SetTrigger("injured");
         if (health <= 0)
         {
             Instantiate(deadParticle, transform.position, Quaternion.identity);

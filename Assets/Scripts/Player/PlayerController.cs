@@ -244,7 +244,7 @@ public class PlayerController : MonoBehaviour
                     {
                         healthcolli -= 1;
                         currentHealth += MoreHealth;
-                        HealthBar.SetHealth(currentHealth);
+                        HealthBar.SetHealth(currentHealth = 100);
                         Instantiate(healthparticle, transform.position, Quaternion.identity);
                     }
                 }

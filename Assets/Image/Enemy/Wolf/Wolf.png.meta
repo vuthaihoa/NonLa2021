@@ -56,6 +56,15 @@ TextureImporter:
   - first:
       213: -8950900020940200642
     second: Wolf_17
+  - first:
+      213: -7301354884331706780
+    second: Wolf_18
+  - first:
+      213: -2594674251864920846
+    second: Wolf_19
+  - first:
+      213: 7909793306663388568
+    second: Wolf_20
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -149,7 +158,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
+        y: 750
         width: 150
         height: 150
       alignment: 0
@@ -170,7 +179,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 600
+        y: 750
         width: 150
         height: 150
       alignment: 0
@@ -191,7 +200,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 600
+        y: 750
         width: 150
         height: 150
       alignment: 0
@@ -212,7 +221,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 450
-        y: 600
+        y: 750
         width: 150
         height: 150
       alignment: 0
@@ -233,7 +242,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 450
+        y: 600
         width: 150
         height: 150
       alignment: 0
@@ -254,7 +263,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 450
+        y: 600
         width: 150
         height: 150
       alignment: 0
@@ -275,7 +284,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 450
+        y: 600
         width: 150
         height: 150
       alignment: 0
@@ -296,7 +305,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 450
-        y: 450
+        y: 600
         width: 150
         height: 150
       alignment: 0
@@ -317,7 +326,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 300
+        y: 450
         width: 150
         height: 150
       alignment: 0
@@ -338,7 +347,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 300
+        y: 450
         width: 150
         height: 150
       alignment: 0
@@ -359,7 +368,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 150
+        y: 300
         width: 150
         height: 150
       alignment: 0
@@ -380,7 +389,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 150
+        y: 300
         width: 150
         height: 150
       alignment: 0
@@ -401,7 +410,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 150
+        y: 300
         width: 150
         height: 150
       alignment: 0
@@ -422,7 +431,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 450
-        y: 150
+        y: 300
         width: 150
         height: 150
       alignment: 0
@@ -443,7 +452,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 150
         width: 150
         height: 150
       alignment: 0
@@ -464,7 +473,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 150
-        y: 0
+        y: 150
         width: 150
         height: 150
       alignment: 0
@@ -485,7 +494,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 300
-        y: 0
+        y: 150
         width: 150
         height: 150
       alignment: 0
@@ -506,7 +515,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 450
-        y: 0
+        y: 150
         width: 150
         height: 150
       alignment: 0
@@ -518,6 +527,69 @@ TextureImporter:
       bones: []
       spriteID: e35a2d7dad308c380800000000000000
       internalID: -8950900020940200642
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 466685cba606caa90800000000000000
+      internalID: -7301354884331706780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_19
+      rect:
+        serializedVersion: 2
+        x: 150
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc2dbdd38dddfbd0800000000000000
+      internalID: -2594674251864920846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Wolf_20
+      rect:
+        serializedVersion: 2
+        x: 300
+        y: 0
+        width: 150
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8950f62ca1b35cd60800000000000000
+      internalID: 7909793306663388568
       vertices: []
       indices: 
       edges: []
