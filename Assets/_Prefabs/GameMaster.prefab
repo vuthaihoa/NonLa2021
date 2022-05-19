@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7626600922819014595}
   - component: {fileID: 7626600922819014592}
+  - component: {fileID: 131311025}
   m_Layer: 0
   m_Name: GameMaster
   m_TagString: GM
@@ -44,3 +45,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lastCheckPoint: {x: -2.103, y: -0.125}
+  vectorValue: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
+--- !u!114 &131311025
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7626600922819014593}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db5f1bf5a34d8d440893a3d0761bd8be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maxHealth: 100
+  currentHealth: 0

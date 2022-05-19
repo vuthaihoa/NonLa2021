@@ -24,8 +24,9 @@ public class PlayerController : MonoBehaviour
     private int extraJump;
     public int extraJumpValue;
 
-    public int maxHealth = 100;
-    public int currentHealth;
+    //public int maxHealth = 100;
+    //public int currentHealth;
+    private PlayerStats stats;
     public HealthBar HealthBar;
     private GameMaster gm;
     public bool shiled = false;
@@ -51,6 +52,7 @@ public class PlayerController : MonoBehaviour
     public GameObject healthparticle;
 
     private NPC_Controller npc;
+    private NPCUpgrade NPCUpgrade;
 
     public VectorValue StartingPosition;
 
@@ -61,9 +63,9 @@ public class PlayerController : MonoBehaviour
 
         extraJump = extraJumpValue;
         facingRight = true;
-
-        currentHealth = maxHealth;
-        HealthBar.MaxHealth(maxHealth);
+        stats = PlayerStats.instance;
+        //currentHealth = maxHealth;
+        HealthBar.MaxHealth(stats.maxHealth);
 
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         transform.position = gm.lastCheckPoint;
@@ -79,22 +81,25 @@ public class PlayerController : MonoBehaviour
     }
     void FixedUpdate()
     {
-        if (!inDialogue())
+        if(!inUpgrade())
         {
-            Ground = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, whatIsGround);
-            if (End == true)
+            if (!inDialogue())
             {
-                move = Input.GetAxis("Horizontal");
-                ani.SetFloat("Speed", Mathf.Abs(move));
-                Rg.velocity = new Vector2(move * Maxspeed, Rg.velocity.y);
+                Ground = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, whatIsGround);
+                if (End == true)
+                {
+                    move = Input.GetAxis("Horizontal");
+                    ani.SetFloat("Speed", Mathf.Abs(move));
+                    Rg.velocity = new Vector2(move * Maxspeed, Rg.velocity.y);
 
-                if (move > 0 && !facingRight)
-                {
-                    flip();
-                }
-                else if (move < 0 && facingRight)
-                {
-                    flip();
+                    if (move > 0 && !facingRight)
+                    {
+                        flip();
+                    }
+                    else if (move < 0 && facingRight)
+                    {
+                        flip();
+                    }
                 }
             }
         }
@@ -103,25 +108,29 @@ public class PlayerController : MonoBehaviour
     }
     private void Update()
     {
-        if (!inDialogue())
+        if(!inUpgrade())
         {
-            Jump();
-            Slide();
-            IsShiled();
-            Potions();
-            if (currentHealth <= 0)
+            if (!inDialogue())
             {
-                ani.SetBool("Death", true);
-                End = false;
-                PressSpace.SetActive(true);
-                if (Input.GetKeyDown(KeyCode.Space))
+                Jump();
+                Slide();
+                IsShiled();
+                Potions();
+                if (stats.currentHealth <= 0)
                 {
-                    SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                    ani.SetBool("Death", true);
+                    End = false;
+                    PressSpace.SetActive(true);
+                    if (Input.GetKeyDown(KeyCode.Space))
+                    {
+                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                        stats.currentHealth = stats.maxHealth;
+                    }
                 }
-            }
-            else
-            {
-                PressSpace.SetActive(false);
+                else
+                {
+                    PressSpace.SetActive(false);
+                }
             }
         }
 
@@ -236,20 +245,20 @@ public class PlayerController : MonoBehaviour
                     IsCoolDown4 = true;
                     CoolDownHealth.fillAmount = 1;
                     FindObjectOfType<AudioManager>().Play("Health");
-                    if (currentHealth >= 100)
+                    if (stats.currentHealth >= 100)
                     {
-                        currentHealth += 0;
+                        stats.currentHealth += 0;
                     }
                     else
                     {
                         healthcolli -= 1;
-                        currentHealth += MoreHealth;
-                        HealthBar.SetHealth(currentHealth);
+                        stats.currentHealth += MoreHealth;
+                        HealthBar.SetHealth(stats.currentHealth);
                         Instantiate(healthparticle, transform.position, Quaternion.identity);
                     }
-                    if (currentHealth > maxHealth)
+                    if (stats.currentHealth > stats.maxHealth)
                     {
-                        currentHealth = maxHealth;
+                        stats.currentHealth = stats.maxHealth;
                     }
                 }
                 if(IsCoolDown4)
@@ -268,8 +277,8 @@ public class PlayerController : MonoBehaviour
     {
         if (shiled)
             return;
-        currentHealth -= damage;
-        HealthBar.SetHealth(currentHealth);
+        stats.currentHealth -= damage;
+        HealthBar.SetHealth(stats.currentHealth);
         StartCoroutine(DamageAnimation());
         FindObjectOfType<AudioManager>().Play("PlayerHurt");
     }
@@ -305,6 +314,13 @@ public class PlayerController : MonoBehaviour
         else
             return false;
     }
+    private bool inUpgrade()
+    {
+        if (NPCUpgrade != null)
+            return NPCUpgrade.UpgradeActivete();
+        else
+            return false;
+    }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "NPC")
@@ -313,10 +329,17 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.T))
                 npc.ActivateDialogue();
         }
+        if(collision.gameObject.tag == "NPCUpgrade")
+        {
+            NPCUpgrade = collision.gameObject.GetComponent<NPCUpgrade>();
+            if (Input.GetKey(KeyCode.X))
+                NPCUpgrade.ActivateUpgrade();
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         npc = null;
+        NPCUpgrade = null;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

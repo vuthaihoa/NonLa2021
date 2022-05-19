@@ -8,7 +8,6 @@ public class fire : MonoBehaviour
     public Transform firePoint;
     public GameObject bullet;
     Animator ani;
-    public PlayerController playerController;
     private bool die = true;
 
     public Image CoolDownBullet;
@@ -41,7 +40,7 @@ public class fire : MonoBehaviour
                 }
             }
         }
-        if(playerController.currentHealth <= 0)
+        if(PlayerStats.instance.currentHealth <= 0)
         {
             die = false;
         }

@@ -9,6 +9,7 @@ TagManager:
   - NPC
   - TRAP
   - HP
+  - NPCUpgrade
   layers:
   - Default
   - TransparentFX

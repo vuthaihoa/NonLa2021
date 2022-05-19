@@ -5,7 +5,6 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float Speed;
-    public int damage;
     public Rigidbody2D Rg;
     public GameObject hitParticle;
     void Start()
@@ -17,7 +16,7 @@ public class Bullet : MonoBehaviour
         Enemy_Health enemy = hitInfo.GetComponent<Enemy_Health>();
         if(enemy != null)
         {
-            enemy.Takedamage(damage);
+            enemy.Takedamage(PlayerStats.instance.Magic);
             Instantiate(hitParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
@@ -25,7 +24,7 @@ public class Bullet : MonoBehaviour
         Boss_Health boss = hitInfo.GetComponent<Boss_Health>();
         if (boss != null)
         {
-            boss.Takedamage(damage);
+            boss.Takedamage(PlayerStats.instance.Magic);
             Instantiate(hitParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
