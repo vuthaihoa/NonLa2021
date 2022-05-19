@@ -28,12 +28,8 @@ public class fire : MonoBehaviour
             {
                 IsCoolDown3 = true;
                 CoolDownBullet.fillAmount = 1f;
-                ani.SetBool("Bullet", true);
-                Shoot();
-            }
-            if (Input.GetKeyUp(KeyCode.Mouse1))
-            {
-                ani.SetBool("Bullet", false);
+                ani.SetTrigger("Bullet");
+                
             }
             if(IsCoolDown3)
             {
@@ -50,7 +46,7 @@ public class fire : MonoBehaviour
             die = false;
         }
     }
-    void Shoot()
+    public void Shoot()
     {
         Instantiate(bullet, firePoint.position, firePoint.rotation);
         FindObjectOfType<AudioManager>().Play("PlayerBullet");
