@@ -21,17 +21,17 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 4372776894844377469, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.07692308
+    - time: 0.071428575
       value: {fileID: 1139214843608797943, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.15384616
+    - time: 0.14285715
       value: {fileID: -6610637546879350329, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.30769232
+    - time: 0.2857143
       value: {fileID: -3017434951189512972, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 13
+  m_SampleRate: 14
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.3846154
+    m_StopTime: 0.35714287
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -75,7 +75,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.30769232
+  - time: 0.2857143
     functionName: Finish_Ani
     data: 
     objectReferenceParameter: {fileID: 0}

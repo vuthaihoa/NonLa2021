@@ -64,7 +64,6 @@ public class PlayerController : MonoBehaviour
         extraJump = extraJumpValue;
         facingRight = true;
         stats = PlayerStats.instance;
-        //currentHealth = maxHealth;
         HealthBar.MaxHealth(stats.maxHealth);
 
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
@@ -130,6 +129,10 @@ public class PlayerController : MonoBehaviour
                 else
                 {
                     PressSpace.SetActive(false);
+                }
+                if(stats.currentHealth == stats.maxHealth)
+                {
+                    HealthBar.MaxHealth(stats.maxHealth);
                 }
             }
         }

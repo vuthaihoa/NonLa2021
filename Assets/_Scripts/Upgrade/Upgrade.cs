@@ -7,42 +7,48 @@ public class Upgrade : MonoBehaviour
     private int UpHealth = 20;
     [SerializeField]
     private Text healthText;
-    int HealthLv = 0;
 
     [SerializeField]
     private int UpDamage = 10;
     [SerializeField]
     private Text DamageText;
-    int DamageLv = 0;
+
 
     [SerializeField]
     private int UpMagic = 5;
     [SerializeField]
     private Text MagicText;
-    int MagicLv = 0;
+
     private PlayerStats stats;
     void OnEnable()
     {
-        stats = PlayerStats.instance;   
+        stats = PlayerStats.instance;
+        stats.HealthLv += 0;
+        stats.DamageLv += 0;
+        stats.MagicLv += 0;
+        healthText.text = stats.HealthLv.ToString();
+        DamageText.text = stats.DamageLv.ToString();
+        MagicText.text = stats.MagicLv.ToString();
     }
     void UpdateHealth()
     {
-        HealthLv += 1;
-        healthText.text = HealthLv.ToString();
+        stats.HealthLv += 1;
+        healthText.text = stats.HealthLv.ToString();
     }
     void UpdateDamage()
     {
-        DamageLv += 1;
-        DamageText.text = DamageLv.ToString();
+        stats.DamageLv += 1;
+        DamageText.text = stats.DamageLv.ToString();
     }
     void UpdateMagic()
     {
-        MagicLv += 1;
-        MagicText.text = MagicLv.ToString();
+        stats.MagicLv += 1;
+        MagicText.text = stats.MagicLv.ToString();
     }
     public void HealthUp()
     {
         stats.maxHealth = stats.maxHealth + UpHealth;
+        stats.currentHealth = stats.maxHealth;
         UpdateHealth();
     }
     public void DamageUp()

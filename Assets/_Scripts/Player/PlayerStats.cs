@@ -10,6 +10,10 @@ public class PlayerStats : MonoBehaviour
     public int damage =10;
     public int Magic = 15;
 
+    public int HealthLv = 0;
+    public int DamageLv = 0;
+    public int MagicLv = 0;
+
     void Awake()
     {
        if(instance == null)
