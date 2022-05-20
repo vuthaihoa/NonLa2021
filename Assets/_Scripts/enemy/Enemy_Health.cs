@@ -7,6 +7,7 @@ public class Enemy_Health : MonoBehaviour
     public int health;
     public GameObject bloodEffect;
     public GameObject deadParticle;
+    public GameObject SoulFire;
     public EnemyFollowPlayer EnemyFollowPlayer;
     public float dazedTime;
     Animator ani;
@@ -35,6 +36,7 @@ public class Enemy_Health : MonoBehaviour
         if (health <= 0)
         {
             Instantiate(deadParticle, transform.position, Quaternion.identity);
+            Instantiate(SoulFire, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
     }

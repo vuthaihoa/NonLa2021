@@ -14,6 +14,7 @@ public class PlayerStats : MonoBehaviour
     public int DamageLv = 0;
     public int MagicLv = 0;
 
+    public int soulFire;
     void Awake()
     {
        if(instance == null)

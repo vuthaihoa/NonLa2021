@@ -300,8 +300,6 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   extraJumpValue: 1
-  maxHealth: 100
-  currentHealth: 0
   HealthBar: {fileID: 0}
   shiled: 0
   End: 1
@@ -309,6 +307,7 @@ MonoBehaviour:
   MoreHealth: 30
   intPotions: 1
   inthealth: {fileID: 0}
+  SoulText: {fileID: 0}
   CoolDownShield: {fileID: 0}
   coolDown1: 2
   CoolDownDash: {fileID: 0}
@@ -343,9 +342,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 640
   attackRange: 0.08
-  damage: 15
   hitParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
-  PlayerController: {fileID: 3867494395799041345}
 --- !u!82 &8973544925100939351
 AudioSource:
   m_ObjectHideFlags: 0
@@ -456,7 +453,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 7505307989793968301}
   bullet: {fileID: 4095149372292239788, guid: 10ab28a5070474d4b9e277bf5597b592, type: 3}
-  playerController: {fileID: 3867494395799041345}
   CoolDownBullet: {fileID: 0}
   coolDown3: 1.5
 --- !u!114 &463732886575240736

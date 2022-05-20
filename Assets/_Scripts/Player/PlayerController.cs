@@ -24,8 +24,6 @@ public class PlayerController : MonoBehaviour
     private int extraJump;
     public int extraJumpValue;
 
-    //public int maxHealth = 100;
-    //public int currentHealth;
     private PlayerStats stats;
     public HealthBar HealthBar;
     private GameMaster gm;
@@ -38,6 +36,8 @@ public class PlayerController : MonoBehaviour
     public int MoreHealth=30;
     public int intPotions;
     public Text inthealth;
+
+    public Text SoulText;
 
     public Image CoolDownShield;
     public float coolDown1;
@@ -77,6 +77,7 @@ public class PlayerController : MonoBehaviour
         CoolDownHealth.fillAmount = 0;
 
         transform.position = StartingPosition.initialValue;
+
     }
     void FixedUpdate()
     {
@@ -102,7 +103,6 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        inthealth.text = healthcolli.ToString();
 
     }
     private void Update()
@@ -136,6 +136,8 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+        inthealth.text = healthcolli.ToString();
+        SoulText.text = stats.soulFire.ToString();
 
 
     }
@@ -356,6 +358,10 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "HP")
         {
             healthcolli += 1;
+        }
+        if (collision.gameObject.tag == "Soul")
+        {
+            stats.soulFire += 1;
         }
     }
 }

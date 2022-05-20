@@ -166,6 +166,7 @@ MonoBehaviour:
   health: 70
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
+  SoulFire: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
   EnemyFollowPlayer: {fileID: 359765585}
   dazedTime: 0.6
 --- !u!114 &359765585
