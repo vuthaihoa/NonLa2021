@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7598162648910706402}
   - component: {fileID: 7598162648910706405}
   - component: {fileID: 1111304215573481621}
+  - component: {fileID: 6008431319022723887}
   m_Layer: 7
   m_Name: Enemy_fire1
   m_TagString: Untagged
@@ -138,6 +139,7 @@ MonoBehaviour:
   SoulFire: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
   EnemyFollowPlayer: {fileID: 7598162648910706402}
   dazedTime: 0.6
+  ojbectDropItems: {fileID: 6008431319022723887}
 --- !u!61 &1111304215573481621
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -164,3 +166,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.13264564, y: 0.19439344}
   m_EdgeRadius: 0
+--- !u!114 &6008431319022723887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7598162648910706414}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaed63a6006e6b44b2b64573f3daf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loots:
+  - item: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
+    DropRate: 100
+    minQuantity: 1
+    maxQuantity: 5

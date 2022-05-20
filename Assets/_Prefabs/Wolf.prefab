@@ -80,6 +80,7 @@ GameObject:
   - component: {fileID: 334216846}
   - component: {fileID: 334216847}
   - component: {fileID: 281882908296215216}
+  - component: {fileID: 3618493848855241051}
   m_Layer: 7
   m_Name: Wolf_0
   m_TagString: Untagged
@@ -277,6 +278,7 @@ MonoBehaviour:
   SoulFire: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
   EnemyFollowPlayer: {fileID: 281882908296215216}
   dazedTime: 0
+  ojbectDropItems: {fileID: 3618493848855241051}
 --- !u!114 &281882908296215216
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -292,6 +294,23 @@ MonoBehaviour:
   attackspeed: 10000
   Speed: 0
   lineOfSite: 0
+--- !u!114 &3618493848855241051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5970196008467168112}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaed63a6006e6b44b2b64573f3daf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loots:
+  - item: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
+    DropRate: 100
+    minQuantity: 2
+    maxQuantity: 5
 --- !u!1 &5970196008544371934
 GameObject:
   m_ObjectHideFlags: 0

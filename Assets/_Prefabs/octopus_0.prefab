@@ -47,6 +47,7 @@ GameObject:
   - component: {fileID: 458966657}
   - component: {fileID: 458966658}
   - component: {fileID: 458966659}
+  - component: {fileID: 9166284233965032049}
   m_Layer: 7
   m_Name: octopus_0
   m_TagString: Untagged
@@ -271,8 +272,27 @@ MonoBehaviour:
   health: 400
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
+  SoulFire: {fileID: 0}
   EnemyFollowPlayer: {fileID: 458966658}
   dazedTime: 0
+  ojbectDropItems: {fileID: 9166284233965032049}
+--- !u!114 &9166284233965032049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398675765819732229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaed63a6006e6b44b2b64573f3daf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loots:
+  - item: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
+    DropRate: 100
+    minQuantity: 10
+    maxQuantity: 15
 --- !u!1 &3398675766688389082
 GameObject:
   m_ObjectHideFlags: 0

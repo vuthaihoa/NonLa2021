@@ -11,6 +11,7 @@ public class Enemy_Health : MonoBehaviour
     public EnemyFollowPlayer EnemyFollowPlayer;
     public float dazedTime;
     Animator ani;
+    public OjbectDropItems ojbectDropItems;
     private void Start()
     {
         ani = GetComponent<Animator>();
@@ -36,8 +37,9 @@ public class Enemy_Health : MonoBehaviour
         if (health <= 0)
         {
             Instantiate(deadParticle, transform.position, Quaternion.identity);
-            Instantiate(SoulFire, transform.position, Quaternion.identity);
+            //Instantiate(SoulFire, transform.position, Quaternion.identity);
             Destroy(gameObject);
+            ojbectDropItems.DropItem();
         }
     }
 }

@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3365747522937218092}
   - component: {fileID: 3365747522937218095}
   - component: {fileID: 359765585}
+  - component: {fileID: 8984253353408581074}
   m_Layer: 7
   m_Name: rong_1
   m_TagString: Untagged
@@ -169,6 +170,7 @@ MonoBehaviour:
   SoulFire: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
   EnemyFollowPlayer: {fileID: 359765585}
   dazedTime: 0.6
+  ojbectDropItems: {fileID: 8984253353408581074}
 --- !u!114 &359765585
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -184,6 +186,23 @@ MonoBehaviour:
   attackspeed: 1000
   Speed: 0
   lineOfSite: 0
+--- !u!114 &8984253353408581074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3365747522937218086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaed63a6006e6b44b2b64573f3daf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loots:
+  - item: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
+    DropRate: 100
+    minQuantity: 4
+    maxQuantity: 10
 --- !u!1 &3365747523761464024
 GameObject:
   m_ObjectHideFlags: 0
