@@ -23,22 +23,7 @@ public class fire : MonoBehaviour
     {
         if(die)
         {
-            if (Input.GetKeyDown(KeyCode.Mouse1) && IsCoolDown3 == false)
-            {
-                IsCoolDown3 = true;
-                CoolDownBullet.fillAmount = 1f;
-                ani.SetTrigger("Bullet");
-                
-            }
-            if(IsCoolDown3)
-            {
-                CoolDownBullet.fillAmount -= 1 / coolDown3 * Time.deltaTime;
-                if (CoolDownBullet.fillAmount <= 0)
-                {
-                    CoolDownBullet.fillAmount = 0;
-                    IsCoolDown3 = false;
-                }
-            }
+            Fire();
         }
         if(PlayerStats.instance.currentHealth <= 0)
         {
@@ -49,5 +34,24 @@ public class fire : MonoBehaviour
     {
         Instantiate(bullet, firePoint.position, firePoint.rotation);
         FindObjectOfType<AudioManager>().Play("PlayerBullet");
+    }
+    void Fire()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse1) && IsCoolDown3 == false)
+        {
+            IsCoolDown3 = true;
+            CoolDownBullet.fillAmount = 1f;
+            ani.SetTrigger("Bullet");
+
+        }
+        if (IsCoolDown3)
+        {
+            CoolDownBullet.fillAmount -= 1 / coolDown3 * Time.deltaTime;
+            if (CoolDownBullet.fillAmount <= 0)
+            {
+                CoolDownBullet.fillAmount = 0;
+                IsCoolDown3 = false;
+            }
+        }
     }
 }
