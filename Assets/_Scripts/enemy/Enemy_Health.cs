@@ -37,7 +37,6 @@ public class Enemy_Health : MonoBehaviour
         if (health <= 0)
         {
             Instantiate(deadParticle, transform.position, Quaternion.identity);
-            //Instantiate(SoulFire, transform.position, Quaternion.identity);
             Destroy(gameObject);
             ojbectDropItems.DropItem();
         }

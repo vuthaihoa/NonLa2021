@@ -15,6 +15,10 @@ public class PlayerStats : MonoBehaviour
     public int MagicLv = 0;
 
     public int soulFire;
+
+    public float UpgradeSoulHealth;
+    public float UpgradeSoulDamage;
+    public float UpgradeSoulMagic;
     void Awake()
     {
        if(instance == null)

@@ -6317,34 +6317,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1123017236, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1123017236, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1123017236, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1617595438, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1617595438, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329802860136714806, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329802860301193387, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2329802860510845957, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
       propertyPath: m_Name
       value: PauseMenu_UI
@@ -6431,30 +6403,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2329802860510846008, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329802860664092646, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329802860664092646, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329802861511742802, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329802861511742802, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 2329802861511742802, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7243708158552526670, guid: 43b1a8aedc5745946a38402c1a545c9e, type: 3}
-      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -7670,6 +7618,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1171114620834477044, guid: 6670ab85807287243bfc769a37298733, type: 3}
+      propertyPath: sounds.Array.data[6].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: e75df5cd9c1f944ce99e585d983fa119, type: 3}
     - target: {fileID: 1171114620834477045, guid: 6670ab85807287243bfc769a37298733, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -8553,6 +8505,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6545311585100747596, guid: 2844a76d3745e5a49afcdc0665e99926, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6545311586040856662, guid: 2844a76d3745e5a49afcdc0665e99926, type: 3}
       propertyPath: m_Name
       value: Upgrade_UI
@@ -8641,10 +8597,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6545311586040856667, guid: 2844a76d3745e5a49afcdc0665e99926, type: 3}
-      propertyPath: HealthBar
-      value: 
-      objectReference: {fileID: 1704977298}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2844a76d3745e5a49afcdc0665e99926, type: 3}
 --- !u!1001 &7598162648476794873
@@ -8714,6 +8666,22 @@ PrefabInstance:
     - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: damage
       value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
+      propertyPath: soulFire
+      value: 1000
+      objectReference: {fileID: 0}
+    - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
+      propertyPath: UpgradeSoulMagic
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
+      propertyPath: UpgradeSoulDamage
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
+      propertyPath: UpgradeSoulHealth
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 7626600922819014593, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: m_Name
