@@ -1162,6 +1162,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
+      propertyPath: SoulText
+      value: 
+      objectReference: {fileID: 362148083}
+    - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: HealthBar
       value: 
       objectReference: {fileID: 1068933384}
@@ -1618,6 +1622,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &362148083 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 257426623, guid: 07cd0e135ae347146aed23fb829a1b05, type: 3}
+  m_PrefabInstance: {fileID: 509262286}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &391740840
 GameObject:
   m_ObjectHideFlags: 0
