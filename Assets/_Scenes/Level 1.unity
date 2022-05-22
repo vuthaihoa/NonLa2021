@@ -8509,10 +8509,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 6545311585100747596, guid: 2844a76d3745e5a49afcdc0665e99926, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 6545311586040856662, guid: 2844a76d3745e5a49afcdc0665e99926, type: 3}
       propertyPath: m_Name
       value: Upgrade_UI
@@ -8677,15 +8673,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: UpgradeSoulMagic
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: UpgradeSoulDamage
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: UpgradeSoulHealth
-      value: 100
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 7626600922819014593, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: m_Name

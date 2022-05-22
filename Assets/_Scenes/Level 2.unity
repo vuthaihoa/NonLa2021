@@ -5444,6 +5444,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameMaster
       objectReference: {fileID: 0}
+    - target: {fileID: 7626600922819014593, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7626600922819014595, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: m_RootOrder
       value: 7

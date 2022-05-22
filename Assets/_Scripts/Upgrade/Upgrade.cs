@@ -71,7 +71,7 @@ public class Upgrade : MonoBehaviour
         stats.currentHealth = stats.maxHealth;
         stats.soulFire = (int)(stats.soulFire - stats.UpgradeSoulHealth);
         stats.UpgradeSoulHealth *= 1.3f;
-        healthTextUp.text = stats.UpgradeSoulHealth.ToString();
+        healthTextUp.text = Mathf.Round(stats.UpgradeSoulHealth).ToString();
         UpdateHealth();
     }
     public void DamageUp()
@@ -84,7 +84,7 @@ public class Upgrade : MonoBehaviour
         UpdateDamage();
         stats.soulFire = (int)(stats.soulFire - stats.UpgradeSoulDamage);
         stats.UpgradeSoulDamage *= 1.3f;
-        DamageTextUp.text = stats.UpgradeSoulDamage.ToString();
+        DamageTextUp.text = Mathf.Round(stats.UpgradeSoulDamage).ToString();
     }
     public void MagicUp()
     {
@@ -96,7 +96,7 @@ public class Upgrade : MonoBehaviour
         UpdateMagic();
         stats.soulFire = (int)(stats.soulFire - stats.UpgradeSoulMagic);
         stats.UpgradeSoulMagic *= 1.3f;
-        MagicTextUp.text = stats.UpgradeSoulMagic.ToString();
+        MagicTextUp.text = Mathf.Round(stats.UpgradeSoulMagic).ToString();
     }
 
 }

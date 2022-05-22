@@ -7,7 +7,6 @@ public class Enemy_Health : MonoBehaviour
     public int health;
     public GameObject bloodEffect;
     public GameObject deadParticle;
-    public GameObject SoulFire;
     public EnemyFollowPlayer EnemyFollowPlayer;
     public float dazedTime;
     Animator ani;
