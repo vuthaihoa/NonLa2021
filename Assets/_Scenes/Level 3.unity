@@ -907,7 +907,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.6
-  lineOfsitePlayer: 1.32
+  lineOfsitePlayer: 0.68
   StopMove: 0.23
 --- !u!50 &307572374
 Rigidbody2D:
@@ -1929,7 +1929,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243239, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243247, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: player
