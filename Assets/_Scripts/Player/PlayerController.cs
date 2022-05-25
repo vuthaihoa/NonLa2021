@@ -11,8 +11,12 @@ public class PlayerController : MonoBehaviour
 
     public float Maxspeed;
     public float JumpHight;
-    public float SkillSlide;
     float move;
+
+    private bool CanDash = true;
+    private bool isDashing;
+    public float dashingPower;
+    public float dashingTime = 0.2f;
 
     private bool facingRight;
     private bool Ground;
@@ -85,6 +89,10 @@ public class PlayerController : MonoBehaviour
         {
             if (!inDialogue())
             {
+                if (isDashing)
+                {
+                    return;
+                }
                 Ground = Physics2D.OverlapCircle(GroundCheck.position, checkRadius, whatIsGround);
                 if (End == true)
                 {
@@ -115,6 +123,10 @@ public class PlayerController : MonoBehaviour
                 Slide();
                 IsShiled();
                 Potions();
+                if(isDashing)
+                {
+                    return;
+                }
                 if (stats.currentHealth <= 0)
                 {
                     ani.SetBool("Death", true);
@@ -181,23 +193,10 @@ public class PlayerController : MonoBehaviour
     {
         if (End)
         {
-            if (Input.GetKeyDown(KeyCode.E) && IsCoolDown2 == false)
+            if (Input.GetKeyDown(KeyCode.E) && IsCoolDown2 == false && CanDash)
             {
                 IsCoolDown2 = true;
                 CoolDownDash.fillAmount = 1f;
-                FindObjectOfType<AudioManager>().Play("Dash");
-                if (facingRight)
-                {
-                    Rg.AddForce(Vector2.right * SkillSlide);
-                    ani.SetBool("SkillSlide", true);
-                    ani.SetBool("ground", false);
-                }
-                else
-                {
-                    Rg.AddForce(Vector2.left * SkillSlide);
-                    ani.SetBool("SkillSlide", true);
-                    ani.SetBool("ground", false);
-                }
                 StartCoroutine("StopSlide");
             }
             if (IsCoolDown2)
@@ -213,8 +212,26 @@ public class PlayerController : MonoBehaviour
     }
     IEnumerator StopSlide()
     {
-        yield return new WaitForSeconds(0.2f);
+        CanDash = false;
+        isDashing = true;
+        float originalGravity = Rg.gravityScale;
+        Rg.gravityScale = 0;
+        if(facingRight)
+        {
+            Rg.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+            ani.SetBool("SkillSlide", true);
+        }
+        else
+        {
+            Rg.velocity = new Vector2(transform.localScale.x * -dashingPower, 0f);
+            ani.SetBool("SkillSlide", true);
+        }
+        yield return new WaitForSeconds(dashingTime);
+        Rg.gravityScale = originalGravity;
+        isDashing = false;
         ani.SetBool("SkillSlide", false);
+        yield return new WaitForSeconds(coolDown2);
+        CanDash = true;
     }
     private void IsShiled()
     {
