@@ -7,15 +7,17 @@ public class EnemyBullet : MonoBehaviour
     public float Speed;
     public float lineOfSite;
     public float ShootingRange;
-    public float fireRate;
+    public float nextFrie;
     public GameObject bulletEnemy;
     public GameObject bulletParent;
     private Transform player;
     bool faceingRight = false;
     private float moveDirection;
+    Animator ani;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        ani = GetComponent<Animator>();
     }
     void Update()
     {
@@ -24,9 +26,17 @@ public class EnemyBullet : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, Speed * Time.deltaTime);
         }
+        if (distanceFromPlayer < ShootingRange)
+        {
+            if(Time.time > nextFrie)
+            {
+                nextFrie += 5f;
+                ani.SetTrigger("instan");
+            }
+        }
         FlipTowardsPlayer();
     }
-    void Bullet()
+    public void Bullet()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
         if (distanceFromPlayer <= ShootingRange)
