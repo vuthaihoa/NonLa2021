@@ -7,8 +7,10 @@ public class EnemyDash : MonoBehaviour
     public float Speed;
     public float lineOfSite;
     public float DashRange;
+    public float startDash;
+    public float nextDash;
     private Transform player;
-    bool faceingRight = true;
+    bool faceingRight = false;
     private float moveDirection;
 
     private bool CanDash = true;
@@ -17,12 +19,12 @@ public class EnemyDash : MonoBehaviour
     public float dashingTime = 0.2f;
 
     Rigidbody2D Rg;
-    //Animator ani;
+    Animator ani;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         Rg = GetComponent<Rigidbody2D>();
-        //ani = GetComponent<Animator>();
+        ani = GetComponent<Animator>();
     }
     void Update()
     {
@@ -33,37 +35,41 @@ public class EnemyDash : MonoBehaviour
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
         if (distanceFromPlayer < lineOfSite && distanceFromPlayer > DashRange)
         {
+            ani.SetBool("run", true);
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, Speed * Time.deltaTime);
+        }
+        else
+        {
+            ani.SetBool("run", false);
         }
         if(distanceFromPlayer < DashRange)
         {
-            if (CanDash)
+            if (Time.time > startDash && CanDash)
             {
-                StartCoroutine("StopSlide");
+                startDash += nextDash;
+                ani.SetTrigger("dash");
+                ani.SetBool("run", false);
             }
         }
         FlipTowardsPlayer();
     }
-    IEnumerator StopSlide()
+    public IEnumerator Dash()
     {
         CanDash = false;
         isDashing = true;
         float originalGravity = Rg.gravityScale;
         Rg.gravityScale = 0;
-        if (!faceingRight)
+        if (faceingRight)
         {
-            Rg.velocity = new Vector2(transform.localScale.x * -dashingPower, 0f);
-            //ani.SetBool("SkillSlide", true);
+            Rg.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
         }
         else
         {
-            Rg.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
-            //ani.SetBool("SkillSlide", true);
+            Rg.velocity = new Vector2(transform.localScale.x * -dashingPower, 0f);
         }
         yield return new WaitForSeconds(dashingTime);
         Rg.gravityScale = originalGravity;
         isDashing = false;
-        //ani.SetBool("SkillSlide", false);
         yield return new WaitForSeconds(0.3f);
         CanDash = true;
     }

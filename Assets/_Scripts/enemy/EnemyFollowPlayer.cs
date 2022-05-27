@@ -9,6 +9,7 @@ public class EnemyFollowPlayer : MonoBehaviour
     public float Speed;
     public float lineOfSite;
     private Transform player;
+    public int damage = 10;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -32,7 +33,7 @@ public class EnemyFollowPlayer : MonoBehaviour
         {
             if(attackspeed <= CanAttack)
             {
-                collision.gameObject.GetComponent<PlayerController>().TakeDamage(10);
+                collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
                 CanAttack = 0f;
             }
             else
