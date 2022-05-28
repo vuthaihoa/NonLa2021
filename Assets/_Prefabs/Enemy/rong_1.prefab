@@ -123,7 +123,8 @@ MonoBehaviour:
   Speed: 0.7
   lineOfSite: 1.13
   ShootingRange: 0.89
-  fireRate: 3.38
+  nextFire: 3
+  canFire: 10
   bulletEnemy: {fileID: 6741644067946006733, guid: 1231a03af8c44254d96ba409eef53dee, type: 3}
   bulletParent: {fileID: 3365747523761464024}
 --- !u!61 &3365747522937218092
@@ -167,7 +168,6 @@ MonoBehaviour:
   health: 70
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
-  SoulFire: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
   EnemyFollowPlayer: {fileID: 359765585}
   dazedTime: 0.6
   ojbectDropItems: {fileID: 8984253353408581074}
@@ -184,8 +184,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackspeed: 1000
+  CanAttack: 0
   Speed: 0
   lineOfSite: 0
+  damage: 10
 --- !u!114 &8984253353408581074
 MonoBehaviour:
   m_ObjectHideFlags: 0

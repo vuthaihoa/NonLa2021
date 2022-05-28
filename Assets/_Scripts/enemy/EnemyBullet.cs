@@ -7,7 +7,8 @@ public class EnemyBullet : MonoBehaviour
     public float Speed;
     public float lineOfSite;
     public float ShootingRange;
-    public float nextFrie;
+    public float nextFire = 2f;
+    public float canFire = 10f;
     public GameObject bulletEnemy;
     public GameObject bulletParent;
     private Transform player;
@@ -28,10 +29,14 @@ public class EnemyBullet : MonoBehaviour
         }
         if (distanceFromPlayer < ShootingRange)
         {
-            if(Time.time > nextFrie)
+            if(canFire > nextFire)
             {
-                nextFrie += 5f;
+                canFire = 0f;
                 ani.SetTrigger("instan");
+            }
+            else
+            {
+                canFire += Time.deltaTime;
             }
         }
         FlipTowardsPlayer();

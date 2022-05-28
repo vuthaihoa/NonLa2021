@@ -5,7 +5,7 @@ using UnityEngine;
 public class EnemyFollowPlayer : MonoBehaviour
 {
     public float attackspeed;
-    private float CanAttack;
+    public float CanAttack;
     public float Speed;
     public float lineOfSite;
     private Transform player;
@@ -21,6 +21,7 @@ public class EnemyFollowPlayer : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, Speed * Time.deltaTime);
         }
+        CanAttack += Time.deltaTime;
     }
     private void OnDrawGizmosSelected()
     {
@@ -29,9 +30,9 @@ public class EnemyFollowPlayer : MonoBehaviour
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if(collision.gameObject.tag == "Player")
+        if (collision.gameObject.tag == "Player")
         {
-            if(attackspeed <= CanAttack)
+            if (attackspeed <= CanAttack)
             {
                 collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
                 CanAttack = 0f;

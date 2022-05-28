@@ -205,6 +205,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackspeed: 3
+  CanAttack: 4
   Speed: 0
   lineOfSite: 0
   damage: 10

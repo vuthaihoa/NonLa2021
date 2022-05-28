@@ -107,7 +107,6 @@ GameObject:
   - component: {fileID: 1224113991273633718}
   - component: {fileID: 1224113991273633712}
   - component: {fileID: 1224113991273633719}
-  - component: {fileID: 1224113991273633714}
   - component: {fileID: 1224113991273633715}
   - component: {fileID: 1224113991273633713}
   m_Layer: 6
@@ -258,18 +257,6 @@ MonoBehaviour:
   EnemyFollowPlayer: {fileID: 0}
   dazedTime: 0
   ojbectDropItems: {fileID: 0}
---- !u!114 &1224113991273633714
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224113991273633706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5dece6a5efd5fcd4490d5eb4240b4aaf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!68 &1224113991273633715
 EdgeCollider2D:
   m_ObjectHideFlags: 0

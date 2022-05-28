@@ -118,9 +118,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76aa631e170e2344e8810493ea103f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackspeed: 0.3
+  attackspeed: 0.8
+  CanAttack: 0
   Speed: 0.4
   lineOfSite: 1.22
+  damage: 10
 --- !u!114 &7598162648910706405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -136,7 +138,6 @@ MonoBehaviour:
   health: 30
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
-  SoulFire: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
   EnemyFollowPlayer: {fileID: 7598162648910706402}
   dazedTime: 0.6
   ojbectDropItems: {fileID: 6008431319022723887}
