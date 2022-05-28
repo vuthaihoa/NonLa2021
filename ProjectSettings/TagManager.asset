@@ -11,6 +11,7 @@ TagManager:
   - HP
   - NPCUpgrade
   - Soul
+  - Money
   layers:
   - Default
   - TransparentFX

@@ -39,6 +39,7 @@ public class PlayerController : MonoBehaviour
     public Text inthealth;
 
     public Text SoulText;
+    public Text MoneyText;
 
     public Image CoolDownShield;
     public float coolDown1;
@@ -149,6 +150,7 @@ public class PlayerController : MonoBehaviour
         }
         inthealth.text = stats.healthcolli.ToString();
         SoulText.text = stats.soulFire.ToString();
+        MoneyText.text = stats.money.ToString();
 
 
     }
@@ -378,6 +380,10 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Soul")
         {
             stats.soulFire += 1;
+        }
+        if (collision.gameObject.tag == "Money")
+        {
+            stats.money += 1;
         }
     }
 }

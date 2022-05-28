@@ -307,6 +307,7 @@ MonoBehaviour:
   PressSpace: {fileID: 0}
   inthealth: {fileID: 0}
   SoulText: {fileID: 0}
+  MoneyText: {fileID: 0}
   CoolDownShield: {fileID: 0}
   coolDown1: 2
   CoolDownDash: {fileID: 0}

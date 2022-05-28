@@ -10,18 +10,24 @@ public class PlayerStats : MonoBehaviour
     public int MoreHealth = 30;
     public int healthcolli;
 
+    public int money;
+
     public int damage =10;
     public int Magic = 15;
 
     public int HealthLv = 0;
     public int DamageLv = 0;
     public int MagicLv = 0;
+    public int PotionLV = 0;
 
     public int soulFire;
 
     public float UpgradeSoulHealth;
     public float UpgradeSoulDamage;
     public float UpgradeSoulMagic;
+    public float UpgradePotion;
+
+    public int buyPotion;
     void Awake()
     {
        if(instance == null)

@@ -275,7 +275,6 @@ MonoBehaviour:
   health: 80
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
-  SoulFire: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
   EnemyFollowPlayer: {fileID: 281882908296215216}
   dazedTime: 0
   ojbectDropItems: {fileID: 3618493848855241051}
@@ -292,8 +291,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackspeed: 10000
+  CanAttack: 0
   Speed: 0
   lineOfSite: 0
+  damage: 10
 --- !u!114 &3618493848855241051
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -311,6 +312,10 @@ MonoBehaviour:
     DropRate: 100
     minQuantity: 2
     maxQuantity: 5
+  - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
+    DropRate: 34.9
+    minQuantity: 6
+    maxQuantity: 10
 --- !u!1 &5970196008544371934
 GameObject:
   m_ObjectHideFlags: 0

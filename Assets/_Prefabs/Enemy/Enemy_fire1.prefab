@@ -184,3 +184,7 @@ MonoBehaviour:
     DropRate: 100
     minQuantity: 1
     maxQuantity: 5
+  - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
+    DropRate: 47.1
+    minQuantity: 1
+    maxQuantity: 5

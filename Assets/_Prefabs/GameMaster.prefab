@@ -62,12 +62,16 @@ MonoBehaviour:
   currentHealth: 0
   MoreHealth: 30
   healthcolli: 1
+  money: 1000
   damage: 10
   Magic: 15
   HealthLv: 0
   DamageLv: 0
   MagicLv: 0
-  soulFire: 0
+  PotionLV: 0
+  soulFire: 1000
   UpgradeSoulHealth: 20
   UpgradeSoulDamage: 20
   UpgradeSoulMagic: 20
+  UpgradePotion: 50
+  buyPotion: 100

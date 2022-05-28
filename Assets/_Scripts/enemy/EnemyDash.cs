@@ -44,11 +44,15 @@ public class EnemyDash : MonoBehaviour
         }
         if(distanceFromPlayer < DashRange)
         {
-            if (Time.time > startDash && CanDash)
+            if (nextDash < startDash && CanDash)
             {
-                startDash += nextDash;
+                startDash = 0f;
                 ani.SetTrigger("dash");
                 ani.SetBool("run", false);
+            }
+            else
+            {
+                startDash += Time.deltaTime;
             }
         }
         FlipTowardsPlayer();

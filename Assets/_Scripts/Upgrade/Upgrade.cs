@@ -28,7 +28,14 @@ public class Upgrade : MonoBehaviour
     [SerializeField]
     private Text MagicTextUp;
 
-
+    [SerializeField]
+    private int UpPotion = 20;
+    [SerializeField]
+    private Text potionLV_Text;
+    [SerializeField]
+    private Text potionUpgrade;
+    [SerializeField]
+    private Text BuyPotionText;
 
     private PlayerStats stats;
     void OnEnable()
@@ -45,6 +52,10 @@ public class Upgrade : MonoBehaviour
         healthTextUp.text = stats.UpgradeSoulHealth.ToString();
         DamageTextUp.text = stats.UpgradeSoulDamage.ToString();
         MagicTextUp.text = stats.UpgradeSoulMagic.ToString();
+
+        potionLV_Text.text = stats.PotionLV.ToString();
+        potionUpgrade.text = stats.UpgradePotion.ToString();
+        BuyPotionText.text = stats.buyPotion.ToString();
     }
     void UpdateHealth()
     {
@@ -97,6 +108,36 @@ public class Upgrade : MonoBehaviour
         stats.soulFire = (int)(stats.soulFire - stats.UpgradeSoulMagic);
         stats.UpgradeSoulMagic *= 1.3f;
         MagicTextUp.text = Mathf.Round(stats.UpgradeSoulMagic).ToString();
+    }
+    void moneyText()
+    {
+        stats.PotionLV += 1;
+        potionLV_Text.text = stats.PotionLV.ToString();
+    }
+    public void PotionUp()
+    {
+        if(stats.money < stats.UpgradePotion)
+        {
+            return;
+        }
+        stats.MoreHealth = stats.MoreHealth + UpPotion;
+        moneyText();
+        stats.money = (int)(stats.money - stats.UpgradePotion);
+        stats.UpgradePotion *=1.3f;
+        potionUpgrade.text = Mathf.Round(stats.UpgradePotion).ToString();
+
+    }
+    public void BuyPotion()
+    {
+        if(stats.money < stats.buyPotion)
+        {
+            return;
+        }
+        stats.healthcolli = stats.healthcolli + 1;
+        stats.money = stats.money - stats.buyPotion;
+        stats.buyPotion = stats.buyPotion + 20;
+        BuyPotionText.text = stats.buyPotion.ToString();
+
     }
 
 }
