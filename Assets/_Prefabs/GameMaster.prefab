@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 023d1816574a1874a85fee2aa9195eb5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lastCheckPoint: {x: -2.103, y: -0.125}
+  lastCheckPoint: {x: -2.062, y: -0.125}
   vectorValue: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
 --- !u!114 &131311025
 MonoBehaviour:
@@ -60,3 +60,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  MoreHealth: 30
+  healthcolli: 1
+  damage: 10
+  Magic: 15
+  HealthLv: 0
+  DamageLv: 0
+  MagicLv: 0
+  soulFire: 0
+  UpgradeSoulHealth: 20
+  UpgradeSoulDamage: 20
+  UpgradeSoulMagic: 20

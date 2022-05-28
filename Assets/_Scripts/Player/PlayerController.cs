@@ -36,9 +36,6 @@ public class PlayerController : MonoBehaviour
 
     public GameObject PressSpace;
 
-    int healthcolli;
-    public int MoreHealth=30;
-    public int intPotions;
     public Text inthealth;
 
     public Text SoulText;
@@ -69,12 +66,14 @@ public class PlayerController : MonoBehaviour
         facingRight = true;
         stats = PlayerStats.instance;
         HealthBar.MaxHealth(stats.maxHealth);
+        if(stats.currentHealth < stats.maxHealth)
+        {
+            HealthBar.SetHealth(stats.currentHealth);
+        }
 
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         transform.position = gm.lastCheckPoint;
         End = true;
-
-        healthcolli = intPotions;
 
         CoolDownShield.fillAmount = 0;
         CoolDownDash.fillAmount = 0;
@@ -148,7 +147,7 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
-        inthealth.text = healthcolli.ToString();
+        inthealth.text = stats.healthcolli.ToString();
         SoulText.text = stats.soulFire.ToString();
 
 
@@ -260,7 +259,7 @@ public class PlayerController : MonoBehaviour
     {
         if(End)
         {
-            if (healthcolli >= 1)
+            if (stats.healthcolli >= 1)
             {
                 if (Input.GetKeyDown(KeyCode.F) && IsCoolDown4 == false)
                 {
@@ -273,8 +272,8 @@ public class PlayerController : MonoBehaviour
                     }
                     else
                     {
-                        healthcolli -= 1;
-                        stats.currentHealth += MoreHealth;
+                        stats.healthcolli -= 1;
+                        stats.currentHealth += stats.MoreHealth;
                         HealthBar.SetHealth(stats.currentHealth);
                         Instantiate(healthparticle, transform.position, Quaternion.identity);
                     }
@@ -374,7 +373,7 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "HP")
         {
-            healthcolli += 1;
+            stats.healthcolli += 1;
         }
         if (collision.gameObject.tag == "Soul")
         {

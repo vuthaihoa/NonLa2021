@@ -7,6 +7,9 @@ public class PlayerStats : MonoBehaviour
     public static PlayerStats instance;
     public int maxHealth = 100;
     public int currentHealth;
+    public int MoreHealth = 30;
+    public int healthcolli;
+
     public int damage =10;
     public int Magic = 15;
 

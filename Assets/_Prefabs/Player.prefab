@@ -305,8 +305,6 @@ MonoBehaviour:
   shiled: 0
   End: 1
   PressSpace: {fileID: 0}
-  MoreHealth: 30
-  intPotions: 3
   inthealth: {fileID: 0}
   SoulText: {fileID: 0}
   CoolDownShield: {fileID: 0}

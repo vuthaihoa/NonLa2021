@@ -124,7 +124,7 @@ MonoBehaviour:
   lineOfSite: 1.77
   DashRange: 0.95
   startDash: 0
-  nextDash: 3
+  nextDash: 4
   dashingPower: 3
   dashingTime: 0.2
 --- !u!50 &7345489860313996827
