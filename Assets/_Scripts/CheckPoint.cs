@@ -19,7 +19,7 @@ public class CheckPoint : MonoBehaviour
             gm.lastCheckPoint = transform.position;
             ani.SetBool("CheckPoint", true);
             vectorValue.initialValue = gm.lastCheckPoint;
-            FindObjectOfType<AudioManager>().Play("checkPoint");
+            //FindObjectOfType<AudioManager>().Play("checkPoint");
         }
     }
 }
