@@ -186,7 +186,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 80
+  health: 140
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   EnemyFollowPlayer: {fileID: 7345489860313996838}
@@ -228,5 +228,5 @@ MonoBehaviour:
     maxQuantity: 6
   - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
     DropRate: 37.7
-    minQuantity: 10
-    maxQuantity: 15
+    minQuantity: 25
+    maxQuantity: 35

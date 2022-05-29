@@ -268,7 +268,7 @@ public class PlayerController : MonoBehaviour
                     IsCoolDown4 = true;
                     CoolDownHealth.fillAmount = 1;
                     FindObjectOfType<AudioManager>().Play("Health");
-                    if (stats.currentHealth >= 100)
+                    if (stats.currentHealth >= stats.maxHealth)
                     {
                         stats.currentHealth += 0;
                     }

@@ -24,6 +24,14 @@ public class NPC_Controller : MonoBehaviour
     {
         return dialogue.activeInHierarchy;
     }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == ("Player"))
+        {
+            visualCube.SetActive(true);
+            puch_T.SetActive(true);
+        }
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
