@@ -9,8 +9,6 @@ public class Upgrade : MonoBehaviour
     private Text healthText;
     [SerializeField]
     private Text healthTextUp;
- 
-
 
     [SerializeField]
     private int UpDamage = 10;
@@ -18,8 +16,6 @@ public class Upgrade : MonoBehaviour
     private Text DamageText;
     [SerializeField]
     private Text DamageTextUp;
-
-
 
     [SerializeField]
     private int UpMagic = 5;
