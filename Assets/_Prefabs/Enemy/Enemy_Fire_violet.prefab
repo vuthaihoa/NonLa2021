@@ -169,6 +169,7 @@ MonoBehaviour:
   health: 120
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
+  HitdeadParticle: {fileID: 403375660451223754, guid: ca83f7058d5869e4e9d5bf8fc2460f8c, type: 3}
   EnemyFollowPlayer: {fileID: 6463286525847311425}
   dazedTime: 0
   ojbectDropItems: {fileID: 6463286525847311431}

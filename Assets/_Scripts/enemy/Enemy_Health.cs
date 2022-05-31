@@ -7,6 +7,7 @@ public class Enemy_Health : MonoBehaviour
     public int health;
     public GameObject bloodEffect;
     public GameObject deadParticle;
+    public GameObject HitdeadParticle;
     public EnemyFollowPlayer EnemyFollowPlayer;
     public float dazedTime;
     Animator ani;
@@ -36,6 +37,7 @@ public class Enemy_Health : MonoBehaviour
         if (health <= 0)
         {
             Instantiate(deadParticle, transform.position, Quaternion.identity);
+            Instantiate(HitdeadParticle, transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
             Destroy(gameObject);
             ojbectDropItems.DropItem();
         }
