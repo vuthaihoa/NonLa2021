@@ -12,6 +12,7 @@ TagManager:
   - NPCUpgrade
   - Soul
   - Money
+  - Enemy
   layers:
   - Default
   - TransparentFX
