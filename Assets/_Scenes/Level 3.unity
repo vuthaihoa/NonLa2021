@@ -143,6 +143,10 @@ PrefabInstance:
       propertyPath: health
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 3441554849944532610, guid: 830922dcdaf18c54e9a9c7d91e10755f, type: 3}
+      propertyPath: HitdeadParticle
+      value: 
+      objectReference: {fileID: 403375660451223754, guid: ca83f7058d5869e4e9d5bf8fc2460f8c, type: 3}
     - target: {fileID: 3441554849944532615, guid: 830922dcdaf18c54e9a9c7d91e10755f, type: 3}
       propertyPath: m_RootOrder
       value: 13
@@ -1929,7 +1933,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243239, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243247, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: player
