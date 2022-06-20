@@ -254,7 +254,7 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 0.64, y: 0.64}
+    oldSize: {x: 0.96, y: 0.96}
     newSize: {x: 0.64, y: 0.64}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -341,7 +341,7 @@ MonoBehaviour:
   whatEnemies:
     serializedVersion: 2
     m_Bits: 640
-  attackRange: 0.08
+  attackRange: 0.15
   hitParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
 --- !u!82 &8973544925100939351
 AudioSource:
