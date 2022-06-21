@@ -35,13 +35,17 @@ public class fire : MonoBehaviour
         Instantiate(bullet, firePoint.position, firePoint.rotation);
         FindObjectOfType<AudioManager>().Play("PlayerBullet");
     }
+    public void Noshoot()
+    {
+        ani.SetBool("Bullet", false);
+    }
     void Fire()
     {
         if (Input.GetKeyDown(KeyCode.Mouse1) && IsCoolDown3 == false)
         {
             IsCoolDown3 = true;
             CoolDownBullet.fillAmount = 1f;
-            ani.SetTrigger("Bullet");
+            ani.SetBool("Bullet",true);
 
         }
         if (IsCoolDown3)
