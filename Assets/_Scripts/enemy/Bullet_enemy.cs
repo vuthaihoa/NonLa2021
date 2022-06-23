@@ -7,6 +7,7 @@ public class Bullet_enemy : MonoBehaviour
     GameObject target;
     public float speed;
     Rigidbody2D bulletRg;
+    public int Damage;
     private void Start()
     {
         bulletRg = GetComponent<Rigidbody2D>();
@@ -31,7 +32,7 @@ public class Bullet_enemy : MonoBehaviour
     {
         if (collision.gameObject.tag == "Player")
         {
-            collision.gameObject.GetComponent<PlayerController>().TakeDamage(10);
+            collision.gameObject.GetComponent<PlayerController>().TakeDamage(Damage);
             Destroy(gameObject);
         }
         if (collision.gameObject.tag == "Ground")
