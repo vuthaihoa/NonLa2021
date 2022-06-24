@@ -17,19 +17,19 @@ public class MT_tele : StateMachineBehaviour
     // OnStateUpdate is called on each Update frame between OnStateEnter and OnStateExit callbacks
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        float distance = Vector3.Distance(player.transform.position, rb.transform.position);
+        float distance = Vector2.Distance(player.transform.position, rb.transform.position);
         if (distance <= tele)
         {
-            Vector3 playerPosRandomized = player.transform.position;
+            Vector2 playerPosRandomized = player.transform.position;
             playerPosRandomized.x = playerPosRandomized.x + UnityEngine.Random.Range(-2f, 2f);
-            playerPosRandomized.z = playerPosRandomized.z + UnityEngine.Random.Range(-2f, 2f);
+            playerPosRandomized.y = playerPosRandomized.y + UnityEngine.Random.Range(0f, 0f);
             rb.transform.position = playerPosRandomized;
         }
         else
         {
-            Vector3 playerPosRandomized = player.transform.position;
+            Vector2 playerPosRandomized = player.transform.position;
             playerPosRandomized.x = playerPosRandomized.x + UnityEngine.Random.Range(-2f, 2f);
-            playerPosRandomized.z = playerPosRandomized.z + UnityEngine.Random.Range(-2f, 2f);
+            playerPosRandomized.y = playerPosRandomized.y + UnityEngine.Random.Range(0f, 0f);
             rb.transform.position = playerPosRandomized;
         }
     }
