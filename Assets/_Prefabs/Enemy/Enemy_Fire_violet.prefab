@@ -180,12 +180,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6463286525847311483}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76aa631e170e2344e8810493ea103f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackspeed: 0
+  attackspeed: 2
   CanAttack: 0
   Speed: 0
   lineOfSite: 0

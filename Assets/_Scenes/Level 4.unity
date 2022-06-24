@@ -828,7 +828,7 @@ MonoBehaviour:
     sao r\u1ED3i c\u1EADu s\u1EBD t\xECm ra anh c\u1EE7a m\xECnh th\xF4i."
   textColor: {r: 1, g: 0.9400701, b: 0.050943315, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
-  delay: 0.02
+  delay: 0.04
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
   characterSprite: {fileID: 21300000, guid: 9fd5d196eac53634498c53fa8e06f761, type: 3}
@@ -11676,7 +11676,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: delay
-      value: 0.02
+      value: 0.04
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
@@ -17346,9 +17346,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "Ch\u1EC9 huy \u0111\u1EC3 xung phong \u0111i \u0111\u1EBFn \u0111\u1EA5y,
-    t\xF4i bi\u1EBFt \u0111\u01B0\u1EDDng \u0111\u1EBFn \u0111\u1EA5y m\u1ED9t c\xE1ch
-    nhanh nh\u1EA5t."
+  input: "Ch\u1EC9 huy t\xF4i xung phong \u0111i \u0111\u1EBFn \u0111\u1EA5y, t\xF4i
+    bi\u1EBFt \u0111\u01B0\u1EDDng \u0111\u1EBFn \u0111\u1EA5y m\u1ED9t c\xE1ch nhanh
+    nh\u1EA5t."
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.1
@@ -22282,7 +22282,7 @@ MonoBehaviour:
     \u0111i t\xECm anh trai \u0111\xE3 m\u1EA5t t\xEDch t\u1EEB l\xE2u."
   textColor: {r: 1, g: 0.9400701, b: 0.050943315, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
-  delay: 0.02
+  delay: 0.04
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
   characterSprite: {fileID: 21300000, guid: 9fd5d196eac53634498c53fa8e06f761, type: 3}
