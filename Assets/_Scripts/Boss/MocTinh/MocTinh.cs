@@ -5,8 +5,8 @@ using UnityEngine;
 public class MocTinh : MonoBehaviour
 {
     public GameObject bulletEnemyRight;
-    public GameObject bulletParentLeft;
-    public GameObject bulletParentRgiht;
+    public Transform bulletParentRgiht;
+    public Transform bulletParentLeft;
     public GameObject bulletEnemyLeft;
     public void Bullet()
     {

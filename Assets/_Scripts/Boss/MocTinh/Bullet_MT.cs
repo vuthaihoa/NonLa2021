@@ -10,8 +10,12 @@ public class Bullet_MT : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(speed, rb.velocity.y);
-        Destroy(this.gameObject, 2);
+        Vector3 rotation = transform.eulerAngles;
+        if (rotation.y == 0)
+        {
+            rb.velocity = new Vector2(speed, rb.velocity.y);
+            Destroy(this.gameObject, 2);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -25,5 +29,4 @@ public class Bullet_MT : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
 }

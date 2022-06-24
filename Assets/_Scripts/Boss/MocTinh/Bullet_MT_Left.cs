@@ -10,8 +10,13 @@ public class Bullet_MT_Left : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(speed, rb.velocity.y);
-        Destroy(this.gameObject, 2);
+        Vector3 rotation = transform.eulerAngles;
+        rotation.y = 180;
+        if (rotation.y == 180)
+        {
+            rb.velocity = new Vector2(-speed, rb.velocity.y);
+            Destroy(this.gameObject, 2);
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
