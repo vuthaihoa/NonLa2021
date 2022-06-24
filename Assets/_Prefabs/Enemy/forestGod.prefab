@@ -105,8 +105,6 @@ GameObject:
   - component: {fileID: 1224113991273633707}
   - component: {fileID: 1224113991273633717}
   - component: {fileID: 1224113991273633718}
-  - component: {fileID: 1224113991273633712}
-  - component: {fileID: 1224113991273633719}
   - component: {fileID: 1224113991273633715}
   - component: {fileID: 1224113991273633713}
   m_Layer: 6
@@ -216,47 +214,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1224113991273633712
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224113991273633706}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 119fa4c6c5ae1884d8f89674c2ea9801, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Attack1: 20
-  Attack2: 20
-  attackOffset: {x: -0.86, y: -0.33, z: 0}
-  attackRange: 0.19
-  attackOffset1: {x: 0.27, y: -0.38, z: 0}
-  attackRange1: 0.2
-  attackMask:
-    serializedVersion: 2
-    m_Bits: 256
-  Enemy_Health: {fileID: 1224113991273633719}
-  Angry: 0
---- !u!114 &1224113991273633719
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1224113991273633706}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  health: 0
-  bloodEffect: {fileID: 0}
-  deadParticle: {fileID: 0}
-  EnemyFollowPlayer: {fileID: 0}
-  dazedTime: 0
-  ojbectDropItems: {fileID: 0}
 --- !u!68 &1224113991273633715
 EdgeCollider2D:
   m_ObjectHideFlags: 0

@@ -27,9 +27,9 @@ public class Boss_attack : MonoBehaviour
         poss += transform.right * attackOffset1.x;
         poss += transform.up * attackOffset1.y;
         Collider2D colInfo = Physics2D.OverlapCircle(poss, attackRange1, attackMask);
+        FindObjectOfType<AudioManager>().Play("wolfAttack");
         if (colInfo != null)
         {
-            FindObjectOfType<AudioManager>().Play("wolfAttack");
             colInfo.GetComponent<PlayerController>().TakeDamage(Attack1);
         }
     }
@@ -39,9 +39,9 @@ public class Boss_attack : MonoBehaviour
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
         Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+        FindObjectOfType<AudioManager>().Play("ThuongLuongattack2");
         if (colInfo != null)
         {
-            FindObjectOfType<AudioManager>().Play("ThuongLuongattack2");
             colInfo.GetComponent<PlayerController>().TakeDamage(Attack2);
         }
     }

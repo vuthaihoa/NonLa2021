@@ -1957,6 +1957,10 @@ PrefabInstance:
       propertyPath: HitdeadParticle
       value: 
       objectReference: {fileID: 403375660451223754, guid: ca83f7058d5869e4e9d5bf8fc2460f8c, type: 3}
+    - target: {fileID: 6912838229064243245, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243247, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: player
       value: 
