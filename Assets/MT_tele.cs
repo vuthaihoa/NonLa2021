@@ -18,7 +18,14 @@ public class MT_tele : StateMachineBehaviour
     override public void OnStateUpdate(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
         float distance = Vector3.Distance(player.transform.position, rb.transform.position);
-        if (distance >= tele)
+        if (distance <= tele)
+        {
+            Vector3 playerPosRandomized = player.transform.position;
+            playerPosRandomized.x = playerPosRandomized.x + UnityEngine.Random.Range(-2f, 2f);
+            playerPosRandomized.z = playerPosRandomized.z + UnityEngine.Random.Range(-2f, 2f);
+            rb.transform.position = playerPosRandomized;
+        }
+        else
         {
             Vector3 playerPosRandomized = player.transform.position;
             playerPosRandomized.x = playerPosRandomized.x + UnityEngine.Random.Range(-2f, 2f);

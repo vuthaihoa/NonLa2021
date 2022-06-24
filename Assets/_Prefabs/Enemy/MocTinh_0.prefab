@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699248641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.647, y: -0.481, z: 0}
+  m_LocalPosition: {x: -0.647, y: -0.3660001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6723028349579404051}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927576822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.482, z: 0}
+  m_LocalPosition: {x: 0.4, y: -0.367, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6723028349579404051}
@@ -75,9 +75,12 @@ GameObject:
   - component: {fileID: 6723028349579404049}
   - component: {fileID: 6723028349579404048}
   - component: {fileID: 1456566732}
-  m_Layer: 0
+  - component: {fileID: 1554292796}
+  - component: {fileID: 1554292797}
+  - component: {fileID: 1554292798}
+  m_Layer: 7
   m_Name: MocTinh_0
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -241,6 +244,62 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 446f2d3323ee5b64ebd0a37694fd6495, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bulletEnemy: {fileID: 0}
-  bulletParent1: {fileID: 699248641}
-  bulletParent2: {fileID: 1927576822}
+  bulletEnemyRight: {fileID: 1276526632126596020, guid: 79ed25bed1111e3469d219e2390492c0, type: 3}
+  bulletParentRgiht: {fileID: 1927576823}
+  bulletParentLeft: {fileID: 699248642}
+  bulletEnemyLeft: {fileID: 8534453887912033566, guid: 6a386d0a644916744a071f0dde4dbaaf, type: 3}
+  Attack1: 20
+  attackOffset: {x: -0.38, y: -0.1, z: 0}
+  attackRange: 0.3
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 256
+--- !u!114 &1554292796
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6723028349579404062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaed63a6006e6b44b2b64573f3daf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loots: []
+--- !u!114 &1554292797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6723028349579404062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76aa631e170e2344e8810493ea103f3c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackspeed: 0
+  CanAttack: 0
+  Speed: 0
+  lineOfSite: 0
+  damage: 10
+--- !u!114 &1554292798
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6723028349579404062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 800
+  bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
+  deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
+  HitdeadParticle: {fileID: 403375660451223754, guid: ca83f7058d5869e4e9d5bf8fc2460f8c, type: 3}
+  EnemyFollowPlayer: {fileID: 1554292797}
+  dazedTime: 0
+  ojbectDropItems: {fileID: 1554292796}
