@@ -55,7 +55,6 @@ public class MocTinh : MonoBehaviour
             playerPosRandomized.x = playerPosRandomized.x + UnityEngine.Random.Range(-2f, 2f);
             playerPosRandomized.y = playerPosRandomized.y + UnityEngine.Random.Range(0f, 0f);
             rb.transform.position = playerPosRandomized;
-            FindObjectOfType<AudioManager>().Play("MT_debut");
         }
     }
     private void OnCollisionStay2D(Collision2D collision)

@@ -122,7 +122,7 @@ MonoBehaviour:
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
   - name: ThuongLuongAngry
-    clip: {fileID: 8300000, guid: 521cbd62a31c50f4ca6252ee2fcaf9b3, type: 3}
+    clip: {fileID: 8300000, guid: 9874dcc5ec6432e49a6dbcda44386b81, type: 3}
     Volume: 0.728
     Pitch: 1
     loop: 0
@@ -131,6 +131,20 @@ MonoBehaviour:
   - name: checkPoint
     clip: {fileID: 8300000, guid: ae1f8d69419ff7c4ca94d3eb7e359258, type: 3}
     Volume: 0.259
+    Pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
+  - name: MT_debut
+    clip: {fileID: 8300000, guid: bb1b1d44701f34641a9d75c486f1b48a, type: 3}
+    Volume: 0.7
+    Pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
+  - name: MT_skill1
+    clip: {fileID: 8300000, guid: cfb0823a8519b394e9f5de8b1a94dfb9, type: 3}
+    Volume: 0.7
     Pitch: 1
     loop: 0
     source: {fileID: 0}

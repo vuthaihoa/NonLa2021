@@ -209,7 +209,7 @@ MonoBehaviour:
   health: 1000
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
-  SoulFire: {fileID: 0}
+  HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
   EnemyFollowPlayer: {fileID: 6912838229064243245}
   dazedTime: 0
   ojbectDropItems: {fileID: -4789289937554691918}
@@ -220,14 +220,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6912838229064243239}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 76aa631e170e2344e8810493ea103f3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   attackspeed: 1000
+  CanAttack: 0
   Speed: 0
   lineOfSite: 0
+  damage: 10
 --- !u!61 &1234043512
 BoxCollider2D:
   m_ObjectHideFlags: 0
