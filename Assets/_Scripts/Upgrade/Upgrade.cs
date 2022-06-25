@@ -11,7 +11,7 @@ public class Upgrade : MonoBehaviour
     private Text healthTextUp;
 
     [SerializeField]
-    private int UpDamage = 10;
+    private int UpDamage = 5;
     [SerializeField]
     private Text DamageText;
     [SerializeField]

@@ -2906,7 +2906,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 69
+  m_RootOrder: 68
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216482556
 GameObject:
@@ -14389,14 +14389,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Buffalo_0 (2)
       objectReference: {fileID: 0}
-    - target: {fileID: 7345489860313996838, guid: b1538e369c483754d9c7642a1644d12f, type: 3}
-      propertyPath: damage
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 7345489860313996839, guid: b1538e369c483754d9c7642a1644d12f, type: 3}
-      propertyPath: HitdeadParticle
-      value: 
-      objectReference: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b1538e369c483754d9c7642a1644d12f, type: 3}
 --- !u!1 &964205986
@@ -24764,7 +24756,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: money
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: MagicLv
@@ -24784,7 +24776,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 131311025, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: soulFire
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7626600922819014592, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: lastCheckPoint.x
@@ -25165,11 +25157,11 @@ PrefabInstance:
       objectReference: {fileID: 41920386}
     - target: {fileID: 3398675765819732234, guid: 5103595df31a7824e92b873df75d5132, type: 3}
       propertyPath: m_RootOrder
-      value: 68
+      value: 69
       objectReference: {fileID: 0}
     - target: {fileID: 3398675765819732234, guid: 5103595df31a7824e92b873df75d5132, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 32.14
+      value: 31.74
       objectReference: {fileID: 0}
     - target: {fileID: 3398675765819732234, guid: 5103595df31a7824e92b873df75d5132, type: 3}
       propertyPath: m_LocalPosition.y
