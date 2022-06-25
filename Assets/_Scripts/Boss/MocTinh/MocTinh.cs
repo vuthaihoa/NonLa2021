@@ -55,6 +55,19 @@ public class MocTinh : MonoBehaviour
             playerPosRandomized.x = playerPosRandomized.x + UnityEngine.Random.Range(-2f, 2f);
             playerPosRandomized.y = playerPosRandomized.y + UnityEngine.Random.Range(0f, 0f);
             rb.transform.position = playerPosRandomized;
+            FindObjectOfType<AudioManager>().Play("MT_debut");
+        }
+    }
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "Enemy")
+        {
+            float distance = Vector2.Distance(player.transform.position, rb.transform.position);
+            Vector2 playerPosRandomized = player.transform.position;
+            playerPosRandomized.x = playerPosRandomized.x + UnityEngine.Random.Range(-2f, 2f);
+            playerPosRandomized.y = playerPosRandomized.y + UnityEngine.Random.Range(0f, 0f);
+            rb.transform.position = playerPosRandomized;
+            FindObjectOfType<AudioManager>().Play("MT_debut");
         }
     }
 }
