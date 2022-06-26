@@ -10,6 +10,7 @@ public class Enemy_Health : MonoBehaviour
     public GameObject HitdeadParticle;
     public EnemyFollowPlayer EnemyFollowPlayer;
     public float dazedTime;
+    public bool NoDamage = false;
     Animator ani;
     public OjbectDropItems ojbectDropItems;
     private void Start()
@@ -30,6 +31,8 @@ public class Enemy_Health : MonoBehaviour
     }
     public void Takedamage(int damage)
     {
+        if (NoDamage)
+            return;
         dazedTime = 0.6f;
         Instantiate(bloodEffect, transform.position, Quaternion.identity);
         health -= damage;

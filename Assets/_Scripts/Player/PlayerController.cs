@@ -221,11 +221,13 @@ public class PlayerController : MonoBehaviour
         {
             Rg.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
             ani.SetBool("SkillSlide", true);
+            FindObjectOfType<AudioManager>().Play("Dash");
         }
         else
         {
             Rg.velocity = new Vector2(transform.localScale.x * -dashingPower, 0f);
             ani.SetBool("SkillSlide", true);
+            FindObjectOfType<AudioManager>().Play("Dash");
         }
         yield return new WaitForSeconds(dashingTime);
         Rg.gravityScale = originalGravity;
