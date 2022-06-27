@@ -40,7 +40,9 @@ public class Upgrade : MonoBehaviour
         stats.HealthLv += 0;
         stats.DamageLv += 0;
         stats.MagicLv += 0;
-
+    }
+    private void Update()
+    {
         healthText.text = stats.HealthLv.ToString();
         DamageText.text = stats.DamageLv.ToString();
         MagicText.text = stats.MagicLv.ToString();
@@ -52,6 +54,11 @@ public class Upgrade : MonoBehaviour
         potionLV_Text.text = stats.PotionLV.ToString();
         potionUpgrade.text = stats.UpgradePotion.ToString();
         BuyPotionText.text = stats.buyPotion.ToString();
+
+        healthTextUp.text = Mathf.Round(stats.UpgradeSoulHealth).ToString();
+        DamageTextUp.text = Mathf.Round(stats.UpgradeSoulDamage).ToString();
+        MagicTextUp.text = Mathf.Round(stats.UpgradeSoulMagic).ToString();
+        potionUpgrade.text = Mathf.Round(stats.UpgradePotion).ToString();
     }
     void UpdateHealth()
     {
