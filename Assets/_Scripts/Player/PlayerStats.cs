@@ -39,7 +39,7 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
     public void LoadData(GameData data)
     {
         this.maxHealth = data.maxHealth;
-        this.currentHealth = data.maxHealth;
+        this.currentHealth = data.currentHealth;
         this.MoreHealth = data.MoreHealth;
         this.healthcolli = data.healthcolli;
         this.money = data.money;
@@ -59,7 +59,7 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
     public void SaveData(ref GameData data)
     {
         data.maxHealth = this.maxHealth;
-        data.maxHealth = this.currentHealth;
+        data.currentHealth = this.currentHealth;
         data.MoreHealth = this.MoreHealth;
         data.healthcolli = this.healthcolli;
         data.money = this.money;

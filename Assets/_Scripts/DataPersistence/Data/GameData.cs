@@ -7,10 +7,10 @@ public class GameData
 {
     public int maxHealth = 100;
     public int currentHealth;
-    public int MoreHealth = 30;
-    public int healthcolli = 0;
+    public int MoreHealth = 50;
+    public int healthcolli = 1;
 
-    public int money;
+    public int money = 0;
 
     public int damage = 10;
     public int Magic = 15;
@@ -22,20 +22,20 @@ public class GameData
 
     public int soulFire = 0;
 
-    public float UpgradeSoulHealth = 0;
-    public float UpgradeSoulDamage = 0;
-    public float UpgradeSoulMagic = 0;
-    public float UpgradePotion = 0;
+    public float UpgradeSoulHealth = 30;
+    public float UpgradeSoulDamage = 30;
+    public float UpgradeSoulMagic = 30;
+    public float UpgradePotion = 50;
 
-    public int buyPotion;
+    public int buyPotion = 50;
 
-    public Vector3 playerPostion;
+    //public Vector3 playerPostion;
     public GameData()
     {
         this.maxHealth = 100;
         this.currentHealth = 100;
-        this.MoreHealth = 0;
-        this.healthcolli = 0;
+        this.MoreHealth = 50;
+        this.healthcolli = 1;
         this.money = 0;
         this.damage = 10;
         this.Magic = 15;
@@ -44,11 +44,19 @@ public class GameData
         this.MagicLv = 0;
         this.PotionLV = 0;
         this.soulFire = 0;
-        this.UpgradeSoulHealth = 0;
-        this.UpgradeSoulDamage = 0;
-        this.UpgradeSoulMagic = 0;
-        this.UpgradePotion = 0;
-        this.buyPotion = 0;
-        playerPostion = Vector3.zero;
+        this.UpgradeSoulHealth = 30;
+        this.UpgradeSoulDamage = 30;
+        this.UpgradeSoulMagic = 30;
+        this.UpgradePotion = 50;
+        this.buyPotion = 50;
+        //playerPostion = Vector3.zero;
     }
+    //public int GetPercentageComplete()
+    //{
+    //    int totalCollected = 0;
+    //    foreach(bool collected in coinsCollected.Values)
+    //    {
+
+    //    }
+    //}
 }
