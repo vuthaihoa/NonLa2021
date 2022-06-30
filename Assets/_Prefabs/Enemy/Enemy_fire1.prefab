@@ -123,6 +123,7 @@ MonoBehaviour:
   Speed: 0.4
   lineOfSite: 1.22
   damage: 10
+  DeadExpon: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
 --- !u!114 &7598162648910706405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -139,8 +140,8 @@ MonoBehaviour:
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
-  EnemyFollowPlayer: {fileID: 7598162648910706402}
   dazedTime: 0.6
+  NoDamage: 0
   ojbectDropItems: {fileID: 6008431319022723887}
 --- !u!61 &1111304215573481621
 BoxCollider2D:

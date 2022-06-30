@@ -8,7 +8,6 @@ public class Enemy_Health : MonoBehaviour
     public GameObject bloodEffect;
     public GameObject deadParticle;
     public GameObject HitdeadParticle;
-    public EnemyFollowPlayer EnemyFollowPlayer;
     public float dazedTime;
     public bool NoDamage = false;
     Animator ani;
@@ -16,18 +15,6 @@ public class Enemy_Health : MonoBehaviour
     private void Start()
     {
         ani = GetComponent<Animator>();
-    }
-    private void Update()
-    {
-        if (dazedTime <= 0)
-        {
-            EnemyFollowPlayer.Speed = 0.4f;
-        }
-        else
-        {
-            EnemyFollowPlayer.Speed = 0f;
-            dazedTime -= Time.deltaTime;
-        }
     }
     public void Takedamage(int damage)
     {

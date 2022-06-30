@@ -15,9 +15,9 @@ GameObject:
   - component: {fileID: 7345489860313996827}
   - component: {fileID: 7345489860313996824}
   - component: {fileID: 7345489860313996839}
-  - component: {fileID: 7345489860313996838}
   - component: {fileID: 7345489860313996825}
   - component: {fileID: 1294585140006404374}
+  - component: {fileID: 2806539512912484175}
   m_Layer: 7
   m_Name: Buffalo_0
   m_TagString: Enemy
@@ -191,26 +191,9 @@ MonoBehaviour:
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
-  EnemyFollowPlayer: {fileID: 7345489860313996838}
   dazedTime: 0
+  NoDamage: 0
   ojbectDropItems: {fileID: 7345489860313996825}
---- !u!114 &7345489860313996838
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7345489860313996830}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76aa631e170e2344e8810493ea103f3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackspeed: 3
-  CanAttack: 4
-  Speed: 0.4
-  lineOfSite: 0
-  damage: 30
 --- !u!114 &7345489860313996825
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,3 +241,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.03689155, y: 0.1462051}
   m_EdgeRadius: 0
+--- !u!114 &2806539512912484175
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7345489860313996830}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ac65047d6d8b14399a662d53d8a48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackspeed: 3
+  CanAttack: 4
+  Speed: 0.5
+  lineOfSite: 0
+  damage: 30

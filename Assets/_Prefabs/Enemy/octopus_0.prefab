@@ -44,10 +44,10 @@ GameObject:
   - component: {fileID: 3398675765819732231}
   - component: {fileID: 3398675765819732230}
   - component: {fileID: 3398675765819732235}
-  - component: {fileID: 458966658}
   - component: {fileID: 458966659}
   - component: {fileID: 9166284233965032049}
   - component: {fileID: 5237620717912724846}
+  - component: {fileID: 2904580902583459958}
   m_Layer: 7
   m_Name: octopus_0
   m_TagString: Enemy
@@ -216,23 +216,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &458966658
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3398675765819732229}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76aa631e170e2344e8810493ea103f3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackspeed: 0.3
-  CanAttack: 0
-  Speed: 0
-  lineOfSite: 0
-  damage: 10
 --- !u!114 &458966659
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -249,8 +232,8 @@ MonoBehaviour:
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
-  EnemyFollowPlayer: {fileID: 458966658}
   dazedTime: 0
+  NoDamage: 0
   ojbectDropItems: {fileID: 9166284233965032049}
 --- !u!114 &9166284233965032049
 MonoBehaviour:
@@ -299,6 +282,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.069793426, y: 0.011799559}
   m_EdgeRadius: 0
+--- !u!114 &2904580902583459958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3398675765819732229}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 20ac65047d6d8b14399a662d53d8a48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  attackspeed: 0.5
+  CanAttack: 0
+  Speed: 0
+  lineOfSite: 0
+  damage: 30
 --- !u!1 &3398675766688389082
 GameObject:
   m_ObjectHideFlags: 0

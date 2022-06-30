@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EnemyFollowPlayer : MonoBehaviour
+public class EnemyColl : MonoBehaviour
 {
     public float attackspeed;
     public float CanAttack;
@@ -10,7 +10,6 @@ public class EnemyFollowPlayer : MonoBehaviour
     public float lineOfSite;
     private Transform player;
     public int damage = 10;
-    public GameObject DeadExpon;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -18,7 +17,7 @@ public class EnemyFollowPlayer : MonoBehaviour
     void Update()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        if(distanceFromPlayer < lineOfSite)
+        if (distanceFromPlayer < lineOfSite)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, Speed * Time.deltaTime);
         }
@@ -37,8 +36,6 @@ public class EnemyFollowPlayer : MonoBehaviour
             {
                 collision.gameObject.GetComponent<PlayerController>().TakeDamage(damage);
                 CanAttack = 0f;
-                Destroy(gameObject);
-                Instantiate(DeadExpon,transform.position, Quaternion.identity);
             }
             else
             {

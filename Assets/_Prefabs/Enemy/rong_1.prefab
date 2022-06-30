@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 3365747522937218082}
   - component: {fileID: 3365747522937218092}
   - component: {fileID: 3365747522937218095}
-  - component: {fileID: 359765585}
   - component: {fileID: 8984253353408581074}
   m_Layer: 7
   m_Name: rong_1
@@ -169,26 +168,9 @@ MonoBehaviour:
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
-  EnemyFollowPlayer: {fileID: 359765585}
   dazedTime: 0.6
+  NoDamage: 0
   ojbectDropItems: {fileID: 8984253353408581074}
---- !u!114 &359765585
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3365747522937218086}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76aa631e170e2344e8810493ea103f3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackspeed: 1000
-  CanAttack: 0
-  Speed: 0
-  lineOfSite: 0
-  damage: 10
 --- !u!114 &8984253353408581074
 MonoBehaviour:
   m_ObjectHideFlags: 0
