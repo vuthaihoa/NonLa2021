@@ -56,7 +56,7 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
         this.UpgradePotion = data.UpgradePotion;
         this.buyPotion = data.buyPotion;
     }
-    public void SaveData(ref GameData data)
+    public void SaveData(GameData data)
     {
         data.maxHealth = this.maxHealth;
         data.currentHealth = this.currentHealth;

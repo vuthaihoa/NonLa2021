@@ -7,17 +7,22 @@ using UnityEngine.SceneManagement;
 public class DataPersistenceManager : MonoBehaviour
 {
     [Header("Debugging")]
+    [SerializeField] private bool disableDataPersistence = false;
     [SerializeField] private bool initializeDataIfNull =  false;
+    [SerializeField] private bool overrideSelectedProfileId = false;
+    [SerializeField] private string testSeclectedProfileId = "test";
     [Header("File Stonrage config")]
     [SerializeField]private string fileName;
     [SerializeField] private bool useEncryption;
 
+    [Header("Auto Save")]
+    [SerializeField] private float autoSaveTimeSeconds = 60f;
     private GameData gameData;
     private List<IDataPersistence> dataPersistenceObject;
     private FileDataHandler dataHandler;
 
-    private string selectedProfileId = "test";
-
+    private string selectedProfileId = "";
+    private Coroutine autoSaveCoruotine;
     public static DataPersistenceManager instance { get; private set; }
 
     private void Awake()
@@ -30,26 +35,40 @@ public class DataPersistenceManager : MonoBehaviour
         }
         instance = this;
         DontDestroyOnLoad(this.gameObject);
+        if(disableDataPersistence)
+        {
+            Debug.LogWarning("Data persistence....");
+        }
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
+        this.selectedProfileId = dataHandler.GetMostRecentlyUpdatedProfileId();
+        if(overrideSelectedProfileId)
+        {
+            this.selectedProfileId = testSeclectedProfileId;
+            Debug.LogWarning("overrode selected...." + testSeclectedProfileId);
+        }
     }
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
-        SceneManager.sceneUnloaded += OnSceneUnloaded;
     }
     private void OnDisable()
     {
         SceneManager.sceneLoaded -= OnSceneLoaded;
-        SceneManager.sceneUnloaded -= OnSceneUnloaded;
     }
     public void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         this.dataPersistenceObject = FindAllDataPersistionObject();
         LoadGame();
+        if(autoSaveCoruotine != null)
+        {
+            StopCoroutine(autoSaveCoruotine);
+        }
+        autoSaveCoruotine = StartCoroutine(AutoSave());
     }
-    public void OnSceneUnloaded(Scene scene)
+    public void ChangeSelectedProfileId(string newProfileId)
     {
-        SaveGame();
+        this.selectedProfileId = newProfileId;
+        LoadGame();
     }
     public void NewGame()
     {
@@ -57,6 +76,10 @@ public class DataPersistenceManager : MonoBehaviour
     }
     public void LoadGame()
     {
+        if(disableDataPersistence)
+        {
+            return;
+        }
         this.gameData = dataHandler.Load(selectedProfileId);
         if(this.gameData == null && initializeDataIfNull)
         {
@@ -80,9 +103,10 @@ public class DataPersistenceManager : MonoBehaviour
         }
         foreach (IDataPersistence dataPersistenceObj in dataPersistenceObject)
         {
-            dataPersistenceObj.SaveData(ref gameData);
+            dataPersistenceObj.SaveData(gameData);
         }
         dataHandler.Save(gameData,selectedProfileId);
+        gameData.lastUpdated = System.DateTime.Now.ToBinary();
     }
     private void OnApplicationQuit()
     {
@@ -90,7 +114,7 @@ public class DataPersistenceManager : MonoBehaviour
     }
     private List<IDataPersistence> FindAllDataPersistionObject()
     {
-        IEnumerable<IDataPersistence> dataPersistenceObject = FindObjectsOfType<MonoBehaviour>().OfType<IDataPersistence>();
+        IEnumerable<IDataPersistence> dataPersistenceObject = FindObjectsOfType<MonoBehaviour>(true).OfType<IDataPersistence>();
         return new List<IDataPersistence>(dataPersistenceObject);
     }
     public bool HasGameData()
@@ -100,5 +124,14 @@ public class DataPersistenceManager : MonoBehaviour
     public Dictionary<string, GameData> GetAllProfilesGameData()
     {
         return dataHandler.LoadAllProfiles();
+    }
+    private IEnumerator AutoSave()
+    {
+        while(true)
+        {
+            yield return new WaitForSeconds(autoSaveTimeSeconds);
+            SaveGame();
+            Debug.Log("auto Save");
+        }
     }
 }

@@ -5,6 +5,9 @@ using UnityEngine;
 [System.Serializable]
 public class GameData
 {
+    public long lastUpdated;
+    //public AttributesScriptableObject playerAttributesData;
+
     public int maxHealth = 100;
     public int currentHealth;
     public int MoreHealth = 50;
@@ -29,7 +32,8 @@ public class GameData
 
     public int buyPotion = 50;
 
-    //public Vector3 playerPostion;
+    //public int NumberLevel = 0;
+    public SerializableDictionary<string, bool> NumberLevel;
     public GameData()
     {
         this.maxHealth = 100;
@@ -49,14 +53,26 @@ public class GameData
         this.UpgradeSoulMagic = 30;
         this.UpgradePotion = 50;
         this.buyPotion = 50;
+
+        NumberLevel = new SerializableDictionary<string, bool>();
+        //this.NumberLevel = 0;
         //playerPostion = Vector3.zero;
     }
-    //public int GetPercentageComplete()
-    //{
-    //    int totalCollected = 0;
-    //    foreach(bool collected in coinsCollected.Values)
-    //    {
-
-    //    }
-    //}
+    public int GetPercentageComplete()
+    {
+        int totalCollected = 0;
+        foreach (bool collected in NumberLevel.Values)
+        {
+            if (collected)
+            {
+                totalCollected++;
+            }
+        }
+        int percentageCompleted = -1;
+        if(NumberLevel.Count != 0)
+        {
+            percentageCompleted = (totalCollected * 100 / NumberLevel.Count);
+        }
+        return percentageCompleted;
+    }
 }
