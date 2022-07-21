@@ -68,7 +68,7 @@ public class GameData
                 totalCollected++;
             }
         }
-        int percentageCompleted = -1;
+        int percentageCompleted = +1;
         if(NumberLevel.Count != 0)
         {
             percentageCompleted = (totalCollected * 100 / NumberLevel.Count);

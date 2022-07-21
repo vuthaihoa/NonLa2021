@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenu : MonoBehaviour
 {
@@ -43,5 +44,17 @@ public class PauseMenu : MonoBehaviour
         PauseManeUI.SetActive(true);
         Time.timeScale = 0f;
         GameIsPause = true;
+    }
+    public void BackMenu()
+    {
+        PlayerPrefs.SetInt("LoadSaved", 1);
+        SceneManager.LoadSceneAsync("Menu");
+        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
+    }
+    public void QuitGame()
+    {
+        PlayerPrefs.SetInt("LoadSaved", 1);
+        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
+        Application.Quit();
     }
 }

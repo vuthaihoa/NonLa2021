@@ -29,16 +29,32 @@ public class ManiMenu : Menu
         saveSlotsMenu.ActivateMenu(false);
         this.DeactivateMenu();
     }
-    public void OnLoadGameClicked()
+    public void OnLoadGameClicked() 
     {
         saveSlotsMenu.ActivateMenu(true);
         this.DeactivateMenu();
+        if (PlayerPrefs.GetInt("LoadSave") == 1)
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
+        }
+        else
+        {
+            return;
+        }
     }
     public void OnContinueGameClicked()
     {
         DisableMenuButtons();
         DataPersistenceManager.instance.SaveGame();
-        SceneManager.LoadSceneAsync("SampleScene");
+        if (PlayerPrefs.GetInt("LoadSave") == 1)
+        {
+            SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
+        }
+        else
+        {
+            return;
+        }
+        //SceneManager.LoadSceneAsync("SampleScene");
     }
     private void DisableMenuButtons()
     {
