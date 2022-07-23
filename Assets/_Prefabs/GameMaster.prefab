@@ -75,3 +75,4 @@ MonoBehaviour:
   UpgradeSoulMagic: 20
   UpgradePotion: 50
   buyPotion: 50
+  playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}

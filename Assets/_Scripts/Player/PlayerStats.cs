@@ -12,7 +12,7 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
 
     public int money;
 
-    public int damage =10;
+    public int damage = 10;
     public int Magic = 15;
 
     public int HealthLv = 0;
@@ -28,52 +28,61 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
     public float UpgradePotion;
 
     public int buyPotion;
+
+    [Header("Attributes SO")]
+    [SerializeField] private AttributesScriptableObject playerAttributesSO;
     void Awake()
     {
-       if(instance == null)
+        if (instance == null)
         {
             instance = this;
+            DontDestroyOnLoad(instance);
+        }
+        else
+        {
+            Destroy(gameObject);
         }
         currentHealth = maxHealth;
+        DontDestroyOnLoad(this.gameObject);
     }
     public void LoadData(GameData data)
     {
-        this.maxHealth = data.maxHealth;
-        this.currentHealth = data.currentHealth;
-        this.MoreHealth = data.MoreHealth;
-        this.healthcolli = data.healthcolli;
-        this.money = data.money;
-        this.damage = data.damage;
-        this.Magic = data.Magic;
-        this.HealthLv = data.HealthLv;
-        this.DamageLv = data.DamageLv;
-        this.MagicLv = data.MagicLv;
-        this.PotionLV = data.PotionLV;
-        this.soulFire = data.soulFire;
-        this.UpgradeSoulHealth = data.UpgradeSoulHealth;
-        this.UpgradeSoulDamage = data.UpgradeSoulDamage;
-        this.UpgradeSoulMagic = data.UpgradeSoulMagic;
-        this.UpgradePotion = data.UpgradePotion;
-        this.buyPotion = data.buyPotion;
+        playerAttributesSO.maxHealth = data.playerAttributesData.maxHealth;
+        playerAttributesSO.currentHealth = data.playerAttributesData.currentHealth;
+        playerAttributesSO.MoreHealth = data.playerAttributesData.MoreHealth;
+        playerAttributesSO.healthcolli = data.playerAttributesData.healthcolli;
+        playerAttributesSO.money = data.playerAttributesData.money;
+        playerAttributesSO.damage = data.playerAttributesData.damage;
+        playerAttributesSO.Magic = data.playerAttributesData.Magic;
+        playerAttributesSO.HealthLv = data.playerAttributesData.HealthLv;
+        playerAttributesSO.DamageLv = data.playerAttributesData.DamageLv;
+        playerAttributesSO.MagicLv = data.playerAttributesData.MagicLv;
+        playerAttributesSO.PotionLV = data.playerAttributesData.PotionLV;
+        playerAttributesSO.soulFire = data.playerAttributesData.soulFire;
+        playerAttributesSO.UpgradeSoulHealth = data.playerAttributesData.UpgradeSoulHealth;
+        playerAttributesSO.UpgradeSoulDamage = data.playerAttributesData.UpgradeSoulDamage;
+        playerAttributesSO.UpgradeSoulMagic = data.playerAttributesData.UpgradeSoulMagic;
+        playerAttributesSO.UpgradePotion = data.playerAttributesData.UpgradePotion;
+        playerAttributesSO.buyPotion = data.playerAttributesData.buyPotion;
     }
     public void SaveData(GameData data)
     {
-        data.maxHealth = this.maxHealth;
-        data.currentHealth = this.currentHealth;
-        data.MoreHealth = this.MoreHealth;
-        data.healthcolli = this.healthcolli;
-        data.money = this.money;
-        data.damage = this.damage;
-        data.Magic = this.Magic;
-        data.HealthLv = this.HealthLv;
-        data.DamageLv = this.DamageLv;
-        data.MagicLv = this.MagicLv;
-        data.PotionLV = this.PotionLV;
-        data.soulFire = this.soulFire;
-        data.UpgradeSoulHealth = this.UpgradeSoulHealth;
-        data.UpgradeSoulDamage = this.UpgradeSoulDamage;
-        data.UpgradeSoulMagic = this.UpgradeSoulMagic;
-        data.UpgradePotion = this.UpgradePotion;
-        data.buyPotion = this.buyPotion;
+        data.playerAttributesData.maxHealth = playerAttributesSO.maxHealth;
+        data.playerAttributesData.currentHealth = playerAttributesSO.currentHealth;
+        data.playerAttributesData.MoreHealth = playerAttributesSO.MoreHealth;
+        data.playerAttributesData.healthcolli = playerAttributesSO.healthcolli;
+        data.playerAttributesData.money = playerAttributesSO.money;
+        data.playerAttributesData.damage = playerAttributesSO.damage;
+        data.playerAttributesData.Magic = playerAttributesSO.Magic;
+        data.playerAttributesData.HealthLv = playerAttributesSO.HealthLv;
+        data.playerAttributesData.DamageLv = playerAttributesSO.DamageLv;
+        data.playerAttributesData.MagicLv = playerAttributesSO.MagicLv;
+        data.playerAttributesData.PotionLV = playerAttributesSO.PotionLV;
+        data.playerAttributesData.soulFire = playerAttributesSO.soulFire;
+        data.playerAttributesData.UpgradeSoulHealth = playerAttributesSO.UpgradeSoulHealth;
+        data.playerAttributesData.UpgradeSoulDamage = playerAttributesSO.UpgradeSoulDamage;
+        data.playerAttributesData.UpgradeSoulMagic = playerAttributesSO.UpgradeSoulMagic;
+        data.playerAttributesData.UpgradePotion = playerAttributesSO.UpgradePotion;
+        data.playerAttributesData.buyPotion = playerAttributesSO.buyPotion;
     }
 }

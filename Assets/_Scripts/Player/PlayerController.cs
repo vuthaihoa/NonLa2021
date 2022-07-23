@@ -152,7 +152,6 @@ public class PlayerController : MonoBehaviour
         SoulText.text = stats.soulFire.ToString();
         MoneyText.text = stats.money.ToString();
 
-
     }
     private void Jump()
     {

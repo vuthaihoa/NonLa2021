@@ -18,7 +18,12 @@ public class ManiMenu : Menu
     //}
     private void Start()
     {
-        if(!DataPersistenceManager.instance.HasGameData())
+        DisableButtonsDependingOnData();
+    }
+
+    private void DisableButtonsDependingOnData()
+    {
+        if (!DataPersistenceManager.instance.HasGameData())
         {
             continueGameButton.interactable = false;
             loadGameButton.interactable = false;
@@ -31,9 +36,9 @@ public class ManiMenu : Menu
     }
     public void OnLoadGameClicked() 
     {
-        saveSlotsMenu.ActivateMenu(true);
+        saveSlotsMenu.ActivateMenu(false);
         this.DeactivateMenu();
-        if (PlayerPrefs.GetInt("LoadSave") == 1)
+        if (PlayerPrefs.GetInt("LoadSaved") == 1)
         {
             SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
         }
@@ -45,8 +50,8 @@ public class ManiMenu : Menu
     public void OnContinueGameClicked()
     {
         DisableMenuButtons();
-        DataPersistenceManager.instance.SaveGame();
-        if (PlayerPrefs.GetInt("LoadSave") == 1)
+        //DataPersistenceManager.instance.SaveGame();
+        if (PlayerPrefs.GetInt("LoadSaved") == 1)
         {
             SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
         }
@@ -61,10 +66,10 @@ public class ManiMenu : Menu
         newGameButton.interactable = false;
         continueGameButton.interactable = false;
     }
-    //public void QuitGame()
-    //{
-    //    Application.Quit();
-    //}
+    public void QuitGame()
+    {
+        Application.Quit();
+    }
     public void ActivateMenu()
     {
         this.gameObject.SetActive(true);

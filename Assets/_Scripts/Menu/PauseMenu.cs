@@ -50,11 +50,14 @@ public class PauseMenu : MonoBehaviour
         PlayerPrefs.SetInt("LoadSaved", 1);
         SceneManager.LoadSceneAsync("Menu");
         PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
+        Resume();
+        DataPersistenceManager.instance.SaveGame();
     }
     public void QuitGame()
     {
         PlayerPrefs.SetInt("LoadSaved", 1);
         PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
         Application.Quit();
+        DataPersistenceManager.instance.SaveGame();
     }
 }

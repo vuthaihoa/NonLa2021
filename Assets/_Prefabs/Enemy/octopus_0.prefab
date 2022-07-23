@@ -228,7 +228,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 400
+  health: 200
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
@@ -294,8 +294,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20ac65047d6d8b14399a662d53d8a48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackspeed: 0.5
-  CanAttack: 0
+  attackspeed: 2.5
+  CanAttack: 3
   Speed: 0
   lineOfSite: 0
   damage: 30

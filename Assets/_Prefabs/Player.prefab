@@ -293,7 +293,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Maxspeed: 0.8
   JumpHight: 1.17
-  dashingPower: 3
+  dashingPower: 6
   dashingTime: 0.2
   GroundCheck: {fileID: 5966597137628072660}
   checkRadius: 0.03

@@ -18,6 +18,9 @@ public class Boss_attack : MonoBehaviour
         if (Enemy_Health.health <= Angry)
         {
             GetComponent<Animator>().SetBool("isAngry", true);
+        }
+        if (Enemy_Health.health <= 0)
+        {
             FindObjectOfType<AudioManager>().Play("ThuongLuongAngry");
         }
     }

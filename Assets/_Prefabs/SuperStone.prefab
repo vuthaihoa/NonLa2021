@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 86543852689563843}
   - component: {fileID: 86543852689563842}
   - component: {fileID: 86543852689563832}
-  - component: {fileID: 86543852689563847}
   - component: {fileID: 86543852689563846}
   m_Layer: 7
   m_Name: SuperStone
@@ -21,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &86543852689563845
 Transform:
   m_ObjectHideFlags: 0
@@ -119,7 +118,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.07909888, y: 0.052920178}
+  m_Offset: {x: 0.07909888, y: -2.88722}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -130,7 +129,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.6506227, y: 0.8295381}
+  m_Size: {x: 0.6506227, y: 6.709817}
   m_EdgeRadius: 0
 --- !u!114 &86543852689563832
 MonoBehaviour:
@@ -144,30 +143,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 300
+  health: 60
   bloodEffect: {fileID: 7873728540304745865, guid: 0cfb805dc58219640bf354851af5002e, type: 3}
   deadParticle: {fileID: 2465791372917126995, guid: 1e588befd7b9ada49bce2d8b48ef56f7, type: 3}
   HitdeadParticle: {fileID: 403375660451223754, guid: ca83f7058d5869e4e9d5bf8fc2460f8c, type: 3}
-  EnemyFollowPlayer: {fileID: 86543852689563847}
   dazedTime: 0
+  NoDamage: 0
   ojbectDropItems: {fileID: 86543852689563846}
---- !u!114 &86543852689563847
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 86543852689563841}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76aa631e170e2344e8810493ea103f3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackspeed: 0
-  CanAttack: 0
-  Speed: 0
-  lineOfSite: 0
-  damage: 10
 --- !u!114 &86543852689563846
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,7 +16,6 @@ GameObject:
   - component: {fileID: 6912838229064243247}
   - component: {fileID: 6912838229064243244}
   - component: {fileID: 6912838229064243242}
-  - component: {fileID: 6912838229064243245}
   - component: {fileID: 1234043512}
   - component: {fileID: -4789289937554691918}
   m_Layer: 7
@@ -210,26 +209,9 @@ MonoBehaviour:
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
-  EnemyFollowPlayer: {fileID: 6912838229064243245}
   dazedTime: 0
+  NoDamage: 0
   ojbectDropItems: {fileID: -4789289937554691918}
---- !u!114 &6912838229064243245
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6912838229064243239}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76aa631e170e2344e8810493ea103f3c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackspeed: 1000
-  CanAttack: 0
-  Speed: 0
-  lineOfSite: 0
-  damage: 10
 --- !u!61 &1234043512
 BoxCollider2D:
   m_ObjectHideFlags: 0

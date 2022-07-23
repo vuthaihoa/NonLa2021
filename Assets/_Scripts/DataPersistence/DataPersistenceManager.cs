@@ -15,19 +15,19 @@ public class DataPersistenceManager : MonoBehaviour
     [SerializeField]private string fileName;
     [SerializeField] private bool useEncryption;
 
-    //[Header("Auto Save")]
-    //[SerializeField] private float autoSaveTimeSeconds = 60f;
+    [Header("Auto Save")]
+    [SerializeField] private float autoSaveTimeSeconds = 1f;
     private GameData gameData;
     private List<IDataPersistence> dataPersistenceObject;
     private FileDataHandler dataHandler;
 
     private string selectedProfileId = "";
-    //private Coroutine autoSaveCoruotine;
+    private Coroutine autoSaveCoruotine;
     public static DataPersistenceManager instance { get; private set; }
 
     private void Awake()
     {
-        if(instance != null)
+        if (instance != null)
         {
             Debug.LogError("sai roi");
             Destroy(this.gameObject);
@@ -59,11 +59,11 @@ public class DataPersistenceManager : MonoBehaviour
     {
         this.dataPersistenceObject = FindAllDataPersistionObject();
         LoadGame();
-        //if(autoSaveCoruotine != null)
-        //{
-        //    StopCoroutine(autoSaveCoruotine);
-        //}
-        //autoSaveCoruotine = StartCoroutine(AutoSave());
+        if (autoSaveCoruotine != null)
+        {
+            StopCoroutine(autoSaveCoruotine);
+        }
+        autoSaveCoruotine = StartCoroutine(AutoSave());
     }
     public void ChangeSelectedProfileId(string newProfileId)
     {
@@ -107,8 +107,6 @@ public class DataPersistenceManager : MonoBehaviour
         }
         dataHandler.Save(gameData,selectedProfileId);
         gameData.lastUpdated = System.DateTime.Now.ToBinary();
-        PlayerPrefs.SetInt("LoadSaved", 1);
-        PlayerPrefs.SetInt("SavedScene", SceneManager.GetActiveScene().buildIndex);
     }
     private void OnApplicationQuit()
     {
@@ -127,13 +125,12 @@ public class DataPersistenceManager : MonoBehaviour
     {
         return dataHandler.LoadAllProfiles();
     }
-    //private IEnumerator AutoSave()
-    //{
-    //    while(true)
-    //    {
-    //        yield return new WaitForSeconds(autoSaveTimeSeconds);
-    //        SaveGame();
-    //        Debug.Log("auto Save");
-    //    }
-    //}
+    private IEnumerator AutoSave()
+    {
+        while (true)
+        {
+            yield return new WaitForSeconds(autoSaveTimeSeconds);
+            SaveGame();
+        }
+    }
 }
