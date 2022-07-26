@@ -52,6 +52,8 @@ public class PlayerController : MonoBehaviour
     private bool IsCoolDown4 = false;
     public float CanAttackUp;
     public float nextAttackUp;
+    public float CanAttackDown;
+    public float nextAttackDown;
 
     public GameObject healthparticle;
 
@@ -62,7 +64,9 @@ public class PlayerController : MonoBehaviour
 
     public GameObject HitparticleUp;
     public Transform hitUp;
-
+    public GameObject HitparticleDown;
+    public Transform hitDown;
+    public float JumpHightDown;
     void Start()
     {
         Rg = GetComponent<Rigidbody2D>();
@@ -129,6 +133,7 @@ public class PlayerController : MonoBehaviour
                 IsShiled();
                 Potions();
                 attackUp();
+                attackDown();
                 if(isDashing)
                 {
                     return;
@@ -282,6 +287,26 @@ public class PlayerController : MonoBehaviour
     public void hitParticleUp()
     {
         Instantiate(HitparticleUp, hitUp.position, hitUp.rotation);
+    }
+    private void attackDown()
+    {
+        if (End)
+        {
+            if (Input.GetKeyDown(KeyCode.S) && CanAttackDown >= nextAttackDown && Ground == false)
+            {
+                ani.SetTrigger("Down");
+                CanAttackDown = 0;
+                Rg.velocity = new Vector2(Rg.velocity.x, JumpHightDown);
+            }
+            if (CanAttackDown <= 1)
+            {
+                CanAttackDown += Time.deltaTime;
+            }
+        }
+    }
+    public void hitParticleDown()
+    {
+        Instantiate(HitparticleDown, hitDown.position, hitDown.rotation);
     }
     private void Potions()
     {

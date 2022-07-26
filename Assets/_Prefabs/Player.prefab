@@ -30,6 +30,36 @@ Transform:
   m_Father: {fileID: 3867494397531111331}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2142855918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2142855919}
+  m_Layer: 8
+  m_Name: HitDown
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2142855919
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142855918}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: -0.258, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3867494397531111331}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &3394498465809688553
 GameObject:
   m_ObjectHideFlags: 0
@@ -174,6 +204,7 @@ Transform:
   - {fileID: 7505307989793968301}
   - {fileID: 332863332711984694}
   - {fileID: 12046761}
+  - {fileID: 2142855919}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -346,11 +377,16 @@ MonoBehaviour:
   CoolDownHealth: {fileID: 0}
   coolDown4: 1
   CanAttackUp: 1
-  nextAttackUp: 0.7
+  nextAttackUp: 0.6
+  CanAttackDown: 1
+  nextAttackDown: 0.5
   healthparticle: {fileID: 3565860828240341224, guid: c445101591cd14849ac97c923bdbeb3b, type: 3}
   StartingPosition: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
   HitparticleUp: {fileID: 7283619497677553569, guid: e38aa2f35c811c8498a9b8858ef0eddc, type: 3}
   hitUp: {fileID: 12046761}
+  HitparticleDown: {fileID: 3794665550090882940, guid: 1bfda0e7414e73b43a16ac93e16feedb, type: 3}
+  hitDown: {fileID: 2142855919}
+  JumpHightDown: 0.7
 --- !u!114 &257437637188897069
 MonoBehaviour:
   m_ObjectHideFlags: 0
