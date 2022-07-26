@@ -50,6 +50,8 @@ public class PlayerController : MonoBehaviour
     public Image CoolDownHealth;
     public float coolDown4;
     private bool IsCoolDown4 = false;
+    public float CanAttackUp;
+    public float nextAttackUp;
 
     public GameObject healthparticle;
 
@@ -57,6 +59,9 @@ public class PlayerController : MonoBehaviour
     private NPCUpgrade NPCUpgrade;
 
     public VectorValue StartingPosition;
+
+    public GameObject HitparticleUp;
+    public Transform hitUp;
 
     void Start()
     {
@@ -123,6 +128,7 @@ public class PlayerController : MonoBehaviour
                 Slide();
                 IsShiled();
                 Potions();
+                attackUp();
                 if(isDashing)
                 {
                     return;
@@ -257,6 +263,25 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+    private void attackUp()
+    {
+        if(End)
+        {
+            if (Input.GetKeyDown(KeyCode.W) && CanAttackUp >= nextAttackUp)
+            {
+                ani.SetTrigger("Up");
+                CanAttackUp = 0;
+            }
+            if (CanAttackUp <= 1)
+            {
+                CanAttackUp += Time.deltaTime;
+            }
+        }
+    }
+    public void hitParticleUp()
+    {
+        Instantiate(HitparticleUp, hitUp.position, hitUp.rotation);
     }
     private void Potions()
     {
