@@ -277,6 +277,7 @@ public class PlayerController : MonoBehaviour
             {
                 ani.SetTrigger("Up");
                 CanAttackUp = 0;
+                FindObjectOfType<AudioManager>().Play("hit");
             }
             if (CanAttackUp <= 1)
             {
@@ -297,6 +298,7 @@ public class PlayerController : MonoBehaviour
                 ani.SetTrigger("Down");
                 CanAttackDown = 0;
                 Rg.velocity = new Vector2(Rg.velocity.x, JumpHightDown);
+                FindObjectOfType<AudioManager>().Play("hit");
             }
             if (CanAttackDown <= 1)
             {
