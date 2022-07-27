@@ -273,7 +273,7 @@ public class PlayerController : MonoBehaviour
     {
         if(End)
         {
-            if (Input.GetKeyDown(KeyCode.W) && CanAttackUp >= nextAttackUp)
+            if (Input.GetKey(KeyCode.W) && CanAttackUp >= nextAttackUp && Input.GetKeyDown(KeyCode.Mouse0))
             {
                 ani.SetTrigger("Up");
                 CanAttackUp = 0;
@@ -292,7 +292,7 @@ public class PlayerController : MonoBehaviour
     {
         if (End)
         {
-            if (Input.GetKeyDown(KeyCode.S) && CanAttackDown >= nextAttackDown && Ground == false)
+            if (Input.GetKey(KeyCode.S) && CanAttackDown >= nextAttackDown && Ground == false && Input.GetKeyDown(KeyCode.Mouse0))
             {
                 ani.SetTrigger("Down");
                 CanAttackDown = 0;

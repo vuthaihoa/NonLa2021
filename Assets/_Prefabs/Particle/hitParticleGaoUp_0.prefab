@@ -13,8 +13,8 @@ GameObject:
   - component: {fileID: 245936710092810000}
   - component: {fileID: 3936383753698274132}
   - component: {fileID: 4907758668739855605}
-  - component: {fileID: 956085749348200283}
   - component: {fileID: 4252304322709203598}
+  - component: {fileID: 6720116476547549246}
   m_Layer: 0
   m_Name: hitParticleGaoUp_0
   m_TagString: Untagged
@@ -139,21 +139,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &956085749348200283
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3794665550090882940}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b166764e513eb54fbcfa363b34a9c32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Speed: 0
-  Rg: {fileID: 4907758668739855605}
-  hitParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
 --- !u!60 &4252304322709203598
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -195,3 +180,17 @@ PolygonCollider2D:
       - {x: 0.22999999, y: -0.24499999}
       - {x: 0.26999998, y: -0.074999996}
       - {x: 0.26999998, y: 0.385}
+--- !u!114 &6720116476547549246
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3794665550090882940}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b55ab0f611e2f7e4fb16b32fb825be1d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Speed: 0
+  hitParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}

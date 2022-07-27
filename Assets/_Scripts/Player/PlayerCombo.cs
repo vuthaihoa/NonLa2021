@@ -39,7 +39,7 @@ public class PlayerCombo : MonoBehaviour
     }
     public void Combo_()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse0) && !atacando)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && !atacando && !Input.GetKey(KeyCode.W) && !Input.GetKey(KeyCode.S))
         {
             atacando = true;
             ani.SetTrigger("" + combo);

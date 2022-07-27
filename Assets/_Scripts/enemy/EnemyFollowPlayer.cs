@@ -22,7 +22,6 @@ public class EnemyFollowPlayer : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, Speed * Time.deltaTime);
         }
-        CanAttack += Time.deltaTime;
     }
     private void OnDrawGizmosSelected()
     {
@@ -40,7 +39,7 @@ public class EnemyFollowPlayer : MonoBehaviour
                 Destroy(gameObject);
                 Instantiate(DeadExpon,transform.position, Quaternion.identity);
             }
-            else
+            if(attackspeed >= CanAttack)
             {
                 CanAttack += Time.deltaTime;
             }
