@@ -248,7 +248,7 @@ MonoBehaviour:
   input: "\u0110\xE3 r\u1EA5t l\xE2u r\u1ED3i \u0111\xE2y l\xE0 m\u1ED9t v\xF9ng
     \u0111\u1EA5t r\u1EA5t tr\xF9 ph\xFA v\xE0 xinh \u0111\u1EB9p!!!"
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
+  textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
@@ -502,7 +502,7 @@ MonoBehaviour:
   input: "T\xF4i ngh\u0129 \u0111\xF3 ch\u1EC9 l\xE0 truy\u1EC1n thuy\u1EBFt v\xEC
     nh\u1EEFng ngon l\u1EEDa \u1EDF \u0111\xE2y s\u1EBD kh\xF4ng bao gi\u1EDD t\u1EAFt."
   textColor: {r: 1, g: 1, b: 1, a: 1}
-  textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
+  textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.1
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
@@ -1099,7 +1099,7 @@ MonoBehaviour:
     \u0111\xE3 ph\xE1t tri\u1EC3n \u0111\u1EC3 c\xF3 th\u1EC3 th\xEDch nghi v\u1EDBi
     n\xE0y.  "
   textColor: {r: 1, g: 1, b: 1, a: 1}
-  textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
+  textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.1
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}

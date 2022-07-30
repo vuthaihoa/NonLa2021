@@ -388,6 +388,7 @@ MonoBehaviour:
   HitparticleDown: {fileID: 3794665550090882940, guid: 1bfda0e7414e73b43a16ac93e16feedb, type: 3}
   hitDown: {fileID: 2142855919}
   JumpHightDown: 0.8
+  playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}
 --- !u!114 &257437637188897069
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -415,6 +416,7 @@ MonoBehaviour:
     m_Bits: 640
   attackRange: 0.15
   hitParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
+  playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}
 --- !u!82 &8973544925100939351
 AudioSource:
   m_ObjectHideFlags: 0
@@ -527,6 +529,7 @@ MonoBehaviour:
   bullet: {fileID: 4095149372292239788, guid: 10ab28a5070474d4b9e277bf5597b592, type: 3}
   CoolDownBullet: {fileID: 0}
   coolDown3: 1.5
+  playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}
 --- !u!114 &463732886575240736
 MonoBehaviour:
   m_ObjectHideFlags: 0

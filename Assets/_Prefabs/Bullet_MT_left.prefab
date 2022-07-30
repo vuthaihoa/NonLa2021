@@ -14,7 +14,9 @@ GameObject:
   - component: {fileID: 1326108092600601362}
   - component: {fileID: 8112447421191599939}
   - component: {fileID: 551004747710117467}
-  m_Layer: 0
+  - component: {fileID: -4007401295261720162}
+  - component: {fileID: -5807418739290065087}
+  m_Layer: 7
   m_Name: Bullet_MT_left
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -155,4 +157,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 0.9
-  Damage: 30
+  Damage: 20
+--- !u!114 &-4007401295261720162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534453887912033566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  bloodEffect: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
+  deadParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
+  HitdeadParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
+  dazedTime: 0
+  NoDamage: 0
+  ojbectDropItems: {fileID: -5807418739290065087}
+--- !u!114 &-5807418739290065087
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8534453887912033566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaed63a6006e6b44b2b64573f3daf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loots: []

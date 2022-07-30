@@ -67,6 +67,9 @@ public class PlayerController : MonoBehaviour
     public GameObject HitparticleDown;
     public Transform hitDown;
     public float JumpHightDown;
+
+    [Header("Attributes SO")]
+    [SerializeField] private AttributesScriptableObject playerAttributesSO;
     void Start()
     {
         Rg = GetComponent<Rigidbody2D>();
@@ -75,8 +78,8 @@ public class PlayerController : MonoBehaviour
         extraJump = extraJumpValue;
         facingRight = true;
         stats = PlayerStats.instance;
-        HealthBar.MaxHealth(stats.maxHealth);
-        if(stats.currentHealth < stats.maxHealth)
+        HealthBar.MaxHealth(playerAttributesSO.maxHealth);
+        if(stats.currentHealth < playerAttributesSO.maxHealth)
         {
             HealthBar.SetHealth(stats.currentHealth);
         }
@@ -146,22 +149,22 @@ public class PlayerController : MonoBehaviour
                     if (Input.GetKeyDown(KeyCode.Space))
                     {
                         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                        stats.currentHealth = stats.maxHealth;
+                        stats.currentHealth = playerAttributesSO.maxHealth;
                     }
                 }
                 else
                 {
                     PressSpace.SetActive(false);
                 }
-                if(stats.currentHealth == stats.maxHealth)
+                if(stats.currentHealth == playerAttributesSO.maxHealth)
                 {
-                    HealthBar.MaxHealth(stats.maxHealth);
+                    HealthBar.MaxHealth(playerAttributesSO.maxHealth);
                 }
             }
         }
-        inthealth.text = stats.healthcolli.ToString();
-        SoulText.text = stats.soulFire.ToString();
-        MoneyText.text = stats.money.ToString();
+        inthealth.text = playerAttributesSO.healthcolli.ToString();
+        SoulText.text = playerAttributesSO.soulFire.ToString();
+        MoneyText.text = playerAttributesSO.money.ToString();
 
     }
     private void Jump()
@@ -314,27 +317,27 @@ public class PlayerController : MonoBehaviour
     {
         if(End)
         {
-            if (stats.healthcolli >= 1)
+            if (playerAttributesSO.healthcolli >= 1)
             {
                 if (Input.GetKeyDown(KeyCode.F) && IsCoolDown4 == false)
                 {
                     IsCoolDown4 = true;
                     CoolDownHealth.fillAmount = 1;
                     FindObjectOfType<AudioManager>().Play("Health");
-                    if (stats.currentHealth >= stats.maxHealth)
+                    if (stats.currentHealth >= playerAttributesSO.maxHealth)
                     {
                         stats.currentHealth += 0;
                     }
                     else
                     {
-                        stats.healthcolli -= 1;
-                        stats.currentHealth += stats.MoreHealth;
+                        playerAttributesSO.healthcolli -= 1;
+                        stats.currentHealth += playerAttributesSO.MoreHealth;
                         HealthBar.SetHealth(stats.currentHealth);
                         Instantiate(healthparticle, transform.position, Quaternion.identity);
                     }
-                    if (stats.currentHealth > stats.maxHealth)
+                    if (stats.currentHealth > playerAttributesSO.maxHealth)
                     {
-                        stats.currentHealth = stats.maxHealth;
+                        stats.currentHealth = playerAttributesSO.maxHealth;
                     }
                 }
                 if(IsCoolDown4)
@@ -428,15 +431,15 @@ public class PlayerController : MonoBehaviour
     {
         if (collision.gameObject.tag == "HP")
         {
-            stats.healthcolli += 1;
+            playerAttributesSO.healthcolli += 1;
         }
         if (collision.gameObject.tag == "Soul")
         {
-            stats.soulFire += 1;
+            playerAttributesSO.soulFire += 1;
         }
         if (collision.gameObject.tag == "Money")
         {
-            stats.money += 1;
+            playerAttributesSO.money += 1;
         }
     }
 }

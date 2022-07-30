@@ -22,7 +22,7 @@ public class SaveSlotsMenu : Menu
     {
         DisableMenuButtons();
         DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileID());
-        if(!isLoadingGame)
+        if (!isLoadingGame)
         {
             DataPersistenceManager.instance.NewGame();
         }
@@ -43,6 +43,7 @@ public class SaveSlotsMenu : Menu
         this.gameObject.SetActive(true);
         this.isLoadingGame = isLoadingGame;
         Dictionary<string, GameData> profilesGameData = DataPersistenceManager.instance.GetAllProfilesGameData();
+        backButton.interactable = true;
         GameObject firstselected = backButton.gameObject;
         foreach(SaveSlot saveSlot in saveSlot)
         {
@@ -64,6 +65,7 @@ public class SaveSlotsMenu : Menu
         }
         Button firstSelectedButton = firstselected.GetComponent<Button>();
         this.SetFirstSelected(firstSelectedButton);
+        //StartCoroutine(this.SetFirstSelected(firstselected));
     }
     public void DeactivateMenu()
     {

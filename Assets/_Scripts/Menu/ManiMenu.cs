@@ -9,6 +9,7 @@ public class ManiMenu : Menu
     [Header("Menu Navigation")]
     [SerializeField] private SaveSlotsMenu saveSlotsMenu;
 
+    [Header("Menu Buttons")]
     [SerializeField] private Button newGameButton;
     [SerializeField] private Button continueGameButton;
     [SerializeField] private Button loadGameButton;
@@ -36,7 +37,7 @@ public class ManiMenu : Menu
     }
     public void OnLoadGameClicked() 
     {
-        saveSlotsMenu.ActivateMenu(false);
+        saveSlotsMenu.ActivateMenu(true);
         this.DeactivateMenu();
         if (PlayerPrefs.GetInt("LoadSaved") == 1)
         {
@@ -50,7 +51,7 @@ public class ManiMenu : Menu
     public void OnContinueGameClicked()
     {
         DisableMenuButtons();
-        //DataPersistenceManager.instance.SaveGame();
+        DataPersistenceManager.instance.SaveGame();
         if (PlayerPrefs.GetInt("LoadSaved") == 1)
         {
             SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
@@ -73,6 +74,7 @@ public class ManiMenu : Menu
     public void ActivateMenu()
     {
         this.gameObject.SetActive(true);
+        DisableButtonsDependingOnData();
     }
     public void DeactivateMenu()
     {

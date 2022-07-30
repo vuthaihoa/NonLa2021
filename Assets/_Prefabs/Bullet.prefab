@@ -155,6 +155,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1.8
-  damage: 20
   Rg: {fileID: 2287316292336006505}
   hitParticle: {fileID: 6982829137089298532, guid: 3beddc40a1e0c944c858a2cdf173e351, type: 3}
+  playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}

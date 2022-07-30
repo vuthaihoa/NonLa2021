@@ -5022,6 +5022,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: GameMaster
       objectReference: {fileID: 0}
+    - target: {fileID: 7626600922819014593, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7626600922819014595, guid: 8af9d6bd1dd27e0468b90a5d57a8a499, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -6907,12 +6911,16 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4718848245082678918, guid: a5dfb1f675ab02341b8da8bac9d5101e, type: 3}
+      propertyPath: useEncryption
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4718848245082678918, guid: a5dfb1f675ab02341b8da8bac9d5101e, type: 3}
       propertyPath: autoSaveTimeSeconds
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4718848245082678918, guid: a5dfb1f675ab02341b8da8bac9d5101e, type: 3}
       propertyPath: initializeDataIfNull
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4718848245082678918, guid: a5dfb1f675ab02341b8da8bac9d5101e, type: 3}
       propertyPath: disableDataPersistence

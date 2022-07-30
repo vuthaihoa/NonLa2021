@@ -5,7 +5,7 @@ using UnityEngine;
 public class AttributesScriptableObject : ScriptableObject
 {
     public int maxHealth ;
-    public int currentHealth;
+    //public int currentHealth;
     public int MoreHealth ;
     public int healthcolli;
 

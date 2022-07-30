@@ -8,7 +8,7 @@ public class LevelLoader : MonoBehaviour,IDataPersistence
     public string sceneToLoad;
     public Vector2 playerPosition;
     public VectorValue playerStorage;
-    public int NumberLevel = 1;
+    public int NumberLevel = 2;
     public static LevelLoader instance;
     public void OnTriggerEnter2D(Collider2D other)
     {

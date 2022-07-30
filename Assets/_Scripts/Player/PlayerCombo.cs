@@ -19,6 +19,8 @@ public class PlayerCombo : MonoBehaviour
     public LayerMask whatEnemies;
     public float attackRange;
     public GameObject hitParticle;
+    [Header("Attributes SO")]
+    [SerializeField] private AttributesScriptableObject playerAttributesSO;
     void Start()
     {
         ani = GetComponent<Animator>();
@@ -48,7 +50,7 @@ public class PlayerCombo : MonoBehaviour
             Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatEnemies);
             for (int i = 0; i < enemiesToDamage.Length; i++)
             {
-                enemiesToDamage[i].GetComponent<Enemy_Health>().Takedamage(PlayerStats.instance.damage);
+                enemiesToDamage[i].GetComponent<Enemy_Health>().Takedamage(playerAttributesSO.damage);
                 Instantiate(hitParticle, attackPos.transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
                 NextAttackTime = Time.time + 1f / StartTimeBtwAttack;
             }

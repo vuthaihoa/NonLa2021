@@ -7,6 +7,8 @@ public class Bullet : MonoBehaviour
     public float Speed;
     public Rigidbody2D Rg;
     public GameObject hitParticle;
+    [Header("Attributes SO")]
+    [SerializeField] private AttributesScriptableObject playerAttributesSO;
     void Start()
     {
         Rg.velocity = transform.right * Speed;
@@ -16,7 +18,7 @@ public class Bullet : MonoBehaviour
         Enemy_Health enemy = hitInfo.GetComponent<Enemy_Health>();
         if(enemy != null)
         {
-            enemy.Takedamage(PlayerStats.instance.Magic);
+            enemy.Takedamage(playerAttributesSO.Magic);
             Instantiate(hitParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
@@ -24,7 +26,7 @@ public class Bullet : MonoBehaviour
         Boss_Health boss = hitInfo.GetComponent<Boss_Health>();
         if (boss != null)
         {
-            boss.Takedamage(PlayerStats.instance.Magic);
+            boss.Takedamage(playerAttributesSO.Magic);
             Instantiate(hitParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }

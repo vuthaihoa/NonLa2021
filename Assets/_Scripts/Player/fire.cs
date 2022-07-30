@@ -13,6 +13,8 @@ public class fire : MonoBehaviour
     public Image CoolDownBullet;
     public float coolDown3;
     private bool IsCoolDown3 = false;
+    [Header("Attributes SO")]
+    [SerializeField] private AttributesScriptableObject playerAttributesSO;
     void Start()
     {
         ani = GetComponent<Animator>();

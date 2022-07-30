@@ -116,7 +116,7 @@ MonoBehaviour:
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
   - name: ThuongLuongattack2
     clip: {fileID: 8300000, guid: 7ca9217d19b102f4abd3e912174207fc, type: 3}
-    Volume: 0.644
+    Volume: 1
     Pitch: 1
     loop: 0
     source: {fileID: 0}

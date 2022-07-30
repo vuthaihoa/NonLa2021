@@ -2801,3 +2801,4 @@ MonoBehaviour:
   potionLV_Text: {fileID: 129152306}
   potionUpgrade: {fileID: 1093590019}
   BuyPotionText: {fileID: 658448873}
+  playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}

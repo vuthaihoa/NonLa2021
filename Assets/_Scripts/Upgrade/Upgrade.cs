@@ -34,112 +34,114 @@ public class Upgrade : MonoBehaviour
     private Text BuyPotionText;
 
     private PlayerStats stats;
+    [Header("Attributes SO")]
+    [SerializeField] private AttributesScriptableObject playerAttributesSO;
     void OnEnable()
     {
         stats = PlayerStats.instance;
-        stats.HealthLv += 0;
-        stats.DamageLv += 0;
-        stats.MagicLv += 0;
+        playerAttributesSO.HealthLv += 0;
+        playerAttributesSO.DamageLv += 0;
+        playerAttributesSO.MagicLv += 0;
     }
     private void Update()
     {
-        healthText.text = stats.HealthLv.ToString();
-        DamageText.text = stats.DamageLv.ToString();
-        MagicText.text = stats.MagicLv.ToString();
+        healthText.text = playerAttributesSO.HealthLv.ToString();
+        DamageText.text = playerAttributesSO.DamageLv.ToString();
+        MagicText.text = playerAttributesSO.MagicLv.ToString();
 
-        healthTextUp.text = stats.UpgradeSoulHealth.ToString();
-        DamageTextUp.text = stats.UpgradeSoulDamage.ToString();
-        MagicTextUp.text = stats.UpgradeSoulMagic.ToString();
+        healthTextUp.text = playerAttributesSO.UpgradeSoulHealth.ToString();
+        DamageTextUp.text = playerAttributesSO.UpgradeSoulDamage.ToString();
+        MagicTextUp.text = playerAttributesSO.UpgradeSoulMagic.ToString();
 
-        potionLV_Text.text = stats.PotionLV.ToString();
-        potionUpgrade.text = stats.UpgradePotion.ToString();
-        BuyPotionText.text = stats.buyPotion.ToString();
+        potionLV_Text.text = playerAttributesSO.PotionLV.ToString();
+        potionUpgrade.text = playerAttributesSO.UpgradePotion.ToString();
+        BuyPotionText.text = playerAttributesSO.buyPotion.ToString();
 
-        healthTextUp.text = Mathf.Round(stats.UpgradeSoulHealth).ToString();
-        DamageTextUp.text = Mathf.Round(stats.UpgradeSoulDamage).ToString();
-        MagicTextUp.text = Mathf.Round(stats.UpgradeSoulMagic).ToString();
-        potionUpgrade.text = Mathf.Round(stats.UpgradePotion).ToString();
+        healthTextUp.text = Mathf.Round(playerAttributesSO.UpgradeSoulHealth).ToString();
+        DamageTextUp.text = Mathf.Round(playerAttributesSO.UpgradeSoulDamage).ToString();
+        MagicTextUp.text = Mathf.Round(playerAttributesSO.UpgradeSoulMagic).ToString();
+        potionUpgrade.text = Mathf.Round(playerAttributesSO.UpgradePotion).ToString();
     }
     void UpdateHealth()
     {
-        stats.HealthLv += 1;
-        healthText.text = stats.HealthLv.ToString();
+        playerAttributesSO.HealthLv += 1;
+        healthText.text = playerAttributesSO.HealthLv.ToString();
     }
     void UpdateDamage()
     {
-        stats.DamageLv += 1;
-        DamageText.text = stats.DamageLv.ToString();
+        playerAttributesSO.DamageLv += 1;
+        DamageText.text = playerAttributesSO.DamageLv.ToString();
     }
     void UpdateMagic()
     {
-        stats.MagicLv += 1;
-        MagicText.text = stats.MagicLv.ToString();
+        playerAttributesSO.MagicLv += 1;
+        MagicText.text = playerAttributesSO.MagicLv.ToString();
     }
     public void HealthUp()
     {
-        if(stats.soulFire < stats.UpgradeSoulHealth)
+        if(playerAttributesSO.soulFire < playerAttributesSO.UpgradeSoulHealth)
         {
             return;
         }
-        stats.maxHealth = stats.maxHealth + UpHealth;
-        stats.currentHealth = stats.maxHealth;
-        stats.soulFire = (int)(stats.soulFire - stats.UpgradeSoulHealth);
-        stats.UpgradeSoulHealth *= 1.3f;
-        healthTextUp.text = Mathf.Round(stats.UpgradeSoulHealth).ToString();
+        playerAttributesSO.maxHealth = playerAttributesSO.maxHealth + UpHealth;
+        stats.currentHealth = playerAttributesSO.maxHealth;
+        playerAttributesSO.soulFire = (int)(playerAttributesSO.soulFire - playerAttributesSO.UpgradeSoulHealth);
+        playerAttributesSO.UpgradeSoulHealth *= 1.3f;
+        healthTextUp.text = Mathf.Round(playerAttributesSO.UpgradeSoulHealth).ToString();
         UpdateHealth();
     }
     public void DamageUp()
     {
-        if (stats.soulFire < stats.UpgradeSoulDamage)
+        if (playerAttributesSO.soulFire < playerAttributesSO.UpgradeSoulDamage)
         {
             return;
         }
-        stats.damage = stats.damage + UpDamage;
+        playerAttributesSO.damage = playerAttributesSO.damage + UpDamage;
         UpdateDamage();
-        stats.soulFire = (int)(stats.soulFire - stats.UpgradeSoulDamage);
-        stats.UpgradeSoulDamage *= 1.3f;
-        DamageTextUp.text = Mathf.Round(stats.UpgradeSoulDamage).ToString();
+        playerAttributesSO.soulFire = (int)(playerAttributesSO.soulFire - playerAttributesSO.UpgradeSoulDamage);
+        playerAttributesSO.UpgradeSoulDamage *= 1.3f;
+        DamageTextUp.text = Mathf.Round(playerAttributesSO.UpgradeSoulDamage).ToString();
     }
     public void MagicUp()
     {
-        if (stats.soulFire < stats.UpgradeSoulMagic)
+        if (playerAttributesSO.soulFire < playerAttributesSO.UpgradeSoulMagic)
         {
             return;
         }
-        stats.Magic = stats.Magic + UpMagic;
+        playerAttributesSO.Magic = playerAttributesSO.Magic + UpMagic;
         UpdateMagic();
-        stats.soulFire = (int)(stats.soulFire - stats.UpgradeSoulMagic);
-        stats.UpgradeSoulMagic *= 1.3f;
-        MagicTextUp.text = Mathf.Round(stats.UpgradeSoulMagic).ToString();
+        playerAttributesSO.soulFire = (int)(playerAttributesSO.soulFire - playerAttributesSO.UpgradeSoulMagic);
+        playerAttributesSO.UpgradeSoulMagic *= 1.3f;
+        MagicTextUp.text = Mathf.Round(playerAttributesSO.UpgradeSoulMagic).ToString();
     }
     void moneyText()
     {
-        stats.PotionLV += 1;
-        potionLV_Text.text = stats.PotionLV.ToString();
+        playerAttributesSO.PotionLV += 1;
+        potionLV_Text.text = playerAttributesSO.PotionLV.ToString();
     }
     public void PotionUp()
     {
-        if(stats.money < stats.UpgradePotion)
+        if(playerAttributesSO.money < playerAttributesSO.UpgradePotion)
         {
             return;
         }
-        stats.MoreHealth = stats.MoreHealth + UpPotion;
+        playerAttributesSO.MoreHealth = playerAttributesSO.MoreHealth + UpPotion;
         moneyText();
-        stats.money = (int)(stats.money - stats.UpgradePotion);
-        stats.UpgradePotion *=1.3f;
-        potionUpgrade.text = Mathf.Round(stats.UpgradePotion).ToString();
+        playerAttributesSO.money = (int)(playerAttributesSO.money - playerAttributesSO.UpgradePotion);
+        playerAttributesSO.UpgradePotion *=1.3f;
+        potionUpgrade.text = Mathf.Round(playerAttributesSO.UpgradePotion).ToString();
 
     }
     public void BuyPotion()
     {
-        if(stats.money < stats.buyPotion)
+        if(playerAttributesSO.money < playerAttributesSO.buyPotion)
         {
             return;
         }
-        stats.healthcolli = stats.healthcolli + 1;
-        stats.money = stats.money - stats.buyPotion;
-        stats.buyPotion = stats.buyPotion + 20;
-        BuyPotionText.text = stats.buyPotion.ToString();
+        playerAttributesSO.healthcolli = playerAttributesSO.healthcolli + 1;
+        playerAttributesSO.money = playerAttributesSO.money - playerAttributesSO.buyPotion;
+        playerAttributesSO.buyPotion = playerAttributesSO.buyPotion + 20;
+        BuyPotionText.text = playerAttributesSO.buyPotion.ToString();
 
     }
 

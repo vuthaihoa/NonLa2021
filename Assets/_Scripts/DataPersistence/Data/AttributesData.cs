@@ -6,7 +6,7 @@ using UnityEngine;
 public class AttributesData
 {
     public int maxHealth;
-    public int currentHealth;
+    //public int currentHealth;
     public int MoreHealth;
     public int healthcolli;
 
@@ -31,7 +31,7 @@ public class AttributesData
     public AttributesData()
     {
         this.maxHealth = 100;
-        this.currentHealth = 100;
+        //this.currentHealth = 100;
         this.MoreHealth = 50;
         this.healthcolli = 1;
         this.money = 0;
@@ -42,9 +42,9 @@ public class AttributesData
         this.MagicLv = 0;
         this.PotionLV = 0;
         this.soulFire = 0;
-        this.UpgradeSoulHealth = 30;
-        this.UpgradeSoulDamage = 30;
-        this.UpgradeSoulMagic = 30;
+        this.UpgradeSoulHealth = 20;
+        this.UpgradeSoulDamage = 20;
+        this.UpgradeSoulMagic = 20;
         this.UpgradePotion = 50;
         this.buyPotion = 50;
     }

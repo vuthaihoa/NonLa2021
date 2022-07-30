@@ -153,6 +153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Speed: 0
   hitParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
+  playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}
 --- !u!61 &8594112685503621183
 BoxCollider2D:
   m_ObjectHideFlags: 0

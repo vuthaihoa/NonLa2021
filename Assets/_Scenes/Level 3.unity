@@ -1901,6 +1901,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: loots.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: loots.Array.data[1].item
+      value: 
+      objectReference: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
+    - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: loots.Array.data[1].DropRate
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: loots.Array.data[1].maxQuantity
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: loots.Array.data[1].minQuantity
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243232, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: m_RootOrder
       value: 30
@@ -1951,11 +1971,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243242, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: health
-      value: 600
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243244, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: Angry
-      value: 300
+      value: 200
       objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243247, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: player
@@ -3710,10 +3730,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
-    - target: {fileID: 1171114620834477047, guid: 6670ab85807287243bfc769a37298733, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6670ab85807287243bfc769a37298733, type: 3}
 --- !u!1 &1362837439
@@ -4416,7 +4432,7 @@ MonoBehaviour:
     th\u1EE9c d\u1EADy c\u1EADu c\xF3 th\u1EC3 b\u1ECB  l\u1EA1c n\u1EBFu kh\xF4ng
     c\u1EA9n th\u1EADn."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
-  textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
+  textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
