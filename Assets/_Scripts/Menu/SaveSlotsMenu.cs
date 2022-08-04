@@ -14,6 +14,7 @@ public class SaveSlotsMenu : Menu
 
     private bool isLoadingGame = false;
 
+
     private void Awake()
     {
         saveSlot = this.GetComponentsInChildren<SaveSlot>();

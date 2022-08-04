@@ -39,14 +39,7 @@ public class ManiMenu : Menu
     {
         saveSlotsMenu.ActivateMenu(true);
         this.DeactivateMenu();
-        if (PlayerPrefs.GetInt("LoadSaved") == 1)
-        {
-            SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
-        }
-        else
-        {
-            return;
-        }
+
     }
     public void OnContinueGameClicked()
     {

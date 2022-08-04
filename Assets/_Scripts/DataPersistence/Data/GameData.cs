@@ -21,7 +21,7 @@ public class GameData
     }
     public int GetPercentageComplete()
     {
-        int totalCollected = 1;
+        int totalCollected = 0;
         foreach (bool collected in NumberLevel.Values)
         {
             if (collected)
@@ -29,7 +29,7 @@ public class GameData
                 totalCollected++;
             }
         }
-        int percentageCompleted = 1;
+        int percentageCompleted = -1;
         if(NumberLevel.Count != 0)
         {
             percentageCompleted = (totalCollected * 100 / NumberLevel.Count);

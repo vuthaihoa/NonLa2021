@@ -14,6 +14,7 @@ public class SaveSlot : MonoBehaviour
     [SerializeField] private Text percentageCompleteText;
 
     private Button saveSlotButton;
+
     private void Awake()
     {
         saveSlotButton = this.GetComponent<Button>();

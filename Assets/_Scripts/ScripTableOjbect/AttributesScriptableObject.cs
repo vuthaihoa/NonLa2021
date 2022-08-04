@@ -4,27 +4,27 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "Attributes", menuName = "ScriptableObjects/AttributesScriptableObject", order = 1)]
 public class AttributesScriptableObject : ScriptableObject
 {
-    public int maxHealth ;
+    public int maxHealth = 100;
     //public int currentHealth;
-    public int MoreHealth ;
-    public int healthcolli;
+    public int MoreHealth = 50;
+    public int healthcolli = 1;
 
-    public int money;
+    public int money = 0;
     
-    public int damage;
-    public int Magic;
+    public int damage = 10;
+    public int Magic = 15;
 
-    public int HealthLv;
-    public int DamageLv;
-    public int MagicLv;
-    public int PotionLV ;
+    public int HealthLv = 0;
+    public int DamageLv = 0;
+    public int MagicLv = 0;
+    public int PotionLV = 0;
 
-    public int soulFire;
+    public int soulFire = 0;
 
-    public float UpgradeSoulHealth;
-    public float UpgradeSoulDamage;
-    public float UpgradeSoulMagic;
-    public float UpgradePotion;
+    public float UpgradeSoulHealth = 20;
+    public float UpgradeSoulDamage = 20;
+    public float UpgradeSoulMagic = 20;
+    public float UpgradePotion = 50;
 
-    public int buyPotion;
+    public int buyPotion = 50;
 }

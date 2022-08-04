@@ -17,6 +17,8 @@ public class DataPersistenceManager : MonoBehaviour
 
     [Header("Auto Save")]
     [SerializeField] private float autoSaveTimeSeconds = 1f;
+    [Header("Attributes SO")]
+    [SerializeField] private AttributesScriptableObject playerAttributesSO;
     private GameData gameData;
     private List<IDataPersistence> dataPersistenceObject;
     private FileDataHandler dataHandler;
@@ -73,6 +75,22 @@ public class DataPersistenceManager : MonoBehaviour
     public void NewGame()
     {
         this.gameData = new GameData();
+        playerAttributesSO.maxHealth = 100;
+        playerAttributesSO.MoreHealth = 50;
+        playerAttributesSO.healthcolli = 1;
+        playerAttributesSO.money = 0;
+        playerAttributesSO.damage = 10;
+        playerAttributesSO.Magic = 15;
+        playerAttributesSO.HealthLv = 0;
+        playerAttributesSO.DamageLv = 0;
+        playerAttributesSO.MagicLv = 0;
+        playerAttributesSO.PotionLV = 0;
+        playerAttributesSO.soulFire = 0;
+        playerAttributesSO.UpgradeSoulHealth = 20;
+        playerAttributesSO.UpgradeSoulDamage = 20;
+        playerAttributesSO.UpgradeSoulMagic = 20;
+        playerAttributesSO.UpgradePotion = 50;
+        playerAttributesSO.buyPotion = 50;
     }
     public void LoadGame()
     {
