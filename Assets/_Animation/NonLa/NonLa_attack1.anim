@@ -21,27 +21,27 @@ AnimationClip:
   - curve:
     - time: 0
       value: {fileID: 7268101858722163077, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.04347826
+    - time: 0.03846154
       value: {fileID: 4110668677880852197, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.08695652
+    - time: 0.07692308
       value: {fileID: -9157289035659334250, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.13043478
+    - time: 0.115384616
       value: {fileID: -3413803264749203881, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.17391305
+    - time: 0.15384616
       value: {fileID: 8677201671382393981, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.2173913
+    - time: 0.1923077
       value: {fileID: -3355110683239534902, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.26086956
+    - time: 0.23076923
       value: {fileID: 1139214843608797943, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.3043478
+    - time: 0.26923078
       value: {fileID: 4372776894844377469, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
-    - time: 0.5217391
+    - time: 0.42307693
       value: {fileID: 4372776894844377469, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
     script: {fileID: 0}
-  m_SampleRate: 23
+  m_SampleRate: 26
   m_WrapMode: 0
   m_Bounds:
     m_Center: {x: 0, y: 0, z: 0}
@@ -70,7 +70,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.5652174
+    m_StopTime: 0.46153846
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -90,14 +90,14 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 0.3043478
+  - time: 0.26923078
     functionName: Start_Combo
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0
     intParameter: 0
     messageOptions: 0
-  - time: 0.5217391
+  - time: 0.42307693
     functionName: Finish_Ani
     data: 
     objectReferenceParameter: {fileID: 0}

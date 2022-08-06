@@ -9114,12 +9114,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 86543852689563846, guid: 58b3025bea010a34f900edc453cf8ec2, type: 3}
       propertyPath: loots.Array.size
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 86543852689563846, guid: 58b3025bea010a34f900edc453cf8ec2, type: 3}
       propertyPath: loots.Array.data[0].item
       value: 
-      objectReference: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
+      objectReference: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
     - target: {fileID: 86543852689563846, guid: 58b3025bea010a34f900edc453cf8ec2, type: 3}
       propertyPath: loots.Array.data[1].item
       value: 
@@ -24489,6 +24489,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5776526760995816551, guid: 25356a7228c82ca4a9460ff1318b5df8, type: 3}
+      propertyPath: totalCoins
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776526760995816551, guid: 25356a7228c82ca4a9460ff1318b5df8, type: 3}
       propertyPath: sceneToLoad
       value: Menu
       objectReference: {fileID: 0}
@@ -27653,6 +27657,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1273355276}
     m_Modifications:
+    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
+      propertyPath: loots.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
+      propertyPath: loots.Array.data[2].item
+      value: 
+      objectReference: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
+    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
+      propertyPath: loots.Array.data[2].DropRate
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
+      propertyPath: loots.Array.data[2].maxQuantity
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
+      propertyPath: loots.Array.data[2].minQuantity
+      value: 20
+      objectReference: {fileID: 0}
     - target: {fileID: 1554292798, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
       propertyPath: health
       value: 600

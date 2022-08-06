@@ -1462,6 +1462,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5776526760995816551, guid: 25356a7228c82ca4a9460ff1318b5df8, type: 3}
+      propertyPath: totalCoins
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776526760995816551, guid: 25356a7228c82ca4a9460ff1318b5df8, type: 3}
       propertyPath: sceneToLoad
       value: Level 4
       objectReference: {fileID: 0}

@@ -10,6 +10,7 @@ public class LevelLoader : MonoBehaviour,IDataPersistence
     public VectorValue playerStorage;
     public static LevelLoader instance;
     private int NumberLevel = 0;
+    public int totalCoins = 5;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player") && !other.isTrigger)
