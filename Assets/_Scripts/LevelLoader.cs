@@ -9,15 +9,15 @@ public class LevelLoader : MonoBehaviour,IDataPersistence
     public Vector2 playerPosition;
     public VectorValue playerStorage;
     public static LevelLoader instance;
+    [SerializeField] private int totalCoins = 0;
     private int NumberLevel = 0;
-    public int totalCoins = 5;
     public void OnTriggerEnter2D(Collider2D other)
     {
         if(other.CompareTag("Player") && !other.isTrigger)
         {
             playerStorage.initialValue = playerPosition;
             SceneManager.LoadScene(sceneToLoad);
-            //NumberLevel -=1;
+            //NumberLevel +=1;
             DataPersistenceManager.instance.SaveGame();
 
         }
@@ -40,6 +40,7 @@ public class LevelLoader : MonoBehaviour,IDataPersistence
     {
         // subscribe to events
         GameEventsManager.instance.onCoinCollected += OnCoinCollected;
+        totalCoins = 5;
     }
     private void OnDestroy()
     {

@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 5776526760995816549}
   - component: {fileID: 5776526760995816551}
   - component: {fileID: 5776526760995816548}
+  - component: {fileID: 1897074326}
   m_Layer: 0
   m_Name: LevelLoader
   m_TagString: Untagged
@@ -44,9 +45,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc03a7128cf829648a1dba0402df07f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Level2
+  sceneToLoad: Level 5
   playerPosition: {x: 0, y: 0}
-  playerStorage: {fileID: 0}
+  playerStorage: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
+  totalCoins: 5
 --- !u!61 &5776526760995816548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -60,7 +62,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.5703826, y: 0}
+  m_Offset: {x: 3.268814, y: -2.4758034}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -71,5 +73,18 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.1407657, y: 1}
+  m_Size: {x: 7.978119, y: 10.306047}
   m_EdgeRadius: 0
+--- !u!114 &1897074326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5776526760995816546}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa46df3a16f13594f9e8efa8ebac2d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 7ba4838e-4e7c-4d82-8da9-0c7f8a6ad96f
