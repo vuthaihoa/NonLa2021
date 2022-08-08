@@ -22457,10 +22457,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5776526760995816551, guid: 25356a7228c82ca4a9460ff1318b5df8, type: 3}
-      propertyPath: totalCoins
-      value: 4
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25356a7228c82ca4a9460ff1318b5df8, type: 3}
 --- !u!1 &1576850033
@@ -23078,9 +23074,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c158df4a32e28524591bd7dba570648a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.9
+  speed: 0.6
   lineOfsitePlayer: 1.12
-  StopMove: 0.19
+  StopMove: 0.1
   TelePortNPC: 3.03
   AttackZone: 6
   nextAttack: 5

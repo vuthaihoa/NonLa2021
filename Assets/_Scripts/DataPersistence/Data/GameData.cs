@@ -21,7 +21,7 @@ public class GameData
     }
     public int GetPercentageComplete()
     {
-        int totalCollected = 0;
+        int totalCollected = 1;
         foreach (bool collected in NumberLevel.Values)
         {
             if (collected)

@@ -48,7 +48,6 @@ MonoBehaviour:
   sceneToLoad: Level 5
   playerPosition: {x: 0, y: 0}
   playerStorage: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
-  totalCoins: 5
 --- !u!61 &5776526760995816548
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -87,4 +86,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa46df3a16f13594f9e8efa8ebac2d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 7ba4838e-4e7c-4d82-8da9-0c7f8a6ad96f
+  id: ac89bd83-1d91-49e4-b61b-2f80f42ad2a0
