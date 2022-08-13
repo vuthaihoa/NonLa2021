@@ -31,7 +31,6 @@ public class DataPersistenceManager : MonoBehaviour
     {
         if (instance != null)
         {
-            Debug.LogError("sai roi");
             Destroy(this.gameObject);
             return;
         }

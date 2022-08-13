@@ -54,8 +54,9 @@ public class NPCFollowPlayer : MonoBehaviour
         if (distance > TelePortNPC)
         {
             Vector3 playerPosRandomized = player.transform.position;
-            playerPosRandomized.x = playerPosRandomized.x + UnityEngine.Random.Range(-10f, 30f);
+            playerPosRandomized.x = playerPosRandomized.x + UnityEngine.Random.Range(0f, 1f);
             playerPosRandomized.z = playerPosRandomized.z + UnityEngine.Random.Range(-10f, 30f);
+            playerPosRandomized.y = playerPosRandomized.y + UnityEngine.Random.Range(0f, 0f);
             transform.position = playerPosRandomized;
         }
     }
