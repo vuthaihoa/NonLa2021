@@ -20,6 +20,16 @@ public class LevelLoader : MonoBehaviour,IDataPersistence
 
         }
     }
+    public void OnTriggerStay2D(Collider2D other)
+    {
+        if (other.CompareTag("Player") && !other.isTrigger)
+        {
+            playerStorage.initialValue = playerPosition;
+            SceneManager.LoadScene(sceneToLoad);
+            DataPersistenceManager.instance.SaveGame();
+
+        }
+    }
     public void LoadData(GameData data)
     {
         foreach (KeyValuePair<string, bool> pair in data.NumberLevel)

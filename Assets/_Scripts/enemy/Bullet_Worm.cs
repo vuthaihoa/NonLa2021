@@ -20,10 +20,6 @@ public class Bullet_Worm : MonoBehaviour
             collision.gameObject.GetComponent<PlayerController>().TakeDamage(Damage);
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "Ground")
-        {
-            Destroy(gameObject);
-        }
         Destroy(gameObject,1);
     }
 }

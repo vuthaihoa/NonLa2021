@@ -26,11 +26,11 @@ public class EnemyBullet : MonoBehaviour
         if (distanceFromPlayer < lineOfSite && distanceFromPlayer>ShootingRange)
         {
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, Speed * Time.deltaTime);
-            ani.SetBool("run", true);
+            //ani.SetBool("run", true);
         }
         else
         {
-            ani.SetBool("run", false);
+            //ani.SetBool("run", false);
         }
         if (distanceFromPlayer < ShootingRange)
         {
@@ -38,7 +38,7 @@ public class EnemyBullet : MonoBehaviour
             {
                 canFire = 0f;
                 ani.SetTrigger("attack");
-                ani.SetBool("run", false);
+                //ani.SetBool("run", false);
             }
             else
             {

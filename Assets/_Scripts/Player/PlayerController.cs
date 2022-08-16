@@ -8,11 +8,13 @@ public class PlayerController : MonoBehaviour
 {
     Rigidbody2D Rg;
     Animator ani;
-
+    [Header("Horizotal")]
     public float Maxspeed;
     public float JumpHight;
     float move;
 
+    public float endTime;
+    [Header("dash")]
     private bool CanDash = true;
     private bool isDashing;
     public float dashingPower;
@@ -20,13 +22,22 @@ public class PlayerController : MonoBehaviour
 
     private bool facingRight;
     private bool Ground;
-
+    [Header("Jump")]
     public Transform GroundCheck;
     public float checkRadius;
     public LayerMask whatIsGround;
 
     private int extraJump;
     public int extraJumpValue;
+    [Header("Jump Wall")]
+    public float WallJumpTime = 0.2f;
+    public float WallSliedSpeed = 0.3f;
+    public float WallDistance = 0.5f;
+    public float JumpWallHight;
+    private int Jumpwallint;
+    bool isWallSiding = false;
+    RaycastHit2D WallCheckHit;
+    float JumpTime;
 
     private PlayerStats stats;
     public HealthBar HealthBar;
@@ -132,6 +143,7 @@ public class PlayerController : MonoBehaviour
             if (!inDialogue())
             {
                 Jump();
+                JumpWall();
                 Slide();
                 IsShiled();
                 Potions();
@@ -145,11 +157,20 @@ public class PlayerController : MonoBehaviour
                 {
                     ani.SetBool("Death", true);
                     End = false;
-                    PressSpace.SetActive(true);
-                    if (Input.GetKeyDown(KeyCode.Space))
+                    if(End == false)
                     {
-                        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-                        stats.currentHealth = playerAttributesSO.maxHealth;
+                        endTime += Time.deltaTime;
+                        if(endTime >=1.5f)
+                        {
+                            Time.timeScale = 0f;
+                            PressSpace.SetActive(true);
+                            if (Input.GetKeyDown(KeyCode.Space))
+                            {
+                                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                                stats.currentHealth = playerAttributesSO.maxHealth;
+                                Time.timeScale = 1f;
+                            }
+                        }
                     }
                 }
                 else
@@ -169,32 +190,69 @@ public class PlayerController : MonoBehaviour
     }
     private void Jump()
     {
-        if (Ground == false)
+        if(End)
         {
-            ani.SetBool("ground", true);
-        }
-        if (Ground == true)
-        {
-            extraJump = extraJumpValue;
-            ani.SetBool("ground", false);
-        }
-
-        if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)
-        {
-            Rg.velocity = new Vector2(Rg.velocity.x, JumpHight);
-            ani.SetBool("ground", true);
-            extraJump--;
-            FindObjectOfType<AudioManager>().Play("PlayerJump");
-            if (extraJump == 0 && Ground == false)
+            if (Ground == false)
             {
+                ani.SetBool("ground", true);
+            }
+            if (Ground == true)
+            {
+                extraJump = extraJumpValue;
                 ani.SetBool("ground", false);
             }
+
+            if (Input.GetKeyDown(KeyCode.Space) && extraJump > 0)
+            {
+                Rg.velocity = new Vector2(Rg.velocity.x, JumpHight);
+                ani.SetBool("ground", true);
+                extraJump--;
+                FindObjectOfType<AudioManager>().Play("PlayerJump");
+                if (extraJump == 0 && Ground == false)
+                {
+                    ani.SetBool("ground", false);
+                }
+            }
+            else if (Input.GetKeyDown(KeyCode.Space) && extraJump == 0 && Ground == true)
+            {
+                Rg.velocity = new Vector2(Rg.velocity.x, JumpHight);
+                ani.SetBool("ground", true);
+                FindObjectOfType<AudioManager>().Play("PlayerJump");
+            }
         }
-        else if (Input.GetKeyDown(KeyCode.Space) && extraJump == 0 && Ground == true)
+    }
+    private void JumpWall()
+    {
+        if(facingRight)
         {
-            Rg.velocity = new Vector2(Rg.velocity.x, JumpHight);
-            ani.SetBool("ground", true);
-            FindObjectOfType<AudioManager>().Play("PlayerJump");
+            WallCheckHit = Physics2D.Raycast(transform.position, new Vector2(WallDistance, 0), WallDistance, whatIsGround);
+        }
+        else
+        {
+            WallCheckHit = Physics2D.Raycast(transform.position, new Vector2(-WallDistance, 0), WallDistance, whatIsGround);
+        }
+
+        if(WallCheckHit && !Ground && move != 0)
+        {
+            isWallSiding = true;
+            JumpTime = Time.time + WallJumpTime;
+        }
+        else if (JumpTime <Time.time)
+        {
+            isWallSiding = false;
+        }
+        if(isWallSiding)
+        {
+            Rg.velocity = new Vector2(Rg.velocity.x, Mathf.Clamp(Rg.velocity.y, WallSliedSpeed, float.MaxValue));
+            if(Input.GetKeyDown(KeyCode.Space) && Jumpwallint > 0)
+            {
+                Jumpwallint = 0;
+                Rg.velocity = new Vector2(Rg.velocity.x, JumpWallHight);
+            }
+        }
+        else if( isWallSiding == false)
+        {
+            Jumpwallint = extraJumpValue;
         }
     }
     void flip()
