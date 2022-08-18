@@ -35,9 +35,11 @@ public class PlayerController : MonoBehaviour
     public float WallDistance = 0.5f;
     public float JumpWallHight;
     private int Jumpwallint;
-    bool isWallSiding = false;
+    bool isWallSiding;
     RaycastHit2D WallCheckHit;
     float JumpTime;
+    private bool TouchingWall;
+    //public Transform WallCheck;
 
     private PlayerStats stats;
     public HealthBar HealthBar;
@@ -223,19 +225,23 @@ public class PlayerController : MonoBehaviour
     }
     private void JumpWall()
     {
-        if(facingRight)
+        if (facingRight)
         {
             WallCheckHit = Physics2D.Raycast(transform.position, new Vector2(WallDistance, 0), WallDistance, whatIsGround);
+            //Debug.DrawRay(transform.position, new Vector2(WallDistance, 0), Color.blue);
         }
         else
         {
             WallCheckHit = Physics2D.Raycast(transform.position, new Vector2(-WallDistance, 0), WallDistance, whatIsGround);
         }
+        //TouchingWall = Physics2D.OverlapCircle(WallCheck.position, checkRadius, whatIsGround);
 
-        if(WallCheckHit && !Ground && move != 0)
+        if (WallCheckHit && Ground == false && move != 0)
         {
             isWallSiding = true;
             JumpTime = Time.time + WallJumpTime;
+            ani.SetBool("WallSlide", true);
+            ani.SetBool("ground", false);
         }
         else if (JumpTime <Time.time)
         {
@@ -244,7 +250,9 @@ public class PlayerController : MonoBehaviour
         if(isWallSiding)
         {
             Rg.velocity = new Vector2(Rg.velocity.x, Mathf.Clamp(Rg.velocity.y, WallSliedSpeed, float.MaxValue));
-            if(Input.GetKeyDown(KeyCode.Space) && Jumpwallint > 0)
+            ani.SetBool("WallSlide", true);
+            ani.SetBool("ground", false);
+            if (Input.GetKeyDown(KeyCode.Space) && Jumpwallint > 0)
             {
                 Jumpwallint = 0;
                 Rg.velocity = new Vector2(Rg.velocity.x, JumpWallHight);
@@ -253,6 +261,7 @@ public class PlayerController : MonoBehaviour
         else if( isWallSiding == false)
         {
             Jumpwallint = extraJumpValue;
+            ani.SetBool("WallSlide", false);
         }
     }
     void flip()
