@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using EZCameraShake;
 
 public class MT_On : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class MT_On : MonoBehaviour
             Boss.SetActive(true);
             stone.SetActive(true);
             stone2.SetActive(true);
+            CameraShaker.Instance.ShakeOnce(6f, 6f, .2f, .2f);
+            FindObjectOfType<AudioManager>().Play("Golem");
         }
     }
 }
