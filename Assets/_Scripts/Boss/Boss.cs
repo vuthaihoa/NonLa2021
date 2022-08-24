@@ -6,6 +6,10 @@ public class Boss : MonoBehaviour
 {
     public Transform player;
     public bool isFipped = false;
+    private void Update()
+    {
+        LookAtPlayer();
+    }
     public void LookAtPlayer()
     {
         Vector3 flipped = transform.localScale;
