@@ -7,11 +7,13 @@ public class bodyguardDamage : MonoBehaviour
     [Header("dash")]
     public float dashingPower;
     public float dashingTime = 0.2f;
+    public GameObject damaColli;
 
     private Transform player;
     bool faceingRight = false;
 
     Rigidbody2D Rg;
+    Animator ani;
 
     public int Attack1;
     public Vector3 attackOffset;
@@ -24,16 +26,23 @@ public class bodyguardDamage : MonoBehaviour
     public GameObject Spear_parents2;
     public GameObject Spear_parents3;
     public GameObject Spear_parents4;
+    public GameObject Spear_parents5;
     public Transform Spear;
-
+    [Header("health")]
+    public Enemy_Health enemy_Health;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
         Rg = GetComponent<Rigidbody2D>();
+        ani = GetComponent<Animator>();
     }
     void Update()
     {
         FlipTowardsPlayer();
+        if(enemy_Health.health <= 30)
+        {
+            ani.SetBool("dead", true);
+        }
     }
     public IEnumerator Dash()
     {
@@ -42,10 +51,12 @@ public class bodyguardDamage : MonoBehaviour
         if (!faceingRight)
         {
             Rg.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
+            FindObjectOfType<AudioManager>().Play("Dash_Enemy");
         }
         else
         {
             Rg.velocity = new Vector2(transform.localScale.x * -dashingPower, 0f);
+            FindObjectOfType<AudioManager>().Play("Dash_Enemy");
         }
         yield return new WaitForSeconds(dashingTime);
         Rg.gravityScale = originalGravity;
@@ -70,6 +81,7 @@ public class bodyguardDamage : MonoBehaviour
         Instantiate(Spear, Spear_parents2.transform.position, Quaternion.identity);
         Instantiate(Spear, Spear_parents3.transform.position, Quaternion.identity);
         Instantiate(Spear, Spear_parents4.transform.position, Quaternion.identity);
+        Instantiate(Spear, Spear_parents5.transform.position, Quaternion.identity);
     }
     private void OnDrawGizmosSelected()
     {
@@ -77,6 +89,14 @@ public class bodyguardDamage : MonoBehaviour
         pos += transform.right * attackOffset.x;
         pos += transform.up * attackOffset.y;
         Gizmos.DrawWireSphere(pos, attackRange);
+    }
+    public void BoxCollDashOn()
+    {
+        damaColli.SetActive(true);
+    }
+    public void BoxCollDashOff()
+    {
+        damaColli.SetActive(false);
     }
     void FlipTowardsPlayer()
     {

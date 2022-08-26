@@ -11,6 +11,7 @@ public class Spear : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         rb.gravityScale = 0f;
+        FindObjectOfType<AudioManager>().Play("EnemyBullet");
     }
     void Update()
     {

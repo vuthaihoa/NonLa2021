@@ -293,7 +293,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 0.3
+  m_GravityScale: 0.4
   m_Material: {fileID: 6200000, guid: 0ac2bad77da8c7c47aceeef4d5be1542, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Maxspeed: 1
-  JumpHight: 1.2
+  JumpHight: 1.5
   endTime: 0
   dashingPower: 5
   dashingTime: 0.3
