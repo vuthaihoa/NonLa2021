@@ -9,7 +9,7 @@ public class PlayerController : MonoBehaviour
     Rigidbody2D Rg;
     Animator ani;
     [Header("Horizotal")]
-    public float Maxspeed;
+    public float Maxspeed = 1.2f;
     public float JumpHight;
     float move;
 
@@ -83,6 +83,7 @@ public class PlayerController : MonoBehaviour
 
     [Header("Attributes SO")]
     [SerializeField] private AttributesScriptableObject playerAttributesSO;
+
     void Start()
     {
         Rg = GetComponent<Rigidbody2D>();
@@ -481,11 +482,16 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.X))
                 NPCUpgrade.ActivateUpgrade();
         }
+        if (collision.gameObject.tag == "Cutscenes")
+        {
+            End = false; 
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         npc = null;
         NPCUpgrade = null;
+        End = true;
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -508,5 +514,13 @@ public class PlayerController : MonoBehaviour
         {
             playerAttributesSO.money += 1;
         }
+    }
+    public void StartCutScene()
+    {
+        End = false;
+    }
+    public void StopCutScene()
+    {
+        End = true;
     }
 }

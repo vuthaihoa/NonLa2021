@@ -13,6 +13,7 @@ TagManager:
   - Soul
   - Money
   - Enemy
+  - Cutscenes
   layers:
   - Default
   - TransparentFX

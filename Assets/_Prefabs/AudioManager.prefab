@@ -163,3 +163,17 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
+  - name: Dash_Enemy
+    clip: {fileID: 8300000, guid: 8bdc9fee84393734ca245b3e0e6dd16e, type: 3}
+    Volume: 1
+    Pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
+  - name: DanhBoss
+    clip: {fileID: 8300000, guid: b8db041a96ccf794ab229c4f1a040f9d, type: 3}
+    Volume: 1
+    Pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: 5dc5318edcb2c2442882528414df648d, type: 2}
