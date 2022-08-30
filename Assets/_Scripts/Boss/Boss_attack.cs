@@ -22,6 +22,8 @@ public class Boss_attack : MonoBehaviour
         if (Enemy_Health.health <= 30)
         {
             FindObjectOfType<AudioManager>().Play("ThuongLuongAngry");
+            FindObjectOfType<AudioManager>().Play("Theme");
+            FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
         }
     }
     public void Attack()

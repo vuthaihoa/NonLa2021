@@ -15,11 +15,20 @@ public class MocTinh : MonoBehaviour
     public LayerMask attackMask;
     Transform player;
     Rigidbody2D rb;
+    public Enemy_Health Enemy_Health;
     private void Start()
     {
         FindObjectOfType<AudioManager>().Play("MT_debut");
         player = GameObject.FindGameObjectWithTag("Player").transform;
         rb = GetComponent<Rigidbody2D>();
+    }
+    private void Update()
+    {
+        if(Enemy_Health.health <= 40)
+        {
+            FindObjectOfType<AudioManager>().Play("Theme");
+            FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        }
     }
     public void Bullet()
     {

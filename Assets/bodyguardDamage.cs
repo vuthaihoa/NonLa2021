@@ -27,9 +27,13 @@ public class bodyguardDamage : MonoBehaviour
     public GameObject Spear_parents3;
     public GameObject Spear_parents4;
     public GameObject Spear_parents5;
+    public GameObject Spear_parents6;
+    public GameObject Spear_parents7;
+    public GameObject Spear_parents8;
     public Transform Spear;
     [Header("health")]
     public Enemy_Health enemy_Health;
+    public GameObject Cutscenedown;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -42,6 +46,7 @@ public class bodyguardDamage : MonoBehaviour
         if(enemy_Health.health <= 30)
         {
             ani.SetBool("dead", true);
+            Cutscenedown.SetActive(true);
         }
     }
     public IEnumerator Dash()
@@ -82,6 +87,9 @@ public class bodyguardDamage : MonoBehaviour
         Instantiate(Spear, Spear_parents3.transform.position, Quaternion.identity);
         Instantiate(Spear, Spear_parents4.transform.position, Quaternion.identity);
         Instantiate(Spear, Spear_parents5.transform.position, Quaternion.identity);
+        Instantiate(Spear, Spear_parents6.transform.position, Quaternion.identity);
+        Instantiate(Spear, Spear_parents7.transform.position, Quaternion.identity);
+        Instantiate(Spear, Spear_parents8.transform.position, Quaternion.identity);
     }
     private void OnDrawGizmosSelected()
     {

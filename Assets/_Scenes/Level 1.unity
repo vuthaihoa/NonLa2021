@@ -9765,6 +9765,10 @@ PrefabInstance:
         n\u1EC1."
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
+    - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textFont
       value: 
       objectReference: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
@@ -9871,6 +9875,10 @@ PrefabInstance:
         \u0111\xE2y \u0111\xE3 ph\xE1t tri\u1EC3n \u0111\u1EC3 c\xF3 th\u1EC3 th\xEDch
         nghi v\u1EDBi n\u01A1i n\xE0y.  "
       objectReference: {fileID: 0}
+    - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: sound
+      value: 
+      objectReference: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textFont
       value: 
