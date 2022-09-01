@@ -354,7 +354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Maxspeed: 1
-  JumpHight: 1.5
+  JumpHight: 1.4
   endTime: 0
   dashingPower: 5
   dashingTime: 0.3

@@ -7053,6 +7053,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0.5, y: 0.5}
+  infinitHorizontal: 0
+  infinitVertical: 0
 --- !u!114 &421016667
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13374,6 +13376,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0.2, y: 0.2}
+  infinitHorizontal: 0
+  infinitVertical: 0
 --- !u!114 &874368198
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18848,6 +18852,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parallaxEffectMultiplier: {x: 0.2, y: 0.2}
+  infinitHorizontal: 0
+  infinitVertical: 0
 --- !u!212 &1254495656
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -31037,10 +31043,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1224113990547246341, guid: fcbe3e796fb650d4c88b7def49c4d972, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -3.74
-      objectReference: {fileID: 0}
     - target: {fileID: 1224113991057926986, guid: fcbe3e796fb650d4c88b7def49c4d972, type: 3}
       propertyPath: m_Name
       value: forestGod

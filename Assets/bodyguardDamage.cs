@@ -43,7 +43,7 @@ public class bodyguardDamage : MonoBehaviour
     void Update()
     {
         FlipTowardsPlayer();
-        if(enemy_Health.health <= 30)
+        if(enemy_Health.health <= 150)
         {
             ani.SetBool("dead", true);
             Cutscenedown.SetActive(true);
