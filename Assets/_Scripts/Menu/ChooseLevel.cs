@@ -34,4 +34,8 @@ public class ChooseLevel : MonoBehaviour
     {
         SceneManager.LoadSceneAsync("Level 7");
     }
+    public void lv8()
+    {
+        SceneManager.LoadSceneAsync("Level 8");
+    }
 }

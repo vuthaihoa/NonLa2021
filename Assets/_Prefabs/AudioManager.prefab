@@ -87,7 +87,7 @@ MonoBehaviour:
     source: {fileID: 0}
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
   - name: Theme
-    clip: {fileID: 8300000, guid: a92248825573a534aaa036383577e635, type: 3}
+    clip: {fileID: 8300000, guid: be8a9737300f92f428a376179d238330, type: 3}
     Volume: 0.19
     Pitch: 1
     loop: 1
@@ -172,6 +172,20 @@ MonoBehaviour:
     group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
   - name: DanhBoss
     clip: {fileID: 8300000, guid: b8db041a96ccf794ab229c4f1a040f9d, type: 3}
+    Volume: 1
+    Pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: 5dc5318edcb2c2442882528414df648d, type: 2}
+  - name: Bodyguard
+    clip: {fileID: 8300000, guid: 1eeebbc7d3f40fa4a831079f9b4afaf9, type: 3}
+    Volume: 1
+    Pitch: 1
+    loop: 1
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: 5dc5318edcb2c2442882528414df648d, type: 2}
+  - name: MusicMocTinh
+    clip: {fileID: 8300000, guid: d2bcacf243d40d644a53244418dd748b, type: 3}
     Volume: 1
     Pitch: 1
     loop: 1

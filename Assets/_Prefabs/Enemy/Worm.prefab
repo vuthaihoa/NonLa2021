@@ -46,6 +46,7 @@ GameObject:
   - component: {fileID: 916038016056757563}
   - component: {fileID: 3803877024690858501}
   - component: {fileID: 1998546302093302823}
+  - component: {fileID: 3153809877897239222}
   m_Layer: 7
   m_Name: Worm
   m_TagString: Enemy
@@ -169,7 +170,7 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0.022663563, y: 0.016490042}
@@ -244,3 +245,19 @@ MonoBehaviour:
     DropRate: 100
     minQuantity: 4
     maxQuantity: 8
+--- !u!58 &3153809877897239222
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 916038016056757542}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: -0.059083406}
+  serializedVersion: 2
+  m_Radius: 0.061239917

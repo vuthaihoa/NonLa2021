@@ -254,8 +254,8 @@ MonoBehaviour:
     maxQuantity: 15
   - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
     DropRate: 42.4
-    minQuantity: 60
-    maxQuantity: 100
+    minQuantity: 20
+    maxQuantity: 35
 --- !u!61 &5237620717912724846
 BoxCollider2D:
   m_ObjectHideFlags: 0

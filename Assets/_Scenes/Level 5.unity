@@ -21890,7 +21890,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicBossOn
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 8792676522300184665, guid: c553c87429a0d18439e4985b8be38cac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c553c87429a0d18439e4985b8be38cac, type: 3}
 --- !u!1 &1709661585
 GameObject:
@@ -23688,6 +23689,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1832442138}
   m_CullTransparentMesh: 1
+--- !u!1 &1833616869 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 8792676522300184664, guid: c553c87429a0d18439e4985b8be38cac, type: 3}
+  m_PrefabInstance: {fileID: 1696506035}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1833616870
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1833616869}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09b57d3d7e811d6488fa95db0caf8fcf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1836262636
 GameObject:
   m_ObjectHideFlags: 0
@@ -27775,7 +27793,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1554292798, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
       propertyPath: health
-      value: 600
+      value: 800
       objectReference: {fileID: 0}
     - target: {fileID: 6723028349579404050, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
       propertyPath: player
