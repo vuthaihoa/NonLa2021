@@ -27,7 +27,7 @@ public class MocTinh : MonoBehaviour
         if(Enemy_Health.health <= 40)
         {
             FindObjectOfType<AudioManager>().Play("Theme");
-            FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+            FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
         }
     }
     public void Bullet()

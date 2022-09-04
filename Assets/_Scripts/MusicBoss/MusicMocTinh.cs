@@ -10,6 +10,7 @@ public class MusicMocTinh : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("MusicMocTinh");
             FindObjectOfType<AudioManager>().StopPlaying("Theme");
+            FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
         }
     }
 }

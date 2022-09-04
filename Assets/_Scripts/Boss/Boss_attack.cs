@@ -23,11 +23,6 @@ public class Boss_attack : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("ThuongLuongAngry");
         }
-        if (Enemy_Health.health <= 50)
-        {
-            FindObjectOfType<AudioManager>().Play("Theme");
-            FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
-        }
     }
     public void Attack()
     {

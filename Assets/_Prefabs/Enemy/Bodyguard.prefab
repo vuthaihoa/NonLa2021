@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 4571187517545526065}
   - component: {fileID: 4571187517545526067}
   - component: {fileID: 4571187517545526066}
+  - component: {fileID: 1397206345}
   m_Layer: 7
   m_Name: Bodyguard
   m_TagString: Untagged
@@ -79,7 +80,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 9
-  m_Sprite: {fileID: -1449950337128801061, guid: 1b9cd3dd530dd5c409883e9afd41332f, type: 3}
+  m_Sprite: {fileID: -4766650784071746963, guid: 1b9cd3dd530dd5c409883e9afd41332f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -119,10 +120,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.028665215, y: -0.083912894}
+  m_Offset: {x: 0.028665215, y: -0.040145636}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.1785986}
@@ -133,7 +134,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.13410184, y: 0.2560757}
+  m_Size: {x: 0.13410184, y: 0.3522148}
   m_EdgeRadius: 0
 --- !u!50 &4571187517545526068
 Rigidbody2D:
@@ -150,7 +151,7 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 3
+  m_GravityScale: 0.6
   m_Material: {fileID: 0}
   m_Interpolate: 0
   m_SleepingMode: 1
@@ -185,8 +186,8 @@ MonoBehaviour:
   dashingPower: 5
   dashingTime: 0.2
   damaColli: {fileID: 4571187517559277357}
-  Attack1: 30
-  attackOffset: {x: -0.04, y: -0.03, z: 0}
+  Attack1: 50
+  attackOffset: {x: -0.04, y: 0.03, z: 0}
   attackRange: 0.16
   attackMask:
     serializedVersion: 2
@@ -196,8 +197,13 @@ MonoBehaviour:
   Spear_parents2: {fileID: 0}
   Spear_parents3: {fileID: 0}
   Spear_parents4: {fileID: 0}
+  Spear_parents5: {fileID: 0}
+  Spear_parents6: {fileID: 0}
+  Spear_parents7: {fileID: 0}
+  Spear_parents8: {fileID: 0}
   Spear: {fileID: 40444635944750803, guid: 4256bdd5c2c84714caf206c4f615b549, type: 3}
   enemy_Health: {fileID: 4571187517545526067}
+  Cutscenedown: {fileID: 0}
 --- !u!114 &4571187517545526067
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -210,7 +216,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 100
+  health: 2300
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
@@ -230,6 +236,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loots: []
+--- !u!58 &1397206345
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4571187517545526074}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.03647441, y: -0.17538284}
+  serializedVersion: 2
+  m_Radius: 0.043188896
 --- !u!1 &4571187517559277357
 GameObject:
   m_ObjectHideFlags: 0
