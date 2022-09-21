@@ -1724,25 +1724,9 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 507509951, guid: 07cd0e135ae347146aed23fb829a1b05, type: 3}
-      propertyPath: m_Name
-      value: intHealth
-      objectReference: {fileID: 0}
-    - target: {fileID: 7996806328472803924, guid: 07cd0e135ae347146aed23fb829a1b05, type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7996806328472803924, guid: 07cd0e135ae347146aed23fb829a1b05, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 7996806328696211529, guid: 07cd0e135ae347146aed23fb829a1b05, type: 3}
       propertyPath: m_Name
       value: Health_UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 7996806328696211529, guid: 07cd0e135ae347146aed23fb829a1b05, type: 3}
-      propertyPath: m_IsActive
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7996806328696211533, guid: 07cd0e135ae347146aed23fb829a1b05, type: 3}
       propertyPath: m_Pivot.x

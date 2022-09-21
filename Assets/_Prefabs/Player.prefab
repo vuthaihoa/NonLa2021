@@ -365,7 +365,7 @@ MonoBehaviour:
     m_Bits: 64
   extraJumpValue: 1
   WallJumpTime: 0.2
-  WallSliedSpeed: 0.04
+  WallSliedSpeed: 0.4
   WallDistance: 0.06
   JumpWallHight: 1.5
   HealthBar: {fileID: 0}
