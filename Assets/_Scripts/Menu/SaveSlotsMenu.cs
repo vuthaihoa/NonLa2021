@@ -26,7 +26,7 @@ public class SaveSlotsMenu : Menu
         if (!isLoadingGame)
         {
             DataPersistenceManager.instance.NewGame();
-            SceneManager.LoadSceneAsync("Level 1");
+            SceneManager.LoadSceneAsync("NewGame");
         }
         DataPersistenceManager.instance.SaveGame();
         //SceneManager.LoadSceneAsync("Level 1");
