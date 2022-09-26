@@ -14,9 +14,11 @@ public class PlayerController : MonoBehaviour
     float move;
 
     public float endTime;
-    [Header("dash")]
+
+    [Header("Dash")]
     private bool CanDash = true;
     private bool isDashing;
+    public bool UnlockDash =false;
     public float dashingPower;
     public float dashingTime = 0.2f;
 
@@ -39,6 +41,7 @@ public class PlayerController : MonoBehaviour
     RaycastHit2D WallCheckHit;
     float JumpTime;
     private bool TouchingWall;
+    public LayerMask whatIsGround_Wall;
     //public Transform WallCheck;
 
     private PlayerStats stats;
@@ -152,6 +155,10 @@ public class PlayerController : MonoBehaviour
                 Potions();
                 attackUp();
                 attackDown();
+                if(UnlockDash == false)
+                {
+                    CoolDownDash.fillAmount = 1;
+                }
                 if(isDashing)
                 {
                     return;
@@ -228,12 +235,12 @@ public class PlayerController : MonoBehaviour
     {
         if (facingRight)
         {
-            WallCheckHit = Physics2D.Raycast(transform.position, new Vector2(WallDistance, 0), WallDistance, whatIsGround);
+            WallCheckHit = Physics2D.Raycast(transform.position, new Vector2(WallDistance, 0), WallDistance, whatIsGround_Wall);
             //Debug.DrawRay(transform.position, new Vector2(WallDistance, 0), Color.blue);
         }
         else
         {
-            WallCheckHit = Physics2D.Raycast(transform.position, new Vector2(-WallDistance, 0), WallDistance, whatIsGround);
+            WallCheckHit = Physics2D.Raycast(transform.position, new Vector2(-WallDistance, 0), WallDistance, whatIsGround_Wall);
         }
         //TouchingWall = Physics2D.OverlapCircle(WallCheck.position, checkRadius, whatIsGround);
 
@@ -275,19 +282,22 @@ public class PlayerController : MonoBehaviour
     {
         if (End)
         {
-            if (Input.GetKeyDown(KeyCode.E) && IsCoolDown2 == false && CanDash)
+            if (UnlockDash == true)
             {
-                IsCoolDown2 = true;
-                CoolDownDash.fillAmount = 1f;
-                StartCoroutine("StopSlide");
-            }
-            if (IsCoolDown2)
-            {
-                CoolDownDash.fillAmount -= 1f / coolDown2 * Time.deltaTime;
-                if (CoolDownDash.fillAmount <= 0)
+                if (Input.GetKeyDown(KeyCode.E) && IsCoolDown2 == false && CanDash)
                 {
-                    CoolDownDash.fillAmount = 0;
-                    IsCoolDown2 = false;
+                    IsCoolDown2 = true;
+                    CoolDownDash.fillAmount = 1f;
+                    StartCoroutine("StopSlide");
+                }
+                if (IsCoolDown2)
+                {
+                    CoolDownDash.fillAmount -= 1f / coolDown2 * Time.deltaTime;
+                    if (CoolDownDash.fillAmount <= 0)
+                    {
+                        CoolDownDash.fillAmount = 0;
+                        IsCoolDown2 = false;
+                    }
                 }
             }
         }
@@ -486,6 +496,11 @@ public class PlayerController : MonoBehaviour
         {
             End = false; 
         }
+        if (collision.gameObject.tag == "UnlockDash")
+        {
+            UnlockDash = true;
+            CoolDownDash.fillAmount = 0;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -513,6 +528,11 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "Money")
         {
             playerAttributesSO.money += 1;
+        }
+        if (collision.gameObject.tag == "UnlockDash")
+        {
+            UnlockDash = true;
+            CoolDownDash.fillAmount = 0;
         }
     }
     public void StartCutScene()

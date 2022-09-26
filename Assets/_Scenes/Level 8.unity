@@ -17527,9 +17527,17 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1212473337}
     - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
+      propertyPath: UnlockDash
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: CoolDownDash
       value: 
       objectReference: {fileID: 1487186039}
+    - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
+      propertyPath: WallJumpTime
+      value: 0.02
+      objectReference: {fileID: 0}
     - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: CoolDownHealth
       value: 
@@ -17585,6 +17593,10 @@ PrefabInstance:
     - target: {fileID: 5685062919191453016, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: m_Name
       value: Player
+      objectReference: {fileID: 0}
+    - target: {fileID: 6048907298555072209, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
+      propertyPath: UnlockBullet
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6048907298555072209, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: CoolDownBullet

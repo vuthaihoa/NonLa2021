@@ -149,7 +149,7 @@ MonoBehaviour:
   Speed: 0.5
   lineOfSite: 1.01
   ShootingRange: 0.45
-  nextFire: 2
+  nextFire: 1.3
   canFire: 4
   bulletEnemy: {fileID: 7598162648910706414, guid: 8fe585a535e95914d926416a5c7217ce, type: 3}
   bulletParent: {fileID: 6463286524196510385}
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 120
+  health: 150
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}

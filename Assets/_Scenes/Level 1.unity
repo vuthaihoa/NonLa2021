@@ -557,7 +557,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "kh\xF4ng \u0111\u01B0\u1EE3c!!! c\xE2u kh\xF4ng \u0111\u01B0\u1EE3c \u0111i."
+  input: "kh\xF4ng \u0111\u01B0\u1EE3c!!!           c\xE2u kh\xF4ng \u0111\u01B0\u1EE3c
+    \u0111i."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -735,9 +736,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "c\u1EADu h\xE3y \u0111i t\u1EDBi b\xECa r\u1EEBng cao su t\xF4i s\u1EBD
-    \u0111\u1EE3i c\u1EADu \u1EDF \u0111\xF3. T\xF4i s\u1EBD d\u1EABn c\u1EADu \u0111i
-    g\u1EB7p ch\u1EC9 huy c\xE1ch tay ph\u1EA3i c\u1EE7a t\u01B0\u1EDBng qu\xE2n."
+  input: "c\u1EADu h\xE3y \u0111i t\u1EDBi b\xECa r\u1EEBng cao su, t\xF4i c\xF3
+    vi\u1EC7c c\u1EA7n gi\u1EA3i quy\u1EBFt g\u1EA5p. H\u1EB9n g\u1EB7p c\u1EADu
+    \u1EDF b\xECa r\u1EEBng."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -8367,8 +8368,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "\u0110\u1EA5t n\u01B0\u1EDBc n\xE0y \u0111ang c\xF3 n\u1ED9i chi\u1EBFn
     v\xE0 Anh c\u1EE7a c\u1EADu ch\xEDnh l\xE0 Ng\u01B0\u1EDDi \u0111\u1EE9ng \u0111\u1EA7u
-    c\u1EE7a qu\xE2n c\xE1ch m\u1EA1ng. T\u01B0\u1EDBng qu\xE2n d\u1EB7n t\xF4i \u1EDF
-    \u0111\xE2y \u0111\u1EC3 \u0111\xF3n c\u1EADu."
+    c\u1EE7a qu\xE2n c\xE1ch m\u1EA1ng, \u0111\u01B0\u1EE3c g\u1ECDi l\xE0 t\u01B0\u1EDBng
+    qu\xE2n. T\u01B0\u1EDBng qu\xE2n d\u1EB7n t\xF4i \u1EDF \u0111\xE2y \u0111\u1EC3
+    \u0111\xF3n c\u1EADu."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -9353,8 +9355,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "T\xF4i kh\xF4ng xin ph\xE9p c\xF4. N\u1EBFu kh\xF4ng ch\u1EC9 t\xF4i c\xF3
-    th\u1EC3 t\u1EF1 t\xECm."
+  input: "T\xF4i kh\xF4ng xin ph\xE9p c\xF4. T\xF4i c\xF3 th\u1EC3 t\u1EF1 t\xECm."
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.1

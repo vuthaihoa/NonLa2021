@@ -15,6 +15,7 @@ public class fire : MonoBehaviour
     private bool IsCoolDown3 = false;
     [Header("Attributes SO")]
     [SerializeField] private AttributesScriptableObject playerAttributesSO;
+    public bool UnlockBullet = false;
     void Start()
     {
         ani = GetComponent<Animator>();
@@ -31,6 +32,10 @@ public class fire : MonoBehaviour
         {
             die = false;
         }
+        if(UnlockBullet == false)
+        {
+            CoolDownBullet.fillAmount = 1f;
+        }
     }
     public void Shoot()
     {
@@ -43,21 +48,40 @@ public class fire : MonoBehaviour
     }
     void Fire()
     {
-        if (Input.GetKeyDown(KeyCode.Mouse1) && IsCoolDown3 == false)
+        if(UnlockBullet == true)
         {
-            IsCoolDown3 = true;
-            CoolDownBullet.fillAmount = 1f;
-            ani.SetBool("Bullet",true);
-
-        }
-        if (IsCoolDown3)
-        {
-            CoolDownBullet.fillAmount -= 1 / coolDown3 * Time.deltaTime;
-            if (CoolDownBullet.fillAmount <= 0)
+            if (Input.GetKeyDown(KeyCode.Mouse1) && IsCoolDown3 == false)
             {
-                CoolDownBullet.fillAmount = 0;
-                IsCoolDown3 = false;
+                IsCoolDown3 = true;
+                CoolDownBullet.fillAmount = 1f;
+                ani.SetBool("Bullet", true);
+
             }
+            if (IsCoolDown3)
+            {
+                CoolDownBullet.fillAmount -= 1 / coolDown3 * Time.deltaTime;
+                if (CoolDownBullet.fillAmount <= 0)
+                {
+                    CoolDownBullet.fillAmount = 0;
+                    IsCoolDown3 = false;
+                }
+            }
+        }
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "UnlockBullet")
+        {
+            UnlockBullet = true;
+            CoolDownBullet.fillAmount = 0;
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "UnlockBullet")
+        {
+            UnlockBullet = true;
+            CoolDownBullet.fillAmount = 0;
         }
     }
 }

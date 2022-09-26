@@ -2441,14 +2441,22 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: loots.Array.size
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: loots.Array.data[1].item
       value: 
       objectReference: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
     - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: loots.Array.data[2].item
+      value: 
+      objectReference: {fileID: 7180151723350403996, guid: d6811a45e00ec544d8d2642f0f3b07f4, type: 3}
+    - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: loots.Array.data[1].DropRate
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: loots.Array.data[2].DropRate
       value: 100
       objectReference: {fileID: 0}
     - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
@@ -2458,6 +2466,14 @@ PrefabInstance:
     - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: loots.Array.data[1].minQuantity
       value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: loots.Array.data[2].maxQuantity
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4789289937554691918, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: loots.Array.data[2].minQuantity
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243232, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: m_RootOrder

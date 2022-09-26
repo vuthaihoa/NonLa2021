@@ -14,6 +14,8 @@ TagManager:
   - Money
   - Enemy
   - Cutscenes
+  - UnlockBullet
+  - UnlockDash
   layers:
   - Default
   - TransparentFX
@@ -25,7 +27,7 @@ TagManager:
   - Enemy
   - Player
   - Boss
-  - 
+  - Wall
   - 
   - 
   - 

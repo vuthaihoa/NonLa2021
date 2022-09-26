@@ -1847,10 +1847,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "Anh s\u1EBD gi\u1EA3i th\xEDch khi g\u1EB7p l\u1EA1i. Nh\u1EDB l\xE0 khi
-    t\u1EDBi v\xF9ng \u0111\u1EA5t ch\xE1y h\xE3y t\xECm m\u1ED9t ng\u01B0\u1EDDi
-    t\xEAn th\u1EE7y, c\xF4 \u1EA5y c\xF3 c\u1EA7m m\u1ED9t c\xE1i l\u01B0\u1EE1i
-    h\xE1i. "
+  input: "Kh\xF4ng! Anh s\u1EBD gi\u1EA3i th\xEDch khi g\u1EB7p l\u1EA1i. Nh\u1EDB
+    l\xE0 khi t\u1EDBi v\xF9ng \u0111\u1EA5t ch\xE1y h\xE3y t\xECm m\u1ED9t ng\u01B0\u1EDDi
+    t\xEAn th\u1EE7y, c\xF4 ta c\xF3 c\u1EA7m m\u1ED9t c\xE1i l\u01B0\u1EE1i h\xE1i."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
