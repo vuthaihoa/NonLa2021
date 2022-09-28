@@ -838,10 +838,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "kh\u1ED1n khi\u1EBFp!!! ch\xFAng ta \u0111\xE3 m\u1EA5t t\u1ED5ng c\u1ED9ng
+  input: "Kh\u1ED1n khi\u1EBFp!!! Ch\xFAng ta \u0111\xE3 m\u1EA5t t\u1ED5ng c\u1ED9ng
     20 ng\u01B0\u1EDDi, \u0111\u01B0\u1EDDng l\xEAn tr\xEAn \u0111\xF3 qu\xE1 kh\u1EAFc
     nghi\u1EC7t."
-  textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
+  textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2
@@ -3391,11 +3391,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "N\xF3n L\xE1 t\xF4i c\u1EA7n c\u1EADu t\u1EDBi \u0111\u1EA3o tr\xEAn tr\u1EDDi
+  input: "N\xF3n L\xE1! t\xF4i c\u1EA7n c\u1EADu t\u1EDBi Thi\xEAn Kh\xF4ng \u0110\u1EA3o
     \u0111\u1EC3 thuy\u1EBFt ph\u1EE5c Ph\xF9 th\u1EE7y m\u1EDF c\xE2y c\u1EA7u v\u01B0\u1EE3t
     d\xE3y Tr\u01B0\u1EDDng S\u01A1n. Th\u1EE7y h\xE3y h\u1ED9 t\u1ED1ng N\xF3n L\xE1
-    t\u1EDBi b\xECa r\u1EEBng."
-  textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
+    t\u1EDBi b\xECa r\u1EEBng ph\xEDa b\u1EAFc."
+  textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2
@@ -8976,9 +8976,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: "C\u1EADu h\xE3y y\xEAn t\xE2m ch\xFAng t\xF4i \u0111\xE3 c\u1EED ng\u01B0\u1EDDi
-    l\xEAn \u0111\u1EA3o bay ,\u0111\u1EC3 nh\u1EDD c\xE1c ph\xF9 th\u1EE7y m\u1EDF
-    c\xE2y c\u1EA7u \u0111i qua d\xE3y Tr\u01B0\u1EDDng S\u01A1n."
-  textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
+    l\xEAn Thi\xEAn Kh\xF4ng \u0110\u1EA3o ,\u0111\u1EC3 nh\u1EDD c\xE1c ph\xF9 th\u1EE7y
+    m\u1EDF c\xE2y c\u1EA7u \u0111i qua d\xE3y Tr\u01B0\u1EDDng S\u01A1n."
+  textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2
@@ -10716,8 +10716,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "th\u01B0a ch\u1EC9 huy 3 ng\u01B0\u1EDDi \u0111i l\xEAn \u0111\u1EA3o bay
-    \u0111\xE3 m\u1EA5t t\xEDch."
+  input: "Th\u01B0a Ph\xF3 t\u01B0\u1EDBng 3 ng\u01B0\u1EDDi \u0111i l\xEAn \u0111\u1EA3o
+    bay \u0111\xE3 m\u1EA5t t\xEDch."
   textColor: {r: 1, g: 0.9400701, b: 0.050943315, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.04
@@ -14105,11 +14105,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textColor.g
-      value: 0
+      value: 0.90049446
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textColor.r
-      value: 0.061843872
+      value: 0.86226416
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: characterSprite
@@ -14222,8 +14222,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "Ch\u1EC9 huy!!! \u0110\xE2y ch\xEDnh l\xE0 em trai c\u1EE7a t\u01B0\u1EDBng
-        qu\xE2n, c\u1EADu \u1EA5y c\u0169ng \u0111\xE3 h\u1EA1 con Thu\u1ED3ng Lu\u1ED3ng."
+      value: "Ph\xF3 t\u01B0\u1EDBng!!! \u0110\xE2y ch\xEDnh l\xE0 em trai c\u1EE7a
+        t\u01B0\u1EDBng qu\xE2n, c\u1EADu \u1EA5y c\u0169ng \u0111\xE3 h\u1EA1 con
+        Thu\u1ED3ng Lu\u1ED3ng."
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textColor.b
@@ -14656,7 +14657,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "M\u1ECDi ng\u01B0\u1EDDi nghe \u0111\xE2y, \u0111\xE3 kh\xF4ng c\xF3 th\xF4ng
     tin g\xEC c\u1EE7a t\u01B0\u1EDBng qu\xE2n trong 3 tu\u1EA7n r\u1ED3i."
-  textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
+  textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2
@@ -16518,7 +16519,7 @@ MonoBehaviour:
   input: "T\xEAn vua \u0111i\xEAn b\u1EAFt nh\u1EEFng ng\u01B0\u1EDDi th\xE2n c\u1EE7a
     ch\xFAng ta lao \u0111\u1ED9ng \u0111\u1EBFn ch\u1EBFt trong h\u1EA7m ng\u1EE5c.
     \u0111\xE3 t\xE0n s\xE1t nh\u1EEFng ng\u01B0\u1EDDi ch\u1ED1ng \u0111\u1ED1i."
-  textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
+  textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2
@@ -17366,10 +17367,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: "T\u01B0\u1EDBng qu\xE2n \u0111\xE3 xu\u1EA5t hi\u1EC7n v\xE0 gi\xFAp \u0111\u1EE1
-    ch\xFAng ta. gi\u1EDD ng\xE0i \u1EA5y \u0111ang g\u1EB7p nguy hi\u1EC3m, t\xF4i
+    ch\xFAng ta. Gi\u1EDD ng\xE0i \u1EA5y \u0111ang g\u1EB7p nguy hi\u1EC3m, t\xF4i
     kh\xF4ng b\u1EAFt ai ph\u1EA3i theo,  nh\u1EEFng ai mu\u1ED1n \u0111i c\u1EE9u
-    t\u01B0\u1EDBng qu\xE2n th\xEC h\xE3y theo T\xF4i."
-  textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
+    t\u01B0\u1EDBng qu\xE2n th\xEC h\xE3y theo t\xF4i."
+  textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2
@@ -25803,7 +25804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "\xC0! H\xE3y c\u1EA9n th\u1EADn v\xEC \u0111\xE3 c\xF3 ng\u01B0\u1EDDi
     nh\xECn th\u1EA5y M\u1ED9c Tinh xu\u1EA5t hi\u1EC7n."
-  textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
+  textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2
@@ -30834,7 +30835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "Ch\xFAng ta s\u1EBD v\u01B0\u1EE3t d\xE3y tr\u01B0\u1EDDng s\u01A1n, quy\u1EBFt
     t\u1EED v\xEC t\u01B0\u1EDBng qu\xE2n."
-  textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
+  textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
   delayBetweenLines: 2

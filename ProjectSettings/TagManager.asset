@@ -16,6 +16,7 @@ TagManager:
   - Cutscenes
   - UnlockBullet
   - UnlockDash
+  - UnlockShield
   layers:
   - Default
   - TransparentFX

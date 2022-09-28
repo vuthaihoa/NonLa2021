@@ -736,9 +736,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "c\u1EADu h\xE3y \u0111i t\u1EDBi b\xECa r\u1EEBng cao su, t\xF4i c\xF3
-    vi\u1EC7c c\u1EA7n gi\u1EA3i quy\u1EBFt g\u1EA5p. H\u1EB9n g\u1EB7p c\u1EADu
-    \u1EDF b\xECa r\u1EEBng."
+  input: "C\u1EADu h\xE3y \u0111i qua h\u1ED3 n\u01B0\u1EDBc tr\u01B0\u1EDBc m\u1EB7t,
+    t\xF4i c\xF3 vi\u1EC7c c\u1EA7n gi\u1EA3i quy\u1EBFt g\u1EA5p. H\u1EB9n g\u1EB7p
+    c\u1EADu \u1EDF b\xECa r\u1EEBng cao su."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -1604,7 +1604,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "\u0110\u01B0\u1EE3c v\u1EADy h\u1EB9n c\xF4 \u1EDF \u0111\xF3."
+  input: "\u0110\u01B0\u1EE3c v\u1EADy h\u1EB9n c\xF4 \u1EDF b\xECa r\u1EEBng."
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.1
@@ -6880,7 +6880,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "T\u01B0\u1EDBng qu\xE2n n\xF3i: \"Anh s\u1EBD chi\u1EBFn th\u1EAFng ch\u1EDF
+  input: "T\u01B0\u1EDBng qu\xE2n n\xF3i:\"Anh s\u1EBD chi\u1EBFn th\u1EAFng tr\u1EDF
     v\u1EC1 m\xE0y ph\u1EA3i tin anh\". T\u01B0\u1EDBng qu\xE2n \u0111\xE3 bi\u1EBFt
     tr\u01B0\u1EDBc c\u1EADu nh\u01B0 v\u1EADy."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
@@ -7802,7 +7802,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "n\xF3i cho t\xF4i bi\u1EBFt \u0111\u01B0\u1EDDng t\u1EDBi ch\u1ED7 anh
+  input: "N\xF3i cho t\xF4i bi\u1EBFt \u0111\u01B0\u1EDDng t\u1EDBi ch\u1ED7 anh
     t\xF4i, c\xF3 l\u1EBD anh \u1EA5y \u0111ang g\u1EB7p nguy hi\u1EC3m."
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
@@ -8367,7 +8367,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: "\u0110\u1EA5t n\u01B0\u1EDBc n\xE0y \u0111ang c\xF3 n\u1ED9i chi\u1EBFn
-    v\xE0 Anh c\u1EE7a c\u1EADu ch\xEDnh l\xE0 Ng\u01B0\u1EDDi \u0111\u1EE9ng \u0111\u1EA7u
+    v\xE0 anh c\u1EE7a c\u1EADu ch\xEDnh l\xE0 ng\u01B0\u1EDDi \u0111\u1EE9ng \u0111\u1EA7u
     c\u1EE7a qu\xE2n c\xE1ch m\u1EA1ng, \u0111\u01B0\u1EE3c g\u1ECDi l\xE0 t\u01B0\u1EDBng
     qu\xE2n. T\u01B0\u1EDBng qu\xE2n d\u1EB7n t\xF4i \u1EDF \u0111\xE2y \u0111\u1EC3
     \u0111\xF3n c\u1EADu."
@@ -11492,9 +11492,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "C\u1EA9n th\u1EADn khi \u0111i qua H\u1ED3 n\u01B0\u1EDBc \u0111\u0103ng
-    kia. \u1EDE \u0111\xF3 c\xF3 m\u1ED9t con Thu\u1ED3ng Lu\u1ED3ng \u0111ang \u1EDF
-    \u0111\u1EA5y."
+  input: "H\xE3y c\u1EA9n th\u1EADn \u1EDF h\u1ED3 n\u01B0\u1EDBc c\xF3 thu\u1ED3ng
+    lu\u1ED3ng \u0111\u1EA5y."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -11684,8 +11683,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "\u0110\xE3 3 tu\u1EA7n r\u1ED3i ch\xFAng t\xF4i v\u1EABn ch\u01B0a bi\u1EBFt
-    \u0111\u01B0\u1EE3c nh\u1EADn \u0111\u01B0\u1EE3c th\xF4ng tin g\xEC."
+  input: "\u0110\xE3 3 tu\u1EA7n r\u1ED3i ch\xFAng t\xF4i v\u1EABn ch\u01B0a nh\u1EADn
+    \u0111\u01B0\u1EE3c th\xF4ng tin g\xEC."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03

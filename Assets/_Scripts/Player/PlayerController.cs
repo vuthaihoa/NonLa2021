@@ -19,6 +19,7 @@ public class PlayerController : MonoBehaviour
     private bool CanDash = true;
     private bool isDashing;
     public bool UnlockDash =false;
+    public bool UnlockShield = false;
     public float dashingPower;
     public float dashingTime = 0.2f;
 
@@ -159,7 +160,11 @@ public class PlayerController : MonoBehaviour
                 {
                     CoolDownDash.fillAmount = 1;
                 }
-                if(isDashing)
+                if (UnlockShield == false)
+                {
+                    CoolDownShield.fillAmount = 1;
+                }
+                if (isDashing)
                 {
                     return;
                 }
@@ -331,21 +336,24 @@ public class PlayerController : MonoBehaviour
     {
         if(End)
         {
-            if (Input.GetKeyDown(KeyCode.Q) && IsCoolDown == false)
+            if (UnlockShield == true)
             {
-                IsCoolDown = true;
-                CoolDownShield.fillAmount = 1f;
-                ani.SetTrigger("Shield");
-                FindObjectOfType<AudioManager>().Play("Shield");
-
-            }
-            if (IsCoolDown)
-            {
-                CoolDownShield.fillAmount -= 1f / coolDown1 * Time.deltaTime;
-                if (CoolDownShield.fillAmount <= 0)
+                if (Input.GetKeyDown(KeyCode.Q) && IsCoolDown == false)
                 {
-                    CoolDownShield.fillAmount = 0;
-                    IsCoolDown = false;
+                    IsCoolDown = true;
+                    CoolDownShield.fillAmount = 1f;
+                    ani.SetTrigger("Shield");
+                    FindObjectOfType<AudioManager>().Play("Shield");
+
+                }
+                if (IsCoolDown)
+                {
+                    CoolDownShield.fillAmount -= 1f / coolDown1 * Time.deltaTime;
+                    if (CoolDownShield.fillAmount <= 0)
+                    {
+                        CoolDownShield.fillAmount = 0;
+                        IsCoolDown = false;
+                    }
                 }
             }
         }
@@ -501,6 +509,11 @@ public class PlayerController : MonoBehaviour
             UnlockDash = true;
             CoolDownDash.fillAmount = 0;
         }
+        if (collision.gameObject.tag == "UnlockShield")
+        {
+            UnlockShield = true;
+            CoolDownShield.fillAmount = 0;
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -533,6 +546,11 @@ public class PlayerController : MonoBehaviour
         {
             UnlockDash = true;
             CoolDownDash.fillAmount = 0;
+        }
+        if(collision.gameObject.tag == "UnlockShield")
+        {
+            UnlockShield = true;
+            CoolDownShield.fillAmount = 0;
         }
     }
     public void StartCutScene()

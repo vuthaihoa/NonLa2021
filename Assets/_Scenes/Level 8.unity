@@ -17853,7 +17853,7 @@ PrefabInstance:
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
       value: "Ch\u1EE7 nh\xE2n \u0111\xE3 ra l\u1EC7nh cho ta kh\xF4ng \u0111\u1EC3
-        cho ai ti\u1EBFn v\xF4 h\xF2n \u0111\u1EA3o bay."
+        cho ai ti\u1EBFn v\xF4  Thi\xEAn Kh\xF4ng \u0110\u1EA3o."
       objectReference: {fileID: 0}
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textFont

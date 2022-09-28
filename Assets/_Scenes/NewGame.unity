@@ -308,7 +308,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "V\u1EADy anh \u0111i h\xE3y th\u1EADn tr\u1ECDng."
+  input: "V\u1EADy anh \u0111i c\u1EA9n th\u1EADn."
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.1
@@ -763,8 +763,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "Anh \u0111i \u0111\xE2y nh\u1EDB khi t\u1EDBi \u0111\u1EA5t li\u1EC1n th\xEC
-    h\xE3y che m\u1EB7t l\u1EA1i."
+  input: "Anh \u0111i \u0111\xE2y, nh\u1EDB khi em tr\u1EDF v\u1EC1 t\u1EDBi \u0111\u1EA5t
+    li\u1EC1n th\xEC h\xE3y che m\u1EB7t l\u1EA1i."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -1848,8 +1848,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: "Kh\xF4ng! Anh s\u1EBD gi\u1EA3i th\xEDch khi g\u1EB7p l\u1EA1i. Nh\u1EDB
-    l\xE0 khi t\u1EDBi v\xF9ng \u0111\u1EA5t ch\xE1y h\xE3y t\xECm m\u1ED9t ng\u01B0\u1EDDi
-    t\xEAn th\u1EE7y, c\xF4 ta c\xF3 c\u1EA7m m\u1ED9t c\xE1i l\u01B0\u1EE1i h\xE1i."
+    l\xE0 khi t\u1EDBi H\u1ECFa Di\u1EC5m T\xEDch h\xE3y t\xECm m\u1ED9t ng\u01B0\u1EDDi
+    t\xEAn Th\u1EE7y c\xF3 c\u1EA7m m\u1ED9t c\xE1i l\u01B0\u1EE1i h\xE1i."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -1917,9 +1917,9 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "Nghe n\xE0y G\u1EA1o anh s\u1EBD \u0111i tr\u1EDF v\u1EC1 \u0110\u1EA5t
-        li\u1EC1n. N\u1EBFu sau 2 th\xE1ng kh\xF4ng Th\u1EA5y anh v\u1EC1 th\xEC
-        h\xE3y \u0111i t\u1EDBi v\xF9ng \u0111\u1EA5t ch\xE1y."
+      value: "Nghe n\xE0y G\u1EA1o anh s\u1EBD tr\u1EDF v\u1EC1 \u0110\u1EA5t li\u1EC1n.
+        N\u1EBFu sau 2 th\xE1ng kh\xF4ng th\u1EA5y anh v\u1EC1 th\xEC h\xE3y \u0111i
+        t\u1EDBi H\u1ECFa Di\u1EC5m T\xEDch."
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: characterSprite
