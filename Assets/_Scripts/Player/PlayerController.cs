@@ -25,6 +25,19 @@ public class PlayerController : MonoBehaviour
 
     private bool facingRight;
     private bool Ground;
+
+    [Header("Bash")]
+    [SerializeField] private float Radius;
+    [SerializeField] GameObject BashAbleObj;
+    private bool NearToBashAbleObj;
+    private bool IsChosingDir;
+    private bool IsBashing;
+    [SerializeField] private float BashPower;
+    [SerializeField] private float BashTime;
+    [SerializeField] private GameObject ArrowBash;
+    Vector3 BashDir;
+    private float BashTimeReset;
+
     [Header("Jump")]
     public Transform GroundCheck;
     public float checkRadius;
@@ -90,6 +103,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        BashTimeReset = BashTime;
         Rg = GetComponent<Rigidbody2D>();
         ani = GetComponent<Animator>();
 
@@ -128,6 +142,7 @@ public class PlayerController : MonoBehaviour
                 {
                     move = Input.GetAxis("Horizontal");
                     ani.SetFloat("Speed", Mathf.Abs(move));
+                    if(IsBashing == false)
                     Rg.velocity = new Vector2(move * Maxspeed, Rg.velocity.y);
 
                     if (move > 0 && !facingRight)
@@ -156,6 +171,7 @@ public class PlayerController : MonoBehaviour
                 Potions();
                 attackUp();
                 attackDown();
+                Bash();
                 if(UnlockDash == false)
                 {
                     CoolDownDash.fillAmount = 1;
@@ -437,6 +453,79 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+    void Bash()
+    {
+        if(End)
+        {
+            RaycastHit2D[] rays = Physics2D.CircleCastAll(transform.position, Radius, Vector3.forward);
+            foreach (RaycastHit2D ray in rays)
+            {
+                NearToBashAbleObj = false;
+                if (ray.collider.tag == "Bash")
+                {
+                    NearToBashAbleObj = true;
+                    BashAbleObj = ray.collider.transform.gameObject;
+                    break;
+                }
+            }
+            if (NearToBashAbleObj)
+            {
+                BashAbleObj.GetComponent<SpriteRenderer>().color = Color.yellow;
+                if (Input.GetKeyDown(KeyCode.Mouse1))
+                {
+                    Time.timeScale = 0f;
+                    BashAbleObj.transform.localScale = new Vector2(1.4f, 1.4f);
+                    ArrowBash.SetActive(true);
+                    ArrowBash.transform.position = BashAbleObj.transform.transform.position;
+                    IsChosingDir = true;
+                }
+                else if (IsChosingDir && Input.GetKeyUp(KeyCode.Mouse1))
+                {
+                    Time.timeScale = 1f;
+                    BashAbleObj.transform.localScale = new Vector2(1, 1);
+                    IsChosingDir = false;
+                    IsBashing = true;
+                    Rg.velocity = Vector2.zero;
+                    //transform.position = BashAbleObj.transform.position;
+                    BashDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+                    BashDir.z = 0;
+                    if (BashDir.x > 0 && !facingRight)
+                    {
+                        flip();
+                    }
+                    else if (BashDir.x < 0 && facingRight)
+                    {
+                        flip();
+                    }
+                    BashDir = BashDir.normalized;
+                    BashAbleObj.GetComponent<Rigidbody2D>().AddForce(-BashDir * 3f, ForceMode2D.Impulse);
+                    ArrowBash.SetActive(false);
+                }
+            }
+            else if (BashAbleObj != null)
+            {
+                BashAbleObj.GetComponent<SpriteRenderer>().color = Color.white;
+            }
+            if (IsBashing)
+            {
+                if (BashTime > 0)
+                {
+                    BashTime -= Time.deltaTime;
+                    Rg.velocity = BashDir * BashPower * Time.deltaTime;
+                }
+                else
+                {
+                    IsBashing = false;
+                    BashTime = BashTimeReset;
+                    Rg.velocity = new Vector2(Rg.velocity.x, 0);
+                }
+            }
+        }
+    }
+    void OnDrawGizmos()
+    {
+        Gizmos.DrawWireSphere(transform.position, Radius);
     }
     public void TakeDamage(int damage)
     {

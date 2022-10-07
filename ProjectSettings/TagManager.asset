@@ -17,6 +17,7 @@ TagManager:
   - UnlockBullet
   - UnlockDash
   - UnlockShield
+  - Bash
   layers:
   - Default
   - TransparentFX

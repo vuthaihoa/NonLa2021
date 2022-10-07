@@ -8,6 +8,7 @@ public class Bullet_enemy : MonoBehaviour
     public float speed;
     Rigidbody2D bulletRg;
     public int Damage;
+    public GameObject Hit;
     private void Start()
     {
         bulletRg = GetComponent<Rigidbody2D>();
@@ -37,6 +38,12 @@ public class Bullet_enemy : MonoBehaviour
         }
         if (collision.gameObject.tag == "Ground")
         {
+            Destroy(gameObject);
+        }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.GetComponent<Enemy_Health>().Takedamage(Damage);
+            Instantiate(Hit, transform.position, Quaternion.Euler(0f, 0f, Random.Range(0.0f, 360.0f)));
             Destroy(gameObject);
         }
     }
