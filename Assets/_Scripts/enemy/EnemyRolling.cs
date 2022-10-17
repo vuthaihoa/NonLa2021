@@ -1,17 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEditor.ShaderGraph.Internal.KeywordDependentCollection;
 
 public class EnemyRolling : MonoBehaviour
 {
     public float Speed;
     public float lineOfSite;
-    public float RollRange;
     public float startRoll;
     public float nextRoll;
     private Transform player;
     bool faceingRight = false;
-    private float moveDirection;
+
+    [SerializeField] private GameObject[] wapoints;
+    private int currentWaypointsIndex = 0;
+
 
     Rigidbody2D Rg;
     Animator ani;
@@ -24,7 +27,7 @@ public class EnemyRolling : MonoBehaviour
     void Update()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        if (distanceFromPlayer < lineOfSite && distanceFromPlayer > RollRange)
+        if (distanceFromPlayer < lineOfSite )
         {
             Rolling();
         }
@@ -32,7 +35,6 @@ public class EnemyRolling : MonoBehaviour
         {
             ani.SetBool("attack", false);
         }
-        FlipTowardsPlayer();
     }
     public void Rolling()
     {
@@ -40,9 +42,18 @@ public class EnemyRolling : MonoBehaviour
         {
             ani.SetBool("attack", true);
             startRoll -= Time.deltaTime;
-            transform.position = Vector2.MoveTowards(this.transform.position, player.position, Speed * Time.deltaTime);
+            if (Vector2.Distance(wapoints[currentWaypointsIndex].transform.position, transform.position) < .1f)
+            {
+                currentWaypointsIndex++;
+                if (currentWaypointsIndex >= wapoints.Length)
+                {
+                    currentWaypointsIndex = 0;
+                }
+            }
+            transform.position = Vector2.MoveTowards(transform.position, wapoints[currentWaypointsIndex].transform.position, Time.deltaTime * Speed);
+
         }
-        if(startRoll <= 3)
+        if (startRoll <= 3)
         {
             startRoll -= Time.deltaTime;
             ani.SetBool("attack", false);
@@ -57,22 +68,17 @@ public class EnemyRolling : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSite);
     }
-    void FlipTowardsPlayer()
+    public void flip()
     {
-        float playerPosition = player.position.x - transform.position.x;
-        if (playerPosition > 0 && faceingRight)
+        Vector3 rotation = transform.eulerAngles;
+        if (transform.position.x > player.position.x)
         {
-            flip();
+            rotation.y = 0f;
         }
-        if (playerPosition < 0 && !faceingRight)
+        else
         {
-            flip();
+            rotation.y = 180f;
         }
-    }
-    void flip()
-    {
-        //moveDirection *= -1;
-        faceingRight = !faceingRight;
-        transform.Rotate(0f, 180f, 0f);
+        transform.eulerAngles = rotation;
     }
 }
