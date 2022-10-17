@@ -51320,7 +51320,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 266640823}
   m_LocalRotation: {x: -0, y: 1, z: -0, w: 0}
-  m_LocalPosition: {x: 0.66753834, y: -0.5580163, z: 0}
+  m_LocalPosition: {x: -0.367, y: -0.5580163, z: 0}
   m_LocalScale: {x: 0.7144796, y: 0.7144796, z: 0.7144796}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52806,9 +52806,11 @@ GameObject:
   - component: {fileID: 737169235}
   - component: {fileID: 737169234}
   - component: {fileID: 737169237}
-  m_Layer: 0
+  - component: {fileID: 737169239}
+  - component: {fileID: 737169238}
+  m_Layer: 7
   m_Name: Nhim
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -52872,7 +52874,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 737169231}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: -0.79, y: -0.498, z: 0}
+  m_LocalPosition: {x: -0.625, y: -0.498, z: 0}
   m_LocalScale: {x: 0.7144796, y: 0.7144796, z: 0.7144796}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52911,8 +52913,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1f0323e4a1927d488bae9f5df054c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 2
-  lineOfSite: 1.14
+  Speed: 1.3
+  lineOfSite: 1.38
   startRoll: 7
   nextRoll: 3
   wapoints:
@@ -52953,6 +52955,38 @@ CircleCollider2D:
   m_Offset: {x: -0.0828393, y: -0.055516616}
   serializedVersion: 2
   m_Radius: 0.23040727
+--- !u!114 &737169238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737169231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6aaed63a6006e6b44b2b64573f3daf62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loots: []
+--- !u!114 &737169239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 737169231}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 200
+  bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
+  deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
+  HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}
+  dazedTime: 0
+  NoDamage: 0
+  ojbectDropItems: {fileID: 737169238}
 --- !u!1 &742629880
 GameObject:
   m_ObjectHideFlags: 0
