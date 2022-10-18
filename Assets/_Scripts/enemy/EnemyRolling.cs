@@ -10,7 +10,7 @@ public class EnemyRolling : MonoBehaviour
     public float startRoll;
     public float nextRoll;
     private Transform player;
-    bool faceingRight = false;
+    public GameObject damaColli;
 
     [SerializeField] private GameObject[] wapoints;
     private int currentWaypointsIndex = 0;
@@ -35,6 +35,7 @@ public class EnemyRolling : MonoBehaviour
         {
             ani.SetBool("attack", false);
         }
+        Timer();
     }
     public void Rolling()
     {
@@ -53,13 +54,16 @@ public class EnemyRolling : MonoBehaviour
             transform.position = Vector2.MoveTowards(transform.position, wapoints[currentWaypointsIndex].transform.position, Time.deltaTime * Speed);
 
         }
-        if (startRoll <= 3)
+    }
+    void Timer()
+    {
+        if (startRoll <= 1.5)
         {
             startRoll -= Time.deltaTime;
             ani.SetBool("attack", false);
             if (startRoll <= 0)
             {
-                startRoll = 6;
+                startRoll = 4;
             }
         }
     }
@@ -68,17 +72,12 @@ public class EnemyRolling : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSite);
     }
-    public void flip()
+    public void BoxCollDashOn()
     {
-        Vector3 rotation = transform.eulerAngles;
-        if (transform.position.x > player.position.x)
-        {
-            rotation.y = 0f;
-        }
-        else
-        {
-            rotation.y = 180f;
-        }
-        transform.eulerAngles = rotation;
+        damaColli.SetActive(true);
+    }
+    public void BoxCollDashOff()
+    {
+        damaColli.SetActive(false);
     }
 }
