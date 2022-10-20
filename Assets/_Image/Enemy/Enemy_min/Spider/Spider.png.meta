@@ -32,6 +32,9 @@ TextureImporter:
   - first:
       213: -8230967131063585693
     second: Spider_9
+  - first:
+      213: -4664177610714319100
+    second: Spider_10
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -125,7 +128,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 80
+        y: 160
         width: 80
         height: 80
       alignment: 0
@@ -146,7 +149,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 80
+        y: 160
         width: 80
         height: 80
       alignment: 0
@@ -167,7 +170,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 80
+        y: 160
         width: 80
         height: 80
       alignment: 0
@@ -188,7 +191,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 80
+        y: 160
         width: 80
         height: 80
       alignment: 0
@@ -209,7 +212,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 80
+        y: 160
         width: 80
         height: 80
       alignment: 0
@@ -230,7 +233,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 80
         width: 80
         height: 80
       alignment: 0
@@ -251,7 +254,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 80
-        y: 0
+        y: 80
         width: 80
         height: 80
       alignment: 0
@@ -272,7 +275,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 160
-        y: 0
+        y: 80
         width: 80
         height: 80
       alignment: 0
@@ -293,7 +296,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 240
-        y: 0
+        y: 80
         width: 80
         height: 80
       alignment: 0
@@ -314,7 +317,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 0
+        y: 80
         width: 80
         height: 80
       alignment: 0
@@ -326,6 +329,27 @@ TextureImporter:
       bones: []
       spriteID: 364f90bf00bb5cd80800000000000000
       internalID: -8230967131063585693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Spider_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 80
+        height: 80
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407fa08cc23854fb0800000000000000
+      internalID: -4664177610714319100
       vertices: []
       indices: 
       edges: []
