@@ -100,7 +100,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42730cb5310f1d1429f33cb39cbb3e9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lineOfSite: 1.67
+  lineOfSite: 1.97
   nextFire: 2
   canFire: 10
   bulletEnemy: {fileID: 161301413769959880, guid: 178ccad32295ac8478f78e448ef71599, type: 3}
