@@ -48,7 +48,7 @@ public class Spider_Boss : MonoBehaviour
             {
                 if (Time.time >= nextFire)
                 {
-                    nextFire = Time.time + 2f;
+                    nextFire = Time.time + canFire;
                     ani.SetTrigger("attack");
                 }
 
@@ -63,7 +63,7 @@ public class Spider_Boss : MonoBehaviour
             {
                 if (Time.time >= nextFire)
                 {
-                    nextFire = Time.time + 2f;
+                    nextFire = Time.time + canFire;
                     ani.SetTrigger("attack");
                 }
             }
