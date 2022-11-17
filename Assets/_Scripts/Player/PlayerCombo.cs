@@ -12,8 +12,8 @@ public class PlayerCombo : MonoBehaviour
     public bool atacando;
     public bool die = true;
 
-    float NextAttackTime = 0f;
-    public float StartTimeBtwAttack;
+    //float NextAttackTime = 0f;
+    //public float StartTimeBtwAttack;
 
     public Transform attackPos;
     public LayerMask whatEnemies;
@@ -47,27 +47,31 @@ public class PlayerCombo : MonoBehaviour
             ani.SetTrigger("" + combo);
             audio_S.clip = sonido[combo];
             audio_S.Play();
-            Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatEnemies);
-            for (int i = 0; i < enemiesToDamage.Length; i++)
-            {
-                enemiesToDamage[i].GetComponent<Enemy_Health>().Takedamage(playerAttributesSO.damage);
-                Instantiate(hitParticle, attackPos.transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
-                NextAttackTime = Time.time + 1f / StartTimeBtwAttack;
-            }
         }
     }
     void Update()
     {
         if(die)
         {
-            if (Time.time >= NextAttackTime)
-            {
-                    Combo_();
-            }
+            Combo_();
+            //if (Time.time >= NextAttackTime)
+            //{
+            //        Combo_();
+            //}
         }
         if(PlayerStats.instance.currentHealth <= 0)
         {
             die = false;
+        }
+    }
+    public void DamageCombo()
+    {
+        Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position, attackRange, whatEnemies);
+        for (int i = 0; i < enemiesToDamage.Length; i++)
+        {
+            enemiesToDamage[i].GetComponent<Enemy_Health>().Takedamage(playerAttributesSO.damage);
+            Instantiate(hitParticle, attackPos.transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
+            //NextAttackTime = Time.time + 1f / StartTimeBtwAttack;
         }
     }
     void OnDrawGizmosSelected()

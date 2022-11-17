@@ -14,5 +14,9 @@ public class CutsceneNewGame : MonoBehaviour
         {
             SceneManager.LoadScene(sceneName);
         }
+        if(Input.GetKeyUp(KeyCode.Escape))
+        {
+            ChangeTime = 0;
+        }
     }
 }

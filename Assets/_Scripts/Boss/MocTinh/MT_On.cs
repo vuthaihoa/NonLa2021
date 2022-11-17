@@ -19,4 +19,18 @@ public class MT_On : MonoBehaviour
             FindObjectOfType<AudioManager>().Play("Golem");
         }
     }
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == ("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == ("Player"))
+        {
+            Destroy(gameObject);
+        }
+    }
 }
