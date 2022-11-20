@@ -13,6 +13,14 @@ public class MadKingDark : MonoBehaviour
     public LayerMask attackMask;
     public Enemy_Health Enemy_Health;
     public GameObject CutsceneDeadMom;
+    public int OnCutscene;
+    private void Update()
+    {
+        if(Enemy_Health.health <= OnCutscene)
+        {
+            CutsceneDeadMom.SetActive(true);
+        }
+    }
     public void Attack()
     {
         Vector3 poss = transform.position;
