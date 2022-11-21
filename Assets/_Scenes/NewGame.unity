@@ -443,6 +443,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChangeTime: 50
   sceneName: Level 1
+  playerPosition: {x: -1.954, y: -0.558}
+  playerStorage: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
 --- !u!1 &321198362
 GameObject:
   m_ObjectHideFlags: 0

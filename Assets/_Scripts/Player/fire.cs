@@ -15,7 +15,6 @@ public class fire : MonoBehaviour
     private bool IsCoolDown3 = false;
     [Header("Attributes SO")]
     [SerializeField] private AttributesScriptableObject playerAttributesSO;
-    public bool UnlockBullet = false;
     void Start()
     {
         ani = GetComponent<Animator>();
@@ -32,7 +31,7 @@ public class fire : MonoBehaviour
         {
             die = false;
         }
-        if(UnlockBullet == false)
+        if(playerAttributesSO.UnlockBullet == false)
         {
             CoolDownBullet.fillAmount = 1f;
         }
@@ -48,7 +47,7 @@ public class fire : MonoBehaviour
     }
     void Fire()
     {
-        if(UnlockBullet == true)
+        if(playerAttributesSO.UnlockBullet == true)
         {
             if (Input.GetKeyDown(KeyCode.Mouse1) && IsCoolDown3 == false)
             {
@@ -72,7 +71,7 @@ public class fire : MonoBehaviour
     {
         if(collision.gameObject.tag == "UnlockBullet")
         {
-            UnlockBullet = true;
+            playerAttributesSO.UnlockBullet = true;
             CoolDownBullet.fillAmount = 0;
         }
     }
@@ -80,7 +79,7 @@ public class fire : MonoBehaviour
     {
         if (collision.gameObject.tag == "UnlockBullet")
         {
-            UnlockBullet = true;
+            playerAttributesSO.UnlockBullet = true;
             CoolDownBullet.fillAmount = 0;
         }
     }

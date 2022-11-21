@@ -852,6 +852,10 @@ PrefabInstance:
       propertyPath: StartingPosition
       value: 
       objectReference: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
+    - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
+      propertyPath: whatIsGround_Wall.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3867494397531111331, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: m_RootOrder
       value: 28
@@ -1812,6 +1816,14 @@ PrefabInstance:
       propertyPath: playerStorage
       value: 
       objectReference: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
+    - target: {fileID: 5776526760995816551, guid: 25356a7228c82ca4a9460ff1318b5df8, type: 3}
+      propertyPath: playerPosition.x
+      value: -3.742
+      objectReference: {fileID: 0}
+    - target: {fileID: 5776526760995816551, guid: 25356a7228c82ca4a9460ff1318b5df8, type: 3}
+      propertyPath: playerPosition.y
+      value: -0.87
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 25356a7228c82ca4a9460ff1318b5df8, type: 3}
 --- !u!1 &596679386

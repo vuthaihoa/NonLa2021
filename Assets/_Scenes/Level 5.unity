@@ -3060,6 +3060,10 @@ PrefabInstance:
       propertyPath: CoolDownShield
       value: 
       objectReference: {fileID: 311669939}
+    - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
+      propertyPath: whatIsGround_Wall.m_Bits
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3867494397531111331, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: m_RootOrder
       value: 25
@@ -17226,6 +17230,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChangeTime: 6.4
   sceneName: Level 5.1
+  playerPosition: {x: -4.038, y: -0.558}
+  playerStorage: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
 --- !u!61 &1700289905
 BoxCollider2D:
   m_ObjectHideFlags: 0

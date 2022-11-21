@@ -18,8 +18,6 @@ public class PlayerController : MonoBehaviour
     [Header("Dash")]
     private bool CanDash = true;
     private bool isDashing;
-    public bool UnlockDash =false;
-    public bool UnlockShield = false;
     public float dashingPower;
     public float dashingTime = 0.2f;
 
@@ -172,11 +170,11 @@ public class PlayerController : MonoBehaviour
                 attackUp();
                 attackDown();
                 Bash();
-                if(UnlockDash == false)
+                if(playerAttributesSO.UnlockDash == false)
                 {
                     CoolDownDash.fillAmount = 1;
                 }
-                if (UnlockShield == false)
+                if (playerAttributesSO.UnlockShield == false)
                 {
                     CoolDownShield.fillAmount = 1;
                 }
@@ -303,7 +301,7 @@ public class PlayerController : MonoBehaviour
     {
         if (End)
         {
-            if (UnlockDash == true)
+            if (playerAttributesSO.UnlockDash == true)
             {
                 if (Input.GetKeyDown(KeyCode.E) && IsCoolDown2 == false && CanDash)
                 {
@@ -352,7 +350,7 @@ public class PlayerController : MonoBehaviour
     {
         if(End)
         {
-            if (UnlockShield == true)
+            if (playerAttributesSO.UnlockShield == true)
             {
                 if (Input.GetKeyDown(KeyCode.Q) && IsCoolDown == false)
                 {
@@ -458,67 +456,70 @@ public class PlayerController : MonoBehaviour
     {
         if(End)
         {
-            RaycastHit2D[] rays = Physics2D.CircleCastAll(transform.position, Radius, Vector3.forward);
-            foreach (RaycastHit2D ray in rays)
+            if(playerAttributesSO.UnlockBash == true)
             {
-                NearToBashAbleObj = false;
-                if (ray.collider.tag == "Bash")
+                RaycastHit2D[] rays = Physics2D.CircleCastAll(transform.position, Radius, Vector3.forward);
+                foreach (RaycastHit2D ray in rays)
                 {
-                    NearToBashAbleObj = true;
-                    BashAbleObj = ray.collider.transform.gameObject;
-                    break;
-                }
-            }
-            if (NearToBashAbleObj)
-            {
-                BashAbleObj.GetComponent<SpriteRenderer>().color = Color.yellow;
-                if (Input.GetKeyDown(KeyCode.Mouse1))
-                {
-                    Time.timeScale = 0f;
-                    BashAbleObj.transform.localScale = new Vector2(1.4f, 1.4f);
-                    ArrowBash.SetActive(true);
-                    ArrowBash.transform.position = BashAbleObj.transform.transform.position;
-                    IsChosingDir = true;
-                }
-                else if (IsChosingDir && Input.GetKeyUp(KeyCode.Mouse1))
-                {
-                    Time.timeScale = 1f;
-                    BashAbleObj.transform.localScale = new Vector2(1, 1);
-                    IsChosingDir = false;
-                    IsBashing = true;
-                    Rg.velocity = Vector2.zero;
-                    //transform.position = BashAbleObj.transform.position;
-                    BashDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
-                    BashDir.z = 0;
-                    if (BashDir.x > 0 && !facingRight)
+                    NearToBashAbleObj = false;
+                    if (ray.collider.tag == "Bash")
                     {
-                        flip();
+                        NearToBashAbleObj = true;
+                        BashAbleObj = ray.collider.transform.gameObject;
+                        break;
                     }
-                    else if (BashDir.x < 0 && facingRight)
+                }
+                if (NearToBashAbleObj)
+                {
+                    BashAbleObj.GetComponent<SpriteRenderer>().color = Color.yellow;
+                    if (Input.GetKeyDown(KeyCode.Mouse1))
                     {
-                        flip();
+                        Time.timeScale = 0f;
+                        BashAbleObj.transform.localScale = new Vector2(1.4f, 1.4f);
+                        ArrowBash.SetActive(true);
+                        ArrowBash.transform.position = BashAbleObj.transform.transform.position;
+                        IsChosingDir = true;
                     }
-                    BashDir = BashDir.normalized;
-                    BashAbleObj.GetComponent<Rigidbody2D>().AddForce(-BashDir * 3f, ForceMode2D.Impulse);
-                    ArrowBash.SetActive(false);
+                    else if (IsChosingDir && Input.GetKeyUp(KeyCode.Mouse1))
+                    {
+                        Time.timeScale = 1f;
+                        BashAbleObj.transform.localScale = new Vector2(1, 1);
+                        IsChosingDir = false;
+                        IsBashing = true;
+                        Rg.velocity = Vector2.zero;
+                        //transform.position = BashAbleObj.transform.position;
+                        BashDir = Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position;
+                        BashDir.z = 0;
+                        if (BashDir.x > 0 && !facingRight)
+                        {
+                            flip();
+                        }
+                        else if (BashDir.x < 0 && facingRight)
+                        {
+                            flip();
+                        }
+                        BashDir = BashDir.normalized;
+                        BashAbleObj.GetComponent<Rigidbody2D>().AddForce(-BashDir * 3f, ForceMode2D.Impulse);
+                        ArrowBash.SetActive(false);
+                    }
                 }
-            }
-            else if (BashAbleObj != null)
-            {
-                BashAbleObj.GetComponent<SpriteRenderer>().color = Color.white;
-            }
-            if (IsBashing)
-            {
-                if (BashTime > 0)
+                else if (BashAbleObj != null)
                 {
-                    BashTime -= Time.deltaTime;
-                    Rg.velocity = BashDir * BashPower * Time.deltaTime;
+                    BashAbleObj.GetComponent<SpriteRenderer>().color = Color.white;
                 }
-                else
+                if (IsBashing)
                 {
-                    IsBashing = false;
-                    BashTime = BashTimeReset;
-                    Rg.velocity = new Vector2(Rg.velocity.x, 0);
+                    if (BashTime > 0)
+                    {
+                        BashTime -= Time.deltaTime;
+                        Rg.velocity = BashDir * BashPower * Time.deltaTime;
+                    }
+                    else
+                    {
+                        IsBashing = false;
+                        BashTime = BashTimeReset;
+                        Rg.velocity = new Vector2(Rg.velocity.x, 0);
+                    }
                 }
             }
         }
@@ -595,12 +596,12 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "UnlockDash")
         {
-            UnlockDash = true;
+            playerAttributesSO.UnlockDash = true;
             CoolDownDash.fillAmount = 0;
         }
         if (collision.gameObject.tag == "UnlockShield")
         {
-            UnlockShield = true;
+            playerAttributesSO.UnlockShield = true;
             CoolDownShield.fillAmount = 0;
         }
     }
@@ -633,12 +634,12 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "UnlockDash")
         {
-            UnlockDash = true;
+            playerAttributesSO.UnlockDash = true;
             CoolDownDash.fillAmount = 0;
         }
         if(collision.gameObject.tag == "UnlockShield")
         {
-            UnlockShield = true;
+            playerAttributesSO.UnlockShield = true;
             CoolDownShield.fillAmount = 0;
         }
     }
