@@ -5,11 +5,11 @@ using UnityEngine;
 public class MadKingDark : MonoBehaviour
 {
     public int Attack1;
+    public Vector3 attackOffset1;
+    public float attackRange1 = 1f;
     public int Attack2;
     public Vector3 attackOffset;
     public float attackRange = 1f;
-    public Vector3 attackOffset1;
-    public float attackRange1 = 1f;
     public LayerMask attackMask;
     public Enemy_Health Enemy_Health;
     public GameObject CutsceneDeadMom;
