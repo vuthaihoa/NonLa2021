@@ -14,6 +14,9 @@ TextureImporter:
   - first:
       213: 8147275610191718606
     second: walls_3
+  - first:
+      213: -24075806118037059
+    second: walls_4
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -174,7 +177,7 @@ TextureImporter:
         width: 128
         height: 132
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
