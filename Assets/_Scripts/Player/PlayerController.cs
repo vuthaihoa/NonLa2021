@@ -499,7 +499,7 @@ public class PlayerController : MonoBehaviour
                             flip();
                         }
                         BashDir = BashDir.normalized;
-                        BashAbleObj.GetComponent<Rigidbody2D>().AddForce(-BashDir * 3f, ForceMode2D.Impulse);
+                        BashAbleObj.GetComponent<Rigidbody2D>().AddForce(-BashDir * 9f, ForceMode2D.Impulse);
                         ArrowBash.SetActive(false);
                     }
                 }
@@ -512,7 +512,15 @@ public class PlayerController : MonoBehaviour
                     if (BashTime > 0)
                     {
                         BashTime -= Time.deltaTime;
-                        Rg.velocity = BashDir * BashPower * Time.deltaTime;
+                        //Rg.velocity = BashDir * BashPower * Time.deltaTime;
+                        if(facingRight)
+                        {
+                            Rg.velocity = new Vector2(Rg.velocity.x + BashPower, Rg.velocity.y);
+                        }
+                        else
+                        {
+                            Rg.velocity = new Vector2(Rg.velocity.x + -BashPower, Rg.velocity.y);
+                        }
                     }
                     else
                     {

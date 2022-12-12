@@ -2547,6 +2547,18 @@ PrefabInstance:
       propertyPath: Angry
       value: 200
       objectReference: {fileID: 0}
+    - target: {fileID: 6912838229064243244, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: attackRange
+      value: 0.44
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912838229064243244, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: attackOffset.x
+      value: -0.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 6912838229064243244, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
+      propertyPath: attackOffset.y
+      value: -0.34
+      objectReference: {fileID: 0}
     - target: {fileID: 6912838229064243247, guid: 935f34f562a0ebe4bbdbae36b8180759, type: 3}
       propertyPath: player
       value: 
