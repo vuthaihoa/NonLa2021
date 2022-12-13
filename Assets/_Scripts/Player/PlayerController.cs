@@ -479,6 +479,7 @@ public class PlayerController : MonoBehaviour
                         ArrowBash.SetActive(true);
                         ArrowBash.transform.position = BashAbleObj.transform.transform.position;
                         IsChosingDir = true;
+                        ani.SetTrigger("tele");
                     }
                     else if (IsChosingDir && Input.GetKeyUp(KeyCode.Mouse1))
                     {
@@ -515,11 +516,11 @@ public class PlayerController : MonoBehaviour
                         //Rg.velocity = BashDir * BashPower * Time.deltaTime;
                         if(facingRight)
                         {
-                            Rg.velocity = new Vector2(Rg.velocity.x + BashPower, Rg.velocity.y);
+                            Rg.velocity = new Vector2(Rg.velocity.x + BashPower * Time.deltaTime, Rg.velocity.y);
                         }
                         else
                         {
-                            Rg.velocity = new Vector2(Rg.velocity.x + -BashPower, Rg.velocity.y);
+                            Rg.velocity = new Vector2(Rg.velocity.x + -BashPower * Time.deltaTime, Rg.velocity.y);
                         }
                     }
                     else
