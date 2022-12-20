@@ -43,6 +43,7 @@ public class EnemyJumpAttackEvles : MonoBehaviour
     {
         enemyRB = GetComponent<Rigidbody2D>();
         enemAni = GetComponent<Animator>();
+        enemyRB.velocity = new Vector2(moveSpeed * moveDirection, enemyRB.velocity.y);
     }
     void FixedUpdate()
     {

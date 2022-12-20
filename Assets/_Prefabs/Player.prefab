@@ -456,7 +456,7 @@ MonoBehaviour:
   dashingTime: 0.3
   Radius: 0.51
   BashAbleObj: {fileID: 0}
-  BashPower: 100
+  BashPower: 15
   BashTime: 0.4
   ArrowBash: {fileID: 985507870}
   GroundCheck: {fileID: 5966597137628072660}

@@ -90,6 +90,10 @@ public class DataPersistenceManager : MonoBehaviour
         playerAttributesSO.UpgradeSoulMagic = 20;
         playerAttributesSO.UpgradePotion = 50;
         playerAttributesSO.buyPotion = 50;
+        playerAttributesSO.UnlockBash = false;
+        playerAttributesSO.UnlockBullet = false;
+        playerAttributesSO.UnlockShield = false;
+        playerAttributesSO.UnlockDash = false;
     }
     public void LoadGame()
     {

@@ -10,6 +10,7 @@ public class MusicThuongLuong : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("DanhBoss");
             FindObjectOfType<AudioManager>().StopPlaying("Theme");
+            Destroy(gameObject, 2f);
         }
     }
 }

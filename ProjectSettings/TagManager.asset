@@ -17,6 +17,7 @@ TagManager:
   - UnlockBullet
   - UnlockDash
   - UnlockShield
+  - UnlockBash
   - Bash
   layers:
   - Default

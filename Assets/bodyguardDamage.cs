@@ -47,6 +47,8 @@ public class bodyguardDamage : MonoBehaviour
         {
             ani.SetBool("dead", true);
             Cutscenedown.SetActive(true);
+            FindObjectOfType<AudioManager>().Play("Theme");
+            FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
         }
     }
     public IEnumerator Dash()

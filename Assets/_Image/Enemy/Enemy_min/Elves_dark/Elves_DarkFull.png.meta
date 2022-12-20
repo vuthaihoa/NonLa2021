@@ -95,6 +95,27 @@ TextureImporter:
   - first:
       213: 1656525294977610923
     second: Elves_DarkFull_30
+  - first:
+      213: 1200378636243593
+    second: Elves_DarkFull_31
+  - first:
+      213: -6801483536553785392
+    second: Elves_DarkFull_32
+  - first:
+      213: -8720722397045177176
+    second: Elves_DarkFull_33
+  - first:
+      213: 3270546401711718992
+    second: Elves_DarkFull_34
+  - first:
+      213: -2869061715137985887
+    second: Elves_DarkFull_35
+  - first:
+      213: 2388444724430049082
+    second: Elves_DarkFull_36
+  - first:
+      213: 3683532402221383587
+    second: Elves_DarkFull_37
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -188,7 +209,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 384
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -209,7 +230,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 384
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -230,7 +251,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 384
+        y: 448
         width: 64
         height: 64
       alignment: 0
@@ -251,7 +272,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -272,7 +293,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -293,7 +314,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -314,7 +335,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -335,7 +356,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -356,7 +377,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 320
+        y: 384
         width: 64
         height: 64
       alignment: 0
@@ -377,7 +398,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 256
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -398,7 +419,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 256
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -419,7 +440,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 256
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -440,7 +461,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 256
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -461,7 +482,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 256
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -482,7 +503,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 256
+        y: 320
         width: 64
         height: 64
       alignment: 0
@@ -503,7 +524,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -524,7 +545,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 192
+        y: 256
         width: 64
         height: 64
       alignment: 0
@@ -545,7 +566,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -566,7 +587,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -587,7 +608,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -608,7 +629,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -629,7 +650,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -650,7 +671,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 128
+        y: 192
         width: 64
         height: 64
       alignment: 0
@@ -671,7 +692,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -692,7 +713,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -713,7 +734,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 128
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -734,7 +755,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 192
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -755,7 +776,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 256
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -776,7 +797,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 320
-        y: 64
+        y: 128
         width: 64
         height: 64
       alignment: 0
@@ -797,7 +818,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -818,7 +839,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 0
+        y: 64
         width: 64
         height: 64
       alignment: 0
@@ -830,6 +851,153 @@ TextureImporter:
       bones: []
       spriteID: ba4f698aaf82df610800000000000000
       internalID: 1656525294977610923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elves_DarkFull_31
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 982953eecb3440000800000000000000
+      internalID: 1200378636243593
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elves_DarkFull_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d74b0262c64c91a0800000000000000
+      internalID: -6801483536553785392
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elves_DarkFull_33
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a4445b2f25c9f680800000000000000
+      internalID: -8720722397045177176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elves_DarkFull_34
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 64
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 052857fcf90536d20800000000000000
+      internalID: 3270546401711718992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elves_DarkFull_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2078e229b0f28d0800000000000000
+      internalID: -2869061715137985887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elves_DarkFull_36
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f0f4582d5752120800000000000000
+      internalID: 2388444724430049082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Elves_DarkFull_37
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 64
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3affb0124398e1330800000000000000
+      internalID: 3683532402221383587
       vertices: []
       indices: 
       edges: []

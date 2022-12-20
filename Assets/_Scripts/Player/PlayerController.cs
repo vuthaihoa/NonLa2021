@@ -514,7 +514,7 @@ public class PlayerController : MonoBehaviour
                     {
                         BashTime -= Time.deltaTime;
                         //Rg.velocity = BashDir * BashPower * Time.deltaTime;
-                        if(facingRight)
+                        if (facingRight)
                         {
                             Rg.velocity = new Vector2(Rg.velocity.x + BashPower * Time.deltaTime, Rg.velocity.y);
                         }
@@ -612,6 +612,10 @@ public class PlayerController : MonoBehaviour
         {
             playerAttributesSO.UnlockShield = true;
             CoolDownShield.fillAmount = 0;
+        }
+        if (collision.gameObject.tag == "UnlockBash")
+        {
+            playerAttributesSO.UnlockBash = true;
         }
     }
     private void OnTriggerExit2D(Collider2D collision)

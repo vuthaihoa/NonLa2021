@@ -17126,6 +17126,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MusicBossOn
       objectReference: {fileID: 0}
+    - target: {fileID: 8792676523748737450, guid: c553c87429a0d18439e4985b8be38cac, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8792676522300184665, guid: c553c87429a0d18439e4985b8be38cac, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: c553c87429a0d18439e4985b8be38cac, type: 3}

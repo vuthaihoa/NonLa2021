@@ -10,6 +10,7 @@ public class MusicBossBodyguard : MonoBehaviour
         {
             FindObjectOfType<AudioManager>().Play("Bodyguard");
             FindObjectOfType<AudioManager>().StopPlaying("Theme");
+            Destroy(gameObject, 2f);
         }
     }
 }
