@@ -61,7 +61,14 @@ public class EnemyJumpAttackEvles : MonoBehaviour
         AnimationController();
         if (!canSeePlayer && isGround)
         {
-            Petrolling();
+            if (CheckingWall)
+            {
+                StartCoroutine(WaitAndContinue());
+            }
+            else
+            {
+                Petrolling();
+            }
         }
     }
     void Petrolling()
@@ -78,6 +85,12 @@ public class EnemyJumpAttackEvles : MonoBehaviour
             }
         }
         enemyRB.velocity = new Vector2(moveSpeed * moveDirection, enemyRB.velocity.y);
+    }
+    private IEnumerator WaitAndContinue()
+    {
+        //enemAni.SetBool("canSeePlayer", true);
+        yield return new WaitForSeconds(3);
+        Petrolling();
     }
     void JumpAttack()
     {

@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   MoreHealth: 50
-  healthcolli: 1
+  healthcolli: 0
   money: 0
   damage: 10
   Magic: 15
@@ -28,7 +28,7 @@ MonoBehaviour:
   UpgradeSoulMagic: 20
   UpgradePotion: 50
   buyPotion: 50
-  UnlockDash: 0
-  UnlockShield: 0
-  UnlockBullet: 0
-  UnlockBash: 0
+  UnlockDash: 1
+  UnlockShield: 1
+  UnlockBullet: 1
+  UnlockBash: 1

@@ -21,7 +21,7 @@ public class BulletElvesDark : MonoBehaviour
     void Update()
     {
         float distanceFromPlayer = Vector2.Distance(player.position, transform.position);
-        if (distanceFromPlayer < lineOfSite && distanceFromPlayer < ShootingRange)
+        if (distanceFromPlayer < lineOfSite && distanceFromPlayer > ShootingRange)
         {
             if (canFire > nextFire)
             {
