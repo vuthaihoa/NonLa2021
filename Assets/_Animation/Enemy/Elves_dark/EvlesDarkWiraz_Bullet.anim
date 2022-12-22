@@ -23,9 +23,9 @@ AnimationClip:
       value: {fileID: -4236381848987094759, guid: 0ce6fbf78d2b6d14c8f322b460051b1f, type: 3}
     - time: 0.33333334
       value: {fileID: 2921341286679436345, guid: 0ce6fbf78d2b6d14c8f322b460051b1f, type: 3}
-    - time: 0.6666667
+    - time: 0.5
       value: {fileID: 3283870907513701081, guid: 0ce6fbf78d2b6d14c8f322b460051b1f, type: 3}
-    - time: 1
+    - time: 0.6666667
       value: {fileID: -2822123288068087813, guid: 0ce6fbf78d2b6d14c8f322b460051b1f, type: 3}
     attribute: m_Sprite
     path: 
@@ -55,7 +55,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 1.1666666
+    m_StopTime: 0.8333334
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -75,7 +75,7 @@ AnimationClip:
   m_HasGenericRootTransform: 0
   m_HasMotionFloatCurves: 0
   m_Events:
-  - time: 1
+  - time: 0.6666667
     functionName: Bullet
     data: 
     objectReferenceParameter: {fileID: 0}

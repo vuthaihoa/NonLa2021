@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3476862627239258973}
   - component: {fileID: 3476862627239258974}
   - component: {fileID: 3476862627239258975}
+  - component: {fileID: 958217440740051023}
   m_Layer: 7
   m_Name: flag
   m_TagString: Enemy
@@ -163,3 +164,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loots: []
+--- !u!50 &958217440740051023
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3476862627239258960}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4

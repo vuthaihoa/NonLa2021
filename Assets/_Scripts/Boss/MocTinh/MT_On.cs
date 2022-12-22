@@ -8,6 +8,14 @@ public class MT_On : MonoBehaviour
     public GameObject Boss;
     public GameObject stone;
     public GameObject stone2;
+    private void Start()
+    {
+        if (Boss == null)
+        {
+            Debug.LogError("Boss object is not set");
+            return;
+        }
+    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == ("Player"))

@@ -24,6 +24,12 @@ public class Enemy_Health : MonoBehaviour
         Instantiate(bloodEffect, transform.position, Quaternion.identity);
         health -= damage;
         ani.SetTrigger("injured");
+        Rigidbody2D rb = GetComponent<Rigidbody2D>();
+        GameObject player = GameObject.FindWithTag("Player");
+        Vector2 playerPos = player.transform.position;
+        Vector2 pushDirection = new Vector2(transform.position.x, transform.position.y) - playerPos;
+        pushDirection = pushDirection.normalized;
+        rb.AddForce(pushDirection * 20f, ForceMode2D.Force);
         if (health <= 0)
         {
             Instantiate(deadParticle, transform.position, Quaternion.identity);

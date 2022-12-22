@@ -216,7 +216,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.067087516, y: -0.010318041}
+  m_Offset: {x: -0.067087516, y: -0.017525658}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -227,7 +227,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.11962479, y: 0.321199}
+  m_Size: {x: 0.11962479, y: 0.33561423}
   m_EdgeRadius: 0
 --- !u!58 &2515799908829714827
 CircleCollider2D:
@@ -242,9 +242,9 @@ CircleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.07629294, y: -0.18489787}
+  m_Offset: {x: -0.07629294, y: -0.1915715}
   serializedVersion: 2
-  m_Radius: 0.016268674
+  m_Radius: 0.009595044
 --- !u!114 &2515799908829714826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -258,8 +258,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 0
-  lineOfSite: 0.77
-  ShootingRange: 0.68
+  lineOfSite: 1.88
+  ShootingRange: 1.05
   nextFire: 2
   canFire: 10
   bulletEnemy: {fileID: 569534875779719088, guid: d078520b83006454fb86205499df795c, type: 3}

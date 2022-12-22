@@ -58,6 +58,14 @@ public class EnemyJumpAttackEvles : MonoBehaviour
         }
         isGround = Physics2D.OverlapBox(groundCheck.position, boxSize, 0, groundPlayer);
         canSeePlayer = Physics2D.OverlapBox(seePlayer.position, lineOfSite, 0, playerayer);
+        if (player.GetComponent<Rigidbody2D>().velocity.magnitude > 0.9f)
+        {
+            canSeePlayer = Physics2D.OverlapBox(seePlayer.position, lineOfSite, 0, playerayer);
+        }
+        else
+        {
+            canSeePlayer = false;
+        }
         AnimationController();
         if (!canSeePlayer && isGround)
         {
@@ -88,7 +96,6 @@ public class EnemyJumpAttackEvles : MonoBehaviour
     }
     private IEnumerator WaitAndContinue()
     {
-        //enemAni.SetBool("canSeePlayer", true);
         yield return new WaitForSeconds(3);
         Petrolling();
     }

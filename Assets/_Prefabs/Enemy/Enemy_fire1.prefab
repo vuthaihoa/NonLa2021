@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 7598162648910706405}
   - component: {fileID: 1111304215573481621}
   - component: {fileID: 6008431319022723887}
+  - component: {fileID: 5306555328621803037}
   m_Layer: 7
   m_Name: Enemy_fire1
   m_TagString: Enemy
@@ -190,3 +191,24 @@ MonoBehaviour:
     DropRate: 28
     minQuantity: 10
     maxQuantity: 15
+--- !u!50 &5306555328621803037
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7598162648910706414}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
