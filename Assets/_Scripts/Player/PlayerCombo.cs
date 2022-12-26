@@ -12,6 +12,7 @@ public class PlayerCombo : MonoBehaviour
     public bool atacando;
     public bool die = true;
 
+    //PlayerController player;
     //float NextAttackTime = 0f;
     //public float StartTimeBtwAttack;
 
@@ -25,6 +26,7 @@ public class PlayerCombo : MonoBehaviour
     {
         ani = GetComponent<Animator>();
         audio_S = GetComponent<AudioSource>();
+        //player = GetComponent<PlayerController>();
     }
     public void Start_Combo()
     {
@@ -47,15 +49,15 @@ public class PlayerCombo : MonoBehaviour
             ani.SetTrigger("" + combo);
             audio_S.clip = sonido[combo];
             audio_S.Play();
-            Rigidbody2D rb = GetComponent<Rigidbody2D>();
-            if(transform.rotation.y == 0)
-            {
-                rb.AddForce(-transform.position * 20f, ForceMode2D.Force);
-            }
-            else
-            {
-                rb.AddForce(transform.position * 20f, ForceMode2D.Force);
-            }
+            //Rigidbody2D rb = GetComponent<Rigidbody2D>();
+            //if(player.facingRight)
+            //{
+            //    rb.AddForce(-transform.position * 20f, ForceMode2D.Force);
+            //}
+            //else
+            //{
+            //    rb.AddForce(transform.position * 20f, ForceMode2D.Force);
+            //}
         }
     }
     void Update()
