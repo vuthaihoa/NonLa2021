@@ -9,7 +9,7 @@ public class fire : MonoBehaviour
     public GameObject bullet;
     Animator ani;
     private bool die = true;
-
+    PlayerController player;
     public Image CoolDownBullet;
     public float coolDown3;
     private bool IsCoolDown3 = false;
@@ -18,7 +18,7 @@ public class fire : MonoBehaviour
     void Start()
     {
         ani = GetComponent<Animator>();
-
+        player = GetComponent<PlayerController>();
         CoolDownBullet.fillAmount = 0;
     }
     void Update()
@@ -54,6 +54,8 @@ public class fire : MonoBehaviour
                 IsCoolDown3 = true;
                 CoolDownBullet.fillAmount = 1f;
                 ani.SetBool("Bullet", true);
+                ani.SetBool("hide", false);
+                player.hide = IsCoolDown3;
 
             }
             if (IsCoolDown3)

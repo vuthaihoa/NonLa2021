@@ -58,7 +58,16 @@ public class EnemyJumpAttackEvles : MonoBehaviour
         }
         isGround = Physics2D.OverlapBox(groundCheck.position, boxSize, 0, groundPlayer);
         canSeePlayer = Physics2D.OverlapBox(seePlayer.position, lineOfSite, 0, playerayer);
-        if (player.GetComponent<Rigidbody2D>().velocity.magnitude > 0.6f)
+        //if (player.GetComponent<Rigidbody2D>().velocity.magnitude > 0.6f)
+        //{
+        //    canSeePlayer = Physics2D.OverlapBox(seePlayer.position, lineOfSite, 0, playerayer);
+        //}
+        //else
+        //{
+        //    canSeePlayer = false;
+        //}
+        bool NonLa_hide = player.GetComponent<Animator>().GetBool("hide");
+        if (!NonLa_hide)
         {
             canSeePlayer = Physics2D.OverlapBox(seePlayer.position, lineOfSite, 0, playerayer);
         }

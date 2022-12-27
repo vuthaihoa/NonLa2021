@@ -12,7 +12,7 @@ public class PlayerCombo : MonoBehaviour
     public bool atacando;
     public bool die = true;
 
-    //PlayerController player;
+    PlayerController player;
     //float NextAttackTime = 0f;
     //public float StartTimeBtwAttack;
 
@@ -26,7 +26,7 @@ public class PlayerCombo : MonoBehaviour
     {
         ani = GetComponent<Animator>();
         audio_S = GetComponent<AudioSource>();
-        //player = GetComponent<PlayerController>();
+        player = GetComponent<PlayerController>();
     }
     public void Start_Combo()
     {
@@ -49,6 +49,7 @@ public class PlayerCombo : MonoBehaviour
             ani.SetTrigger("" + combo);
             audio_S.clip = sonido[combo];
             audio_S.Play();
+            player.hide = atacando;
             //Rigidbody2D rb = GetComponent<Rigidbody2D>();
             //if(player.facingRight)
             //{

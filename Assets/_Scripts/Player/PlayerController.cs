@@ -23,6 +23,7 @@ public class PlayerController : MonoBehaviour
 
     private bool facingRight;
     private bool Ground;
+    public bool hide;
 
     [Header("Bash")]
     [SerializeField] private float Radius;
@@ -140,7 +141,11 @@ public class PlayerController : MonoBehaviour
                 {
                     move = Input.GetAxis("Horizontal");
                     ani.SetFloat("Speed", Mathf.Abs(move));
-                    if(IsBashing == false)
+                    if(move >= 0.1f)
+                    {
+                        hide = true;
+                    }
+                    if (IsBashing == false)
                     Rg.velocity = new Vector2(move * Maxspeed, Rg.velocity.y);
 
                     if (move > 0 && !facingRight)
@@ -170,7 +175,7 @@ public class PlayerController : MonoBehaviour
                 attackUp();
                 attackDown();
                 Bash();
-                if(playerAttributesSO.UnlockDash == false)
+                if (playerAttributesSO.UnlockDash == false)
                 {
                     CoolDownDash.fillAmount = 1;
                 }
@@ -246,6 +251,7 @@ public class PlayerController : MonoBehaviour
             {
                 Rg.velocity = new Vector2(Rg.velocity.x, JumpHight);
                 ani.SetBool("ground", true);
+                hide = true;
                 FindObjectOfType<AudioManager>().Play("PlayerJump");
             }
         }
@@ -331,12 +337,14 @@ public class PlayerController : MonoBehaviour
         {
             Rg.velocity = new Vector2(transform.localScale.x * dashingPower, 0f);
             ani.SetBool("SkillSlide", true);
+            hide = true;
             FindObjectOfType<AudioManager>().Play("Dash");
         }
         else
         {
             Rg.velocity = new Vector2(transform.localScale.x * -dashingPower, 0f);
             ani.SetBool("SkillSlide", true);
+            hide = true;
             FindObjectOfType<AudioManager>().Play("Dash");
         }
         yield return new WaitForSeconds(dashingTime);
@@ -357,6 +365,7 @@ public class PlayerController : MonoBehaviour
                     IsCoolDown = true;
                     CoolDownShield.fillAmount = 1f;
                     ani.SetTrigger("Shield");
+                    hide = true;
                     FindObjectOfType<AudioManager>().Play("Shield");
 
                 }
@@ -379,6 +388,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.W) && CanAttackUp >= nextAttackUp && Input.GetKeyDown(KeyCode.Mouse0))
             {
                 ani.SetTrigger("Up");
+                hide = true;
                 CanAttackUp = 0;
                 FindObjectOfType<AudioManager>().Play("hit");
             }
@@ -399,6 +409,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.S) && CanAttackDown >= nextAttackDown && Ground == false && Input.GetKeyDown(KeyCode.Mouse0))
             {
                 ani.SetTrigger("Down");
+                hide = true;
                 CanAttackDown = 0;
                 Rg.velocity = new Vector2(Rg.velocity.x, JumpHightDown);
                 FindObjectOfType<AudioManager>().Play("hit");
@@ -480,6 +491,7 @@ public class PlayerController : MonoBehaviour
                         ArrowBash.transform.position = BashAbleObj.transform.transform.position;
                         IsChosingDir = true;
                         ani.SetTrigger("tele");
+                        hide = true;
                     }
                     else if (IsChosingDir && Input.GetKeyUp(KeyCode.Mouse1))
                     {
@@ -532,6 +544,13 @@ public class PlayerController : MonoBehaviour
                 }
             }
         }
+    }
+    private IEnumerator WaitAndSetHideTrue()
+    {
+        hide = true;
+        ani.SetBool("hide", false);
+        yield return new WaitForSeconds(2);
+        hide = false;
     }
     void OnDrawGizmos()
     {
@@ -599,6 +618,18 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKey(KeyCode.X))
                 NPCUpgrade.ActivateUpgrade();
         }
+        if (collision.gameObject.tag == "Hide")
+        {
+            if(hide)
+            {
+                StartCoroutine(WaitAndSetHideTrue());
+            }
+            else
+            {
+                hide = false;
+                ani.SetBool("hide", true);
+            }
+        }
         if (collision.gameObject.tag == "Cutscenes")
         {
             End = false; 
@@ -623,6 +654,10 @@ public class PlayerController : MonoBehaviour
         npc = null;
         NPCUpgrade = null;
         End = true;
+        if (collision.gameObject.tag == "Hide")
+        {
+            ani.SetBool("hide", false);
+        }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
