@@ -17,6 +17,14 @@ public class PlatformMove : MonoBehaviour
             {
                 currentWaypointsIndex = 0;
             }
+            if(currentWaypointsIndex == 3)
+            {
+                speed = 0.4f;
+            }
+            if (currentWaypointsIndex == 4)
+            {
+                speed = 0.8f;
+            }
         }
         transform.position = Vector2.MoveTowards(transform.position, wapoints[currentWaypointsIndex].transform.position, Time.deltaTime * speed);
     }

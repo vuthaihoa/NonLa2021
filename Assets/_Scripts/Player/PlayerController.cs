@@ -110,11 +110,14 @@ public class PlayerController : MonoBehaviour
         facingRight = true;
         stats = PlayerStats.instance;
         HealthBar.MaxHealth(playerAttributesSO.maxHealth);
-        if(stats.currentHealth < playerAttributesSO.maxHealth)
+        if (stats.currentHealth < playerAttributesSO.maxHealth)
         {
             HealthBar.SetHealth(stats.currentHealth);
         }
-
+        else
+        {
+            stats.currentHealth = playerAttributesSO.maxHealth;
+        }
         gm = GameObject.FindGameObjectWithTag("GM").GetComponent<GameMaster>();
         transform.position = gm.lastCheckPoint;
         End = true;

@@ -25,7 +25,7 @@ public class StartCutScene : MonoBehaviour
         }
         if(Input.GetKeyDown(KeyCode.Escape))
         {
-            director.time = 28f;
+            director.time = 50f;
         }
     }
 }
