@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 8520111760973565017}
   - component: {fileID: 2765249118482777704}
   - component: {fileID: 298170723150828456}
+  - component: {fileID: 7565173727544007575}
+  - component: {fileID: 4521612279566596423}
   m_Layer: 0
   m_Name: SizeLookEnemy
   m_TagString: Untagged
@@ -102,6 +104,46 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &7565173727544007575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111494110536171841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d58bde1af203d5f48a3e9cb353cddf4e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemySaber: {fileID: 0}
+  Smoke: {fileID: 2614085439855581841, guid: 23c00f8dc446ff240ade00151da6f3ad, type: 3}
+--- !u!61 &4521612279566596423
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1111494110536171841}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.027325511, y: 0.022702076}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.95, y: 0.48}
+    newSize: {x: 0.95, y: 0.48}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.895349, y: 0.3302012}
+  m_EdgeRadius: 0
 --- !u!1 &2515799908714819666
 GameObject:
   m_ObjectHideFlags: 0
@@ -296,7 +338,7 @@ MonoBehaviour:
   player: {fileID: 0}
   groundCheck: {fileID: 2515799909678227636}
   boxSize: {x: 0.12, y: -0.06}
-  lineOfSite: {x: 0.61, y: 0.42}
+  lineOfSite: {x: 0.46, y: 0.24}
   playerayer:
     serializedVersion: 2
     m_Bits: 256
@@ -514,7 +556,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2515799910309403287}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.258, y: 0, z: 0}
+  m_LocalPosition: {x: 0.369, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 2515799908829714824}
@@ -546,8 +588,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4904323227998005906}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.24806744, y: -0.022538016, z: 0}
-  m_LocalScale: {x: 0.3541144, y: 1.5572377, z: 2.0991445}
+  m_LocalPosition: {x: -0.0767, y: -0.022538016, z: 0}
+  m_LocalScale: {x: 0.13682981, y: 1.5572377, z: 2.0991445}
   m_Children: []
   m_Father: {fileID: 2515799908829714824}
   m_RootOrder: 6

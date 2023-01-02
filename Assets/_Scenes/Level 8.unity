@@ -11130,7 +11130,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "\u0110\xFAng nh\u01B0 ng\u01B0\u1EDDi n\xF3i th\xEC \u0111\xE3 kh\xF4ng
+  input: "\u0110\xFAng nh\u01B0 ng\u01B0\u01A1i n\xF3i th\xEC \u0111\xE3 kh\xF4ng
     c\xF3 n\u1ED9i chi\u1EBFn."
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
