@@ -10621,7 +10621,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2786532905275519767, guid: 4f4b6f275cd65834c9879bf35b0afaca, type: 3}
       propertyPath: OnCutscene
-      value: 800
+      value: 400
       objectReference: {fileID: 0}
     - target: {fileID: 2786532905275519767, guid: 4f4b6f275cd65834c9879bf35b0afaca, type: 3}
       propertyPath: CutsceneDeadMom

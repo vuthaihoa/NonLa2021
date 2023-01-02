@@ -35,6 +35,10 @@ public class Dark_miniBoss : MonoBehaviour
             transform.position = Vector2.MoveTowards(this.transform.position, player.position, Speed * Time.deltaTime);
             ani.SetBool("run", true);
         }
+        else
+        {
+            ani.SetBool("run", false);
+        }
         if (distanceFromPlayer < AttackingRange)
         {
             if (canFire > nextFire)
@@ -57,6 +61,7 @@ public class Dark_miniBoss : MonoBehaviour
             }
             ani.SetBool("run", false);
         }
+        canFire += Time.deltaTime;
         FlipTowardsPlayer();
     }
     public void Attack()
