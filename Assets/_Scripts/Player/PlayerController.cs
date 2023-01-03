@@ -194,7 +194,7 @@ public class PlayerController : MonoBehaviour
                 {
                     ani.SetBool("Death", true);
                     End = false;
-                    if(End == false)
+                    if (End == false)
                     {
                         endTime += Time.deltaTime;
                         if(endTime >=1.5f)
@@ -203,9 +203,14 @@ public class PlayerController : MonoBehaviour
                             PressSpace.SetActive(true);
                             if (Input.GetKeyDown(KeyCode.Space))
                             {
+                                playerAttributesSO.healthcolli -= 2;
                                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                                 stats.currentHealth = playerAttributesSO.maxHealth;
                                 Time.timeScale = 1f;
+                            }
+                            if (playerAttributesSO.healthcolli <= 0)
+                            {
+                                playerAttributesSO.healthcolli = 0;
                             }
                         }
                     }

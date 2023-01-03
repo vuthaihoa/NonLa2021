@@ -2788,7 +2788,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e7df1ea7ee04c294c940293c90ef13f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  UpHealth: 20
+  UpHealth: 10
   healthText: {fileID: 6545311584213870279}
   healthTextUp: {fileID: 1527653637}
   UpDamage: 2
