@@ -24,7 +24,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 699248641}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.647, y: -0.3660001, z: 0}
+  m_LocalPosition: {x: -0.502, y: -0.3660001, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6723028349579404051}
@@ -54,7 +54,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927576822}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.4, y: -0.367, z: 0}
+  m_LocalPosition: {x: 0.325, y: -0.367, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 6723028349579404051}
@@ -83,7 +83,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &6723028349579404051
 Transform:
   m_ObjectHideFlags: 0
@@ -247,12 +247,13 @@ MonoBehaviour:
   bulletParentRgiht: {fileID: 1927576823}
   bulletParentLeft: {fileID: 699248642}
   bulletEnemyLeft: {fileID: 8534453887912033566, guid: 6a386d0a644916744a071f0dde4dbaaf, type: 3}
-  Attack1: 20
+  Attack1: 30
   attackOffset: {x: -0.38, y: -0.1, z: 0}
   attackRange: 0.3
   attackMask:
     serializedVersion: 2
     m_Bits: 256
+  Enemy_Health: {fileID: 1554292798}
 --- !u!114 &1554292796
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -268,12 +269,16 @@ MonoBehaviour:
   loots:
   - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
     DropRate: 100
-    minQuantity: 10
-    maxQuantity: 50
+    minQuantity: 16
+    maxQuantity: 20
   - item: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
     DropRate: 100
-    minQuantity: 20
-    maxQuantity: 30
+    minQuantity: 13
+    maxQuantity: 17
+  - item: {fileID: 978294017411525179, guid: c9cf1ffdc623daf4e8e600de88e617b0, type: 3}
+    DropRate: 100
+    minQuantity: 1
+    maxQuantity: 1
 --- !u!114 &1554292798
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -286,7 +291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 400
+  health: 1200
   bloodEffect: {fileID: 6512630296081774035, guid: 3417a92e6bf83a84c839cf30fb6fbc23, type: 3}
   deadParticle: {fileID: 8810984599450161541, guid: ecbe2241f1dab664a930ce577d96eb7f, type: 3}
   HitdeadParticle: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}

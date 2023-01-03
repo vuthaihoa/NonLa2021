@@ -2791,10 +2791,10 @@ MonoBehaviour:
   UpHealth: 20
   healthText: {fileID: 6545311584213870279}
   healthTextUp: {fileID: 1527653637}
-  UpDamage: 5
+  UpDamage: 2
   DamageText: {fileID: 6545311585535119377}
   DamageTextUp: {fileID: 137822713}
-  UpMagic: 10
+  UpMagic: 6
   MagicText: {fileID: 6545311585927114867}
   MagicTextUp: {fileID: 670268648}
   UpPotion: 20

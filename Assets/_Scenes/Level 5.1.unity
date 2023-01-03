@@ -2997,6 +2997,7 @@ GameObject:
   - component: {fileID: 779829735}
   - component: {fileID: 779829734}
   - component: {fileID: 779829736}
+  - component: {fileID: 779829737}
   m_Layer: 0
   m_Name: MomDead
   m_TagString: Untagged
@@ -3071,6 +3072,19 @@ MonoBehaviour:
   sceneName: Level 5.2
   playerPosition: {x: -2.26, y: -0.821}
   playerStorage: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
+--- !u!114 &779829737
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 779829733}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa46df3a16f13594f9e8efa8ebac2d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 4b855f3e-a750-429c-86f0-bbb3c9f5aa60
 --- !u!1 &782388839
 GameObject:
   m_ObjectHideFlags: 0

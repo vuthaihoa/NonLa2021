@@ -297,8 +297,8 @@ MonoBehaviour:
     maxQuantity: 5
   - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
     DropRate: 34.9
-    minQuantity: 15
-    maxQuantity: 25
+    minQuantity: 7
+    maxQuantity: 13
 --- !u!1 &5970196008544371934
 GameObject:
   m_ObjectHideFlags: 0

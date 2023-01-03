@@ -5651,5 +5651,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: UI_NameBoss
       objectReference: {fileID: 0}
+    - target: {fileID: 2248216228841775198, guid: 3b79b706e4da40d4c85b9f20b3651ccc, type: 3}
+      propertyPath: m_MatchWidthOrHeight
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248216228841775198, guid: 3b79b706e4da40d4c85b9f20b3651ccc, type: 3}
+      propertyPath: m_ReferencePixelsPerUnit
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248216229226286772, guid: 3b79b706e4da40d4c85b9f20b3651ccc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00012207031
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248216229226286772, guid: 3b79b706e4da40d4c85b9f20b3651ccc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000061035156
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b79b706e4da40d4c85b9f20b3651ccc, type: 3}

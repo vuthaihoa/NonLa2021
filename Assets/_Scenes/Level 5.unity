@@ -16170,17 +16170,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 6723028349579404062, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
   m_PrefabInstance: {fileID: 6723028348670235355}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1554292789 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 1554292798, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-  m_PrefabInstance: {fileID: 6723028348670235355}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1554292788}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e2d1349c224b84041b37c0faf67a0b31, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1576850033
 GameObject:
   m_ObjectHideFlags: 0
@@ -17290,6 +17279,7 @@ GameObject:
   - component: {fileID: 1700289902}
   - component: {fileID: 1700289903}
   - component: {fileID: 1700289904}
+  - component: {fileID: 1700289906}
   - component: {fileID: 1700289905}
   m_Layer: 0
   m_Name: NonlaSleep
@@ -17379,6 +17369,19 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 4.504455, y: 2.1024837}
   m_EdgeRadius: 0
+--- !u!114 &1700289906
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1700289901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa46df3a16f13594f9e8efa8ebac2d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 16a49027-b98e-42b0-bdbc-fd4c636055c5
 --- !u!1 &1709661585
 GameObject:
   m_ObjectHideFlags: 0
@@ -21948,42 +21951,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1456566732, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-      propertyPath: Attack1
-      value: 30
-      objectReference: {fileID: 0}
-    - target: {fileID: 1456566732, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-      propertyPath: Enemy_Health
-      value: 
-      objectReference: {fileID: 1554292789}
-    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-      propertyPath: loots.Array.size
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-      propertyPath: loots.Array.data[2].item
-      value: 
-      objectReference: {fileID: 978294017411525179, guid: c9cf1ffdc623daf4e8e600de88e617b0, type: 3}
-    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-      propertyPath: loots.Array.data[2].DropRate
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-      propertyPath: loots.Array.data[0].minQuantity
-      value: 50
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-      propertyPath: loots.Array.data[2].maxQuantity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554292796, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-      propertyPath: loots.Array.data[2].minQuantity
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1554292798, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
-      propertyPath: health
-      value: 1200
-      objectReference: {fileID: 0}
     - target: {fileID: 6723028349579404050, guid: 47e1a9d647af1fd4ba6facdb4457b333, type: 3}
       propertyPath: player
       value: 

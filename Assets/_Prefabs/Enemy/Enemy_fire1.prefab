@@ -186,11 +186,11 @@ MonoBehaviour:
   - item: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
     DropRate: 100
     minQuantity: 1
-    maxQuantity: 5
+    maxQuantity: 3
   - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
     DropRate: 28
-    minQuantity: 10
-    maxQuantity: 15
+    minQuantity: 1
+    maxQuantity: 4
 --- !u!50 &5306555328621803037
 Rigidbody2D:
   serializedVersion: 4

@@ -677,11 +677,11 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "Soul")
         {
-            playerAttributesSO.soulFire += 1;
+            playerAttributesSO.soulFire += 3;
         }
         if (collision.gameObject.tag == "Money")
         {
-            playerAttributesSO.money += 1;
+            playerAttributesSO.money += 3;
         }
         if (collision.gameObject.tag == "UnlockDash")
         {

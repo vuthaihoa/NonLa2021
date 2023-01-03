@@ -253,5 +253,9 @@ MonoBehaviour:
   loots:
   - item: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
     DropRate: 100
-    minQuantity: 40
-    maxQuantity: 60
+    minQuantity: 15
+    maxQuantity: 20
+  - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
+    DropRate: 100
+    minQuantity: 15
+    maxQuantity: 25

@@ -14,9 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1000
   MoreHealth: 50
-  healthcolli: 1
+  healthcolli: 0
   money: 0
-  damage: 10
+  damage: 100
   Magic: 15
   HealthLv: 0
   DamageLv: 0

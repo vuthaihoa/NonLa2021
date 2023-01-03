@@ -117,7 +117,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemySaber: {fileID: 0}
-  Smoke: {fileID: 2614085439855581841, guid: 23c00f8dc446ff240ade00151da6f3ad, type: 3}
 --- !u!61 &4521612279566596423
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -441,7 +440,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6aaed63a6006e6b44b2b64573f3daf62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loots: []
+  loots:
+  - item: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
+    DropRate: 51
+    minQuantity: 3
+    maxQuantity: 6
+  - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
+    DropRate: 57
+    minQuantity: 4
+    maxQuantity: 7
 --- !u!1 &2515799908954997379
 GameObject:
   m_ObjectHideFlags: 0
