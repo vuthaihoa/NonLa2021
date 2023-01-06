@@ -30,6 +30,36 @@ Transform:
   m_Father: {fileID: 3867494397531111331}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &899717393
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 899717394}
+  m_Layer: 8
+  m_Name: HItUpgrade
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &899717394
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 899717393}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.421, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3867494397531111331}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &985507870
 GameObject:
   m_ObjectHideFlags: 0
@@ -301,6 +331,7 @@ Transform:
   - {fileID: 12046761}
   - {fileID: 2142855919}
   - {fileID: 985507873}
+  - {fileID: 899717394}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -454,6 +485,7 @@ MonoBehaviour:
   endTime: 0
   dashingPower: 5
   dashingTime: 0.3
+  hide: 0
   Radius: 0.51
   BashAbleObj: {fileID: 0}
   BashPower: 15
@@ -471,7 +503,7 @@ MonoBehaviour:
   JumpWallHight: 1.5
   whatIsGround_Wall:
     serializedVersion: 2
-    m_Bits: 64
+    m_Bits: 0
   HealthBar: {fileID: 0}
   shiled: 0
   End: 1
@@ -523,6 +555,8 @@ MonoBehaviour:
     m_Bits: 640
   attackRange: 0.15
   hitParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
+  hitUpgradeparents: {fileID: 899717394}
+  hitUpgrade: {fileID: 1561638501352935297, guid: b6aa9899ed7807c4098f3364341b0d9c, type: 3}
   playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}
 --- !u!82 &8973544925100939351
 AudioSource:

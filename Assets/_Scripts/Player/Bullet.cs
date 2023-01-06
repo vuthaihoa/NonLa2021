@@ -5,6 +5,7 @@ using UnityEngine;
 public class Bullet : MonoBehaviour
 {
     public float Speed;
+    public float DestroyTime = 0.7f;
     public Rigidbody2D Rg;
     public GameObject hitParticle;
     [Header("Attributes SO")]
@@ -22,7 +23,7 @@ public class Bullet : MonoBehaviour
             Instantiate(hitParticle, transform.position, Quaternion.identity);
             Destroy(gameObject);
         }
-        Destroy(gameObject,0.7f);
+        Destroy(gameObject, DestroyTime);
         Boss_Health boss = hitInfo.GetComponent<Boss_Health>();
         if (boss != null)
         {

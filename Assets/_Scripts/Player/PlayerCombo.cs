@@ -20,6 +20,8 @@ public class PlayerCombo : MonoBehaviour
     public LayerMask whatEnemies;
     public float attackRange;
     public GameObject hitParticle;
+    public Transform hitUpgradeparents;
+    public GameObject hitUpgrade;
     [Header("Attributes SO")]
     [SerializeField] private AttributesScriptableObject playerAttributesSO;
     void Start()
@@ -84,6 +86,13 @@ public class PlayerCombo : MonoBehaviour
             enemiesToDamage[i].GetComponent<Enemy_Health>().Takedamage(playerAttributesSO.damage);
             Instantiate(hitParticle, attackPos.transform.position, Quaternion.Euler(0.0f, 0.0f, Random.Range(0.0f, 360.0f)));
             //NextAttackTime = Time.time + 1f / StartTimeBtwAttack;
+        }
+    }
+    public void HitUpgrade()
+    {
+        if(playerAttributesSO.damage >= 50)
+        {
+            Instantiate(hitUpgrade, hitUpgradeparents.position, hitUpgradeparents.rotation);
         }
     }
     void OnDrawGizmosSelected()

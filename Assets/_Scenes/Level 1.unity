@@ -9406,10 +9406,6 @@ PrefabInstance:
       propertyPath: CoolDownShield
       value: 
       objectReference: {fileID: 1340396411}
-    - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
-      propertyPath: whatIsGround_Wall.m_Bits
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3867494397531111331, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: m_RootOrder
       value: 21
