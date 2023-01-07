@@ -557,6 +557,8 @@ MonoBehaviour:
   hitParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
   hitUpgradeparents: {fileID: 899717394}
   hitUpgrade: {fileID: 1561638501352935297, guid: b6aa9899ed7807c4098f3364341b0d9c, type: 3}
+  hitUpgrade2: {fileID: 4388422109128715, guid: 0d975226ba1e30a4b9cc836d37d579f9, type: 3}
+  hitUpgrade3: {fileID: 1857492070011305940, guid: 9339f7e857bf6294a9c6882593c1c49e, type: 3}
   playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}
 --- !u!82 &8973544925100939351
 AudioSource:

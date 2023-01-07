@@ -22,6 +22,8 @@ public class PlayerCombo : MonoBehaviour
     public GameObject hitParticle;
     public Transform hitUpgradeparents;
     public GameObject hitUpgrade;
+    public GameObject hitUpgrade2;
+    public GameObject hitUpgrade3;
     [Header("Attributes SO")]
     [SerializeField] private AttributesScriptableObject playerAttributesSO;
     void Start()
@@ -90,9 +92,23 @@ public class PlayerCombo : MonoBehaviour
     }
     public void HitUpgrade()
     {
-        if(playerAttributesSO.damage >= 50)
+        if(playerAttributesSO.damage >= 30)
         {
             Instantiate(hitUpgrade, hitUpgradeparents.position, hitUpgradeparents.rotation);
+        }
+    }
+    public void HitUpgrade2()
+    {
+        if (playerAttributesSO.damage >= 40)
+        {
+            Instantiate(hitUpgrade2, hitUpgradeparents.position, hitUpgradeparents.rotation);
+        }
+    }
+    public void HitUpgrade3()
+    {
+        if (playerAttributesSO.damage >= 50)
+        {
+            Instantiate(hitUpgrade3, hitUpgradeparents.position, hitUpgradeparents.rotation);
         }
     }
     void OnDrawGizmosSelected()
