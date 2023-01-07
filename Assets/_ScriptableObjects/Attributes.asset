@@ -15,14 +15,14 @@ MonoBehaviour:
   maxHealth: 190
   MoreHealth: 90
   healthcolli: 0
-  money: 242
-  damage: 50
-  Magic: 45
+  money: 251
+  damage: 28
+  Magic: 50
   HealthLv: 9
   DamageLv: 9
   MagicLv: 5
   PotionLV: 2
-  soulFire: 120
+  soulFire: 87
   UpgradeSoulHealth: 212.08992
   UpgradeSoulDamage: 212.08992
   UpgradeSoulMagic: 74.25859

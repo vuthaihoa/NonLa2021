@@ -7,6 +7,8 @@ public class fire : MonoBehaviour
 {
     public Transform firePoint;
     public GameObject bullet;
+    public GameObject magic1;
+    public GameObject magic2;
     Animator ani;
     private bool die = true;
     PlayerController player;
@@ -44,6 +46,20 @@ public class fire : MonoBehaviour
     public void Noshoot()
     {
         ani.SetBool("Bullet", false);
+    }
+    public void Magic1()
+    {
+        if(playerAttributesSO.Magic >= 50)
+        {
+            Instantiate(magic1, firePoint.position, firePoint.rotation);
+        }
+    }
+    public void Magic2()
+    {
+        if (playerAttributesSO.Magic >= 50)
+        {
+            Instantiate(magic2, firePoint.position, firePoint.rotation);
+        }
     }
     void Fire()
     {

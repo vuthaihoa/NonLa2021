@@ -799,6 +799,14 @@ PrefabInstance:
       propertyPath: m_Text
       value: "H\u1ECFa Di\u1EC5m T\xEDch"
       objectReference: {fileID: 0}
+    - target: {fileID: 2248216229226286772, guid: 3b79b706e4da40d4c85b9f20b3651ccc, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2248216229226286772, guid: 3b79b706e4da40d4c85b9f20b3651ccc, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3b79b706e4da40d4c85b9f20b3651ccc, type: 3}
 --- !u!114 &257426623 stripped

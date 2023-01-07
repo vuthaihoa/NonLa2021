@@ -27,6 +27,8 @@ AnimationClip:
       value: {fileID: 6581301862041211445, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
     - time: 0.1875
       value: {fileID: 863470871134072566, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
+    - time: 0.3125
+      value: {fileID: -8121206406721251471, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -50,12 +52,13 @@ AnimationClip:
     - {fileID: 4717467408896117603, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
     - {fileID: 6581301862041211445, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
     - {fileID: 863470871134072566, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
+    - {fileID: -8121206406721251471, guid: 5d19758df3f5c7d44ad02e1cd0185198, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.25
+    m_StopTime: 0.375
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -84,6 +87,20 @@ AnimationClip:
     messageOptions: 0
   - time: 0.1875
     functionName: Shoot
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.1875
+    functionName: Magic1
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.3125
+    functionName: Magic2
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

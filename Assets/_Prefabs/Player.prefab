@@ -670,6 +670,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   firePoint: {fileID: 7505307989793968301}
   bullet: {fileID: 4095149372292239788, guid: 10ab28a5070474d4b9e277bf5597b592, type: 3}
+  magic1: {fileID: 2006971768871213656, guid: ced97a90a1bf1064f878470a4f148fc4, type: 3}
+  magic2: {fileID: 4226042058211096959, guid: dc1d002a0d95233428fadb2793276cae, type: 3}
   CoolDownBullet: {fileID: 0}
   coolDown3: 1.5
   playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}
