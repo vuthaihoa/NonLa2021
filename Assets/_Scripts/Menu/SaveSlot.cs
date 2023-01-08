@@ -13,6 +13,10 @@ public class SaveSlot : MonoBehaviour
     [SerializeField] private GameObject HasDataContent;
     [SerializeField] private Text percentageCompleteText;
 
+    [Header("Clear Data Button")]
+    [SerializeField] private Button clearButton;
+    public bool hasData { get; private set; } = false;
+
     private Button saveSlotButton;
 
     private void Awake()
@@ -23,13 +27,17 @@ public class SaveSlot : MonoBehaviour
     {
         if (data == null)
         {
+            hasData = false;
             noDataContent.SetActive(true);
             HasDataContent.SetActive(false);
+            clearButton.gameObject.SetActive(false);
         }
         else
         {
+            hasData = true;
             noDataContent.SetActive(false);
             HasDataContent.SetActive(true);
+            clearButton.gameObject.SetActive(true);
 
             percentageCompleteText.text = data.GetPercentageComplete() + "% COMPLETE";
         }
@@ -41,5 +49,6 @@ public class SaveSlot : MonoBehaviour
     public void SetInteractable(bool interactable)
     {
         saveSlotButton.interactable = interactable;
+        clearButton.interactable = interactable;
     }
 }

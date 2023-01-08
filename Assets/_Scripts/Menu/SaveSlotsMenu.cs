@@ -10,6 +10,8 @@ public class SaveSlotsMenu : Menu
     [SerializeField] private ManiMenu maniMenu;
     [Header("Menu Buttons")]
     [SerializeField] private Button backButton;
+    [Header("Confirmation Popup")]
+    [SerializeField] private ConfirmationPopupMenu confirmationPopupMenu;
     private SaveSlot[] saveSlot;
 
     private bool isLoadingGame = false;
@@ -22,14 +24,41 @@ public class SaveSlotsMenu : Menu
     public void OnSaveSlotClicked(SaveSlot saveSlot)
     {
         DisableMenuButtons();
-        DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileID());
-        if (!isLoadingGame)
+        if (isLoadingGame)
         {
+            DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileID());
+            SaveGameAndLoadScene();
+            //DataPersistenceManager.instance.NewGame();
+            //SceneManager.LoadSceneAsync("NewGame");
+        }
+        else if(saveSlot.hasData)
+        {
+            confirmationPopupMenu.ActivateMenu(
+                "Starting a New Game With this Slot will override the  currently saved data. Are you sure?",
+                () =>
+                {
+                    DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileID());
+                    DataPersistenceManager.instance.NewGame();
+                    SaveGameAndLoadScene();
+                    SceneManager.LoadSceneAsync("NewGame");
+                },
+                () =>
+                {
+                    this.ActivateMenu(isLoadingGame);
+                }
+                );
+        }
+        else
+        {
+            DataPersistenceManager.instance.ChangeSelectedProfileId(saveSlot.GetProfileID());
             DataPersistenceManager.instance.NewGame();
+            SaveGameAndLoadScene();
             SceneManager.LoadSceneAsync("NewGame");
         }
+    }
+    private void SaveGameAndLoadScene()
+    {
         DataPersistenceManager.instance.SaveGame();
-        //SceneManager.LoadSceneAsync("Level 1");
         if (PlayerPrefs.GetInt("LoadSaved") == 1 && isLoadingGame)
         {
             SceneManager.LoadScene(PlayerPrefs.GetInt("SavedScene"));
@@ -39,9 +68,22 @@ public class SaveSlotsMenu : Menu
             return;
         }
     }
-    private void Start()
+    public void OnClearClicked(SaveSlot saveSlot)
     {
-        //ActivateMenu();
+        DisableMenuButtons();
+        confirmationPopupMenu.ActivateMenu(
+            "Are you sure you want to delete this Save data?",
+            () =>
+            {
+                DataPersistenceManager.instance.DeleteProfileData(saveSlot.GetProfileID());
+                ActivateMenu(isLoadingGame);
+            },
+            () =>
+            {
+                ActivateMenu(isLoadingGame);
+            }
+            );
+
     }
     public void OnBackCliked()
     {
@@ -53,6 +95,7 @@ public class SaveSlotsMenu : Menu
         this.gameObject.SetActive(true);
         this.isLoadingGame = isLoadingGame;
         Dictionary<string, GameData> profilesGameData = DataPersistenceManager.instance.GetAllProfilesGameData();
+        backButton.interactable = true;
         backButton.interactable = true;
         GameObject firstselected = backButton.gameObject;
         foreach(SaveSlot saveSlot in saveSlot)

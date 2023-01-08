@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
 
 public class DataPersistenceManager : MonoBehaviour
 {
@@ -41,12 +42,8 @@ public class DataPersistenceManager : MonoBehaviour
             Debug.LogWarning("Data persistence....");
         }
         this.dataHandler = new FileDataHandler(Application.persistentDataPath, fileName, useEncryption);
-        this.selectedProfileId = dataHandler.GetMostRecentlyUpdatedProfileId();
-        if(overrideSelectedProfileId)
-        {
-            this.selectedProfileId = testSeclectedProfileId;
-            Debug.LogWarning("overrode selected...." + testSeclectedProfileId);
-        }
+        
+        InitializeSelectedProfileId();
     }
     private void OnEnable()
     {
@@ -70,6 +67,21 @@ public class DataPersistenceManager : MonoBehaviour
     {
         this.selectedProfileId = newProfileId;
         LoadGame();
+    }
+    public void DeleteProfileData(string profileId)
+    {
+        dataHandler.Delete(profileId);
+        InitializeSelectedProfileId();
+        LoadGame();
+    }
+    private void InitializeSelectedProfileId()
+    {
+        this.selectedProfileId = dataHandler.GetMostRecentlyUpdatedProfileId();
+        if (overrideSelectedProfileId)
+        {
+            this.selectedProfileId = testSeclectedProfileId;
+            Debug.LogWarning("overrode selected...." + testSeclectedProfileId);
+        }
     }
     public void NewGame()
     {

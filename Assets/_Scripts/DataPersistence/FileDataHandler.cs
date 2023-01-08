@@ -11,13 +11,14 @@ public class FileDataHandler
 
     private bool useEncryption = false;
     private readonly string encryptionCodeWord = "word";
+    private readonly string backupExtension = ".bak";
     public FileDataHandler(string DataDirPath, string DataFileName, bool useEncrytion)
     {
         this.DataDirPath = DataDirPath;
         this.DataFileName = DataFileName;
         this.useEncryption = useEncrytion;
     }
-    public GameData Load(string profileId)
+    public GameData Load(string profileId, bool allowRestoreFromBackup = true)
     {
         if(profileId == null)
         {
@@ -45,7 +46,20 @@ public class FileDataHandler
             }
             catch(Exception e)
             {
-                Debug.LogError("Error occured:" + fullPath + "\n" + e);
+                if(allowRestoreFromBackup)
+                {
+                    Debug.LogWarning("Failed to load data file. Attempting to roll back.\n" + e);
+                    bool rollbackSuccess = AttemptRollback(fullPath);
+                    if (rollbackSuccess)
+                    {
+                        LoadData = Load(profileId,false);
+                    }
+                }
+                else
+                {
+                    Debug.LogError("Error occured when trying to load file at path:"
+                        + fullPath + " and backup did not work.\n" + e);
+                }
             }
         }
         return LoadData;
@@ -57,6 +71,7 @@ public class FileDataHandler
             return;
         }
         string fullPath = Path.Combine(DataDirPath,profileId, DataFileName);
+        string backupFilePath = fullPath + backupExtension;
         try
         {
             Directory.CreateDirectory(Path.GetDirectoryName(fullPath));
@@ -72,10 +87,43 @@ public class FileDataHandler
                     writer.Write(dataToStore);
                 }
             }
+            GameData verifiedGameData = Load(profileId);
+            if(verifiedGameData != null)
+            {
+                File.Copy(fullPath, backupFilePath, true);
+            }
+            else
+            {
+                throw new Exception("Save file Could not be verified and backup could not be created. ");
+            }
         }
         catch (Exception e)
         {
             Debug.LogError("Error occured:" + fullPath + "\n" + e);
+        }
+    }
+    public void Delete(string profileId)
+    {
+        if(profileId == null)
+        {
+            return;
+        }
+
+        string fullPath = Path.Combine(DataDirPath, profileId, DataFileName);
+        try
+        {
+            if(File.Exists(fullPath))
+            {
+                Directory.Delete(Path.GetDirectoryName(fullPath),true);
+            }
+            else
+            {
+                Debug.LogWarning(" Tried to delete profile data, but data was not found at path: " + fullPath);
+            }
+        }
+        catch (Exception e)
+        {
+            Debug.LogError("Failed to delete profile data for profileId: " + profileId + "at path"+ fullPath + "\n" + e);
         }
     }
     public Dictionary<string,GameData> LoadAllProfiles()
@@ -139,5 +187,29 @@ public class FileDataHandler
             modifieData += (char)(data[i] ^ encryptionCodeWord[i % encryptionCodeWord.Length]);
         }
         return modifieData;
+    }
+    private bool AttemptRollback(string fullpath)
+    {
+        bool success = false;
+        string backupFilePath = fullpath + backupExtension;
+        try
+        {
+            if(File.Exists(backupFilePath))
+            {
+                File.Copy(backupFilePath, fullpath, true);
+                success = true;
+                Debug.LogWarning("had to roll back to backup file at: " + backupFilePath);
+            }
+            else
+            {
+                throw new Exception("Tried to roll back, but no backup file exists to roll back to.");
+            }
+        }
+        catch(Exception e)
+        {
+            Debug.LogError("Error occured when try to roll back to backup file at: "
+                + backupFilePath + "\n" + e);
+        }
+        return success;
     }
 }

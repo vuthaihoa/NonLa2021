@@ -56,6 +56,8 @@ public class PlayerController : MonoBehaviour
     private bool TouchingWall;
     public LayerMask whatIsGround_Wall;
     //public Transform WallCheck;
+    [Header("Health")]
+    float autoHealth = 10f;
 
     private PlayerStats stats;
     public HealthBar HealthBar;
@@ -64,6 +66,9 @@ public class PlayerController : MonoBehaviour
     public bool End = true;
 
     public GameObject PressSpace;
+    public Transform parentsMagic;
+    public GameObject Magic3;
+    public GameObject Magic4;
 
     public Text inthealth;
 
@@ -178,6 +183,7 @@ public class PlayerController : MonoBehaviour
                 attackUp();
                 attackDown();
                 Bash();
+                UpgradeHealth();
                 if (playerAttributesSO.UnlockDash == false)
                 {
                     CoolDownDash.fillAmount = 1;
@@ -322,6 +328,10 @@ public class PlayerController : MonoBehaviour
                     IsCoolDown2 = true;
                     CoolDownDash.fillAmount = 1f;
                     StartCoroutine("StopSlide");
+                    if (playerAttributesSO.maxHealth >= 300)
+                    {
+                        Instantiate(Magic4, transform.position, Quaternion.identity);
+                    }
                 }
                 if (IsCoolDown2)
                 {
@@ -375,7 +385,10 @@ public class PlayerController : MonoBehaviour
                     ani.SetTrigger("Shield");
                     hide = true;
                     FindObjectOfType<AudioManager>().Play("Shield");
-
+                    if(playerAttributesSO.maxHealth >= 300)
+                    {
+                        Instantiate(Magic3, parentsMagic.position, parentsMagic.rotation);
+                    }
                 }
                 if (IsCoolDown)
                 {
@@ -468,6 +481,18 @@ public class PlayerController : MonoBehaviour
                         IsCoolDown4 = false;
                     }
                 }
+            }
+        }
+    }
+    void UpgradeHealth()
+    {
+        if(playerAttributesSO.maxHealth >= 200)
+        {
+            if(Time.time >= autoHealth)
+            {
+                autoHealth = Time.time + 10f;
+                stats.currentHealth += 20;
+                Instantiate(healthparticle, transform.position, Quaternion.identity);
             }
         }
     }

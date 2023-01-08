@@ -8,6 +8,7 @@ public class MagicUpgrade : MonoBehaviour
     public float speed;
     public GameObject hitParticle;
     public float DestroyTime = 0.7f;
+    public float RorationTimne;
     Rigidbody2D bulletRg;
     private Transform enemy;
     [Header("Attributes SO")]
@@ -19,6 +20,14 @@ public class MagicUpgrade : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Enemy");
         Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
         bulletRg.velocity = new Vector2(moveDir.x, moveDir.y);
+    }
+    private void Update()
+    {
+        if (Time.time >= RorationTimne)
+        {
+            RorationTimne = Time.time + 2f;
+            Roration(enemy);
+        }
     }
     private void Roration(Transform target)
     {
