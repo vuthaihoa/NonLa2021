@@ -193,7 +193,7 @@ GameObject:
   - component: {fileID: 2515799908829714829}
   m_Layer: 7
   m_Name: Elves_DarkWiraz
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -322,7 +322,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 468577a70e1856145afd79b8b65627de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 0.8
+  moveSpeed: 0.6
   GroundCheckPoint: {fileID: 2515799909301429543}
   WallCheckPoint: {fileID: 2515799908714819667}
   CircleRadius: 0.12

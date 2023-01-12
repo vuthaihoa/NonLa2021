@@ -20,7 +20,7 @@ GameObject:
   - component: {fileID: 2786532905275519762}
   m_Layer: 7
   m_Name: Madkingfull_Dark
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,15 +136,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Attack1: 30
+  attackOffset1: {x: -0.09, y: -0.1, z: 0}
+  attackRange1: 0.11
   Attack2: 50
   attackOffset: {x: 0.03, y: 0.02, z: 0}
   attackRange: 0.17
-  attackOffset1: {x: -0.09, y: -0.1, z: 0}
-  attackRange1: 0.11
   attackMask:
     serializedVersion: 2
     m_Bits: 256
   Enemy_Health: {fileID: 2786532905275519766}
+  CutsceneDeadMom: {fileID: 0}
+  OnCutscene: 0
 --- !u!114 &2786532905275519766
 MonoBehaviour:
   m_ObjectHideFlags: 0

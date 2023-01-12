@@ -38,4 +38,11 @@ public class Enemy_Health : MonoBehaviour
             ojbectDropItems.DropItem();
         }
     }
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if(collision.gameObject.tag == "TRAP")
+        {
+            Destroy(gameObject);
+        }
+    }
 }
