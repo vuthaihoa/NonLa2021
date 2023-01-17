@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 1938030858057967060}
   - component: {fileID: 3062245404012239725}
   - component: {fileID: 4740938704253000586}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Bullet_Tin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -159,7 +159,7 @@ MonoBehaviour:
   speed: 1.4
   Damage: 60
   Rb: {fileID: 3371935290544473545}
-  Hit: {fileID: 8789645325217453092, guid: d021c98102f880c4ea0f51cf2e4c8d7e, type: 3}
+  Hit: {fileID: 6982829137089298532, guid: 3beddc40a1e0c944c858a2cdf173e351, type: 3}
 --- !u!114 &3062245404012239725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -173,9 +173,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 10
-  bloodEffect: {fileID: 8789645325217453092, guid: d021c98102f880c4ea0f51cf2e4c8d7e, type: 3}
-  deadParticle: {fileID: 8789645325217453092, guid: d021c98102f880c4ea0f51cf2e4c8d7e, type: 3}
-  HitdeadParticle: {fileID: 8789645325217453092, guid: d021c98102f880c4ea0f51cf2e4c8d7e, type: 3}
+  bloodEffect: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
+  deadParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
+  HitdeadParticle: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
   dazedTime: 0
   NoDamage: 0
   ojbectDropItems: {fileID: 4740938704253000586}

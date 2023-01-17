@@ -121,7 +121,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   attackspeed: 0.8
   CanAttack: 0
-  Speed: 0.4
+  Speed: 1.48
   lineOfSite: 1.22
   damage: 10
   DeadExpon: {fileID: 3939127931678096643, guid: e82702670962d68459e66067e1805251, type: 3}

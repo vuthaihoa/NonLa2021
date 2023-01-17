@@ -7,9 +7,10 @@ public class Trap_StoneCir : MonoBehaviour
     public float attackspeed;
     public float CanAttack;
     public int damage = 10;
+    public float DestroyTime = 5f;
     private void Start()
     {
-        Destroy(gameObject,5f);
+        Destroy(gameObject, DestroyTime);
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {

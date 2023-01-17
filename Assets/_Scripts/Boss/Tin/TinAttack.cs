@@ -6,25 +6,32 @@ public class TinAttack : MonoBehaviour
 {
     [Header("dash")]
     public float dashingPower;
+    public float dashingPowerTarget;
     public float dashingTime = 0.2f;
+    public float HightdashingPowerTarget;
     public GameObject damaColli;
 
     private Transform player;
 
     Rigidbody2D Rg;
     Animator ani;
-
+    public int angry;
     public int Attack1;
     public Vector3 attackOffset;
     public float attackRange = 1f;
     public LayerMask attackMask;
 
-    [Header("Speard")]
+    [Header("Bullet")]
     public Transform Bullet_parents;
     public GameObject bulletTin;
+    [Header("Hit")]
+    public Transform Hit_parents;
+    public GameObject hit;
     [Header("health")]
     public Enemy_Health enemy_Health;
     private Boss boss;
+    [Header("Spawn")]
+    public GameObject spawnStone;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -34,11 +41,9 @@ public class TinAttack : MonoBehaviour
     }
     void Update()
     {
-        if (enemy_Health.health <= 300)
+        if (enemy_Health.health <= angry)
         {
             ani.SetBool("angry", true);
-            FindObjectOfType<AudioManager>().Play("Theme");
-            FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
         }
     }
     public IEnumerator Dash()
@@ -73,16 +78,41 @@ public class TinAttack : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (boss.isFipped)
         {
-            rb.AddForce(-transform.position * 20f, ForceMode2D.Force);
+            rb.AddForce(transform.position * -30f, ForceMode2D.Force);
         }
         else
         {
-            rb.AddForce(transform.position * 20f, ForceMode2D.Force);
+            rb.AddForce(transform.position * 30f, ForceMode2D.Force);
         }
     }
     public void Bullet()
     {
         Instantiate(bulletTin, Bullet_parents.position, Bullet_parents.rotation);
+    }
+    public void Hit()
+    {
+        Instantiate(hit, Hit_parents.position, Hit_parents.rotation);
+    }
+    public void DashTarget()
+    {
+        if (boss.isFipped)
+        {
+            Rg.velocity = new Vector2(transform.localScale.x * dashingPower, transform.localScale.y * -dashingPowerTarget);
+        }
+        else
+        {
+            Rg.velocity = new Vector2(transform.localScale.x * -dashingPower, transform.localScale.y * -dashingPowerTarget);
+        }
+    }
+    public void CanDashTarget()
+    {
+        Rg.velocity = new Vector2(this.transform.position.x, HightdashingPowerTarget * Time.deltaTime);
+        float originalGravity = Rg.gravityScale;
+        Rg.gravityScale = 0;
+    }
+    public void Idle()
+    {
+        Rg.gravityScale = 1;
     }
     private void OnDrawGizmosSelected()
     {
@@ -98,5 +128,13 @@ public class TinAttack : MonoBehaviour
     public void BoxCollDashOff()
     {
         damaColli.SetActive(false);
+    }
+    public void SpawnStoneOn()
+    {
+        spawnStone.SetActive(true);
+    }
+    public void SpawnStoneOff()
+    {
+        spawnStone.SetActive(false);
     }
 }

@@ -29,7 +29,7 @@ AnimationClip:
       value: {fileID: -8097586915131650658, guid: 91082a550991a2648a3a6565b49d11b1, type: 3}
     - time: 0.5
       value: {fileID: 7430428139412539336, guid: 91082a550991a2648a3a6565b49d11b1, type: 3}
-    - time: 0.6
+    - time: 0.9
       value: {fileID: -2849617229777092471, guid: 91082a550991a2648a3a6565b49d11b1, type: 3}
     attribute: m_Sprite
     path: 
@@ -61,7 +61,7 @@ AnimationClip:
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 0.70000005
+    m_StopTime: 1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -90,6 +90,13 @@ AnimationClip:
     messageOptions: 0
   - time: 0.4
     functionName: BoxCollDashOn
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 0.9
+    functionName: BoxCollDashOff
     data: 
     objectReferenceParameter: {fileID: 0}
     floatParameter: 0

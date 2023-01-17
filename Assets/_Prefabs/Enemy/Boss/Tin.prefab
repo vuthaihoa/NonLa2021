@@ -30,6 +30,36 @@ Transform:
   m_Father: {fileID: 9151357506808443408}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &117734007
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 117734008}
+  m_Layer: 7
+  m_Name: Hit_parents
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &117734008
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 117734007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.161, y: -0.132, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 9151357506808443408}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1621881742
 GameObject:
   m_ObjectHideFlags: 0
@@ -101,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   attackspeed: 1
-  CanAttack: 0
+  CanAttack: 2
   Speed: 0
   lineOfSite: 0
   damage: 50
@@ -143,6 +173,7 @@ Transform:
   m_Children:
   - {fileID: 1621881744}
   - {fileID: 92060234}
+  - {fileID: 117734008}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -292,8 +323,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dashingPower: 5
+  dashingPowerTarget: 3
   dashingTime: 0.2
+  HightdashingPowerTarget: 100
   damaColli: {fileID: 1621881742}
+  angry: 4999
   Attack1: 50
   attackOffset: {x: 0.05, y: 0, z: 0}
   attackRange: 0.16
@@ -302,7 +336,10 @@ MonoBehaviour:
     m_Bits: 256
   Bullet_parents: {fileID: 92060234}
   bulletTin: {fileID: 4733882194004516885, guid: 7606da6e83506984fa12b0453601adac, type: 3}
+  Hit_parents: {fileID: 117734008}
+  hit: {fileID: 1887912388563762621, guid: cc5be166b94d4214e85dd73450f7e9d4, type: 3}
   enemy_Health: {fileID: 1358823949}
+  spawnStone: {fileID: 0}
 --- !u!114 &1358823943
 MonoBehaviour:
   m_ObjectHideFlags: 0
