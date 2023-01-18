@@ -14,15 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 300
   MoreHealth: 50
-  healthcolli: 8
-  money: 657
+  healthcolli: 9
+  money: 828
   damage: 50
   Magic: 50
   HealthLv: 0
   DamageLv: 0
   MagicLv: 0
   PotionLV: 0
-  soulFire: 714
+  soulFire: 858
   UpgradeSoulHealth: 20
   UpgradeSoulDamage: 20
   UpgradeSoulMagic: 20

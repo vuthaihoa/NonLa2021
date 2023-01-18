@@ -16,6 +16,7 @@ public class TinAttack : MonoBehaviour
     Rigidbody2D Rg;
     Animator ani;
     public int angry;
+    public int die;
     public int Attack1;
     public Vector3 attackOffset;
     public float attackRange = 1f;
@@ -47,8 +48,9 @@ public class TinAttack : MonoBehaviour
         {
             ani.SetBool("angry", true);
         }
-        if (enemy_Health.health <= 100)
+        if (enemy_Health.health <= die)
         {
+            ani.SetBool("die", true);
             Tindie.SetActive(true);
         }
     }
