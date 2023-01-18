@@ -32,6 +32,8 @@ public class TinAttack : MonoBehaviour
     private Boss boss;
     [Header("Spawn")]
     public GameObject spawnStone;
+    [Header("Cutscene")]
+    public GameObject Tindie;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -44,6 +46,10 @@ public class TinAttack : MonoBehaviour
         if (enemy_Health.health <= angry)
         {
             ani.SetBool("angry", true);
+        }
+        if (enemy_Health.health <= 100)
+        {
+            Tindie.SetActive(true);
         }
     }
     public IEnumerator Dash()
@@ -70,7 +76,7 @@ public class TinAttack : MonoBehaviour
         poss += transform.right * attackOffset.x;
         poss += transform.up * attackOffset.y;
         Collider2D colInfo = Physics2D.OverlapCircle(poss, attackRange, attackMask);
-        FindObjectOfType<AudioManager>().Play("MT_skill1");
+        FindObjectOfType<AudioManager>().Play("Tin_punch");
         if (colInfo != null)
         {
             colInfo.GetComponent<PlayerController>().TakeDamage(Attack1);
@@ -78,30 +84,34 @@ public class TinAttack : MonoBehaviour
         Rigidbody2D rb = GetComponent<Rigidbody2D>();
         if (boss.isFipped)
         {
-            rb.AddForce(transform.position * -30f, ForceMode2D.Force);
+            rb.AddForce(transform.position * 30f, ForceMode2D.Force);
         }
         else
         {
-            rb.AddForce(transform.position * 30f, ForceMode2D.Force);
+            rb.AddForce(transform.position * -30f, ForceMode2D.Force);
         }
     }
     public void Bullet()
     {
         Instantiate(bulletTin, Bullet_parents.position, Bullet_parents.rotation);
+        FindObjectOfType<AudioManager>().Play("EnemyBullet");
     }
     public void Hit()
     {
         Instantiate(hit, Hit_parents.position, Hit_parents.rotation);
+        FindObjectOfType<AudioManager>().Play("Tin_punch");
     }
     public void DashTarget()
     {
         if (boss.isFipped)
         {
             Rg.velocity = new Vector2(transform.localScale.x * dashingPower, transform.localScale.y * -dashingPowerTarget);
+            FindObjectOfType<AudioManager>().Play("Dash_Enemy");
         }
         else
         {
             Rg.velocity = new Vector2(transform.localScale.x * -dashingPower, transform.localScale.y * -dashingPowerTarget);
+            FindObjectOfType<AudioManager>().Play("Dash_Enemy");
         }
     }
     public void CanDashTarget()

@@ -25,8 +25,8 @@ public class MagicUpgrade : MonoBehaviour
     {
         if (Time.time >= RorationTimne)
         {
-            RorationTimne = Time.time + 2f;
             Roration(enemy);
+            RorationTimne = Time.time + 2f;
         }
     }
     private void Roration(Transform target)

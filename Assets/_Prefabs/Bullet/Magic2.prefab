@@ -166,10 +166,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 2
+  lineOfSite: 1.21
   hitParticle: {fileID: 2307313915267459405, guid: 4d2f19936a086d6408c8c5a203cdb4e5, type: 3}
   DestroyTime: 0.7
   RorationTimne: 0
-  shootingDistance: 3.54
   playerAttributesSO: {fileID: 11400000, guid: 735acdb63fdb1bf4da42c6f7fc275cf2, type: 2}
 --- !u!114 &6082637409806802517
 MonoBehaviour:

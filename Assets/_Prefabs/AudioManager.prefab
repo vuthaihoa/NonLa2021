@@ -191,3 +191,10 @@ MonoBehaviour:
     loop: 1
     source: {fileID: 0}
     group: {fileID: 24300002, guid: 5dc5318edcb2c2442882528414df648d, type: 2}
+  - name: Tin_punch
+    clip: {fileID: 8300000, guid: 2d1b94ae5e2a8394d94f056fd44e3f41, type: 3}
+    Volume: 1
+    Pitch: 1
+    loop: 0
+    source: {fileID: 0}
+    group: {fileID: 24300002, guid: a8140b0f37a3a774eaf7eac176ee94ed, type: 2}
