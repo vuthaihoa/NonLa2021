@@ -147,7 +147,7 @@ TextureImporter:
       213: -7370868735631448203
     second: Linh_47
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -168,6 +168,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -206,6 +207,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -221,6 +223,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1252,6 +1266,55 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Linh_34: 8291308622151358163
+      Linh_43: -8206366015136230398
+      Linh_6: -6516287677219383839
+      Linh_10: -542433989698166673
+      Linh_37: 3127484306852415691
+      Linh_9: -8252787295925591655
+      Linh_25: -8688660454092606936
+      Linh_5: -3058845377172758601
+      Linh_1: -4564532121062466568
+      Linh_31: -7299267699244342305
+      Linh_12: -6315300219392059101
+      Linh_17: -6431577667980620544
+      Linh_27: 302890961688208761
+      Linh_16: 5130128912094116617
+      Linh_3: 5511029477555251499
+      Linh_19: 4154173169377092594
+      Linh_2: -2029880910501649573
+      Linh_20: 1011068358029680541
+      Linh_36: -2526839133251899716
+      Linh_32: -6406144247335126308
+      Linh_4: -2214538379621502270
+      Linh_14: 6629690548612934524
+      Linh_42: -3882890887678489722
+      Linh_0: -1297769870653861099
+      Linh_47: -7370868735631448203
+      Linh_15: -579185756176971478
+      Linh_38: 1988652014341511639
+      Linh_18: 6041497931602309520
+      Linh_8: -8843012031055629162
+      Linh_22: -7365866689886140069
+      Linh_24: -2653335983316104510
+      Linh_21: 2175397598345050754
+      Linh_35: -1082944379252201840
+      Linh_29: -4462120960291068132
+      Linh_39: 6272078096817393224
+      Linh_46: 2679954750016169749
+      Linh_28: -2693411041863266963
+      Linh_30: 7010323096903608663
+      Linh_45: -2980246632978898163
+      Linh_7: -3941994438564197130
+      Linh_11: 1251875502914736229
+      Linh_23: 8382856795111630529
+      Linh_41: -289275024746216357
+      Linh_40: 7908952820539832512
+      Linh_26: -2917860657317919548
+      Linh_33: 5533636396285604281
+      Linh_13: 6089219731556729679
+      Linh_44: 4971163030423526557
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

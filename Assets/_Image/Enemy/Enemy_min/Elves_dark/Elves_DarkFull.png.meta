@@ -213,7 +213,7 @@ TextureImporter:
       213: 3939930534871236733
     second: Elves_DarkFull_69
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -234,6 +234,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -272,6 +273,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -287,6 +289,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1780,6 +1794,77 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Elves_DarkFull_2: 6936304630703006530
+      Elves_DarkFull_49: 9134435491664540799
+      Elves_DarkFull_66: 1848367863434384125
+      Elves_DarkFull_21: 8933843814150287882
+      Elves_DarkFull_22: 1611530112213332913
+      Elves_DarkFull_25: 1978837925744592350
+      Elves_DarkFull_12: 1125823913210726410
+      Elves_DarkFull_64: 2163191990025054342
+      Elves_DarkFull_23: 258210063728508896
+      Elves_DarkFull_62: 1806604177588892246
+      Elves_DarkFull_6: 3559567341162542081
+      Elves_DarkFull_29: -2822123288068087813
+      Elves_DarkFull_24: -2478644999851685009
+      Elves_DarkFull_1: -6758693743231093308
+      Elves_DarkFull_41: 3124741946371443455
+      Elves_DarkFull_18: 2271210016507381801
+      Elves_DarkFull_67: -8992172799702023229
+      Elves_DarkFull_27: 2921341286679436345
+      Elves_DarkFull_16: -6791315440382892222
+      Elves_DarkFull_34: 3270546401711718992
+      Elves_DarkFull_43: -2851557348060154812
+      Elves_DarkFull_7: 2067239594970506646
+      Elves_DarkFull_48: -8929157191872682407
+      Elves_DarkFull_65: -4217047790016585015
+      Elves_DarkFull_39: 4042237989586587664
+      Elves_DarkFull_57: -7711014149294345779
+      Elves_DarkFull_53: 5932500427990651114
+      Elves_DarkFull_68: 7165229459046283948
+      Elves_DarkFull_26: -4236381848987094759
+      Elves_DarkFull_37: 3683532402221383587
+      Elves_DarkFull_3: -2058827729023671415
+      Elves_DarkFull_58: 6587139195834148551
+      Elves_DarkFull_38: -8003816279417804386
+      Elves_DarkFull_17: -556310634644829294
+      Elves_DarkFull_36: 2388444724430049082
+      Elves_DarkFull_46: 1085446640087033191
+      Elves_DarkFull_31: 1200378636243593
+      Elves_DarkFull_50: -7609815316210136061
+      Elves_DarkFull_52: 6095631592564210484
+      Elves_DarkFull_4: 7768372779704606537
+      Elves_DarkFull_28: 3283870907513701081
+      Elves_DarkFull_0: 7620025224086668761
+      Elves_DarkFull_40: -576764515575112007
+      Elves_DarkFull_59: -1313792672764279830
+      Elves_DarkFull_47: 1631899940823348544
+      Elves_DarkFull_13: -8945744212390501837
+      Elves_DarkFull_60: 8008947591891331492
+      Elves_DarkFull_20: -4510734283563745570
+      Elves_DarkFull_35: -2869061715137985887
+      Elves_DarkFull_15: 7140958588459483657
+      Elves_DarkFull_33: -8720722397045177176
+      Elves_DarkFull_69: 3939930534871236733
+      Elves_DarkFull_14: 8336781432384669054
+      Elves_DarkFull_44: -6219840437391749918
+      Elves_DarkFull_56: 8830854266777298567
+      Elves_DarkFull_30: 1656525294977610923
+      Elves_DarkFull_11: -7763039044624403721
+      Elves_DarkFull_10: 1734470869864237510
+      Elves_DarkFull_54: 8754722930389104027
+      Elves_DarkFull_63: -1924862926255068210
+      Elves_DarkFull_9: -6797435336957198209
+      Elves_DarkFull_5: -3649657824343360926
+      Elves_DarkFull_51: -8618259960214364181
+      Elves_DarkFull_55: -4461598681455844592
+      Elves_DarkFull_42: -682033220777388449
+      Elves_DarkFull_61: 4304310085230000424
+      Elves_DarkFull_19: 7948235061858660984
+      Elves_DarkFull_8: -8280524539173439286
+      Elves_DarkFull_32: -6801483536553785392
+      Elves_DarkFull_45: 767770717378595419
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

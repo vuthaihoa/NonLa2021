@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: New Table_en
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: en
+  m_SharedData: {fileID: 11400000, guid: 9ab235f22b78d094a86f3c57dbcac25b, type: 2}
+  m_Metadata:
+    m_Items:
+    - rid: 3120771776777027649
+  m_TableData:
+  - m_Id: 48241913856
+    m_Localized: Play
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5583854972928
+    m_Localized: Options
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7575633473536
+    m_Localized: Quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7694764290048
+    m_Localized: Back
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8588041990144
+    m_Localized: Sounds
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8796498898944
+    m_Localized: Mucsic
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9671422324736
+    m_Localized: Continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9822257885184
+    m_Localized: Load Game
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9973085057024
+    m_Localized: Map
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10609331613696
+    m_Localized: Empty
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11777386557440
+    m_Localized: Clear
+    m_Metadata:
+      m_Items: []
+  - m_Id: 11863805997056
+    m_Localized: Are you sure?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13125117095936
+    m_Localized: Brother!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13249922805760
+    m_Localized: "Listen, G\u1EA1o, I'm going back to the mainland. If you don't
+      see me back after 2 months, go to Hoa Diem Tich."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13723648471040
+    m_Localized: What happened? I will go with you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 13854171017216
+    m_Localized: No! I'll explain when I see you again. Remember, when you go to
+      Hoa Diem Tich, look for a person named Thuy who has a scythe.
+    m_Metadata:
+      m_Items:
+      - rid: 3120771776777027649
+  - m_Id: 14009515454464
+    m_Localized: So go carefully.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 14147839406080
+    m_Localized: I'm going, remember when you come back to the mainland, cover your
+      face.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 18877776998400
+    m_Localized: RESUME
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds:
+    - rid: 3120771776777027649
+      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
+      data:
+        m_Entries: 0030f1ac990c0000

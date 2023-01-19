@@ -39,7 +39,7 @@ TextureImporter:
       213: 8210815826122256794
     second: SuperStone_Oni_11
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -60,6 +60,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -98,6 +99,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -113,6 +115,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -388,6 +402,19 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      SuperStone_Oni_6: -3938810092660733329
+      SuperStone_Oni_5: 8969564485304979992
+      SuperStone_Oni_11: 8210815826122256794
+      SuperStone_Oni_10: 1718207183849928610
+      SuperStone_Oni_8: 2457623905772282981
+      SuperStone_Oni_1: -7208527338280158581
+      SuperStone_Oni_4: 828089080819605244
+      SuperStone_Oni_2: -2196029439511704137
+      SuperStone_Oni_9: -4199273511722611971
+      SuperStone_Oni_0: 2217834492853180222
+      SuperStone_Oni_3: 2833508649659232380
+      SuperStone_Oni_7: -8326439645473146814
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

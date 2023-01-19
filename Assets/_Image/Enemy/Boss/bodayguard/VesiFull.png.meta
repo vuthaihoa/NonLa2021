@@ -126,7 +126,7 @@ TextureImporter:
       213: 1683188895168239717
     second: VesiFull_40
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -147,6 +147,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -185,6 +186,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -200,6 +202,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1084,6 +1098,48 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      VesiFull_0: -1449950337128801061
+      VesiFull_18: -4749145014292891084
+      VesiFull_29: 615305798757246479
+      VesiFull_32: -9201400259407971734
+      VesiFull_13: -9055205702387417323
+      VesiFull_21: 2737075129618463377
+      VesiFull_5: 5532963013763659683
+      VesiFull_26: -2398538749269120496
+      VesiFull_10: -6138201294041887914
+      VesiFull_27: -5724843336803752310
+      VesiFull_17: -2542231130047851368
+      VesiFull_1: -2559781812755562444
+      VesiFull_34: 8257181177021168096
+      VesiFull_2: 6792353294394914765
+      VesiFull_19: 6361431842162832045
+      VesiFull_8: 8300053475103105429
+      VesiFull_23: -2894556769523358525
+      VesiFull_38: 5786731231679858819
+      VesiFull_40: 1683188895168239717
+      VesiFull_36: 8035622134452021957
+      VesiFull_9: -3879862593182440934
+      VesiFull_24: -9179203844039580640
+      VesiFull_33: 5526932221507221107
+      VesiFull_16: -4741157559385630146
+      VesiFull_4: -4766650784071746963
+      VesiFull_31: 3920361035620111111
+      VesiFull_35: -558592436792434956
+      VesiFull_37: 4940310387400170133
+      VesiFull_11: 8444813679551059440
+      VesiFull_14: 351306105687270838
+      VesiFull_15: 6246150928568801853
+      VesiFull_28: 3811867741426158629
+      VesiFull_7: -8802009922580374402
+      VesiFull_22: -372904565395319440
+      VesiFull_25: 4235953660971428210
+      VesiFull_12: -6705969909492213773
+      VesiFull_6: 6840154488464989415
+      VesiFull_39: -18094378227239926
+      VesiFull_3: -6377944305769834065
+      VesiFull_30: -6852682538622763636
+      VesiFull_20: -3122615786711701500
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

@@ -627,7 +627,7 @@ TextureImporter:
       213: 8908957925385231588
     second: TilesExamples_207
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -648,6 +648,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -686,6 +687,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -701,6 +703,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -5092,6 +5106,215 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      TilesExamples_82: -1146743175080232558
+      TilesExamples_132: 4419772875819484180
+      TilesExamples_42: -5660526662959016347
+      TilesExamples_155: 2002824228542790856
+      TilesExamples_77: -5545578517837147424
+      TilesExamples_66: 6769011357425489016
+      TilesExamples_206: 8370159035029629449
+      TilesExamples_96: 2139869385341950905
+      TilesExamples_186: -4703834260709540284
+      TilesExamples_5: 4852022789602071881
+      TilesExamples_75: -5870297877679074830
+      TilesExamples_190: -5142926356814161319
+      TilesExamples_140: 2404131966935717364
+      TilesExamples_195: 7247665660463240796
+      TilesExamples_184: 7341338730013776762
+      TilesExamples_110: 6391388962746061531
+      TilesExamples_43: 4438216693542232206
+      TilesExamples_13: 6814156144551179983
+      TilesExamples_87: -7237184403007753820
+      TilesExamples_163: 1921753497854409838
+      TilesExamples_58: 2253288273723807833
+      TilesExamples_151: 8018451144741464013
+      TilesExamples_88: -811134009804270464
+      TilesExamples_142: -5221313734179666421
+      TilesExamples_126: 5787168868998689410
+      TilesExamples_154: 4677137435614512082
+      TilesExamples_161: -3497522588510650679
+      TilesExamples_193: 8308714413281684763
+      TilesExamples_189: 561995784354925191
+      TilesExamples_130: 6695947910514262833
+      TilesExamples_148: 4697785392679671638
+      TilesExamples_71: -7600989867936009608
+      TilesExamples_19: -3678221862985243579
+      TilesExamples_100: -9189726484555471976
+      TilesExamples_93: 3048285540048613274
+      TilesExamples_68: 8215524192747524140
+      TilesExamples_141: -6202734628165830209
+      TilesExamples_131: -886706446947825343
+      TilesExamples_15: -9144355903156620381
+      TilesExamples_90: -6233449056568130128
+      TilesExamples_183: -3330469826637235902
+      TilesExamples_192: 1187058450057062337
+      TilesExamples_95: -4696030091913745371
+      TilesExamples_166: 6992044488697377717
+      TilesExamples_118: 7014729521580423559
+      TilesExamples_125: -3846074862596907052
+      TilesExamples_143: -5774588282754925007
+      TilesExamples_159: -6273292481326692948
+      TilesExamples_157: -1354550903730595192
+      TilesExamples_177: 8409376638945728117
+      TilesExamples_150: -4319302556335314955
+      TilesExamples_198: -6355949598950208076
+      TilesExamples_122: 3578480057379596499
+      TilesExamples_62: 5405948680330797889
+      TilesExamples_97: -3588387707050117149
+      TilesExamples_162: 4969015906040856484
+      TilesExamples_34: 865212718502964071
+      TilesExamples_98: -7267987572325445647
+      TilesExamples_49: -8758710022618860974
+      TilesExamples_196: -2165559975430194112
+      TilesExamples_50: -7476814184186520991
+      TilesExamples_136: -5416278994211220694
+      TilesExamples_39: 4184215349484459210
+      TilesExamples_108: -1505122419881885614
+      TilesExamples_165: 3853990797224168023
+      TilesExamples_33: 9018705446388507824
+      TilesExamples_26: -7230776699826822164
+      TilesExamples_40: 8230240198741687407
+      TilesExamples_139: -5804075110864811878
+      TilesExamples_109: 7646706666495958173
+      TilesExamples_51: -5927717173277005153
+      TilesExamples_178: 6750531210750129312
+      TilesExamples_105: 2964551665163170764
+      TilesExamples_99: 2157129266177368672
+      TilesExamples_152: -5215434210226527862
+      TilesExamples_56: -1174626334115027926
+      TilesExamples_9: 3685555546738264218
+      TilesExamples_111: 1645071014127493247
+      TilesExamples_30: -3037803663239700701
+      TilesExamples_115: 2410080807443488904
+      TilesExamples_185: 1323561113349372022
+      TilesExamples_91: 5648643836867716589
+      TilesExamples_94: 6141914336312972955
+      TilesExamples_53: 8711148543662179033
+      TilesExamples_188: -2294142764296475361
+      TilesExamples_57: 8125045817614534855
+      TilesExamples_180: 7229781869690998727
+      TilesExamples_32: -6000538202896983143
+      TilesExamples_116: 2490859654660798632
+      TilesExamples_199: 2046527683235881532
+      TilesExamples_10: -2764937072949494111
+      TilesExamples_29: 7204250404341864248
+      TilesExamples_138: 8495927969779035809
+      TilesExamples_202: -7446143632237680202
+      TilesExamples_200: 349470515790919559
+      TilesExamples_83: -1523840202508200711
+      TilesExamples_63: 4439536357194677269
+      TilesExamples_20: -939578351028019418
+      TilesExamples_78: -7153720462597887557
+      TilesExamples_92: 3648338330718072667
+      TilesExamples_175: -3978653652362117341
+      TilesExamples_117: -1060038034174960380
+      TilesExamples_81: -1223817817608604054
+      TilesExamples_201: -1496672976427444256
+      TilesExamples_106: -5793672810251580933
+      TilesExamples_203: -3398025679088033711
+      TilesExamples_80: 6923408597884257571
+      TilesExamples_149: 8392466174878834704
+      TilesExamples_112: -6736179512723339228
+      TilesExamples_101: 4921200720966003670
+      TilesExamples_207: 8908957925385231588
+      TilesExamples_6: -2739728861204203798
+      TilesExamples_45: 2737987875124390257
+      TilesExamples_104: 8093617434398016240
+      TilesExamples_160: 2660956516504498413
+      TilesExamples_46: -5418684693217078766
+      TilesExamples_1: -8984887768303404567
+      TilesExamples_204: 8453860424259552641
+      TilesExamples_89: 6318300477973089293
+      TilesExamples_114: 7820302805331274383
+      TilesExamples_79: 6829722599195323330
+      TilesExamples_173: -204837590170700093
+      TilesExamples_133: 7743929389655071283
+      TilesExamples_164: 5846132542682416096
+      TilesExamples_3: 2139167342924543441
+      TilesExamples_37: -5974590385973298137
+      TilesExamples_2: 4715162398055194868
+      TilesExamples_28: 5195722828399271292
+      TilesExamples_172: -9106793365355011328
+      TilesExamples_134: 1687355811600050562
+      TilesExamples_182: -3227588015998989834
+      TilesExamples_4: -4832975166074507827
+      TilesExamples_55: -8385528307891232469
+      TilesExamples_7: 5617495114369942702
+      TilesExamples_12: 7192854156554175964
+      TilesExamples_25: -3394870911899928058
+      TilesExamples_147: 2872395109490166982
+      TilesExamples_31: 336830882105496950
+      TilesExamples_127: 8875675024337778173
+      TilesExamples_146: 7156401504214368235
+      TilesExamples_65: -3289070388738695355
+      TilesExamples_191: -7248579682328972958
+      TilesExamples_137: -2025381368412407464
+      TilesExamples_16: 1907131785476697329
+      TilesExamples_48: 4999733967344348498
+      TilesExamples_18: -1433031817733432186
+      TilesExamples_120: 5534262414242284229
+      TilesExamples_64: -3525437577623292609
+      TilesExamples_24: -4523416074066502996
+      TilesExamples_74: -5561231870684898635
+      TilesExamples_67: 5377968069308856081
+      TilesExamples_102: 8361053834795853143
+      TilesExamples_76: 17849111661218434
+      TilesExamples_158: -9032161597752071589
+      TilesExamples_171: 8844811758962919038
+      TilesExamples_36: 5690108156362651666
+      TilesExamples_194: 7799091250131523371
+      TilesExamples_176: -6063344569815486579
+      TilesExamples_70: -7341279819580228104
+      TilesExamples_119: 3973980939870539537
+      TilesExamples_27: -8220973734025886334
+      TilesExamples_107: 2669816810071140293
+      TilesExamples_205: 6330260776099529412
+      TilesExamples_124: -7310985089075160939
+      TilesExamples_41: 3303537684576784195
+      TilesExamples_170: 3010486570666438217
+      TilesExamples_156: -8113143641877723928
+      TilesExamples_179: 1935418358788560279
+      TilesExamples_129: 3490814275373889854
+      TilesExamples_128: -2032971113531745954
+      TilesExamples_11: 6246797930319289524
+      TilesExamples_38: 7283637238512481983
+      TilesExamples_168: -8859850878831984010
+      TilesExamples_187: 3901503501995743744
+      TilesExamples_85: 3072505699880022036
+      TilesExamples_123: -2105717477833687350
+      TilesExamples_60: -8714451804720080511
+      TilesExamples_72: -7447745100798948821
+      TilesExamples_73: -5593047020262029297
+      TilesExamples_135: 3465769227111164755
+      TilesExamples_197: -5706709562775378022
+      TilesExamples_86: 2803624458505283977
+      TilesExamples_0: -5241168079454102991
+      TilesExamples_22: -1654725164068743927
+      TilesExamples_144: 2022376063967706936
+      TilesExamples_167: 7639919652760170082
+      TilesExamples_121: 2117518026117129311
+      TilesExamples_181: 7515401590577465205
+      TilesExamples_23: -3150819584154491204
+      TilesExamples_145: 8768113779710412747
+      TilesExamples_8: 6673013189867136212
+      TilesExamples_169: -2593116583817089372
+      TilesExamples_84: -2765004415837698705
+      TilesExamples_61: -4574767761688321173
+      TilesExamples_54: 5133277565943936885
+      TilesExamples_35: 2393673744584205878
+      TilesExamples_52: 6351134053991144151
+      TilesExamples_59: 3004695131855882393
+      TilesExamples_44: -4728836905698843119
+      TilesExamples_113: 7705696194542454647
+      TilesExamples_69: -236376446805995274
+      TilesExamples_103: 513728462081403077
+      TilesExamples_153: 148202154773864582
+      TilesExamples_14: 1869112389368384728
+      TilesExamples_17: -2042183226653080146
+      TilesExamples_47: 8568341911344211036
+      TilesExamples_174: 5747929529914330033
+      TilesExamples_21: 7188754830990349319
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

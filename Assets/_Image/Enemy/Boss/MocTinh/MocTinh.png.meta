@@ -123,7 +123,7 @@ TextureImporter:
       213: 5755902607167774089
     second: MocTinh_39
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -144,6 +144,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -182,6 +183,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -197,6 +199,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 4096
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1060,6 +1074,47 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      MocTinh_23: 8979180418465398504
+      MocTinh_10: 983856442496816476
+      MocTinh_5: 725673238137734186
+      MocTinh_35: 2411434439243610945
+      MocTinh_34: -5603656286065848833
+      MocTinh_6: -3180399016415463510
+      MocTinh_22: -7727374960742482665
+      MocTinh_4: 4299297729592270421
+      MocTinh_0: 1493097177073259906
+      MocTinh_21: 8783765947536779691
+      MocTinh_27: -715652926000885440
+      MocTinh_17: -8143018710197351806
+      MocTinh_2: 1597939060934665937
+      MocTinh_28: -853468307202607746
+      MocTinh_30: 687000709374809509
+      MocTinh_33: -6643680855837696072
+      MocTinh_32: 4060038620019000812
+      MocTinh_11: -6167906678401076624
+      MocTinh_13: -950228463618487908
+      MocTinh_16: -4567414778750100371
+      MocTinh_9: -1165021437226477156
+      MocTinh_37: 933746456462152477
+      MocTinh_39: 5755902607167774089
+      MocTinh_26: -1579105362785659063
+      MocTinh_1: 2169375721314269360
+      MocTinh_38: 836411637901656732
+      MocTinh_29: 2400975276174694482
+      MocTinh_12: -1077324244674636037
+      MocTinh_7: 6917738392750914745
+      MocTinh_20: 7733677746326935023
+      MocTinh_8: -8574623255747456928
+      MocTinh_36: -7749118253818917549
+      MocTinh_15: 5842702663233007861
+      MocTinh_3: -398308527610595640
+      MocTinh_31: 803284731491949967
+      MocTinh_18: 4934543739760518023
+      MocTinh_14: 5005113635009282430
+      MocTinh_19: -2140341801146930914
+      MocTinh_24: 7470719918395765880
+      MocTinh_25: -514703587720823805
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

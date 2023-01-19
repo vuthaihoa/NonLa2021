@@ -66,7 +66,7 @@ TextureImporter:
       213: 7909793306663388568
     second: Wolf_20
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -87,6 +87,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -125,6 +126,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -140,6 +142,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -604,6 +618,28 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Wolf_2: 6891357095817125983
+      Wolf_5: -6983649135101308852
+      Wolf_11: 5053179653577929093
+      Wolf_20: 7909793306663388568
+      Wolf_4: -6079965141102547391
+      Wolf_1: -5547194825390550217
+      Wolf_9: -5063944184051285002
+      Wolf_15: 4894625464057909285
+      Wolf_10: 1931046830726773370
+      Wolf_18: -7301354884331706780
+      Wolf_8: 1575559808605154654
+      Wolf_0: -458185587419916677
+      Wolf_19: -2594674251864920846
+      Wolf_14: -646909099640243086
+      Wolf_6: 5184831053750644559
+      Wolf_13: 6257932743403368881
+      Wolf_17: -8950900020940200642
+      Wolf_12: -3112195067975180470
+      Wolf_16: -568028469627883041
+      Wolf_3: 2672853027243246175
+      Wolf_7: 4345086733073366625
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

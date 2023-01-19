@@ -60,7 +60,7 @@ TextureImporter:
       213: -7746129187389698789
     second: Thuy_18
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -81,6 +81,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -119,6 +120,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -134,6 +136,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -556,6 +570,26 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Thuy_2: -752837988541003706
+      Thuy_11: -2725182023383776110
+      Thuy_17: 1874938399841917581
+      Thuy_4: -5221880885688171254
+      Thuy_16: 8369593917981334827
+      Thuy_1: -1764230758042054462
+      Thuy_0: 9040244637722880295
+      Thuy_9: 6781274597019593947
+      Thuy_6: -3267692543292485574
+      Thuy_18: -7746129187389698789
+      Thuy_14: 4660797601485879270
+      Thuy_7: -8613025057364711559
+      Thuy_13: -8965761737857613830
+      Thuy_12: -7894791517854429900
+      Thuy_8: 1668314109076316102
+      Thuy_3: 1721265879381001785
+      Thuy_5: 8251108157203546746
+      Thuy_15: -5958888922068011923
+      Thuy_10: 8078548275321565308
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

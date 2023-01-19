@@ -192,7 +192,7 @@ TextureImporter:
       213: -3398066668723899021
     second: Elves_full_62
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -213,6 +213,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -251,6 +252,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -266,6 +268,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -1612,6 +1626,70 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Elves_full_45: 966456613068827001
+      Elves_full_28: 4960144204662219204
+      Elves_full_32: 118554646453866558
+      Elves_full_43: -4433433844237635101
+      Elves_full_48: -6889518337921875985
+      Elves_full_61: 5780704881511714324
+      Elves_full_11: 2005056497445080561
+      Elves_full_24: 973597047785518175
+      Elves_full_5: 1629971994069955090
+      Elves_full_0: 8750024081625433155
+      Elves_full_55: -4390407593619719015
+      Elves_full_25: 8672904530432280516
+      Elves_full_15: -4815420610306891564
+      Elves_full_37: 7444164277639143623
+      Elves_full_47: -8123089079876911897
+      Elves_full_36: 5791314158991918592
+      Elves_full_58: -9208669614493755809
+      Elves_full_1: 6310465603146221308
+      Elves_full_21: 7820661175837496474
+      Elves_full_38: -624721380802562417
+      Elves_full_13: -8070461279111530606
+      Elves_full_62: -3398066668723899021
+      Elves_full_18: 833446343985479095
+      Elves_full_23: -402171192172847172
+      Elves_full_34: 1455370319427059400
+      Elves_full_14: 5575598214394359977
+      Elves_full_44: -7839583324647714781
+      Elves_full_57: -7001819643349745041
+      Elves_full_53: 1906730567479375916
+      Elves_full_29: 8409053347028740244
+      Elves_full_8: -5368417825504024405
+      Elves_full_19: 5728780056437231279
+      Elves_full_39: -8328825106140130143
+      Elves_full_59: -6326890397610606484
+      Elves_full_60: 3355699208149129466
+      Elves_full_52: -8908206612723947882
+      Elves_full_22: -3568355291992403796
+      Elves_full_30: -7472451222498999909
+      Elves_full_51: -9008903613465680823
+      Elves_full_27: 8601764689384878431
+      Elves_full_4: 5979228836105013900
+      Elves_full_7: 4354644373214445056
+      Elves_full_2: -8974293122983796771
+      Elves_full_33: -7430190072829407643
+      Elves_full_12: -3949165254093776815
+      Elves_full_3: -3524395410424266477
+      Elves_full_50: -421777769273648478
+      Elves_full_9: -7749544881526235961
+      Elves_full_16: 6776614899713330996
+      Elves_full_42: 1533986718376517617
+      Elves_full_17: -1919950254477560521
+      Elves_full_10: 5092410846729289571
+      Elves_full_26: -6928865312570417540
+      Elves_full_31: 3567616110811408869
+      Elves_full_54: 3037445153127779857
+      Elves_full_41: -7530526261057566469
+      Elves_full_35: -2737805857280831610
+      Elves_full_56: -576891120137941672
+      Elves_full_6: 3301588900856852720
+      Elves_full_40: 3391528572982564711
+      Elves_full_20: 7033767114405461825
+      Elves_full_46: -5559060376246581708
+      Elves_full_49: -6107637725979220768
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

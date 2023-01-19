@@ -102,7 +102,7 @@ TextureImporter:
       213: -8977558017155151765
     second: ThuongLuong_Boss_32
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -123,6 +123,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -161,6 +162,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -176,6 +178,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -892,6 +906,40 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      ThuongLuong_Boss_21: -3313447571378398204
+      ThuongLuong_Boss_30: -5403425495625797617
+      ThuongLuong_Boss_9: -1623536495227130124
+      ThuongLuong_Boss_7: 2580072909531953028
+      ThuongLuong_Boss_32: -8977558017155151765
+      ThuongLuong_Boss_12: 8852319221250491563
+      ThuongLuong_Boss_16: -5469832330593428181
+      ThuongLuong_Boss_3: -4788212597369901786
+      ThuongLuong_Boss_31: 5252325178683450474
+      ThuongLuong_Boss_13: 2575330933792948895
+      ThuongLuong_Boss_19: 6761008864083123994
+      ThuongLuong_Boss_2: -8411472227099128898
+      ThuongLuong_Boss_14: 8476376712777071679
+      ThuongLuong_Boss_10: 3039803746173400489
+      ThuongLuong_Boss_23: -8749373190791461490
+      ThuongLuong_Boss_26: -1579500509513224547
+      ThuongLuong_Boss_17: 3194102808150982041
+      ThuongLuong_Boss_1: -8302199972076813235
+      ThuongLuong_Boss_24: 3602542851721130101
+      ThuongLuong_Boss_15: 2791568383068640431
+      ThuongLuong_Boss_0: 6798740858438847732
+      ThuongLuong_Boss_4: 3622299630987730430
+      ThuongLuong_Boss_20: -4016765279414832838
+      ThuongLuong_Boss_5: 2696946815535943755
+      ThuongLuong_Boss_11: 8980837445465505488
+      ThuongLuong_Boss_18: -3155771036360963952
+      ThuongLuong_Boss_27: 5329817928579086159
+      ThuongLuong_Boss_25: -5099955697786082917
+      ThuongLuong_Boss_6: -4780157075786410651
+      ThuongLuong_Boss_8: 2251408442095697616
+      ThuongLuong_Boss_29: 6463006708729949805
+      ThuongLuong_Boss_22: 1009026817313730153
+      ThuongLuong_Boss_28: -9218911847919075329
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

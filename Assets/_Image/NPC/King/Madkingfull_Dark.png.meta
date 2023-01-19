@@ -90,7 +90,7 @@ TextureImporter:
       213: -6536940455242486190
     second: Madkingfull_Dark_28
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -111,6 +111,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -149,6 +150,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -164,6 +166,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -796,6 +810,36 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      Madkingfull_Dark_11: -5629411324589374623
+      Madkingfull_Dark_2: -6648107479359346271
+      Madkingfull_Dark_6: -7838637005862388845
+      Madkingfull_Dark_22: -3009960239327546965
+      Madkingfull_Dark_9: -7897283542678460732
+      Madkingfull_Dark_23: -8270721288239113201
+      Madkingfull_Dark_18: -3508834408643940924
+      Madkingfull_Dark_1: 4750179996549548438
+      Madkingfull_Dark_13: -2464018121808483994
+      Madkingfull_Dark_17: 1171926334554259426
+      Madkingfull_Dark_24: -8456973452329000680
+      Madkingfull_Dark_7: -6800353987588857531
+      Madkingfull_Dark_0: 5832914764348305367
+      Madkingfull_Dark_12: 9222810212434684367
+      Madkingfull_Dark_15: 4277506286715702624
+      Madkingfull_Dark_20: 4742912499109310747
+      Madkingfull_Dark_8: 3985837696926318031
+      Madkingfull_Dark_14: 7713683112335129739
+      Madkingfull_Dark_25: -3246568887434298339
+      Madkingfull_Dark_4: -9063377265696961096
+      Madkingfull_Dark_3: -1699313016485667008
+      Madkingfull_Dark_5: -1933132730667571495
+      Madkingfull_Dark_10: 6394549784661824576
+      Madkingfull_Dark_27: 5876179520582216361
+      Madkingfull_Dark_16: -8555350841379956752
+      Madkingfull_Dark_21: 2628340815343361276
+      Madkingfull_Dark_19: 8664134977520156449
+      Madkingfull_Dark_26: -7053067764261980857
+      Madkingfull_Dark_28: -6536940455242486190
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

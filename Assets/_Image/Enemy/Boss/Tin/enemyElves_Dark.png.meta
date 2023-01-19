@@ -318,7 +318,7 @@ TextureImporter:
       213: -6398252326375588975
     second: enemyElves_Dark_104
   externalObjects: {}
-  serializedVersion: 11
+  serializedVersion: 12
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -339,6 +339,7 @@ TextureImporter:
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -377,6 +378,7 @@ TextureImporter:
   textureFormatSet: 0
   ignorePngGamma: 0
   applyGammaDecoding: 0
+  cookieLightType: 1
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -392,6 +394,18 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -2620,6 +2634,112 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
+    nameFileIdTable:
+      enemyElves_Dark_16: -4687033697201573779
+      enemyElves_Dark_31: -3980605755909465522
+      enemyElves_Dark_83: -1233028331244618198
+      enemyElves_Dark_5: 5936525649439444890
+      enemyElves_Dark_13: 5986923965857503149
+      enemyElves_Dark_45: -2381304632951267110
+      enemyElves_Dark_101: 1918585241543409371
+      enemyElves_Dark_77: 992992981492651756
+      enemyElves_Dark_73: 4324558238748879640
+      enemyElves_Dark_81: 5969149218596376070
+      enemyElves_Dark_24: -4191428299883105830
+      enemyElves_Dark_66: 1531933273846027422
+      enemyElves_Dark_95: -4219907074658623233
+      enemyElves_Dark_7: 5507305611393466773
+      enemyElves_Dark_15: -3259633975484776461
+      enemyElves_Dark_30: -9117459946927014270
+      enemyElves_Dark_46: -1271826614040491325
+      enemyElves_Dark_51: 7042579518304511754
+      enemyElves_Dark_9: 2686023668338280088
+      enemyElves_Dark_38: 8602670026905972152
+      enemyElves_Dark_56: 6532658801342191974
+      enemyElves_Dark_72: 7684306956388279330
+      enemyElves_Dark_99: -9214103470348140313
+      enemyElves_Dark_32: -5204972291764343848
+      enemyElves_Dark_36: -6385313569632047603
+      enemyElves_Dark_28: 428641914301818253
+      enemyElves_Dark_40: -954185748585461630
+      enemyElves_Dark_33: -2624741399175769161
+      enemyElves_Dark_3: -4578109780954837167
+      enemyElves_Dark_69: 3820079569697588249
+      enemyElves_Dark_91: 2105803024010731386
+      enemyElves_Dark_80: -9099054885988225816
+      enemyElves_Dark_1: 4296042974953227525
+      enemyElves_Dark_97: 6890307097623292675
+      enemyElves_Dark_34: -6908426738247756268
+      enemyElves_Dark_70: -177358800781294800
+      enemyElves_Dark_98: -5469337720839383534
+      enemyElves_Dark_61: -5885664381077897168
+      enemyElves_Dark_71: 9093706113523159499
+      enemyElves_Dark_23: -1584753675584678229
+      enemyElves_Dark_50: 148314661613626685
+      enemyElves_Dark_11: -6421591883247465346
+      enemyElves_Dark_58: 7417936757814288510
+      enemyElves_Dark_0: -3894744272373353020
+      enemyElves_Dark_88: 2498085697384829673
+      enemyElves_Dark_26: 1457632631971470717
+      enemyElves_Dark_29: 7505875781790325349
+      enemyElves_Dark_18: -6801636192492103018
+      enemyElves_Dark_60: 2352504859748436482
+      enemyElves_Dark_82: 1040941553682205004
+      enemyElves_Dark_62: 5754188062852749767
+      enemyElves_Dark_43: -2849617229777092471
+      enemyElves_Dark_10: -350996294598079209
+      enemyElves_Dark_6: -444660887935839507
+      enemyElves_Dark_74: -3674826590267861467
+      enemyElves_Dark_47: 6136111146703635406
+      enemyElves_Dark_49: -7207183027069950408
+      enemyElves_Dark_2: -6392706000277618778
+      enemyElves_Dark_68: -8145104961978681629
+      enemyElves_Dark_41: -8097586915131650658
+      enemyElves_Dark_25: 4254730684923480523
+      enemyElves_Dark_92: 1220151606569244738
+      enemyElves_Dark_102: 4121360183292424842
+      enemyElves_Dark_89: -7110805543249733
+      enemyElves_Dark_64: 2405456795479355083
+      enemyElves_Dark_63: 3817515899183554688
+      enemyElves_Dark_104: -6398252326375588975
+      enemyElves_Dark_53: -51138314025640713
+      enemyElves_Dark_55: 7763805685626601383
+      enemyElves_Dark_76: -723123259042728982
+      enemyElves_Dark_93: 7247377273544061571
+      enemyElves_Dark_90: 4801897570238617549
+      enemyElves_Dark_35: -4031791551557499650
+      enemyElves_Dark_100: 1445061953474532072
+      enemyElves_Dark_48: 114039779257918201
+      enemyElves_Dark_59: -6007374692321901991
+      enemyElves_Dark_75: 965354347529417488
+      enemyElves_Dark_78: 624257165994339299
+      enemyElves_Dark_84: -9075553832375670836
+      enemyElves_Dark_39: -7745648183688924708
+      enemyElves_Dark_42: 7430428139412539336
+      enemyElves_Dark_12: 298864826691619948
+      enemyElves_Dark_52: -4913085476087074836
+      enemyElves_Dark_20: -7089375043656438143
+      enemyElves_Dark_14: 8657437315857749828
+      enemyElves_Dark_67: -7853920528232726843
+      enemyElves_Dark_37: -2234791990430226127
+      enemyElves_Dark_4: 5247402127927525451
+      enemyElves_Dark_86: 4304618526308724995
+      enemyElves_Dark_54: 3559426331234967035
+      enemyElves_Dark_87: 8765010525631671918
+      enemyElves_Dark_96: -3703135733576063715
+      enemyElves_Dark_44: -4421942439516382967
+      enemyElves_Dark_79: 4476761961642103075
+      enemyElves_Dark_85: -3429923829857074746
+      enemyElves_Dark_65: 2440832550776474325
+      enemyElves_Dark_103: 784375560388741991
+      enemyElves_Dark_8: 7088128396010169661
+      enemyElves_Dark_21: 3978216229553316240
+      enemyElves_Dark_17: 4420884095557371687
+      enemyElves_Dark_19: 7052418035002671750
+      enemyElves_Dark_22: 5265370331213580802
+      enemyElves_Dark_27: -2412145613987419932
+      enemyElves_Dark_94: 6338239456220560561
+      enemyElves_Dark_57: 4515110696353227230
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
