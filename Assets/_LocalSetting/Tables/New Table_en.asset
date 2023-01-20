@@ -72,8 +72,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 13249922805760
-    m_Localized: "Listen, G\u1EA1o, I'm going back to the mainland. If you don't
-      see me back after 2 months, go to Hoa Diem Tich."
+    m_Localized: Listen, Gao, I'm going back to the mainland. If you don't see me
+      back after 2 months, go to Hoa Diem Tich.
     m_Metadata:
       m_Items: []
   - m_Id: 13723648471040
@@ -97,6 +97,209 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 18877776998400
     m_Localized: RESUME
+    m_Metadata:
+      m_Items: []
+  - m_Id: 19350571528192
+    m_Localized: 2 months later
+    m_Metadata:
+      m_Items: []
+  - m_Id: 153216108015616
+    m_Localized: Hello NonLa!!! I'm Thuy, I'm here to wait for you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 153499785572352
+    m_Localized: The place he was standing thousands of years ago was the land of
+      the fairies. Due to a war, this place was completely destroyed.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 153638541537280
+    m_Localized: His brother is the great commander of the revolutionary army. The
+      country is in a civil war due to the people's dissatisfaction with the king.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 153805319647232
+    m_Localized: Go straight to the forest, I'll wait for you there.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 385960801021952
+    m_Localized: Hoa Diem Tich. I remember I've been here before.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386369116516352
+    m_Localized: You came earlier than I thought. Commander Thuc told me to take
+      you to the base to meet Deputy Commander Boi.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 386553108049920
+    m_Localized: Let's go into the forest.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 388986471264256
+    m_Localized: Boi!!! This is the leaf of NonLa.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 389452517158912
+    m_Localized: "\rBrother of the Grand Commander. Welcome to the revolutionary
+      army base."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 389624991133696
+    m_Localized: "Where's my brother?\r"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 389719404916736
+    m_Localized: The commander is advancing along the Truong Son mountain range to
+      the north.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390005968154624
+    m_Localized: NonLa, you should go to Thien Khong Island to meet the law and ask
+      them to open the Bridge over the Truong Son range.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390385007407104
+    m_Localized: We should be able to easily support the commander in chief.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 390509720842240
+    m_Localized: "\rI'm here, run away!"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 396054427152384
+    m_Localized: Mommy...Mom...Mom...Mom!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 397196888453120
+    m_Localized: Stop!! Your journey ends here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400073488936960
+    m_Localized: Those who challenge the king are stupid.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400277684432896
+    m_Localized: You have no idea what he did for this country.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400379467608064
+    m_Localized: As you said, there was no civil war.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 400545444605952
+    m_Localized: Then I will kill you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401827349737472
+    m_Localized: he's too strong.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 401904566874112
+    m_Localized: I destroy the ground before I fall.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 402014356975616
+    m_Localized: "\rKing!! sorry god."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403384862584832
+    m_Localized: Thank you for saving me!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 403526026080256
+    m_Localized: Tin! follow me knight of hats
+    m_Metadata:
+      m_Items: []
+  - m_Id: 404322939645952
+    m_Localized: Prince!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 404685784690688
+    m_Localized: This is the knight who saved me.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 404853686874112
+    m_Localized: The lord is waiting for you at the palace.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 404960251555840
+    m_Localized: My name is Ngo. Knight of the Conical Hat why did you come down
+      to this area.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 405085145346048
+    m_Localized: You can call me NonLa. He was on his way to the island of heaven
+      when he had an accident and left here.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 405112332824576
+    m_Localized: I know a way up there, but right now I can't.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 405507625005056
+    m_Localized: The person you and I met outside that Door is the Tin card. The
+      leader of the legion of mad gods.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 405648599756800
+    m_Localized: He used to be the general of the elves. He believes that the Storm
+      God has been betrayed by the alliance of three great families.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 405767944482816
+    m_Localized: He rebelled and took his way outside. My father has attacked many
+      times to quell the rebellion, but it has not been successful.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 405870503604224
+    m_Localized: Now, if you want to go to Thien Khong Island, you have to go past
+      Tin. Let's go to my father first.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 405974019026944
+    m_Localized: Dear Father!!! This is the benefactor who saved me, he is called
+      Non La.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408214456840192
+    m_Localized: Thank you for saving my son's life.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408313140424704
+    m_Localized: Nonla wants to go to Thien Khong Island, can you help him?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408513410052096
+    m_Localized: There's only one way you can get up there and take out the mobs
+      of gods and I need you to do one thing.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408598512480256
+    m_Localized: He kept saying I would try to make it happen.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408736316338176
+    m_Localized: you will break into Tin's base and destroy the purple gem.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 408928298020864
+    m_Localized: Only when the jewel is destroyed will the giant door collapse we
+      will attack in.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409038394306560
+    m_Localized: Soldiers, lead the hats on to the base of the mad god army.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 409187795415040
+    m_Localized: Obviously, my lord.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411039949729792
+    m_Localized: Volunteer!!!
+    m_Metadata:
+      m_Items: []
+  - m_Id: 411713487843328
+    m_Localized: Thank you for playing!!!
     m_Metadata:
       m_Items: []
   references:

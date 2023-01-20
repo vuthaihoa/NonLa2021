@@ -10,6 +10,7 @@ namespace DialogueSystem
 
         [Header("Text Options")]
         [SerializeField] private string input;
+        [SerializeField] private string texts;
         [SerializeField] private Color textColor;
         [SerializeField] private Font textFont;
 
@@ -41,18 +42,23 @@ namespace DialogueSystem
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
+                
                 if (textHolder.text != input)
                 {
                     StopCoroutine(lineAppear);
                     textHolder.text = input;
                 }
                 else
+                {
                     finished = true;
+                }
             }
         }
         private void ResetLine()
         {
             textHolder = GetComponent<Text>();
+            input = textHolder.text;
+            textHolder.text = texts;
             textHolder.text = "";
             finished = false;
         }
