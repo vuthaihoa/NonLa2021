@@ -16,8 +16,7 @@ MonoBehaviour:
     m_Code: en
   m_SharedData: {fileID: 11400000, guid: 9ab235f22b78d094a86f3c57dbcac25b, type: 2}
   m_Metadata:
-    m_Items:
-    - rid: 3120771776777027649
+    m_Items: []
   m_TableData:
   - m_Id: 48241913856
     m_Localized: Play
@@ -40,7 +39,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 8796498898944
-    m_Localized: Mucsic
+    m_Localized: Music
     m_Metadata:
       m_Items: []
   - m_Id: 9671422324736
@@ -84,8 +83,7 @@ MonoBehaviour:
     m_Localized: No! I'll explain when I see you again. Remember, when you go to
       Hoa Diem Tich, look for a person named Thuy who has a scythe.
     m_Metadata:
-      m_Items:
-      - rid: 3120771776777027649
+      m_Items: []
   - m_Id: 14009515454464
     m_Localized: So go carefully.
     m_Metadata:
@@ -104,17 +102,17 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 153216108015616
-    m_Localized: Hello NonLa!!! I'm Thuy, I'm here to wait for you.
+    m_Localized: Hello Non La!!! I'm Thuy, I'm here to wait for you.
     m_Metadata:
       m_Items: []
   - m_Id: 153499785572352
-    m_Localized: The place he was standing thousands of years ago was the land of
-      the fairies. Due to a war, this place was completely destroyed.
+    m_Localized: Thousand years ago, this place was the land of the elves,  completely
+      destroyed by war.
     m_Metadata:
       m_Items: []
   - m_Id: 153638541537280
-    m_Localized: His brother is the great commander of the revolutionary army. The
-      country is in a civil war due to the people's dissatisfaction with the king.
+    m_Localized: Your brother is the great commander of the revolutionary army. The
+      country is in a civil war because the people's dissatisfaction with the king
     m_Metadata:
       m_Items: []
   - m_Id: 153805319647232
@@ -126,8 +124,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 386369116516352
-    m_Localized: You came earlier than I thought. Commander Thuc told me to take
-      you to the base to meet Deputy Commander Boi.
+    m_Localized: You came earlier than I thought. Commander Thoc told me take you
+      to the base meet Deputy Commander Boi
     m_Metadata:
       m_Items: []
   - m_Id: 386553108049920
@@ -135,12 +133,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 388986471264256
-    m_Localized: Boi!!! This is the leaf of NonLa.
+    m_Localized: Boi!!! This is Non La
     m_Metadata:
       m_Items: []
   - m_Id: 389452517158912
-    m_Localized: "\rBrother of the Grand Commander. Welcome to the revolutionary
-      army base."
+    m_Localized: Brother of the Great Commander. Welcome to the revolutionary army
+      base.
     m_Metadata:
       m_Items: []
   - m_Id: 389624991133696
@@ -153,12 +151,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 390005968154624
-    m_Localized: NonLa, you should go to Thien Khong Island to meet the law and ask
-      them to open the Bridge over the Truong Son range.
+    m_Localized: Non La, you should go to Thien Khong Island, meet the Wizards and
+      ask them to open the Bridge across the Truong Son range
     m_Metadata:
       m_Items: []
   - m_Id: 390385007407104
-    m_Localized: We should be able to easily support the commander in chief.
+    m_Localized: We might be able to easily support the Commander
     m_Metadata:
       m_Items: []
   - m_Id: 390509720842240
@@ -302,10 +300,10 @@ MonoBehaviour:
     m_Localized: Thank you for playing!!!
     m_Metadata:
       m_Items: []
+  - m_Id: 669985260253184
+    m_Localized: I need to rest before I move on.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
-    RefIds:
-    - rid: 3120771776777027649
-      type: {class: SmartFormatTag, ns: UnityEngine.Localization.Metadata, asm: Unity.Localization}
-      data:
-        m_Entries: 0030f1ac990c0000
+    RefIds: []

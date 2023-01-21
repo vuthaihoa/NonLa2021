@@ -450,12 +450,12 @@ PlayableDirector:
     value: {fileID: 281097622}
   - key: {fileID: 5250882685628622765, guid: deba3dfdffe90a04f90273bc5b3cdc6c, type: 2}
     value: {fileID: 402478570}
-  - key: {fileID: 2669628973413737982, guid: deba3dfdffe90a04f90273bc5b3cdc6c, type: 2}
-    value: {fileID: 2048591425}
   - key: {fileID: -3029428280341365956, guid: deba3dfdffe90a04f90273bc5b3cdc6c, type: 2}
     value: {fileID: 574674373}
   - key: {fileID: -7705588740470888935, guid: deba3dfdffe90a04f90273bc5b3cdc6c, type: 2}
     value: {fileID: 1203822229}
+  - key: {fileID: 5061635735585028244, guid: deba3dfdffe90a04f90273bc5b3cdc6c, type: 2}
+    value: {fileID: 2048591425}
   m_ExposedReferences:
     m_References: []
 --- !u!4 &302808749
@@ -485,7 +485,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26b8fd210ffb309449c4d09ac0c97507, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ChangeTime: 50
+  ChangeTime: 60
   sceneName: Level 1
   playerPosition: {x: -1.954, y: -0.558}
   playerStorage: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}

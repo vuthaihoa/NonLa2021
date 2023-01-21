@@ -10,7 +10,7 @@ namespace DialogueSystem
 
         [Header("Text Options")]
         [SerializeField] private string input;
-        [SerializeField] private string texts;
+        //[SerializeField] private string texts;
         [SerializeField] private Color textColor;
         [SerializeField] private Font textFont;
 
@@ -58,7 +58,8 @@ namespace DialogueSystem
         {
             textHolder = GetComponent<Text>();
             input = textHolder.text;
-            textHolder.text = texts;
+            //textHolder.text = input;
+            //textHolder.text = texts = "";
             textHolder.text = "";
             finished = false;
         }

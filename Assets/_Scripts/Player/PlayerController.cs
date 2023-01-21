@@ -323,7 +323,7 @@ public class PlayerController : MonoBehaviour
         {
             if (playerAttributesSO.UnlockDash == true)
             {
-                if (Input.GetKeyDown(KeyCode.E) && IsCoolDown2 == false && CanDash)
+                if (Input.GetKeyDown(KeyCode.LeftShift) && IsCoolDown2 == false && CanDash)
                 {
                     IsCoolDown2 = true;
                     CoolDownDash.fillAmount = 1f;
@@ -642,7 +642,7 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.tag == "NPC")
         {
             npc = collision.gameObject.GetComponent<NPC_Controller>();
-            if (Input.GetKey(KeyCode.T))
+            if (Input.GetKey(KeyCode.E))
                 npc.ActivateDialogue();
         }
         if(collision.gameObject.tag == "NPCUpgrade")
@@ -701,6 +701,18 @@ public class PlayerController : MonoBehaviour
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.tag == "NPC")
+        {
+            npc = collision.gameObject.GetComponent<NPC_Controller>();
+            if (Input.GetKey(KeyCode.E))
+                npc.ActivateDialogue();
+        }
+        if (collision.gameObject.tag == "NPCUpgrade")
+        {
+            NPCUpgrade = collision.gameObject.GetComponent<NPCUpgrade>();
+            if (Input.GetKey(KeyCode.X))
+                NPCUpgrade.ActivateUpgrade();
+        }
         if (collision.gameObject.tag == "HP")
         {
             playerAttributesSO.healthcolli += 1;
