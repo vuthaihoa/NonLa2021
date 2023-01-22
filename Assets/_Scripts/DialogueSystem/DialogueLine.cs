@@ -34,6 +34,7 @@ namespace DialogueSystem
         }
         private void OnEnable()
         {
+            //CopyLine();
             ResetLine();
             lineAppear = WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines);
             StartCoroutine(lineAppear);
@@ -58,10 +59,15 @@ namespace DialogueSystem
         {
             textHolder = GetComponent<Text>();
             input = textHolder.text;
-            //textHolder.text = input;
-            //textHolder.text = texts = "";
             textHolder.text = "";
             finished = false;
         }
+        //private void CopyLine()
+        //{
+        //    textHolder = GetComponent<Text>();
+        //    input = textHolder.text;
+        //    textHolder.text = input;
+        //    textHolder.text = "";
+        //}
     }
 }

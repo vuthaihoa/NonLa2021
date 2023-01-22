@@ -1097,6 +1097,10 @@ PrefabInstance:
         Th\xF3c d\u1EB7n t\xF4i d\u1EABn c\u1EADu t\u1EDBi c\u0103n c\u1EE9 g\u1EB7p
         Ph\xF3 ch\u1EC9 huy B\u1ED9i."
       objectReference: {fileID: 0}
+    - target: {fileID: 5110159381890468887, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: delay
       value: 0.03
@@ -1121,6 +1125,10 @@ PrefabInstance:
       propertyPath: characterSprite
       value: 
       objectReference: {fileID: 21300000, guid: 9fd5d196eac53634498c53fa8e06f761, type: 3}
+    - target: {fileID: 5110159382269491213, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: m_Text
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 5110159382409069507, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1249,7 +1257,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &460147049
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2674,7 +2682,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!212 &872512883
 SpriteRenderer:
   m_ObjectHideFlags: 0
