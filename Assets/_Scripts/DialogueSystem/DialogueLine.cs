@@ -36,6 +36,12 @@ namespace DialogueSystem
         private void OnEnable()
         {
             ResetLine();
+            //lineAppear = WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines);
+            //StartCoroutine(lineAppear);
+        }
+        private void Start()
+        {
+            ResetLine();
             lineAppear = WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines);
             StartCoroutine(lineAppear);
         }
