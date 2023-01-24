@@ -378,9 +378,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 143185840}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 143185846}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -393,15 +393,15 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &143185840 stripped
+--- !u!114 &143185846 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159383571777073, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 5110159383480672652}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 143185835}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &144427830
@@ -5381,9 +5381,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1247970590}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 1247970592}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5396,15 +5396,15 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &1247970590 stripped
+--- !u!114 &1247970592 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159382269491213, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 5110159383480672652}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247970586}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1258197935
@@ -6663,8 +6663,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "C\u1EADu h\xE3y \u0111i th\u1EB3ng t\u1EDBi khu r\u1EEBng, t\xF4i s\u1EBD
-    ch\u1EDD c\u1EADu \u1EDF \u0111\xF3."
+  input: Go straight to the forest, I'll wait for you there.
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -6739,9 +6738,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1664240899}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 1664240898}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7165,9 +7164,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1733752772}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 1733752778}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7180,15 +7179,15 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &1733752772 stripped
+--- !u!114 &1733752778 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159381890468887, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 5110159383480672652}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1733752768}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1743157116
@@ -10308,10 +10307,8 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "N\u01A1i c\u1EADu \u0111ang \u0111\u1EE9ng h\xE0ng ngh\xECn n\u0103m
-        tr\u01B0\u1EDBc ch\xEDnh l\xE0 v\xF9ng \u0111\u1EA5t c\u1EE7a ti\xEAn t\u1ED9c.
-        Do m\u1ED9t cu\u1ED9c chi\u1EBFn x\u1EA3y ra n\xEAn n\u01A1i n\xE0y \u0111\xE3
-        ho\xE0n to\xE0n b\u1ECB ph\xE1 h\u1EE7y."
+      value: Thousand years ago, this place was the land of the elves,  completely
+        destroyed by war.
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: sound
@@ -10327,9 +10324,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "Anh trai c\xE2u ch\xEDnh l\xE0 \u0110\u1EA1i ch\u1EC9 huy qu\xE2n c\xE1ch
-        m\u1EA1ng. \u0110\u1EA5t n\u01B0\u1EDBc \u0111ang c\xF3 n\u1ED9i chi\u1EBFn
-        do ng\u01B0\u1EDDi d\xE2n b\u1EA5t m\xE3n v\u1EDBi vua."
+      value: Your brother is the great commander of the revolutionary army. The country
+        is in a civil war because the people's dissatisfaction with the king
       objectReference: {fileID: 0}
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textFont
@@ -10449,8 +10445,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "Ch\xE0o N\xF3n l\xE1!!! T\xF4i l\xE0 Th\u1EE7y, t\xF4i \u1EDF \u0111\xE2y
-        \u0111\u1EC3 \u0111\u1EE3i c\u1EADu."
+      value: Hello Non La!!! I'm Thuy, I'm here to wait for you.
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: sound

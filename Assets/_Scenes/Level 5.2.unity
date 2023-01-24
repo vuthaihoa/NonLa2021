@@ -573,7 +573,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "C\xF3 v\u1EBB m\u1ECDi ng\u01B0\u1EDDi ch\u01B0a t\u1EEBng g\u1EB7p! Kh\xF4ng
     sao r\u1ED3i c\u1EADu s\u1EBD t\xECm ra anh c\u1EE7a m\xECnh th\xF4i."
-  texts: 
   textColor: {r: 1, g: 0.9400701, b: 0.050943315, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.02
@@ -3213,7 +3212,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "T\xF4i mu\u1ED1n h\u1ECFi m\u1ECDi ng\u01B0\u1EDDi \u0111\xE3 c\xF3 ai
     g\u1EB7p m\u1ED9t ng\u01B0\u1EDDi t\xEAn l\xE0 th\xF3c n\xE0y ch\u01B0a?"
-  texts: 
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.1
@@ -7290,7 +7288,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   input: . . . . .
-  texts: 
   textColor: {r: 0.55880594, g: 0.6037736, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.03
@@ -8217,7 +8214,6 @@ MonoBehaviour:
     gi\u1EEFa nh\u1EEFng ng\u1ECDn n\xFAi th\xEC T\xF4i c\u1EA7n m\u1ED9t ng\u01B0\u1EDDi
     xung phong \u0111i \u0111\u1EBFn ng\u1ECDn n\xFAi bay \u0111\u1EC3 k\xEDch ho\u1EA1t
     c\xE2y c\u1EA7u ph\xE9p n\u01A1i nh\u1EEFng ph\xF9 th\u1EE7y \u0111ang canh gi\u1EEF."
-  texts: 
   textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.03
@@ -9544,7 +9540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "M\u1EB9!!!M\u1EB9!!!M\u1EB9!!!M\u1EB9 \u01A0i!!!"
+      value: Mommy...Mom...Mom...Mom!!!
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textColor.b
@@ -9564,6 +9560,17 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 754ab6e411f0ec647abbaedf7e5a1690, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+--- !u!114 &879702541 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_PrefabInstance: {fileID: 879702540}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1991068911}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &879735523
 GameObject:
   m_ObjectHideFlags: 0
@@ -11456,7 +11463,6 @@ MonoBehaviour:
   input: "H\u1EAFn l\xE0 ch\xEDnh l\xE0 m\u1ED9t t\xEAn vua \u0111i\xEAn th\u1EE9
     hai ch\xFAng ta c\u1EA7n \u0111\u1EE9ng l\xEAn \u0111\u1EC3 c\u1EE9u ng\u01B0\u1EDDi
     th\xE2n c\u1EE7a ch\xFAng ta. "
-  texts: 
   textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.03
@@ -12720,7 +12726,6 @@ MonoBehaviour:
   input: "V\u1EADy th\xEC qu\xE1 t\u1ED1t, Th\u1EE7y h\xE3y d\u1EABn N\xF3n L\xE1
     \u0111\u1EBFn b\xECa r\u1EEBng. H\xE3y c\u1EA9n th\u1EADn v\xEC khu v\u1EF1c
     \u0111\xF3 c\xF3 m\u1ED9t con m\u1ED9c tinh lu\xF4n \u1EA9n n\u1EA5p."
-  texts: 
   textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.03
@@ -13248,7 +13253,6 @@ MonoBehaviour:
     \u0111\u1EA1o qu\xE2n b\u0103ng c\u1EE7a bi\u1EC3n l\u1EDBn v\xE0 m\u1ED9t \u0111\u1EA1o
     qu\xE2n \u0111i theo \u0111\u01B0\u1EDDng n\xF9i \u0111\u1EC3 t\u1EADp k\xEDch
     b\u1EA5t ng\u1EDD."
-  texts: 
   textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.03
@@ -14468,7 +14472,6 @@ MonoBehaviour:
   input: "Ch\u1EC9 huy \u0111\u1EC3 xung phong \u0111i \u0111\u1EBFn \u0111\u1EA5y,
     t\xF4i bi\u1EBFt \u0111\u01B0\u1EDDng \u0111\u1EBFn \u0111\u1EA5y m\u1ED9t c\xE1ch
     nhanh nh\u1EA5t."
-  texts: 
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.1
@@ -15989,7 +15992,6 @@ MonoBehaviour:
     ta \u0111\u1EC3 l\u1EA5y \u0111\u1ED5 vua \u0111i\xEAn, m\xE1u c\u1EE7a ng\u01B0\u1EDDi
     th\xE2n ch\xFAng ta \u0111\xE3 ch\u1EA3y \u0111\u1EC3 hi v\u1ECDng nh\u1EEFng
     ng\u01B0\u1EDDi c\xF2n s\u1ED1ng s\u1EBD c\xF3 th\u1EC3 s\u1ED1ng t\u1ED1t h\u01A1n."
-  texts: 
   textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.03
@@ -18319,7 +18321,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   input: "C\u1EADu \u1EA5y mu\u1ED1n gia nh\u1EADp qu\xE2n c\xE1ch m\u1EA1ng v\xE0
     \u0111i t\xECm anh trai \u0111\xE3 m\u1EA5t t\xEDch t\u1EEB l\xE2u."
-  texts: 
   textColor: {r: 1, g: 0.9400701, b: 0.050943315, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.02
@@ -18517,7 +18518,6 @@ MonoBehaviour:
     nh\u1EEFng h\u1EA7m m\u1ECF \u0111\u1EC3 khai th\xE1c Linh h\u1ED3n l\u1EEDa
     v\xE0 l\u1EA5y nh\u1EEFng linh h\u1ED3n l\u1EEDa c\u1EE7a m\u1ECDi sinh v\u1EADt
     khi ch\u1EBFt s\u1EBD sinh ra."
-  texts: 
   textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.03
@@ -21392,9 +21392,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1991068914}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 879702541}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -21407,17 +21407,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &1991068914 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159383571777073, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
-  m_PrefabInstance: {fileID: 879702540}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1991068911}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &2004505914
 GameObject:
   m_ObjectHideFlags: 0
@@ -22039,7 +22028,6 @@ MonoBehaviour:
   input: "Th\u1EE7y \u0111\xE3 gi\u1EDBi thi\u1EC7u th\xEC t\xF4i ch\u1EAFc ch\u1EB5n
     tin t\u01B0\u1EDFng. Ch\xE0o m\u1EEBng c\u1EADu \u0111\u1EBFn v\u1EDBi qu\xE2n
     c\xE1ch m\u1EA1ng."
-  texts: 
   textColor: {r: 0.061843872, g: 0, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: ee00ab17e82d05648bb4d9c05bd975b2, type: 3}
   delay: 0.03

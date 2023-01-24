@@ -28,6 +28,7 @@ public class AttributesData
     public float UpgradePotion;
 
     public int buyPotion;
+    public int intLanguage;
     public AttributesData()
     {
         this.maxHealth = 100;
@@ -47,5 +48,6 @@ public class AttributesData
         this.UpgradeSoulMagic = 20;
         this.UpgradePotion = 50;
         this.buyPotion = 50;
+        this.buyPotion = 0;
     }
 }

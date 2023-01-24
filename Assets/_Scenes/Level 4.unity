@@ -706,9 +706,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "N\xF3n L\xE1, c\u1EADu h\xE3y l\xEAn Thi\xEAn Kh\xF4ng \u0110\u1EA3o g\u1EB7p
-    ph\xE1p s\u1EF1 \u0111\u1EC3 nh\u1EDD h\u1ECD m\u1EDF C\xE2y c\u1EA7u v\u01B0\u1EE3t
-    d\xE3y Tr\u01B0\u1EDDng S\u01A1n."
+  input: Non La, you should go to Thien Khong Island, meet the Wizards and ask them
+    to open the Bridge across the Truong Son range
   textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -783,9 +782,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 66266441}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 66266440}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1198,9 +1197,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 99921103}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 99921105}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1213,15 +1212,15 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &99921103 stripped
+--- !u!114 &99921105 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159382269491213, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 879702540}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 99921099}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &103736979 stripped
@@ -8322,8 +8321,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "\u0110\u1EA1i ch\u1EC9 huy \u0111ang ti\u1EBFn c\xF4ng theo d\xE3y Tr\u01B0\u1EDDng
-    S\u01A1n l\xEAn ph\xEDa B\u1EAFc."
+  input: The commander is advancing along the Truong Son mountain range to the north.
   textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -8398,9 +8396,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 531897625}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 531897624}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10578,9 +10576,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 687383804}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 687383806}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -10593,15 +10591,15 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &687383804 stripped
+--- !u!114 &687383806 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159383571777073, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 879702540}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687383800}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &690102550
@@ -13075,8 +13073,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "Em trai c\u1EE7a \u0110\u1EA1i ch\u1EC9 huy. Ch\xE0o m\u1EEBng c\u1EADu
-        t\u1EDBi c\u0103n c\u1EE9 qu\xE2n c\xE1ch m\u1EA1ng."
+      value: Brother of the Great Commander. Welcome to the revolutionary army base.
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textColor.b
@@ -13096,7 +13093,7 @@ PrefabInstance:
       objectReference: {fileID: 21300000, guid: 2d1d72c1b1b37d8488a88a4afdd3b78c, type: 3}
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "Anh trai t\xF4i \u0111\xE2u?"
+      value: 'Where''s my brother? '
       objectReference: {fileID: 0}
     - target: {fileID: 5110159382409069507, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: m_IsActive
@@ -13200,7 +13197,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "B\u1ED9i!!! \u0111\xE2y ch\xEDnh l\xE1 N\xF3n L\xE1."
+      value: Boi!!! This is Non La
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: textColor.b
@@ -13646,8 +13643,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "Ch\xFAng t\xF4i s\u1EBD c\xF3 th\u1EC3 d\u1EC5 d\xE0ng h\u1ED7 tr\u1EE3
-    \u0111\u1EA1i ch\u1EC9 huy."
+  input: We might be able to easily support the Commander
   textColor: {r: 0.75849056, g: 0.7833891, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -13722,9 +13718,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 910091254}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 910091253}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17736,9 +17732,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1221822064}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 1221822066}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -17751,15 +17747,15 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &1221822064 stripped
+--- !u!114 &1221822066 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159381890468887, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 879702540}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221822060}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1231314005

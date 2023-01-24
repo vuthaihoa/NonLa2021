@@ -65,6 +65,7 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
         playerAttributesSO.UpgradeSoulMagic = data.playerAttributesData.UpgradeSoulMagic;
         playerAttributesSO.UpgradePotion = data.playerAttributesData.UpgradePotion;
         playerAttributesSO.buyPotion = data.playerAttributesData.buyPotion;
+        playerAttributesSO.intLanguage = data.playerAttributesData.intLanguage;
     }
     public void SaveData(GameData data)
     {
@@ -85,5 +86,6 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
         data.playerAttributesData.UpgradeSoulMagic = playerAttributesSO.UpgradeSoulMagic;
         data.playerAttributesData.UpgradePotion = playerAttributesSO.UpgradePotion;
         data.playerAttributesData.buyPotion = playerAttributesSO.buyPotion;
+        data.playerAttributesData.intLanguage = playerAttributesSO.intLanguage;
     }
 }

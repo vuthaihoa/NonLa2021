@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,7 +11,7 @@ namespace DialogueSystem
 
         [Header("Text Options")]
         [SerializeField] private string input;
-        //[SerializeField] private string texts;
+        [SerializeField] private string input2;
         [SerializeField] private Color textColor;
         [SerializeField] private Font textFont;
 
@@ -34,7 +35,6 @@ namespace DialogueSystem
         }
         private void OnEnable()
         {
-            //CopyLine();
             ResetLine();
             lineAppear = WriteText(input, textHolder, textColor, textFont, delay, sound, delayBetweenLines);
             StartCoroutine(lineAppear);
@@ -43,7 +43,6 @@ namespace DialogueSystem
         {
             if (Input.GetKeyDown(KeyCode.Space))
             {
-                
                 if (textHolder.text != input)
                 {
                     StopCoroutine(lineAppear);
@@ -58,16 +57,28 @@ namespace DialogueSystem
         private void ResetLine()
         {
             textHolder = GetComponent<Text>();
-            input = textHolder.text;
             textHolder.text = "";
             finished = false;
         }
-        //private void CopyLine()
-        //{
-        //    textHolder = GetComponent<Text>();
-        //    input = textHolder.text;
-        //    textHolder.text = input;
-        //    textHolder.text = "";
-        //}
+        public virtual string texts
+        {
+            get
+            {
+                return input;
+            }
+            set
+            {
+                if (String.IsNullOrEmpty(value))
+                {
+                    if (String.IsNullOrEmpty(input))
+                        return;
+                    input = "";
+                }
+                else if (input != value)
+                {
+                    input = value;
+                }
+            }
+        }
     }
 }

@@ -311,7 +311,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "V\u1EADy anh \u0111i c\u1EA9n th\u1EADn."
+  input: So go carefully.
   textColor: {r: 1, g: 1, b: 1, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.1
@@ -386,9 +386,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 281097625}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 281097624}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -814,8 +814,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "Anh \u0111i \u0111\xE2y, nh\u1EDB khi em tr\u1EDF v\u1EC1 t\u1EDBi \u0111\u1EA5t
-    li\u1EC1n th\xEC h\xE3y che m\u1EB7t l\u1EA1i."
+  input: I'm going, remember when you come back to the mainland, cover your face.
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -890,9 +889,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 402478573}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 402478572}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2011,9 +2010,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  input: "Kh\xF4ng! Anh s\u1EBD gi\u1EA3i th\xEDch khi g\u1EB7p l\u1EA1i. Nh\u1EDB
-    l\xE0 khi t\u1EDBi H\u1ECFa Di\u1EC5m T\xEDch h\xE3y t\xECm m\u1ED9t ng\u01B0\u1EDDi
-    t\xEAn Th\u1EE7y c\xF3 c\u1EA7m m\u1ED9t c\xE1i l\u01B0\u1EE1i h\xE1i."
+  input: No! I'll explain when I see you again. Remember, when you go to Hoa Diem
+    Tich, look for a person named Thuy who has a scythe.
   textColor: {r: 1, g: 0.69166327, b: 0, a: 1}
   textFont: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
   delay: 0.03
@@ -2088,9 +2086,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1494318852}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 1494318851}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2133,9 +2131,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1539025841}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 1549482584}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2148,17 +2146,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &1539025841 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159383571777073, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
-  m_PrefabInstance: {fileID: 1549482581}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1539025832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1001 &1549482581
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2172,9 +2159,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "Nghe n\xE0y G\u1EA1o anh s\u1EBD tr\u1EDF v\u1EC1 \u0110\u1EA5t li\u1EC1n.
-        N\u1EBFu sau 2 th\xE1ng kh\xF4ng th\u1EA5y anh v\u1EC1 th\xEC h\xE3y \u0111i
-        t\u1EDBi H\u1ECFa Di\u1EC5m T\xEDch."
+      value: Listen, Gao, I'm going back to the mainland. If you don't see me back
+        after 2 months, go to Hoa Diem Tich.
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: characterSprite
@@ -2186,8 +2172,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: "\u0110\xE3 c\xF3 chuy\u1EC7n g\xEC x\u1EA3y ra v\u1EADy? Em s\u1EBD
-        \u0111i v\u1EDBi anh."
+      value: What happened? I will go with you.
       objectReference: {fileID: 0}
     - target: {fileID: 5110159382409069507, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: m_IsActive
@@ -2299,7 +2284,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
-      value: Anh hai!!!
+      value: Brother!!!
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: inputEn
@@ -2321,13 +2306,35 @@ PrefabInstance:
   m_SourcePrefab: {fileID: 100100000, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
 --- !u!114 &1549482582 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159382269491213, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 1549482581}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1591091905}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1549482583 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_PrefabInstance: {fileID: 1549482581}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1751438760}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1549482584 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_PrefabInstance: {fileID: 1549482581}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1539025832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1559112675
@@ -2445,8 +2452,8 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1549482582}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2489,9 +2496,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1751438769}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 1549482583}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2504,17 +2511,6 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &1751438769 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159381890468887, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
-  m_PrefabInstance: {fileID: 1549482581}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751438760}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1836101473
 GameObject:
   m_ObjectHideFlags: 0

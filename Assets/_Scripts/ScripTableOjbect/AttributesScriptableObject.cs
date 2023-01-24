@@ -27,6 +27,8 @@ public class AttributesScriptableObject : ScriptableObject
     public float UpgradePotion = 50;
 
     public int buyPotion = 50;
+
+    public int intLanguage = 0;
     [Header("UnLockSkill")]
     public bool UnlockDash =false;
     public bool UnlockShield = false;

@@ -1093,6 +1093,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
+      value: You came earlier than I thought. Commander Thoc told me take you to
+        the base meet Deputy Commander Boi
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: input2
       value: "C\u1EADu t\u1EDBi s\u1EDBm h\u01A1n t\xF4i ngh\u0129. Ch\u1EC9 huy
         Th\xF3c d\u1EB7n t\xF4i d\u1EABn c\u1EADu t\u1EDBi c\u0103n c\u1EE9 g\u1EB7p
         Ph\xF3 ch\u1EC9 huy B\u1ED9i."
@@ -1107,6 +1112,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
+      value: Let's go into the forest.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: input2
       value: "H\xE3y \u0111i v\xE0o khu r\u1EEBng."
       objectReference: {fileID: 0}
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
@@ -1227,6 +1236,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
+      value: Hoa Diem Tich. I remember I've been here before.
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: input2
       value: "H\u1ECFa Di\u1EC5m T\xEDch. T\xF4i nh\u1EDB m\xECnh \u0111\xE3 t\u1EEBng
         \u0111i qua \u0111\xE2y."
       objectReference: {fileID: 0}
@@ -1779,9 +1792,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 618508241}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 618508243}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1794,15 +1807,15 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &618508241 stripped
+--- !u!114 &618508243 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159382269491213, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 420540808}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 618508237}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &627966042
@@ -3658,6 +3671,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2507450747064387316, guid: 180697cc0fea808488caa02341ee1452, type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 2507450747064387317, guid: 180697cc0fea808488caa02341ee1452, type: 3}
       propertyPath: vectorValue
       value: 
@@ -4277,30 +4294,30 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1561916015}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 1561916017}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Input
           m_BoolArgument: 0
         m_CallState: 2
   references:
     version: 2
     RefIds: []
---- !u!114 &1561916015 stripped
+--- !u!114 &1561916017 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159383571777073, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 420540808}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1561916011}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1577351466
@@ -5524,9 +5541,9 @@ MonoBehaviour:
   m_UpdateString:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1885196428}
-        m_TargetAssemblyTypeName: UnityEngine.UI.Text, UnityEngine.UI
-        m_MethodName: set_text
+      - m_Target: {fileID: 1885196430}
+        m_TargetAssemblyTypeName: DialogueSystem.DialogueLine, Assembly-CSharp
+        m_MethodName: set_texts
         m_Mode: 0
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -5539,15 +5556,15 @@ MonoBehaviour:
   references:
     version: 2
     RefIds: []
---- !u!114 &1885196428 stripped
+--- !u!114 &1885196430 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 5110159381890468887, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
   m_PrefabInstance: {fileID: 420540808}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1885196424}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Script: {fileID: 11500000, guid: bdff9184da6154248a24038c2fbc8143, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1938979103
