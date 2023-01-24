@@ -17,12 +17,12 @@ public class SkillHPUpgrade : MonoBehaviour
         Enemy_Health enemy = hitInfo.GetComponent<Enemy_Health>();
         if (enemy != null)
         {
-            enemy.Takedamage(playerAttributesSO.Magic);
+            enemy.Takedamage(playerAttributesSO.damageMagic);
         }
         Boss_Health boss = hitInfo.GetComponent<Boss_Health>();
         if (boss != null)
         {
-            boss.Takedamage(playerAttributesSO.Magic);
+            boss.Takedamage(playerAttributesSO.damageMagic);
         }
 
     }

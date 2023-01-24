@@ -29,6 +29,8 @@ public class AttributesData
 
     public int buyPotion;
     public int intLanguage;
+    public int damageHit = 40;
+    public int damageMagic = 100;
     public AttributesData()
     {
         this.maxHealth = 100;
@@ -48,6 +50,8 @@ public class AttributesData
         this.UpgradeSoulMagic = 20;
         this.UpgradePotion = 50;
         this.buyPotion = 50;
-        this.buyPotion = 0;
+        this.intLanguage = 0;
+        this.damageHit = 40;
+        this.damageMagic = 100;
     }
 }

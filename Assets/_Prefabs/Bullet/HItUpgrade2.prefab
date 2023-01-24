@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4388422109128711}
   - component: {fileID: 4388422109128710}
   - component: {fileID: 4388422109128709}
-  - component: {fileID: 4388422109128708}
+  - component: {fileID: 7955738579965964513}
   m_Layer: 0
   m_Name: HItUpgrade2
   m_TagString: Untagged
@@ -155,7 +155,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.47458684, y: 0.23365869}
   m_EdgeRadius: 0
---- !u!114 &4388422109128708
+--- !u!114 &7955738579965964513
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -164,7 +164,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4388422109128715}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b166764e513eb54fbcfa363b34a9c32, type: 3}
+  m_Script: {fileID: 11500000, guid: dd1d02a2c6996d1408415c7d46a05488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 1.4

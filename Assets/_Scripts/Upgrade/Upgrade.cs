@@ -140,7 +140,6 @@ public class Upgrade : MonoBehaviour
         }
         playerAttributesSO.healthcolli = playerAttributesSO.healthcolli + 1;
         playerAttributesSO.money = playerAttributesSO.money - playerAttributesSO.buyPotion;
-        playerAttributesSO.buyPotion = playerAttributesSO.buyPotion + 20;
         BuyPotionText.text = playerAttributesSO.buyPotion.ToString();
 
     }

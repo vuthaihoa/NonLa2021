@@ -66,6 +66,8 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
         playerAttributesSO.UpgradePotion = data.playerAttributesData.UpgradePotion;
         playerAttributesSO.buyPotion = data.playerAttributesData.buyPotion;
         playerAttributesSO.intLanguage = data.playerAttributesData.intLanguage;
+        playerAttributesSO.damageHit = data.playerAttributesData.damageHit;
+        playerAttributesSO.damageMagic = data.playerAttributesData.damageMagic;
     }
     public void SaveData(GameData data)
     {
@@ -87,5 +89,7 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
         data.playerAttributesData.UpgradePotion = playerAttributesSO.UpgradePotion;
         data.playerAttributesData.buyPotion = playerAttributesSO.buyPotion;
         data.playerAttributesData.intLanguage = playerAttributesSO.intLanguage;
+        data.playerAttributesData.damageHit = playerAttributesSO.damageHit;
+        data.playerAttributesData.damageMagic = playerAttributesSO.damageMagic;
     }
 }

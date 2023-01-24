@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4700433580639041057}
   - component: {fileID: 1349493310342833136}
   - component: {fileID: 1602025773185227435}
-  - component: {fileID: 3110835763667308947}
+  - component: {fileID: -6887725963761914794}
   m_Layer: 0
   m_Name: HitUpgrade3
   m_TagString: Untagged
@@ -145,7 +145,7 @@ CircleCollider2D:
   m_Offset: {x: 0.0307508, y: -0.03743599}
   serializedVersion: 2
   m_Radius: 0.16646484
---- !u!114 &3110835763667308947
+--- !u!114 &-6887725963761914794
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -154,10 +154,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1857492070011305940}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5b166764e513eb54fbcfa363b34a9c32, type: 3}
+  m_Script: {fileID: 11500000, guid: dd1d02a2c6996d1408415c7d46a05488, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 1.6
+  Speed: 1.7
   DestroyTime: 0.6
   Rg: {fileID: 1349493310342833136}
   hitParticle: {fileID: 2307313915267459405, guid: 4d2f19936a086d6408c8c5a203cdb4e5, type: 3}
