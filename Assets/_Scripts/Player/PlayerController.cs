@@ -209,7 +209,7 @@ public class PlayerController : MonoBehaviour
                             PressSpace.SetActive(true);
                             if (Input.GetKeyDown(KeyCode.Space))
                             {
-                                playerAttributesSO.healthcolli -= 2;
+                                playerAttributesSO.healthcolli = playerAttributesSO.healthcolli - 2;
                                 SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
                                 stats.currentHealth = playerAttributesSO.maxHealth;
                                 Time.timeScale = 1f;
