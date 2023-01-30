@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Playables;
 using UnityEngine.SceneManagement;
 
 public class CutsceneNewGame : MonoBehaviour
 {
     public float ChangeTime;
     public string sceneName;
+    public PlayableDirector director;
     public Vector2 playerPosition;
     public VectorValue playerStorage;
     void Update()
@@ -21,6 +23,11 @@ public class CutsceneNewGame : MonoBehaviour
         {
             ChangeTime = 0;
             playerStorage.initialValue = playerPosition;
+        }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            director.time += 5f;
+            ChangeTime -= 5f;
         }
     }
 }

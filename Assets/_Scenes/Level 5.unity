@@ -17748,6 +17748,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ChangeTime: 6.4
   sceneName: Level 5.1
+  director: {fileID: 1700289903}
   playerPosition: {x: -4.038, y: -0.558}
   playerStorage: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
 --- !u!61 &1700289905

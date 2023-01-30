@@ -27,5 +27,9 @@ public class StartCutScene : MonoBehaviour
         {
             director.time = 50f;
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            director.time += 5f;
+        }
     }
 }

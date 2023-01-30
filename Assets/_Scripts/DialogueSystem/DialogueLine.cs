@@ -11,7 +11,7 @@ namespace DialogueSystem
 
         [Header("Text Options")]
         [SerializeField] private string input;
-        [SerializeField] private string input2;
+        //[SerializeField] private string input2;
         [SerializeField] private Color textColor;
         [SerializeField] private Font textFont;
 

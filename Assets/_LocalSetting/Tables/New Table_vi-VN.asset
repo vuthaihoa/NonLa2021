@@ -329,12 +329,22 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 411713487843328
-    m_Localized: "C\u1EA3m \u01A1n b\u1EA1n \u0111\xE3 ch\u01A1i!!!"
+    m_Localized: "C\u1EA3m \u01A1n c\u1EADu \u0111\xE3 gi\xFAp ch\xFAng t\xF4i."
     m_Metadata:
       m_Items: []
   - m_Id: 669985260253184
     m_Localized: "M\xECnh c\u1EA7n ngh\u1EC9 ng\u01A1i tr\u01B0\u1EDBc khi l\xEAn
       \u0111\u01B0\u1EDDng ti\u1EBFp."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3632852230025216
+    m_Localized: "Ng\xF4!!! con h\xE3y d\u1EABn N\xF3n L\xE1 L\xEAn thi\xEAn Kh\xF4ng
+      \u0110\u1EA3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3633747760066560
+    m_Localized: "v\xE2ng th\u01B0a cha! \u0110i th\xF4i Hi\u1EC7p S\u0129 N\xF3n
+      l\xE1 Ch\xFAng ta s\u1EBD nh\u1EDD th\u1EA7n L\u1EA1c \u0111\u01B0a ta \u0111i."
     m_Metadata:
       m_Items: []
   references:

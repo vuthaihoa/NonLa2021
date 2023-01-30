@@ -72,7 +72,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 13249922805760
     m_Localized: Listen, Gao, I'm going back to the mainland. If you don't see me
-      back after 2 months, go to Hoa Diem Tich.
+      back after 2 months, go to Hoa Diem relics.
     m_Metadata:
       m_Items: []
   - m_Id: 13723648471040
@@ -102,7 +102,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 153216108015616
-    m_Localized: Hello Non La!!! I'm Thuy, I'm here to wait for you.
+    m_Localized: Hello Knight of the Leaf hat!!! I'm Thuy, I'm here to wait for you.
     m_Metadata:
       m_Items: []
   - m_Id: 153499785572352
@@ -120,7 +120,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 385960801021952
-    m_Localized: Hoa Diem Tich. I remember I've been here before.
+    m_Localized: Hoa Diem relics. I remember I've been here before.
     m_Metadata:
       m_Items: []
   - m_Id: 386369116516352
@@ -133,7 +133,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 388986471264256
-    m_Localized: Boi!!! This is Non La
+    m_Localized: Boi!!! This is Knight of the Leaf hat
     m_Metadata:
       m_Items: []
   - m_Id: 389452517158912
@@ -151,8 +151,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 390005968154624
-    m_Localized: Non La, you should go to Thien Khong Island, meet the Wizards and
-      ask them to open the Bridge across the Truong Son range
+    m_Localized: Knight of the Leaf hat, you should go to Thien Khong Island, meet
+      the Wizards and ask them to open the Bridge across the Truong Son range
     m_Metadata:
       m_Items: []
   - m_Id: 390385007407104
@@ -196,7 +196,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 402014356975616
-    m_Localized: "\rKing!! sorry god."
+    m_Localized: "\rKing!! I'm sorry."
     m_Metadata:
       m_Items: []
   - m_Id: 403384862584832
@@ -204,7 +204,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 403526026080256
-    m_Localized: Tin! follow me Non La knight
+    m_Localized: Tin! follow me Knight of the Leaf hat
     m_Metadata:
       m_Items: []
   - m_Id: 404322939645952
@@ -225,7 +225,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 405085145346048
-    m_Localized: You can call me NonLa. He was on his way to the island of heaven
+    m_Localized: You can call me Non La. He was on his way to the island of heaven
       when he had an accident and left here.
     m_Metadata:
       m_Items: []
@@ -255,7 +255,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 405974019026944
     m_Localized: Dear Father!!! This is the benefactor who saved me, he is called
-      Non La.
+      Knight of the Leaf hat.
     m_Metadata:
       m_Items: []
   - m_Id: 408214456840192
@@ -272,7 +272,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 408598512480256
-    m_Localized: He kept saying I would try to make it happen.
+    m_Localized: You keep saying I'll try to do it.
     m_Metadata:
       m_Items: []
   - m_Id: 408736316338176
@@ -285,23 +285,33 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 409038394306560
-    m_Localized: Soldiers, lead the hats on to the base of the mad god army.
+    m_Localized: Soldier, lead Knight of the Leaf hat on to the base of the mad god
+      army.
     m_Metadata:
       m_Items: []
   - m_Id: 409187795415040
-    m_Localized: Obviously, my lord.
+    m_Localized: Yes, my lord.
     m_Metadata:
       m_Items: []
   - m_Id: 411039949729792
-    m_Localized: Volunteer!!!
+    m_Localized: Let's go!!!
     m_Metadata:
       m_Items: []
   - m_Id: 411713487843328
-    m_Localized: Thank you for playing!!!
+    m_Localized: Thank you for helping us.
     m_Metadata:
       m_Items: []
   - m_Id: 669985260253184
     m_Localized: I need to rest before I move on.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3632852230025216
+    m_Localized: son, lead Knight of the Leaf hat go to Thien Khong Island
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3633747760066560
+    m_Localized: yes father! Let's go,  Knight of the Leaf hat We will ask Lac god
+      to lead us.
     m_Metadata:
       m_Items: []
   references:

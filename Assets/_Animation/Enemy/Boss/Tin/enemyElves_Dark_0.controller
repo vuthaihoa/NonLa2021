@@ -106,7 +106,7 @@ MonoBehaviour:
   range: 0.35
   rangeDash: 1.43
   speed: 3
-  agry: 2500
+  agry: 800
 --- !u!1101 &-8330120090329324886
 AnimatorStateTransition:
   m_ObjectHideFlags: 1
@@ -443,7 +443,7 @@ MonoBehaviour:
   range: 0.35
   rangeDash: 1.43
   speed: 3
-  agry: 2500
+  agry: 800
 --- !u!1101 &-2017968629136388122
 AnimatorStateTransition:
   m_ObjectHideFlags: 1

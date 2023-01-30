@@ -13,6 +13,7 @@ public class SkillHit : MonoBehaviour
     void Start()
     {
         Rg.velocity = transform.right * Speed;
+        Destroy(gameObject, DestroyTime);
     }
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {
