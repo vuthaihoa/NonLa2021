@@ -14,6 +14,10 @@ public class Stickyplatform : MonoBehaviour
         {
             collision.gameObject.transform.SetParent(transform);
         }
+        if (collision.gameObject.tag == "Enemy")
+        {
+            collision.gameObject.transform.SetParent(transform);
+        }
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
@@ -22,6 +26,10 @@ public class Stickyplatform : MonoBehaviour
             collision.gameObject.transform.SetParent(null);
         }
         if (collision.gameObject.tag == "NPC")
+        {
+            collision.gameObject.transform.SetParent(null);
+        }
+        if (collision.gameObject.tag == "Enemy")
         {
             collision.gameObject.transform.SetParent(null);
         }
