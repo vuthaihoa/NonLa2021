@@ -15,6 +15,11 @@ public class EnemyBullet : MonoBehaviour
     bool faceingRight = false;
     private float moveDirection;
     Animator ani;
+    [Header("Damage")]
+    [SerializeField] int Attack2;
+    [SerializeField] Vector3 attackOffset;
+    [SerializeField] float attackRange = 1f;
+    [SerializeField] LayerMask attackMask;
     void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -61,6 +66,12 @@ public class EnemyBullet : MonoBehaviour
         Gizmos.color = Color.green;
         Gizmos.DrawWireSphere(transform.position, lineOfSite);
         Gizmos.DrawWireSphere(transform.position, ShootingRange);
+
+        Gizmos.color = Color.white;
+        Vector3 pos = transform.position;
+        pos += transform.right * attackOffset.x;
+        pos += transform.up * attackOffset.y;
+        Gizmos.DrawWireSphere(pos, attackRange);
     }
     void FlipTowardsPlayer()
     {
@@ -79,5 +90,17 @@ public class EnemyBullet : MonoBehaviour
         moveDirection *= -1;
         faceingRight = !faceingRight;
         transform.Rotate(0f, 180f, 0f);
+    }
+    public void Attack_2()
+    {
+        Vector3 pos = transform.position;
+        pos += transform.right * attackOffset.x;
+        pos += transform.up * attackOffset.y;
+        Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange, attackMask);
+        FindObjectOfType<AudioManager>().Play("MT_skill1");
+        if (colInfo != null)
+        {
+            colInfo.GetComponent<PlayerController>().TakeDamage(Attack2);
+        }
     }
 }
