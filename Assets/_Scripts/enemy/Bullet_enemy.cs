@@ -46,11 +46,5 @@ public class Bullet_enemy : MonoBehaviour
         {
             Destroy(gameObject);
         }
-        if (collision.gameObject.tag == "Enemy")
-        {
-            collision.gameObject.GetComponent<Enemy_Health>().Takedamage(Damage);
-            Instantiate(Hit, transform.position, Quaternion.Euler(0f, 0f, Random.Range(0.0f, 360.0f)));
-            Destroy(gameObject);
-        }
     }
 }

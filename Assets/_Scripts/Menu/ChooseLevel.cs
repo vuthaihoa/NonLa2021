@@ -80,4 +80,76 @@ public class ChooseLevel : MonoBehaviour
         FindObjectOfType<AudioManager>().StopPlaying("Theme");
         playerStorage.initialValue = playerPosition;
     }
+    public void lv9()
+    {
+        SceneManager.LoadSceneAsync("Level 9");
+        FindObjectOfType<AudioManager>().Play("Theme");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
+        playerStorage.initialValue = playerPosition;
+    }
+    public void lv10()
+    {
+        SceneManager.LoadSceneAsync("Level 10");
+        FindObjectOfType<AudioManager>().Play("Theme");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
+        playerStorage.initialValue = playerPosition;
+    }
+    public void lv11()
+    {
+        SceneManager.LoadSceneAsync("Level 11");
+        FindObjectOfType<AudioManager>().Play("Theme");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
+        playerStorage.initialValue = playerPosition;
+    }
+    public void lv12()
+    {
+        SceneManager.LoadSceneAsync("Level 12");
+        FindObjectOfType<AudioManager>().Play("Theme");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
+        playerStorage.initialValue = playerPosition;
+    }
+    public void lv13()
+    {
+        SceneManager.LoadSceneAsync("Level 13");
+        FindObjectOfType<AudioManager>().Play("Bodyguard");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Theme");
+        playerStorage.initialValue = playerPosition;
+    }
+    public void lv14()
+    {
+        SceneManager.LoadSceneAsync("Level 14");
+        FindObjectOfType<AudioManager>().Play("Theme");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
+        playerStorage.initialValue = playerPosition;
+    }
+    public void lv15()
+    {
+        SceneManager.LoadSceneAsync("Level 15");
+        FindObjectOfType<AudioManager>().Play("Theme");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
+        playerStorage.initialValue = playerPosition;
+    }
+    public void lv16()
+    {
+        SceneManager.LoadSceneAsync("Level 16");
+        FindObjectOfType<AudioManager>().Play("Theme");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
+        playerStorage.initialValue = playerPosition;
+    }
 }

@@ -145,8 +145,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 0.09
-  lineOfSite: 4.02
-  ShootingRange: 1.75
+  lineOfSite: 6.09
+  ShootingRange: 0.75
   nextFire: 3
   canFire: 10
   bulletEnemy: {fileID: 3610935545787717322, guid: 5432af89c3311684da9ed002e8b31c48, type: 3}

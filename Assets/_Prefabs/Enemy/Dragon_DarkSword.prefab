@@ -1,5 +1,36 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4950477511639857918
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1553255937638422398}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1553255937638422398
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4950477511639857918}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.6150231, y: -1.0457249, z: -0.029690094}
+  m_LocalScale: {x: 1.908518, y: 1.908518, z: 1.908518}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 5479551023252669866}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &5479551023252669863
 GameObject:
   m_ObjectHideFlags: 0
@@ -34,7 +65,8 @@ Transform:
   m_LocalPosition: {x: -1.172, y: 0.905, z: 0}
   m_LocalScale: {x: 0.5239668, y: 0.5239668, z: 0.5239668}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1553255937638422398}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -123,12 +155,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Speed: 0.9
-  lineOfSite: 2.98
+  lineOfSite: 6.29
   ShootingRange: 0.13
   nextFire: 3
   canFire: 10
-  bulletEnemy: {fileID: 5479551023252669863}
-  bulletParent: {fileID: 5479551023252669863}
+  bulletEnemy: {fileID: 4950477511639857918}
+  bulletParent: {fileID: 4950477511639857918}
   Attack2: 50
   attackOffset: {x: -0.05, y: 0.1, z: 0}
   attackRange: 0.13
@@ -214,10 +246,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loots:
-  - item: {fileID: 7445063279809320962, guid: 6104b7789ece96e4b9a714f5e7f4ef43, type: 3}
-    DropRate: 46
-    minQuantity: 8
-    maxQuantity: 14
   - item: {fileID: 7519246150000501656, guid: 07d8e1d6e2d4bd74d8c3a516f7260aa7, type: 3}
     DropRate: 37
     minQuantity: 8
