@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f97ef61e2c3d8b4fac102ff27b287c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Speed: 0.09
+  Speed: 0.7
   lineOfSite: 6.09
   ShootingRange: 0.75
   nextFire: 3
