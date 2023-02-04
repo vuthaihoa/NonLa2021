@@ -68,6 +68,7 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
         playerAttributesSO.intLanguage = data.playerAttributesData.intLanguage;
         playerAttributesSO.damageHit = data.playerAttributesData.damageHit;
         playerAttributesSO.damageMagic = data.playerAttributesData.damageMagic;
+        playerAttributesSO.coolDown3 = data.playerAttributesData.coolDown3;
     }
     public void SaveData(GameData data)
     {
@@ -91,5 +92,6 @@ public class PlayerStats : MonoBehaviour, IDataPersistence
         data.playerAttributesData.intLanguage = playerAttributesSO.intLanguage;
         data.playerAttributesData.damageHit = playerAttributesSO.damageHit;
         data.playerAttributesData.damageMagic = playerAttributesSO.damageMagic;
+        data.playerAttributesData.coolDown3 = playerAttributesSO.coolDown3;
     }
 }

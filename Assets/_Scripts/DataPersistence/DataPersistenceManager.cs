@@ -102,8 +102,9 @@ public class DataPersistenceManager : MonoBehaviour
         playerAttributesSO.UpgradeSoulMagic = 20;
         playerAttributesSO.UpgradePotion = 50;
         playerAttributesSO.buyPotion = 200;
-        playerAttributesSO.damageHit = 40;
+        playerAttributesSO.damageHit = 1;
         playerAttributesSO.damageMagic = 100;
+        playerAttributesSO.coolDown3 = 2;
         playerAttributesSO.UnlockBash = false;
         playerAttributesSO.UnlockBullet = false;
         playerAttributesSO.UnlockShield = false;

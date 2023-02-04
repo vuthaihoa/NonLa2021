@@ -12,7 +12,7 @@ public class AttributesScriptableObject : ScriptableObject
     public int money = 0;
     
     public int damage = 10;
-    public int damageHit = 40;
+    public int damageHit = 1;
     public int Magic = 15;
     public int damageMagic = 100;
 
@@ -31,6 +31,7 @@ public class AttributesScriptableObject : ScriptableObject
     public int buyPotion = 200;
 
     public int intLanguage = 0;
+    public float coolDown3 = 2;
     [Header("UnLockSkill")]
     public bool UnlockDash =false;
     public bool UnlockShield = false;

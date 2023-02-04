@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class MagicUpgrade : MonoBehaviour
 {
-    GameObject target;
+    private GameObject[] target;
     public float speed;
     public GameObject hitParticle;
     public float DestroyTime = 0.7f;
@@ -17,9 +17,8 @@ public class MagicUpgrade : MonoBehaviour
     {
         enemy = GameObject.FindGameObjectWithTag("Enemy").transform;
         bulletRg = GetComponent<Rigidbody2D>();
-        target = GameObject.FindGameObjectWithTag("Enemy");
-        Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
-        bulletRg.velocity = new Vector2(moveDir.x, moveDir.y);
+
+        FindEnemy();
     }
     private void Update()
     {
@@ -34,6 +33,26 @@ public class MagicUpgrade : MonoBehaviour
         float angle = Mathf.Atan2(target.position.y - transform.position.y, target.position.x - transform.position.x) * Mathf.Rad2Deg;
         Quaternion targetRotation = Quaternion.Euler(new Vector3(0, 0, angle));
         transform.rotation = Quaternion.RotateTowards(transform.rotation, targetRotation, 200);
+    }
+    public Transform FindEnemy()
+    {
+        target = GameObject.FindGameObjectsWithTag("Enemy");
+        float distanceToClosestEnemy = Mathf.Infinity;
+        Transform trans = null;
+        foreach(GameObject go in target)
+        {
+            float currentDistance;
+            currentDistance = Vector3.Distance(transform.position, go.transform.position);
+            if(currentDistance < distanceToClosestEnemy)
+            {
+                distanceToClosestEnemy = currentDistance;
+                trans = go.transform;
+                enemy = go.transform;
+                Vector2 moveDir = (trans.transform.position - transform.position).normalized * speed;
+                bulletRg.velocity = new Vector2(moveDir.x, moveDir.y);
+            }
+        }
+        return trans;
     }
     private void OnTriggerEnter2D(Collider2D hitInfo)
     {

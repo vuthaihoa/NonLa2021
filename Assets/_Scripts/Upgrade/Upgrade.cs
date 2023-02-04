@@ -13,12 +13,16 @@ public class Upgrade : MonoBehaviour
     [SerializeField]
     private int UpDamage = 5 ;
     [SerializeField]
+    private int UpDamageUpgrade = 5;
+    [SerializeField]
     private Text DamageText;
     [SerializeField]
     private Text DamageTextUp;
 
     [SerializeField]
     private int UpMagic = 5;
+    [SerializeField]
+    private float CoolDownMagic = 0.05f;
     [SerializeField]
     private Text MagicText;
     [SerializeField]
@@ -97,6 +101,7 @@ public class Upgrade : MonoBehaviour
             return;
         }
         playerAttributesSO.damage = playerAttributesSO.damage + UpDamage;
+        playerAttributesSO.damageHit = playerAttributesSO.damageHit + UpDamageUpgrade;
         UpdateDamage();
         playerAttributesSO.soulFire = (int)(playerAttributesSO.soulFire - playerAttributesSO.UpgradeSoulDamage);
         playerAttributesSO.UpgradeSoulDamage *= 1.3f;
@@ -109,6 +114,7 @@ public class Upgrade : MonoBehaviour
             return;
         }
         playerAttributesSO.Magic = playerAttributesSO.Magic + UpMagic;
+        playerAttributesSO.coolDown3 = playerAttributesSO.coolDown3 - CoolDownMagic;
         UpdateMagic();
         playerAttributesSO.soulFire = (int)(playerAttributesSO.soulFire - playerAttributesSO.UpgradeSoulMagic);
         playerAttributesSO.UpgradeSoulMagic *= 1.3f;

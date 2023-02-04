@@ -13,7 +13,6 @@ public class fire : MonoBehaviour
     private bool die = true;
     PlayerController player;
     public Image CoolDownBullet;
-    public float coolDown3;
     private bool IsCoolDown3 = false;
     [Header("Attributes SO")]
     [SerializeField] private AttributesScriptableObject playerAttributesSO;
@@ -56,7 +55,7 @@ public class fire : MonoBehaviour
     }
     public void Magic2()
     {
-        if (playerAttributesSO.Magic >= 50)
+        if (playerAttributesSO.Magic >= 70)
         {
             Instantiate(magic2, firePoint.position, firePoint.rotation);
         }
@@ -76,7 +75,7 @@ public class fire : MonoBehaviour
             }
             if (IsCoolDown3)
             {
-                CoolDownBullet.fillAmount -= 1 / coolDown3 * Time.deltaTime;
+                CoolDownBullet.fillAmount -= 1 / playerAttributesSO.coolDown3 * Time.deltaTime;
                 if (CoolDownBullet.fillAmount <= 0)
                 {
                     CoolDownBullet.fillAmount = 0;

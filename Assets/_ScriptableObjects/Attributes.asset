@@ -14,23 +14,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 1000
   MoreHealth: 50
-  healthcolli: 0
-  money: 0
+  healthcolli: 6
+  money: 159
   damage: 1000
   damageHit: 40
-  Magic: 15
+  Magic: 175
   damageMagic: 100
   HealthLv: 0
   DamageLv: 0
-  MagicLv: 0
+  MagicLv: 21
   PotionLV: 0
-  soulFire: 0
+  soulFire: 144
   UpgradeSoulHealth: 20
   UpgradeSoulDamage: 20
-  UpgradeSoulMagic: 20
+  UpgradeSoulMagic: 4941.2866
   UpgradePotion: 50
   buyPotion: 200
   intLanguage: 0
+  coolDown3: 0.95000094
   UnlockDash: 1
   UnlockShield: 1
   UnlockBullet: 1
