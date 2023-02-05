@@ -389,6 +389,10 @@ PrefabInstance:
       propertyPath: m_Offset.y
       value: -0.090063736
       objectReference: {fileID: 0}
+    - target: {fileID: 5633813055714847111, guid: f243f3181aeb05047a78aac51da53e4a, type: 3}
+      propertyPath: m_SortingOrder
+      value: 11
+      objectReference: {fileID: 0}
     - target: {fileID: 7812609063215511873, guid: f243f3181aeb05047a78aac51da53e4a, type: 3}
       propertyPath: m_Size.x
       value: 1.6973345
