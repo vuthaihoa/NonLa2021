@@ -122,6 +122,13 @@ public class TinAttack : MonoBehaviour
         float originalGravity = Rg.gravityScale;
         Rg.gravityScale = 0;
     }
+    public void DashDown()
+    {
+        float A = player.transform.position.x;
+        float B = player.transform.position.y;
+        Rg.position = new Vector2(A,B + 0.6f);
+        Rg.gravityScale = 0;
+    }
     public void Idle()
     {
         Rg.gravityScale = 1;
