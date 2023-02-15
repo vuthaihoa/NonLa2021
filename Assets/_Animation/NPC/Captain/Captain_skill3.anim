@@ -61,6 +61,26 @@ AnimationClip:
       value: {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
     - time: 2
       value: {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 2.1
+      value: {fileID: 8611564440514264555, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 2.2
+      value: {fileID: -282840653, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 2.3
+      value: {fileID: 95103077, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 2.4
+      value: {fileID: -1800523657, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 2.5
+      value: {fileID: -222691305, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 2.6
+      value: {fileID: 1565929075, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 2.7
+      value: {fileID: 1274239965, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 2.8
+      value: {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 2.9
+      value: {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - time: 3
+      value: {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
     attribute: m_Sprite
     path: 
     classID: 212
@@ -101,12 +121,22 @@ AnimationClip:
     - {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
     - {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
     - {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: 8611564440514264555, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: -282840653, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: 95103077, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: -1800523657, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: -222691305, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: 1565929075, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: 1274239965, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
+    - {fileID: -2022352630, guid: d38f6d42c7c5e3541ae79ae49477476a, type: 3}
   m_AnimationClipSettings:
     serializedVersion: 2
     m_AdditiveReferencePoseClip: {fileID: 0}
     m_AdditiveReferencePoseTime: 0
     m_StartTime: 0
-    m_StopTime: 2.1
+    m_StopTime: 3.1
     m_OrientationOffsetY: 0
     m_Level: 0
     m_CycleOffset: 0
@@ -176,6 +206,27 @@ AnimationClip:
     intParameter: 0
     messageOptions: 0
   - time: 1.9
+    functionName: BoxCollDashOff
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.1
+    functionName: DashDown
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.6
+    functionName: BoxCollDashOn
+    data: 
+    objectReferenceParameter: {fileID: 0}
+    floatParameter: 0
+    intParameter: 0
+    messageOptions: 0
+  - time: 2.9
     functionName: BoxCollDashOff
     data: 
     objectReferenceParameter: {fileID: 0}

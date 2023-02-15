@@ -129,6 +129,10 @@ public class BoiAttack : MonoBehaviour
         Rg.position = new Vector2(A, B + 0.6f);
         Rg.gravityScale = 0;
     }
+    public void HealthEnemy()
+    {
+        enemy_Health.health = enemy_Health.health + 200;
+    }
     public void Idle()
     {
         Rg.gravityScale = 1;

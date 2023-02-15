@@ -314,6 +314,40 @@ MonoBehaviour:
       to lead us.
     m_Metadata:
       m_Items: []
+  - m_Id: 9737678017867776
+    m_Localized: Non La! It took me three days to kill the magicians.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9737856120598528
+    m_Localized: I think you'll die soon when you have to get up here. My plan is
+      perfect.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9738695597961216
+    m_Localized: I gave the command of the army to Thuy using ships to cross the
+      sea and attack the capital.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9738875898507264
+    m_Localized: They will die from ambush. No one can stand against the great King.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9739080538599424
+    m_Localized: So my brother's disappearance was caused by you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9739258385477632
+    m_Localized: Hhahahahha! Yes, he's stupid.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9739481237237760
+    m_Localized: Be careful Knight of the Leaf hat. He had slaughtered the giants.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9739570294894592
+    m_Localized: I Will kill you.
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

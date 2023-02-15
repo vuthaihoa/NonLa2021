@@ -161,4 +161,22 @@ public class ChooseLevel : MonoBehaviour
         FindObjectOfType<AudioManager>().StopPlaying("Theme");
         playerStorage.initialValue = playerPosition;
     }
+    public void lv18()
+    {
+        SceneManager.LoadSceneAsync("Level 18");
+        FindObjectOfType<AudioManager>().Play("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Theme");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("Bodyguard");
+        playerStorage.initialValue = playerPosition;
+    }
+    public void lv19()
+    {
+        SceneManager.LoadSceneAsync("Level 19");
+        FindObjectOfType<AudioManager>().Play("Bodyguard");
+        FindObjectOfType<AudioManager>().StopPlaying("DanhBoss");
+        FindObjectOfType<AudioManager>().StopPlaying("MusicMocTinh");
+        FindObjectOfType<AudioManager>().StopPlaying("Theme");
+        playerStorage.initialValue = playerPosition;
+    }
 }

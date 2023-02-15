@@ -347,6 +347,44 @@ MonoBehaviour:
       l\xE1 Ch\xFAng ta s\u1EBD nh\u1EDD th\u1EA7n L\u1EA1c \u0111\u01B0a ta \u0111i."
     m_Metadata:
       m_Items: []
+  - m_Id: 9737678017867776
+    m_Localized: "N\xF3n l\xE1! tao m\u1EDBi ph\u1EA3i m\u1EA5t ba ng\xE0y \u0111\u1EC3
+      d\u1ECDn d\u1EB9p b\u1ECDn ph\xE1p s\u01B0."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9737856120598528
+    m_Localized: "Tao ngh\u0129 m\xE0y s\u1EBD ch\u1EBFt s\u1EDBm khi ph\u1EA3i l\xEAn
+      \u0111\xE2y. k\u1EBF ho\u1EA1ch c\u1EE7a tao r\u1EA5t ho\xE0n h\u1EA3o."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9738695597961216
+    m_Localized: "Tao \u0111\xE3 trao quy\u1EC1n ch\u1EC9 huy qu\xE2n \u0111\u1ED9i
+      cho Th\u1EE7y d\xF9ng t\xE0u v\u01B0\u1EE3t bi\u1EC3n v\xE0 t\u1EA5n c\xF4ng
+      v\xE0o kinh th\xE0nh."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9738875898507264
+    m_Localized: "Ch\xFAng s\u1EBD ch\u1EBFt v\xEC b\u1ECB ph\u1EE5c k\xEDch. Kh\xF4ng
+      ai c\xF3 th\u1EC3 ch\u1ED1ng l\u1EA1i \u0110\u1EE9c vua v\u0129 \u0111\u1EA1i."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9739080538599424
+    m_Localized: "V\u1EADy Anh trai tao m\u1EA5t t\xEDch l\xE0 do m\xE0y g\xE2y ra."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9739258385477632
+    m_Localized: "Hhahahahha! \u0110\xFAng v\u1EADy, h\u1EAFn qu\xE1 ngu ng\u1ED1c."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9739481237237760
+    m_Localized: "C\u1EA9n th\u1EADn hi\u1EC7p s\u0129 N\xF3n L\xE1. H\u1EAFn \u0111\xE3
+      t\xE1n s\xE1t \u0111\u01B0\u1EE3c t\u1ED9c ng\u01B0\u1EDDi kh\u1ED5ng l\u1ED3."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9739570294894592
+    m_Localized: "Tao s\u1EBD cho m\xE0y g\u1EB7p l\u1EA1i anh trai c\u1EE7a m\xE0y."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
