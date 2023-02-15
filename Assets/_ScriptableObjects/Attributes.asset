@@ -12,26 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa707cf513ea97b48aa35299f7fd3130, type: 3}
   m_Name: Attributes
   m_EditorClassIdentifier: 
-  maxHealth: 1000
-  MoreHealth: 50
-  healthcolli: 6
-  money: 159
-  damage: 1000
+  maxHealth: 200
+  MoreHealth: 130
+  healthcolli: 4
+  money: 158
+  damage: 56
   damageHit: 40
-  Magic: 175
+  Magic: 95
   damageMagic: 100
-  HealthLv: 0
-  DamageLv: 0
-  MagicLv: 21
-  PotionLV: 0
-  soulFire: 144
-  UpgradeSoulHealth: 20
-  UpgradeSoulDamage: 20
-  UpgradeSoulMagic: 4941.2866
-  UpgradePotion: 50
+  HealthLv: 10
+  DamageLv: 11
+  MagicLv: 6
+  PotionLV: 4
+  soulFire: 771
+  UpgradeSoulHealth: 275.7169
+  UpgradeSoulDamage: 358.43195
+  UpgradeSoulMagic: 96.53616
+  UpgradePotion: 142.805
   buyPotion: 200
-  intLanguage: 0
-  coolDown3: 0.95000094
+  intLanguage: 1
+  coolDown3: 2
   UnlockDash: 1
   UnlockShield: 1
   UnlockBullet: 1
