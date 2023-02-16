@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 823624259942356946}
   - component: {fileID: 1687909218656046596}
   - component: {fileID: 633502539002171964}
+  - component: {fileID: 7256506626697633220}
   m_Layer: 7
   m_Name: Bullet_Boi
   m_TagString: Untagged
@@ -97,7 +98,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6699984545835271353}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -184,3 +185,23 @@ MonoBehaviour:
   Damage: 60
   Hit: {fileID: 2970892498471324828, guid: 902f1c98d205ea643ae46b345d2b02ea, type: 3}
   RorationTimne: 0
+--- !u!95 &7256506626697633220
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6699984545835271353}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9e2ec15d3b71fc64cb80a5000ec691d8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
