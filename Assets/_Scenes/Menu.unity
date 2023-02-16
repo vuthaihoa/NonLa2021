@@ -1533,6 +1533,14 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 805870850}
+    - target: {fileID: 819394073565139923, guid: b8e719f737232f142a2a918488cb862e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 819394073709413799, guid: b8e719f737232f142a2a918488cb862e, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 819394073840276752, guid: b8e719f737232f142a2a918488cb862e, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -1624,6 +1632,10 @@ PrefabInstance:
     - target: {fileID: 819394074271576358, guid: b8e719f737232f142a2a918488cb862e, type: 3}
       propertyPath: m_Name
       value: Menu_Canvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 1297560661337371248, guid: b8e719f737232f142a2a918488cb862e, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b8e719f737232f142a2a918488cb862e, type: 3}
