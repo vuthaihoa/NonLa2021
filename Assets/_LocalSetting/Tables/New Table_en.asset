@@ -102,7 +102,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 153216108015616
-    m_Localized: Hello Knight of the Leaf hat!!! I'm Thuy, I'm here to wait for you.
+    m_Localized: Hello Nonla Knight!!! I'm Thuy, I'm here to wait for you.
     m_Metadata:
       m_Items: []
   - m_Id: 153499785572352
@@ -133,7 +133,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 388986471264256
-    m_Localized: Boi!!! This is Knight of the Leaf hat
+    m_Localized: Boi!!! This is Nonla Knight
     m_Metadata:
       m_Items: []
   - m_Id: 389452517158912
@@ -151,8 +151,8 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 390005968154624
-    m_Localized: Knight of the Leaf hat, you should go to Thien Khong Island, meet
-      the Wizards and ask them to open the Bridge across the Truong Son range
+    m_Localized: Nonla Knight, you should go to Thien Khong Island, meet the Wizards
+      and ask them to open the Bridge across the Truong Son range
     m_Metadata:
       m_Items: []
   - m_Id: 390385007407104
@@ -204,7 +204,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 403526026080256
-    m_Localized: Tin! follow me Knight of the Leaf hat
+    m_Localized: Tin! follow me Nonla Knight
     m_Metadata:
       m_Items: []
   - m_Id: 404322939645952
@@ -220,8 +220,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 404960251555840
-    m_Localized: My name is Ngo. Knight of the Conical Hat why did you come down
-      to this area.
+    m_Localized: My name is Ngo. Nonla Knight why did you come down to this area.
     m_Metadata:
       m_Items: []
   - m_Id: 405085145346048
@@ -255,7 +254,7 @@ MonoBehaviour:
       m_Items: []
   - m_Id: 405974019026944
     m_Localized: Dear Father!!! This is the benefactor who saved me, he is called
-      Knight of the Leaf hat.
+      Nonla Knight.
     m_Metadata:
       m_Items: []
   - m_Id: 408214456840192
@@ -285,8 +284,7 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 409038394306560
-    m_Localized: Soldier, lead Knight of the Leaf hat on to the base of the mad god
-      army.
+    m_Localized: Soldier, lead Nonla Knight on to the base of the mad god army.
     m_Metadata:
       m_Items: []
   - m_Id: 409187795415040
@@ -306,12 +304,12 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 3632852230025216
-    m_Localized: son, lead Knight of the Leaf hat go to Thien Khong Island
+    m_Localized: son, lead Nonla Knight go to Thien Khong Island
     m_Metadata:
       m_Items: []
   - m_Id: 3633747760066560
-    m_Localized: yes father! Let's go,  Knight of the Leaf hat We will ask Lac god
-      to lead us.
+    m_Localized: yes father! Let's go,  Nonla Knight We will ask Lac god to lead
+      us.
     m_Metadata:
       m_Items: []
   - m_Id: 9737678017867776
@@ -341,11 +339,38 @@ MonoBehaviour:
     m_Metadata:
       m_Items: []
   - m_Id: 9739481237237760
-    m_Localized: Be careful Knight of the Leaf hat. He had slaughtered the giants.
+    m_Localized: Be careful Nonla Knight. He had slaughtered the giants.
     m_Metadata:
       m_Items: []
   - m_Id: 9739570294894592
     m_Localized: I Will kill you.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10642804122017792
+    m_Localized: Magic always exists in living things, Every creature is born with
+      a certain amount of magic.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643026357215232
+    m_Localized: Our race of giants has served the kingdom greatly. But the king
+      is hunting us to collect magic.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643164861521920
+    m_Localized: Knight you are the one we are waiting for save everyone.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643492377944064
+    m_Localized: The stone statue knows how to speak?
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643650838749184
+    m_Localized: This is the witch queen who lived a long time ago. Hurry up and
+      find the revolutionary army, the conical knights.
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643771173330944
+    m_Localized: I will also translate about Cao Su Forest.
     m_Metadata:
       m_Items: []
   references:

@@ -46,7 +46,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc03a7128cf829648a1dba0402df07f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: Menu
+  sceneToLoad: Level 20
   playerPosition: {x: -2.535, y: -0.72}
   playerStorage: {fileID: 11400000, guid: db92c2070753ad84a905489b62d5ed2c, type: 2}
 --- !u!61 &508064914814326515

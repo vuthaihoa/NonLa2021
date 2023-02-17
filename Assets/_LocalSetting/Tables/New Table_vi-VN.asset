@@ -385,6 +385,40 @@ MonoBehaviour:
     m_Localized: "Tao s\u1EBD cho m\xE0y g\u1EB7p l\u1EA1i anh trai c\u1EE7a m\xE0y."
     m_Metadata:
       m_Items: []
+  - m_Id: 10642804122017792
+    m_Localized: "Ph\xE9p thu\u1EADt lu\xF4n t\u1ED3n t\u1EA1i trong sinh v\u1EADt
+      s\u1ED1ng, M\u1ED7i sinh v\u1EADt khi sinh ra \u0111\u1EC1u c\xF3 m\u1ED9t
+      l\u01B0\u1EE3ng ph\xE9p thu\u1EADt nh\u1EA5t \u0111\u1ECBnh."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643026357215232
+    m_Localized: "T\u1ED9c kh\u1ED5ng l\u1ED3 c\u1EE7a ch\xFAng t\xF4i \u0111\xE3
+      ph\u1EE5c v\u1EE5 cho v\u01B0\u01A1ng qu\u1ED1c r\u1EA5t nhi\u1EC1u. Nh\u01B0ng
+      \u0111\u1EE9c vua \u0111ang truy s\xE1t ch\xFAng t\xF4i \u0111\u1EC3 th\u1EE7
+      th\u1EADp ph\xE9p thu\u1EADt."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643164861521920
+    m_Localized: "Hi\u1EC7p s\u0129 c\u1EADu ch\xEDnh l\xE0 ng\u01B0\u1EDDi ch\xFAng
+      t\xF4i \u0111ang ch\u1EDD \u0111\u1EE3i, h\xE3y c\u1EE9u l\u1EA5y m\u1ECDi
+      ng\u01B0\u1EDDi."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643492377944064
+    m_Localized: "B\u1EE9c t\u01B0\u1EE3ng \u0111\xE1 bi\u1EBFt n\xF3i sao?"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643650838749184
+    m_Localized: "\u0110\xE2y ch\xEDnh l\xE0 n\u1EEF ho\xE0ng ph\xF9 th\u1EE7y t\u1EEBng
+      s\u1ED1ng c\xE1ch \u0111\xE2y r\u1EA5t l\xE2u. Hi\u1EC7p s\u0129 N\xF3n l\xE1
+      ch\xFAng ta h\xE3y mau \u0111i t\xECm qu\xE2n c\xE1ch m\u1EA1ng th\xF4i."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 10643771173330944
+    m_Localized: "T\xF4i s\u1EBD d\u1ECBch chuy\u1EC3n c\u1EA3 hai t\u1EDBi R\u1EEBng
+      Cao Su.\r\n"
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

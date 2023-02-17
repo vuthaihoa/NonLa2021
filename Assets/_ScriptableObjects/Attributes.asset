@@ -12,14 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aa707cf513ea97b48aa35299f7fd3130, type: 3}
   m_Name: Attributes
   m_EditorClassIdentifier: 
-  maxHealth: 630
+  maxHealth: 200
   MoreHealth: 130
   healthcolli: 0
   money: 158
-  damage: 136
+  damage: 32
   damageHit: 40
-  Magic: 139
-  damageMagic: 376
+  Magic: 51
+  damageMagic: 100
   HealthLv: 10
   DamageLv: 11
   MagicLv: 6
