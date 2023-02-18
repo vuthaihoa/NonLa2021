@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Player
-  m_Shader: {fileID: -6465566751694194690, guid: 38ccc0a608af3d142b6c88a8b95fa1ae, type: 3}
+  m_Name: Lava1
+  m_Shader: {fileID: -6465566751694194690, guid: a3abb22d6f8d1a04db3f2fbd91defa77, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -20,11 +20,27 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - _Emissiom:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _Emission:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _Lava1:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _LavaEmission:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ManiTex:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -43,5 +59,5 @@ Material:
     m_Ints: []
     m_Floats: []
     m_Colors:
-    - Color_0f0709741de747339be962f70f47a8a7: {r: 7.690018, g: 7.690018, b: 7.690018, a: 0}
+    - _Color: {r: 0.0754717, g: 0.00029949093, b: 0, a: 0}
   m_BuildTextureStacks: []

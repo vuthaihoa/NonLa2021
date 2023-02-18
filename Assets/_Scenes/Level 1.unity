@@ -8612,7 +8612,7 @@ GameObject:
   - component: {fileID: 1999664119}
   - component: {fileID: 1999664122}
   m_Layer: 0
-  m_Name: BackGorund_Lava1_1
+  m_Name: Lava1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8658,7 +8658,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: a226604e62fde054594c615957ef8ecd, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -8679,12 +8679,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: e421298fb35b36840b79a0445d9bbabf, type: 3}
+  m_Sprite: {fileID: -653298353, guid: e421298fb35b36840b79a0445d9bbabf, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 2
-  m_Size: {x: 24.461561, y: 1.8}
+  m_Size: {x: 21.272928, y: 1.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -8698,7 +8698,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1999664118}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 7.9449015, y: 0.099276125, z: 23.991943}
+  m_LocalPosition: {x: 7.9957, y: 0.099276125, z: 23.991943}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9919,6 +9919,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3394498465809688553, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: SoulText
       value: 
