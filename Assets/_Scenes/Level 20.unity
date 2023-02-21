@@ -2927,7 +2927,7 @@ MonoBehaviour:
   delay: 0.1
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
-  characterSprite: {fileID: 21300000, guid: 754ab6e411f0ec647abbaedf7e5a1690, type: 3}
+  characterSprite: {fileID: 21300000, guid: 7046b71df0035f74ea80cbd29080dabe, type: 3}
   imageHolder: {fileID: 1259525921}
 --- !u!114 &518152100
 MonoBehaviour:
@@ -3996,7 +3996,7 @@ MonoBehaviour:
   delay: 0.1
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
-  characterSprite: {fileID: 21300000, guid: 754ab6e411f0ec647abbaedf7e5a1690, type: 3}
+  characterSprite: {fileID: 21300000, guid: 7046b71df0035f74ea80cbd29080dabe, type: 3}
   imageHolder: {fileID: 458278067}
 --- !u!114 &717141501
 MonoBehaviour:
@@ -4713,7 +4713,7 @@ MonoBehaviour:
   delay: 0.03
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
-  characterSprite: {fileID: 21300000, guid: 9fd5d196eac53634498c53fa8e06f761, type: 3}
+  characterSprite: {fileID: 21300000, guid: b059d4b34f5e27c42a91d805bfb262e0, type: 3}
   imageHolder: {fileID: 1935503040}
 --- !u!114 &848524153
 MonoBehaviour:
@@ -64653,7 +64653,7 @@ MonoBehaviour:
   delay: 0.03
   delayBetweenLines: 2
   sound: {fileID: 8300000, guid: 5631e6ea96b66ce4d9110d66199499fc, type: 3}
-  characterSprite: {fileID: 21300000, guid: 9fd5d196eac53634498c53fa8e06f761, type: 3}
+  characterSprite: {fileID: 21300000, guid: 754ab6e411f0ec647abbaedf7e5a1690, type: 3}
   imageHolder: {fileID: 1497834693}
 --- !u!114 &1664240899
 MonoBehaviour:
@@ -74090,6 +74090,22 @@ PrefabInstance:
       propertyPath: textFont
       value: 
       objectReference: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
+    - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: textColor.b
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: textColor.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: textColor.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5110159381890468886, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7046b71df0035f74ea80cbd29080dabe, type: 3}
     - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: input
       value: Knight you are the one we are waiting for save everyone.
@@ -74098,6 +74114,10 @@ PrefabInstance:
       propertyPath: textFont
       value: 
       objectReference: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
+    - target: {fileID: 5110159382269491212, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7046b71df0035f74ea80cbd29080dabe, type: 3}
     - target: {fileID: 5110159382409069507, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -74199,6 +74219,10 @@ PrefabInstance:
       propertyPath: textFont
       value: 
       objectReference: {fileID: 12800000, guid: a33327983d5e6274b8dd6e32bbf3225e, type: 3}
+    - target: {fileID: 5110159383571777072, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
+      propertyPath: characterSprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 7046b71df0035f74ea80cbd29080dabe, type: 3}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e653cdec51388604e9e24ccec671fa00, type: 3}
 --- !u!1001 &6545311584473069570
