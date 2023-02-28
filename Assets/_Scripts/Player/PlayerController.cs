@@ -301,7 +301,7 @@ public class PlayerController : MonoBehaviour
             ani.SetBool("ground", false);
             if (Input.GetKeyDown(KeyCode.Space) && Jumpwallint > 0)
             {
-                Jumpwallint = 0;
+                Jumpwallint = 1;
                 Rg.velocity = new Vector2(Rg.velocity.x, JumpWallHight);
             }
         }
