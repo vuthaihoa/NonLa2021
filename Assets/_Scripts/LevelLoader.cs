@@ -16,7 +16,6 @@ public class LevelLoader : MonoBehaviour,IDataPersistence
         {
             playerStorage.initialValue = playerPosition;
             SceneManager.LoadScene(sceneToLoad);
-            DataPersistenceManager.instance.SaveGame();
 
         }
     }

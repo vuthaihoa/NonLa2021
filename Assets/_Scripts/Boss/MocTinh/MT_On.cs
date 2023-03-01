@@ -12,7 +12,6 @@ public class MT_On : MonoBehaviour
     {
         if (Boss == null)
         {
-            Debug.LogError("Boss object is not set");
             return;
         }
     }
