@@ -735,6 +735,10 @@ public class PlayerController : MonoBehaviour
             playerAttributesSO.UnlockShield = true;
             CoolDownShield.fillAmount = 0;
         }
+        if (collision.gameObject.tag == "TRAP")
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
     }
     public void StartCutScene()
     {
