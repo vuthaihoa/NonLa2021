@@ -419,6 +419,15 @@ MonoBehaviour:
       chuy\u1EC3n c\u1EA3 hai t\u1EDBi R\u1EEBng Cao Su.\r\n"
     m_Metadata:
       m_Items: []
+  - m_Id: 16251222452416512
+    m_Localized: "Em c\u1EA7n ph\u1EA3i tr\u1EDF n\xEAn m\u1EA1nh m\u1EBD \u0111\u1EC3
+      c\xF3 t\u1EF1 b\u1EA3o v\u1EC7 em."
+    m_Metadata:
+      m_Items: []
+  - m_Id: 16251189065756672
+    m_Localized: "Em L\u1EA1i t\u1EDBi tr\u1EC5."
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

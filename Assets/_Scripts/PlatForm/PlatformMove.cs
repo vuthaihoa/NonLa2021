@@ -61,6 +61,10 @@ public class PlatformMove : MonoBehaviour
             Roration(player);
             speed = 0.6f;
         }
+        if (currentWaypointsIndex == 13)
+        {
+            Destroy(gameObject);
+        }
     }
     private void Roration(Transform target)
     {

@@ -109,7 +109,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 480
+        y: 800
         width: 304
         height: 160
       alignment: 0
@@ -130,7 +130,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 480
+        y: 800
         width: 304
         height: 160
       alignment: 0
@@ -151,7 +151,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 608
-        y: 480
+        y: 800
         width: 304
         height: 160
       alignment: 0
@@ -172,7 +172,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 912
-        y: 480
+        y: 800
         width: 304
         height: 160
       alignment: 0
@@ -193,7 +193,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1216
-        y: 480
+        y: 800
         width: 304
         height: 160
       alignment: 0
@@ -214,7 +214,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 320
+        y: 640
         width: 304
         height: 160
       alignment: 0
@@ -235,7 +235,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 320
+        y: 640
         width: 304
         height: 160
       alignment: 0
@@ -256,7 +256,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 608
-        y: 320
+        y: 640
         width: 304
         height: 160
       alignment: 0
@@ -277,7 +277,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 912
-        y: 320
+        y: 640
         width: 304
         height: 160
       alignment: 0
@@ -298,7 +298,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1216
-        y: 320
+        y: 640
         width: 304
         height: 160
       alignment: 0
@@ -319,7 +319,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 160
+        y: 480
         width: 304
         height: 160
       alignment: 0
@@ -340,7 +340,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 160
+        y: 480
         width: 304
         height: 160
       alignment: 0
@@ -361,7 +361,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 608
-        y: 160
+        y: 480
         width: 304
         height: 160
       alignment: 0
@@ -382,7 +382,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 912
-        y: 160
+        y: 480
         width: 304
         height: 160
       alignment: 0
@@ -403,7 +403,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1216
-        y: 160
+        y: 480
         width: 304
         height: 160
       alignment: 0
@@ -424,7 +424,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 320
         width: 304
         height: 160
       alignment: 0
@@ -445,7 +445,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 304
-        y: 0
+        y: 320
         width: 304
         height: 160
       alignment: 0
@@ -457,6 +457,216 @@ TextureImporter:
       bones: []
       spriteID: 1a5bcb7d235533e4f9d36f2e154b9ea2
       internalID: -1941445939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_17
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 320
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c1485cf050d5234d9c01156eb1d49a6
+      internalID: 1153523757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_18
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 320
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52447e3c2ef6ae34c977105e63f13ad7
+      internalID: 2057557193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_19
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 320
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78897cda5d5118644a435e8f2841b50d
+      internalID: -2093761816
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d857c8ce86295746bdb1daf2848708f
+      internalID: 1816753255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_21
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 160
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a95d4f4d5ddc9bb49b2232ec88801eff
+      internalID: 806657394
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_22
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 160
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c731776f7b759448cdf64bf5cd74ed
+      internalID: 1299871969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_23
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 160
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77a63cb5f93c2b4998ed120c5f85437
+      internalID: -1961406397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_24
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 160
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06410f2388dffae43a5e4fc1ecd00bf8
+      internalID: 1984522913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c09632aa43e4590488e98dc43576e068
+      internalID: -1888601005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: BoLaofull_26
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 304
+        height: 160
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd3d8fe05e73d554aadb2e8e90b4c9c0
+      internalID: -1652427750
       vertices: []
       indices: 
       edges: []
@@ -473,19 +683,29 @@ TextureImporter:
     secondaryTextures: []
     nameFileIdTable:
       BoLaofull_10: 1050127578
+      BoLaofull_22: 1299871969
+      BoLaofull_21: 806657394
+      BoLaofull_23: -1961406397
+      BoLaofull_18: 2057557193
       BoLaofull_12: -1770872098
       BoLaofull_16: -1941445939
+      BoLaofull_26: -1652427750
       BoLaofull_11: -2089010085
       BoLaofull_9: -1713580690
       BoLaofull_7: -2030154744
+      BoLaofull_24: 1984522913
       BoLaofull_15: 1145395931
+      BoLaofull_19: -2093761816
       BoLaofull_3: -1800223536
       BoLaofull_0: -1107791658
       BoLaofull_6: 1924425709
       BoLaofull_13: -1444686601
       BoLaofull_5: 930035484
       BoLaofull_14: 1523514039
+      BoLaofull_20: 1816753255
+      BoLaofull_17: 1153523757
       BoLaofull_4: -438668859
+      BoLaofull_25: -1888601005
       BoLaofull_8: -1799653681
       BoLaofull_2: -1611009684
       BoLaofull_1: 88914628
