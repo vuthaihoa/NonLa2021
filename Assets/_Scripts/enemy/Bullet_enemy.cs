@@ -12,6 +12,7 @@ public class Bullet_enemy : MonoBehaviour
     public GameObject Hit;
     private Transform player;
     public float RorationTimne;
+    public float timeline = 2f;
     private void Start()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -19,7 +20,7 @@ public class Bullet_enemy : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player");
         Vector2 moveDir = (target.transform.position - transform.position).normalized * speed;
         bulletRg.velocity = new Vector2(moveDir.x, moveDir.y);
-        Destroy(this.gameObject, 2);
+        Destroy(this.gameObject, timeline);
     }
     private void Update()
     {
