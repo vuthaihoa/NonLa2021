@@ -9,6 +9,8 @@ public class BoLaoAttack : MonoBehaviour
     [SerializeField] private Transform BulletParents;
     [SerializeField] private GameObject Bullet2;
     [SerializeField] private Transform BulletParents2;
+    [SerializeField] private Transform TreeTrapParents;
+    [SerializeField] private GameObject treeTrap;
     [Header("attack")]
     [SerializeField] private int Attack1;
     [SerializeField] private Vector3 attackOffset;
@@ -17,6 +19,8 @@ public class BoLaoAttack : MonoBehaviour
     [SerializeField] private Vector3 attackOffset2;
     [SerializeField] private float attackRange2 = 1f;
     [SerializeField] private LayerMask attackMask;
+    [Header("lotusFlower")]
+    [SerializeField] private GameObject LotusFlower;
     public void Attack()
     {
         Vector3 poss = transform.position;
@@ -35,7 +39,7 @@ public class BoLaoAttack : MonoBehaviour
         pos += transform.right * attackOffset2.x;
         pos += transform.up * attackOffset2.y;
         Collider2D colInfo = Physics2D.OverlapCircle(pos, attackRange2, attackMask);
-        FindObjectOfType<AudioManager>().Play("MT_skill1");
+        FindObjectOfType<AudioManager>().Play("ThuongLuongAngry");
         if (colInfo != null)
         {
             colInfo.GetComponent<PlayerController>().TakeDamage(Attack2);
@@ -50,6 +54,19 @@ public class BoLaoAttack : MonoBehaviour
     {
         FindObjectOfType<AudioManager>().Play("EnemyBullet");
         Instantiate(Bullet2, BulletParents2.transform.position, Quaternion.identity);
+    }
+    public void TreeTrap()
+    {
+        Instantiate(treeTrap, TreeTrapParents.transform.position, Quaternion.identity);
+    }
+    public void lotusOn()
+    {
+        LotusFlower.SetActive(true);
+        FindObjectOfType<AudioManager>().Play("ThuongLuongAngry");
+    }
+    public void lotusOff()
+    {
+        LotusFlower.SetActive(false);
     }
     private void OnDrawGizmosSelected()
     {
