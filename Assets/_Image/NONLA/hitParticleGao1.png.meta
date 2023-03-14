@@ -116,10 +116,10 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 98
-        height: 81
-      alignment: 9
-      pivot: {x: 0.67545426, y: 0.7979027}
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -135,12 +135,12 @@ TextureImporter:
       name: hitParticleGao1_1
       rect:
         serializedVersion: 2
-        x: 98
+        x: 96
         y: 0
-        width: 98
-        height: 81
-      alignment: 9
-      pivot: {x: 0.6828263, y: 0.7925511}
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -148,6 +148,48 @@ TextureImporter:
       bones: []
       spriteID: 74c344ecafbf4d8e0800000000000000
       internalID: -1669432507226637241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hitParticleGao1_2
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b24a8e49c2b2f6409f7877f7b3fc85d
+      internalID: 1728628850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: hitParticleGao1_3
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 96
+        height: 96
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48299bf357f63034f98843545c8e0353
+      internalID: -779848337
       vertices: []
       indices: 
       edges: []
@@ -165,6 +207,8 @@ TextureImporter:
     nameFileIdTable:
       hitParticleGao1_1: -1669432507226637241
       hitParticleGao1_0: 2901041686711466284
+      hitParticleGao1_2: 1728628850
+      hitParticleGao1_3: -779848337
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

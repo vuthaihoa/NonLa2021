@@ -275,7 +275,7 @@ public class PlayerController : MonoBehaviour
         if (facingRight)
         {
             WallCheckHit = Physics2D.Raycast(transform.position, new Vector2(WallDistance, 0), WallDistance, whatIsGround_Wall);
-            //Debug.DrawRay(transform.position, new Vector2(WallDistance, 0), Color.blue);
+            Debug.DrawRay(transform.position, new Vector2(WallDistance, 0), Color.blue);
         }
         else
         {
