@@ -10335,10 +10335,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3394498465809688553, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 3867494395799041345, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: SoulText
       value: 
@@ -10374,18 +10370,6 @@ PrefabInstance:
     - target: {fileID: 3867494397531111331, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: m_RootOrder
       value: 21
-      objectReference: {fileID: 0}
-    - target: {fileID: 3867494397531111331, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.41059786
-      objectReference: {fileID: 0}
-    - target: {fileID: 3867494397531111331, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.4105978
-      objectReference: {fileID: 0}
-    - target: {fileID: 3867494397531111331, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4105978
       objectReference: {fileID: 0}
     - target: {fileID: 3867494397531111331, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -10435,10 +10419,6 @@ PrefabInstance:
       propertyPath: CoolDownBullet
       value: 
       objectReference: {fileID: 1704522194}
-    - target: {fileID: 7101226607024296854, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
-      propertyPath: m_IsTrigger
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdc541b2ab364ed42b5f26e5cd4b4f1a, type: 3}
 --- !u!1001 &4058778778273690511

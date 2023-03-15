@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 4447115949744675946}
   - component: {fileID: 1143198881319667970}
   - component: {fileID: 6610618531609233302}
-  - component: {fileID: 5673770740230487649}
-  - component: {fileID: 5939757466431536734}
+  - component: {fileID: 7846951111576457214}
   m_Layer: 0
   m_Name: TreeTrap
   m_TagString: Untagged
@@ -120,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c913cfcdfacc0e45bf285ad1dd7a91e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &5673770740230487649
+--- !u!114 &7846951111576457214
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -129,37 +128,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3603622392755050455}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 20ac65047d6d8b14399a662d53d8a48d, type: 3}
+  m_Script: {fileID: 11500000, guid: c5e4ed7ff67464642b6e7fc9cd7b9340, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  attackspeed: 3
-  CanAttack: 5
-  Speed: 0
-  lineOfSite: 0
-  damage: 40
---- !u!61 &5939757466431536734
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3603622392755050455}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.021058202, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1.12, y: 0.8}
-    newSize: {x: 1.8131704, y: 0.8}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 2
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1.7049499, y: 0.8}
-  m_EdgeRadius: 0
+  DamageAttack: 50
+  attackOffset: {x: 0, y: -0.56, z: 0}
+  attackRange: 0.76
+  attackMask:
+    serializedVersion: 2
+    m_Bits: 256

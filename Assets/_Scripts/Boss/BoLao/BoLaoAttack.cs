@@ -21,6 +21,21 @@ public class BoLaoAttack : MonoBehaviour
     [SerializeField] private LayerMask attackMask;
     [Header("lotusFlower")]
     [SerializeField] private GameObject LotusFlower;
+    [Header("Cutscene")]
+    [SerializeField] private GameObject SaveGao;
+    [SerializeField] private int HpCutscene;
+    private Enemy_Health enemy_Health;
+    private void Start()
+    {
+        enemy_Health= GetComponent<Enemy_Health>();
+    }
+    private void Update()
+    {
+        if(enemy_Health.health < HpCutscene)
+        {
+            SaveGao.SetActive(true);
+        }
+    }
     public void Attack()
     {
         Vector3 poss = transform.position;

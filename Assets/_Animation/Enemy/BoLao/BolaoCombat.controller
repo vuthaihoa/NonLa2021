@@ -248,7 +248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   range: 0.94
-  rangeDash: 0
+  rangeDash: 0.94
   speed: 3
   agry: 3500
 --- !u!1102 &-1029143830066760192
